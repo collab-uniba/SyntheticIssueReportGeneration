@@ -28,7 +28,7 @@ sample_sizes = [5, 10, 15, 20, 25, 30, 50, 100, 150, 200, "all"]
 test_dataset = dataset["test"]
 test_texts = test_dataset["Text"]
 test_labels = test_dataset["Polarity"]
-test_ids = test_dataset.get("ID", list(range(len(test_dataset))))
+test_ids = test_dataset["ID"]
 
 results = []
 
@@ -51,14 +51,14 @@ for size in sample_sizes:
         num_epochs=4,
         eval_strategy="no",
         save_strategy="no",
-        load_best_model_at_end=False,
+        load_best_model_at_end=True,
     )
 
     trainer = Trainer(
         model=model,
         args=args,
         train_dataset=train_dataset,
-        eval_dataset=None,
+        eval_dataset=test_dataset,
         metric="accuracy",
         column_mapping={"Text": "text", "Polarity": "label"}
     )
