@@ -15,15 +15,18 @@ pip install --upgrade pip
 pip install -r requirements_fewShot.txt
 
 MODEL_NAME="llama3.2:1b"  # default
+next_is_model=false
 
-for i in "$@"; do
-    if [[ $i == --model ]]; then
-        next_is_model=true
-    elif [[ $next_is_model == true ]]; then
-        MODEL_NAME=$i
+for arg in "$@"; do
+    if [ "$next_is_model" = true ]; then
+        MODEL_NAME="$arg"
         break
     fi
+    if [ "$arg" = "--model" ]; then
+        next_is_model=true
+    fi
 done
+
 
 echo "🤖 Download del modello '$MODEL_NAME'..."
 ollama pull "$MODEL_NAME"
