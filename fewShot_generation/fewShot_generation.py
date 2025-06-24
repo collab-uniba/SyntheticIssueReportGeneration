@@ -15,6 +15,7 @@ parser.add_argument("--temperature", type=float, default=0.8, help="Sampling tem
 parser.add_argument("--num_predict", type=int, default=500, help="Maximum number of tokens to predict")
 parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling")
 parser.add_argument("--repeat_penalty", type=float, default=1.1, help="Penalty for repeated tokens")
+parser.add_argument("--max_samples_per_class", type=int, default=30, help="Maximum number of samples to use per emotion class")
 args = parser.parse_args()
 
 initial_seed = 42
@@ -34,7 +35,7 @@ df = pd.read_csv("train_StackOverFlow.csv", delimiter=';', quotechar='"')
 emotions = ["positive", "negative", "neutral"]
 emotion_data = {}
 
-MAX_SAMPLES_PER_CLASS = 30  
+MAX_SAMPLES_PER_CLASS = args.max_samples_per_class
 
 for emotion in emotions:
     filtered = df[df['Polarity'] == emotion]
