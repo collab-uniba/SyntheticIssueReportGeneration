@@ -9,7 +9,6 @@ from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_sc
 from sklearn.model_selection import train_test_split
 
 if len(sys.argv) != 2:
-    print("Usage: python script.py <train_csv_path>")
     sys.exit(1)
 
 train_csv_path = sys.argv[1]
