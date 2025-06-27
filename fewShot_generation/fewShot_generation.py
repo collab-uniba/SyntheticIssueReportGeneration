@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 parser = argparse.ArgumentParser(description="Few-shot generation with Ollama")
 parser.add_argument("--n_samples", type=int, default=3, help="Number of examples to use for few-shot context PER EMOTION")
-parser.add_argument("--n_generazioni", type=int, default=3, help="Number of generations to perform")
+parser.add_argument("--n_generazioni", type=int, default=50, help="Number of generations to perform")
 parser.add_argument("--target_polarity", type=str, default="positive", choices=["positive", "neutral", "negative"], help="Target emotion for the generated text")
 parser.add_argument("--model", type=str, default="llama3.2:1b", help="Model name to use with Ollama")
 parser.add_argument("--temperature", type=float, default=0.8, help="Sampling temperature")
