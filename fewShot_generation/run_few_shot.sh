@@ -14,6 +14,14 @@ echo "📥 Installazione requirements..."
 pip install --upgrade pip
 pip install -r requirements_fewShot.txt
 
+# Verifica se ollama è installato
+if ! command -v ollama &> /dev/null; then
+    echo "📦 Ollama non trovato, installazione in corso..."
+    curl -fsSL https://ollama.com/install.sh | sh
+else
+    echo "✅ Ollama già installato."
+fi
+
 MODEL_NAME="llama3.2:1b"  # default
 next_is_model=false
 
@@ -26,7 +34,6 @@ for arg in "$@"; do
         next_is_model=true
     fi
 done
-
 
 echo "🤖 Download del modello '$MODEL_NAME'..."
 ollama pull "$MODEL_NAME"
