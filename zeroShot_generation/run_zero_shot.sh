@@ -13,7 +13,15 @@ echo "📚 Installo i pacchetti da requirements_zeroShot.txt..."
 pip install --upgrade pip > /dev/null
 pip install -r requirements_zeroShot.txt
 
-MODEL_NAME="llama3.2:1b"  
+# Verifica se Ollama è installato
+if ! command -v ollama &> /dev/null; then
+  echo "📦 Ollama non trovato, installazione in corso..."
+  curl -fsSL https://ollama.com/install.sh | sh
+else
+  echo "✅ Ollama già installato."
+fi
+
+MODEL_NAME="llama3.2:1b"
 
 for ((i=1; i<=$#; i++)); do
   arg="${!i}"
