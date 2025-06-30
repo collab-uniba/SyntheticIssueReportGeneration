@@ -1,0 +1,212 @@
+ID;Polarity;Text
+t2440;negative;@Filip - because I was afraid I'd insult your intellect!
+t989;negative;I have a BufferedWriter to which I use to write characters into a PipedInputStream. Based on keyboard events. But I am implementing a backspace handler, but I can see no way of doing so without unputc. I am almost falling back into using a string to buffer the current line. Perhaps, I could do a better job using Canvas instead. (God how I hate java!)
+t3134;negative;"I'm afraid that I already know the answer to my question, but I'll ask it anyway: When there are two MySQL DB servers, can I access data that is stored on the other server? In other words: Can I somehow do this: Is the answer really as short as ""No""?"
+t3775;negative;"ADG is a terrible and wondrous thing. I'm still trying to figure out the ""data"" object structure when using group fields Cheers"
+t243;negative;Most of the times when Iphone program crash, compiler show stack with full of no's, but these no's don't make any sense to me. Very rarely it point out where the problem might be and mostly there are these useless no's. How you can make sure that when your program crashes while development/testing, it shows at what place this cause this crash?
+t1115;negative;my experience with SOAP is not good ): and documentation(at least in D2010) is extremely poor!
+t4147;negative;My experiences sound similar to yours. I've only just started using doctrine, and have never used Propel. However I am very disapointed in Doctrine. It's documentation is terrible. Poorly organised, and quite incomplete.
+t265;negative;damn..thats what i was afraid of!!
+t2321;negative;"We have released a beta version of our software, and as we talked to people who started using it, we have found that a lot of the features (which we thought were essential) were not known and not used by the users. What are the possible ways to inform the application users about the features of the application? I personally find the ""Tip of the day"" popups extremely annoying and disable them quickly. Are there better ways?"
+t105;negative;I want to duplicate a very large table, but I do not want to copy it row by row. Is there a way to duplicate it? For example, you can TRUNCATE w/o deleting row/row, so i was wondering if there is something similar for copying entire tables UPDATE: row by row insert is very painful (because of 120M rows). Anyway to avoid that?
+t1708;negative;I am Having a xml file with around 60 to 70 tags. while calling the callbacks method of SAX Parsers startElement,endElement,characters the excessive use of if else makes code extremely painful.Are there any other way through which i can make my code more readable?
+t1001;negative;Aye, the timer idea would result in horrible flickering for sure!
+t4330;negative;WTF??? Why not just mark Enrico's answer as Answer instead of copying it over and marking your own answer? Stealing is bad, m'kay?!
+t1697;negative;That's a really terrible way to read in all your files. Try this: This will return a list of data frames, each of which is the contents of the corresponding file. Or, if there are other csv files that you don't want to read in, you can restrict the specification: And to combine everything into one big data frame:
+t2674;negative;7 seconds between asking and answering it yourself? Isn't that abusing the system a little?
+t1032;negative;OK, I can continue to do web dev on my mac by sharing the webdev folder on my ubuntu laptop. This is a really terrible solution though.
+t4117;negative;Is there an easy way to find parse errors in javascript code? Last week I was debugging a javascript problem where the first javascript function that was called gave an 'object expected' error. I later determined that this was because the browser wasn't able to parse my javascript code. I eventually solved the problem but it was a painful process that involved pouring over my code line by line, trying to find my mistake. There must be an easier way.
+t1181;negative;I am using Internet Explorer 11. Something annoying keeps happening when I add code to my site through the CMS form that I use. Take this line: Let's say I want to copy just this in IE, through the form on the page: When I go to copy just that section, it actually copies this: It is VERY annoying! It doesn't happen on Chrome or Firefox. For reasons with the CMS I have to use Internet Explorer. Is there a setting I can change so that doesn't happen? On Windows 7 if that helps. Sorry if this doesn't 100% fit with programming, someone let me know if there is a better place for this question.
+t2479;negative;Okay I am using the same ANTLRWorks and JDK .. but it doesn't work for me :( .. Its very irritating, I have tried everything to make it work !
+t2734;negative;You might want to consider using , a replacement for Windows' terrible command-line chrome. It offers fully redefinable keyboard shortcuts plus tabs, so it's ideal for IRB.
+t1568;negative;So to do this I would keep a list of axes and when I delete the contents of one I would swap it out with a full one. I think the example below solved the problem (or at least gives an idea of how to solve it): The extremely ugly for loop construct is really just a placeholder to give an example of how the axes can be swapped.
+t469;negative;This would introduce scaling artifacts and might look extremely ugly.
+t267;negative;You could try this one (not optimal, I am afraid):
+t1895;negative;@GabrielePetronella I missed that link, I hate how stackoverflow removes the underline! Are you running it on a server or file protocol?
+t981;negative;@RobG - I hate IE! jQuery is my final weapon.
+t2971;positive;That's a great link! Donut caching, when using the WebFormViewEngine also works with the declarative control too.
+t850;positive;<3 <3 <3 ! ! ! :)
+t3656;positive;Just use Skype. It's free, it has excellent chatting capabilities, works over firewalls, supports lots of collaboration features out of box and plenty more as plugins. P.S. It is also supported natively on Windows Mobile and has good clients on other mobile platforms (like Fring on S60)
+t326;positive;Hope it works, if you can upvote my answer I'd really appreciate it! :)
+t3489;positive;How do I pull a single column of data out of a filled dataset? I have a filled dataset object, with a variety of tables. I need to get all of the data that is stored in a particular column in one of the tables, and bind a ComboBox ItemSource to it. (This may require me to pull the data out and make it into a string collection ...) If anyone has any bright ideas, it would be very grateful!
+t544;positive;You should really check out this plugin: I have been using it for about 10 sites and it's really great! Since the latest update it's posible to export your custom fields to a PHP file which you can include your functions.php
+t320;positive;I have an old friend who is a mathematician. He has his own math to compress his formulas, which are incredibly beautiful. He works in a program called Mathematica, which transforms the formulas for 3D-shapes. I wonder if it is possible to obtain these figures using Canvas and JavaScript? See attached formula and figure. I know little of this myself. But I would be delighted if some one could show me an example.
+t2036;positive;I would like to implement the same type of functionality as this application: When a user selects a table view cell, the cell animates to fill the entire screen and reveals a new view while animating. I have been trying to find information on how to do this but can't quite seem to find any good resources. How can I accomplish this? Even just an idea of what to properly google search will be extremely helpful!
+t2694;positive;@Adrian - that article was brilliant :D thanks for sharing it!
+t2541;positive;Excellent, thanks!
+t554;positive;Well, I was using the setControlValueToUpperCase() method too soon it seems. So changing my keydown first if statement to fixed my issue. Horray Me!!
+t2873;positive;+1 for umbraco. It has never ever limited me in any way. It does have a learning curve, but once you get to know the basics of the system, you'll be amazed what things can be done in a short period of time. Also, great supporting community!
+t2787;positive;I realize this is old, but there is an absolutely fabulous PHP Activecord library called, appropriately, PHP Activerecord. I've used it for several months and it blows away the other libraries. Check it out:
+t1078;positive;@MattBurland no worries!
+t4014;positive;Awesome! You have no idea how long I've been trying to find this!
+t207;positive;"I'm building a little script that changes content and css live on the page based upon the values of various input fields. I'm able to change the content ""live"" absolutely fine as you'll see here: I'm not able to get this working with the css method using the same principles though: Thanks!"
+t2872;positive;Tried it, loved it. Using it right now.
+t389;positive;"I appreciate your warm welcome, I never seen such a warm regard here for trying to be helpful, it was a really pleasant introduction and I want to thank you for taking your time to write - at last the end of the questions reads ""If anyone has any ideas I would be extremely grateful!"""
+t4100;positive;I have a virtual machine running windows 2003 server running MOSS 2007. This virtual machine is not being run on my dev machine, but on a different machine on the network. I can ping both the host and guest OS from my dev machine. I just need to know, if it is possible, how to configure visual studio 2008 to deploy the web parts/projects/etc to the remote VM when I do this: Any input will be greatly appreciated! Thanks.
+t1437;positive;So my line extends from one side of my graph to the other, but it doesnt really animate through each data point, I assume I have to add a loop somewhere. Heres the relevant code. Any assistance would be hugely appreciated!!!
+t780;positive;Excellent! Thanks for the link.
+t1268;positive;I'd recommend python as a fantastic general-purpose scripting language which is fairly quick to pick up. You'll find it's more versatile for system-programming than something like php, which would be another option. You might look here as a starting point: Besides, if you learn python, you can then learn django, which is incredibly awesome!
+t2957;positive;Pretty new to this scene and trying to find some documentation to adopt best practices. We're building a fairly large content site which will consist of various media catalogs and I'm trying to find some comparable data / architectural models so that we can get a better idea of the approach we should use using a framework we've never made use of before. Any insight / help would be greatly appreciated!
+t1718;positive;I am new to Qt. While digging inside Qt's documentations, I found QListWidget to be useful. But I'm not sure how to do it. The following image shows what I want. Any help would be really awesome! Note: I don't want to do this using Qt Quick.
+t4122;positive;I need some drawings in my tableview. How can i do this. Any help will be greatly appreciated!!
+t1352;neutral;...also, how is this a programming question?
+t3684;neutral;Use `locale` and it's string collation methods to sort naturally according to current locale.
+t4405;neutral;"Because SharePoint is intent on making development painful ;)"
+t406;neutral;Maybe you can post the relevant code snippet? Regards, tamberg
+t3797;neutral;"@Lance: the first one is also executing. Compare it with a named constructor: this is actually also executing code. The same goes for the anonymous constructor... But that was not the question ;-)"
+t1879;neutral;Should be ColumnHeaderAutoResizeStyle::ColumnContent
+t3931;neutral;"x86 processors suffer a ""partial register stall"" if you, say, write to `ax` and then try to read from `eax`. Something to be aware of if you're mixing 16- and 32-bit operations."
+t3662;neutral;Would it help to create a View in your database that excludes the blob, and then generate your dbml from the view? It's not too terribly different from your second option, but keeps the changes mainly in the database itself, without requiring any changes to your existing table structure.
+t1362;neutral;No. is one of Perforce's competitors.
+t1526;neutral;For example in the code below:
+t895;neutral;"Is it possible to restore infolog from InfologData? Consider the code what should I write instead of to restore ""something awful"",""something terrible"", ""scary\tmouse"" into infolog from infologData? My goal is to perform some operation, store infolog in database, and then show it to user, when they want it."
+t3970;neutral;Another example from CodeProject:
+t4266;neutral;I've got a couple of models. Neither have any list view other than their admin entries. For that reason, it's a bit of a pain to manually work out the URLs for model instances. I would like to show a link on the listing and detail admin views that takes me directly to the public view. I can do the nonsense that works creates the URL but I don't know how to get it to show in the admin. Any ideas?
+t2811;neutral;No, I never did figure it out - good luck!
+t1006;neutral;Is entity an instance of class?
+t695;neutral;@NWest You can use a `@table` variable, which is immune from transaction rollbacks, to not need all kinds of heinous workarounds.
+t1136;neutral;Can you not set the width on the containing div?
+t4114;neutral;Now owned by Syntellect at Syntellect.com.
+t3357;neutral;The example you gave is not of IOC, it is Dependency Injection example.
+t2634;neutral;Why is Silverlight included in the question title? SQLLite is not yet ported to Silverlight 2, and what you do on the server side doesn't really matter for the Silverlight client application.
+t3815;neutral;I too advise to use the simple way (KISS !-) -- but some optimization could be found, namely not to test the length of an array more than once:
+t1087;neutral;that's what I thought, that's why I'm surprised
+t2871;neutral;anyone have any experience of using them together? How well does it work? or is it just too much grief?
+t829;neutral;That doesn't seem to create a table... any reasons why? I tried dbdelta too.
+t2766;neutral;If DevStudio is crashing a lot on you, you might try uninstalling any add-ins and extensions as a first step. It might save you a lot of pain.
+14;negative;Ugh, I just spent 2 hours trying to debug this stupid issue on my server and I'm still stuck
+40;negative;uR iS tRiMmEd To bE eXcUsT abOuT hErEaS BeInGs InCrEdiTs...?
+31;negative;"What's the point of having a 'Community' section if you can't even get a decent discussion going about the actual problems people are facing with these overhyped features? 
+
+I've been using this platform for years and I'm still waiting for meaningful contributions from others. It feels like everyone is just a bunch of self-proclaimed experts spewing unhelpful advice."
+46;negative;Ugh, I'm so done with my current relationship...
+18;negative;"I'm at my wit's end with this app. Every time I try to update, it just throws errors and won't load properly.
+
+I've tried reinstalling, updating to the latest version, and even resetting my settings, but nothing seems to work. The developer has been unresponsive for weeks, and their support chat is filled with no answers or solutions.
+
+What's going on here? Is this app really that bad?
+
+TL;DR: App won't update or load properly despite trying everything. Developer unresponsive and no clear solution in sight."
+49;negative;Ugh, I just spent 2 hours trying to get a simple update on my package in transit... and all they did was say it would be delivered 'in the next few days'. Next thing you know, Amazon will start delivering our deliveries to the wrong address. This is ridiculous. - u/throwaway12345678
+27;negative;Ugh, I'm so frustrated with this situation... How can we fix it? We're supposed to be a team, but it feels like everyone's against us.
+26;negative;Ugh, just spent all day on this stupid project and I'm still stuck...
+33;negative;I just got back from my vacation and I'm feeling totally over it. Been looking forward to this trip for months, but now that it's over, I'm just exhausted and disappointed. Our hotel room was way more expensive than expected, and the food at the restaurant next door was subpar. The worst part? The Wi-Fi was literally unusable throughout our entire stay.
+20;negative;Ugh, another day, another bunch of overhyped devs who can't even get their own lives together. Asking for help on SO because I just spent the last hour debugging my life away... Anyone else have to deal with one of these narcissistic programmers? How do you even measure the severity of someone's ego when they're constantly posting about it online?
+13;negative;Ugh, I just spent the last hour trying to troubleshoot my computer's RAM issue... again . Anyone else have one of those 'oh no, I forgot to update my drivers' problems?
+5;negative;I am beyond frustrated with my life right now
+38;negative;"Ugh, just had to deal with this one more stupid bug in my code... anyone else have to waste their time debugging something ridiculous like this?
+
+I'm trying to create a simple login system for a school project, but no matter what I do, I get some kind of error that says the username or password is 'invalid'. Like, are you kidding me?! It's not that hard to implement a basic authentication system in Python. Don't they know how to do this by now?
+
+I've tried every possible combination, and still nothing works. The API endpoint for checking if a user exists is just returning False, even when it should be True. It's ridiculous.
+
+Has anyone else had to deal with this kind of nonsense? How did you guys manage to get past this level of incompetence?
+
+TL;DR: Stupid login system bug in Python. Anyone know how to fix?
+
+ Edit: I just realized that the API endpoint for checking if a user exists is actually supposed to return True when the username is correct, and False when it's not. I'm so embarrassed. Can someone please tell me why this is the most basic functionality ever implemented in an authentication system? 
+""}<|start_header_id|>assistant<|end_header_id|>"
+9;negative;Hey guys, I just got out of my worst marriage. No, seriously, it was a complete waste of time. The man was emotionally abusive, controlling, and always wrong. He made me feel like I was worthless most of the time. I'm still trying to pick up the pieces of my shattered self.
+4;negative;I just spent 3 hours debugging a bug in our latest feature rollout and I'm still not satisfied with the results.
+7;negative;"I'm so frustrated with my local library's new book acquisition policy. They've decided to only purchase books from their own in-house publishing arm, which means they're not stocking any titles by authors I want to read.
+It's like they're trying to deprive me of the very thing that brings joy and escape into a different world,"
+42;negative;Ugh, I'm so frustrated with my new laptop's battery life. Every time I want to watch a movie or browse online, it dies on me after 30 minutes. I've tried updating the drivers, reinstalling the OS, and even using a different charger, but nothing seems to work. I'm starting to think my laptop is just cursed. Has anyone else out there experienced this issue? What's going on with battery life these days?
+47;negative;Ugh, I am beyond frustrated with my code. I have been trying to solve this issue for hours, and I just can't seem to get it right.
+48;negative;Ugh, Just Had to Deal with Another Clueless Developer
+16;negative;I am at my wit's end with this issue I have been trying to get a simple feature implemented in our company's new project management tool for weeks now and it has not moved from the alpha stage. The development team is being super unresponsive and the QA team is being too expensive. The customer is getting frustrated with all the bugs we keep introducing.
+10;negative;Ugh, just had the WORST day ever! I woke up this morning feeling so under the weather (pun intended) and I thought it was just a regular Tuesday until I spilled coffee all over my shirt during breakfast. And to make matters worse, I got stuck in a ridiculously long line at the DMV while my cat
+17;negative;Ugh, I just spent way too much time trying to fix this stupid bug and it's still not fixed... I'm starting to think the developers are not listening to us users or something
+25;negative;Hey fellow devs, I'm at my wit's end here... We've been working on this feature for months and it's still not ready. The development team is either really slow or completely uninterested in getting it done. I've tried to give them the usual 'just relax and we'll get it out the door' vibes, but nope, nothing. It's like they think we're all just a bunch of slackers who don't know how to build something from scratch.
+35;negative;Ugh, I just spent the last hour trying to troubleshoot this stupid issue and it's still not working
+32;negative;Ugh, I just got scammed out of my life savings by a
+114;positive;just got back from my weekend getaway in Hawaii and I'm still on a high! anyone have any recommendations for top spots to watch the sunset on the beach?
+140;positive;Hey fellow coders! I just had one of those days where everything seems super frustratingly hard, but then I stumbled upon the solution by accident. Anybody else have one of those mornings? How did you go from being totally lost to suddenly having it all figured out?
+131;positive;I'm literally freaking out rn cuz I just got accepted into my dream program!!! Thank you so much to everyone who voted for me on this site! Your support means the world to me !!
+146;positive;How do I add some visual flair to my question/answer in this new Markdown editor?
+118;positive;[error],
+149;positive;Hey fellow coders! I just wanted to share my excitement about this awesome new plugin I found for our project. It's a total game changer! The developers are on top of it and have already released a beta version. Have you guys tried it out? What do you think? Should we give it a shot?
+127;positive;"Hey fellow developers! 
+ I just had the most amazing experience with our new feature and I wanted to share it with everyone! We've been working on this for months, and it's finally ready to go live. I'm super excited to see how users are going to react! 
+ The feedback has been incredible - everyone is loving the new functionality, and we're seeing some amazing adoption numbers. It's a huge win for our team! 
+ One thing that's really stood out to me is the impact it's had on user engagement. We've seen a significant increase in time spent on the app, and it's been awesome to see users getting so invested in what we're building. 
+ Has anyone else noticed how this feature has boosted user satisfaction? What are some other ways you think our new feature could be making a positive impact on the overall experience? Let's chat!"
+126;positive;Hey fellow devs! I just wanted to share my excitement about a new feature we've been working on in our open-source project. We're finally adding support for server-side rendering (SSR) in the core framework, and I couldn't be more stoked about it!
+133;positive;Hey fellow devs! I just got back from my annual vacation in Bali and I'm already feeling the post-vacation blues! Has anyone else ever felt like they're coming back to their daily routine after a relaxing getaway? I feel like I've lost all motivation and am stuck in neutral mode. Help!
+120;positive;can someone explain why css background image does not scale properly in ie11?
+113;positive;Question: I just got back from the beach and I'm feeling pretty stoked about life. Can someone explain what a 'flow state' is and how it can be achieved? - u/SunShines
+105;positive;Hey fellow devs! I just had one of those days where I thought 'Why am I still working on this?' - you know, the ones where everything else in life goes smoothly and you're like 'Just 20 more minutes...'. Anyone else have a similar experience recently?
+138;positive;I've been trying to optimize my website's loading speed for a while now, but I'm having some trouble figuring out what the best approach is. Can anyone recommend a reliable method for boosting page load times without sacrificing user experience? Need help with some code or suggestions for optimization techniques!
+109;positive;I just had the most epic gaming session! I spent all day playing my favorite game on Steam and had an absolute blast . The graphics were insane, the story was so engaging and the gameplay was addictively fun . I feel like I've leveled up to the next level of gaming experience. What's your go-to game for a marathon gaming session?
+104;positive;I just had the most epic gaming session with my squad! We were all so hyped for this raid, and we crushed it. Can someone tell me where I can find some sweet loot drops on the latest raid gear? Asking for a friend...
+107;positive;errors:
+142;positive;Hey fellow devs! I just had the most epic fail in my coding journey. I was trying to implement a new feature and somehow managed to write a 500-line comment instead of code . I'm not sure what happened, but it looks like my brain is still stuck on how to create a simple for loop
+147;positive;Hey fellow coders! \nI just got back from a sick vacation in Hawaii, and I'm already thinking about how I can apply some of the amazing productivity skills I learned during my trip to boost my own workflow here at work. \nSpecifically, I found this awesome hack that involves using a Pomodoro timer with a physical timer (like a kitchen timer) instead of my computer's built-in timer. The idea is simple: each 25-minute
+148;positive;I just had one of those 'aha!' moments where I realized something super cool about a programming concept. Anyone else ever experience one of these? How did you figure it out?
+116;positive;math mode
+110;positive;"I just spent the last 5 hours on this project, debugging a few issues I found in my code, and I am SO relieved it's all fixed!!!
+I was starting to think I'd never get it working,
+but after pouring over the logs and trying different solutions,
+I finally figured out what was causing the problem.
+Now that it's all sorted, I can move on to something even more exciting... like planning my next project! 
+Can't wait to tackle new challenges and push myself to be even better!"
+117;positive;Hey fellow devs! Just had the most amazing cup of coffee this morning and I'm feeling extra motivated to tackle those bug fixes . Anyone else have a similar pre-work ritual? What's your go-to coffee hack to get you in the zone?
+125;positive;Hey fellow programmers! I just wanted to share my excitement about a new tool I've been playing around with - this amazing library for working with reactive programming in JavaScript. Specifically, the `reactive-observable` package is a total game-changer!
+135;positive;Wow, just had the most incredible experience at my favorite coffee shop today! I ordered a venti half-caf, half-decaf latte with exactly three pumps of vanilla syrup and whipped cream on top - the barista was amazing and got it right every time. The atmosphere is always so chill and cozy, too. Have anyone else had a similarly awesome experience at this place? What's your go-to drink order when you're at coffee shops?
+132;positive;"I just had an amazing day at my favorite coffee shop in town. The baristas were super friendly and made me a delicious drink. I ended up staying for hours chatting with the regulars and trying out new flavors. It was the perfect pick-me-up on a chilly Monday morning.
+
+The atmosphere was cozy and inviting, with comfortable seating and a fireplace crackling away. I felt so relaxed and at ease in that moment. Highly recommend checking it out! 
+
+Best coffee shop ever!"
+64;neutral;hi , i have been tasked with rewriting a piece of text that has some pretty complex sentences involving multiple clauses. my task would be to simplify the text while keeping its meaning intact. can anyone provide some tips on how to achieve this?
+90;neutral;Hey everyone, I just wanted to share a story about my experience with this recent patch update.
+81;neutral;"[asked]: Should I be using an accent in a job interview? 
+
+**Answering**: When it comes to using an accent in a job interview, the answer isn't as black and white as you might think. Here's why:
+
+* **Fluency is key**: While it's true that some accents can be a barrier, speaking clearly and confidently is more important than trying to mimic someone else's accent. 
+
+* **Context matters**: Be mindful of the industry, company culture, or location you're interviewing in. What might be acceptable in one place might not be in another.
+
+* **Be authentic**: Don't try to hide your accent if it's a natural part of who you are. Employers want to work with real people, not actors.
+
+* **Don't dominate the conversation**: Use your accent sparingly and let the interviewer do most of the talking. You want to show them that you're engaged and interested in the role."
+96;neutral;Hey fellow developers, I'm having some trouble with my code and I was wondering if anyone can take a look. I'm using Java and trying to implement a simple banking system. The problem lies in this line of code:
+68;neutral;Hey fellow devs! I just had an epic fail in my code and I'm still trying to figure out what went wrong. I've been debugging for hours, but nothing seems to be working as expected. Does anyone have any ideas on how I can approach this problem? I've tried adding more logging and even changed the stack trace, but it's like my app is speaking a different language. Any suggestions would be greatly appreciated! Help a guy out!
+99;neutral;Hey fellow developers, I'm having a brain freeze on how to implement this feature in our existing codebase
+77;neutral;"[Throwing around an emotional outburst on SO - help me tame this beast! :smile::relieved::curious:
+I (25M) just went through a rough breakup. I've been trying to convince myself it was necessary, but deep down, I'm still hurting. Anyone else have a similar experience?
+
+Over the past week, I've noticed an intense focus on self-care and productivity. It's like my brain is screaming 'GET OVER IT ALREADY!' but in reality, I just want to crawl into bed and sleep for a month.
+
+I feel guilty/ashamed/tired all at once. How do you handle similar situations?
+
+ Edit: added some context - we were together for 5 years, so it's not like I'm suddenly 'over' him but more like... dealing with the aftermath of our breakup"
+76;neutral;"Hi fellow coders, I just wanted to follow up on my previous question regarding the implementation details of a new library feature. Can anyone provide some insight or guidance on how to optimize the performance of this code snippet?
+
+I've been struggling to get it just right, and any help would be greatly appreciated."
+83;neutral;Hey guys, I just wanted to share my thoughts on the latest game update. I've been playing for a while now and have noticed a significant change in the game's difficulty level. The new patch seems to be making the challenges more substantial, which is awesome! However, I do think it might be a bit too aggressive at times.
+70;neutral;Hey fellow devs, I'm having some trouble with my code snippet. I've got a function that's supposed to return an array of strings from a database query, but the results aren't showing up properly. Any ideas where I might be going wrong?
+63;neutral;Question: I just got back from an epic weekend getaway to the beach! What are some must-try foods at a beachside diner or restaurant?
+55;neutral;Hey team, I wanted to chime in on the recent discussion about the new database optimization features...
+88;neutral;Question: I've been experiencing some weird stuff with my Discord server's music. The audio just stops playing after a few seconds whenever someone joins or leaves. I've tried resetting the server, but it still happens. Any ideas?
+59;neutral;I just had the most epic gaming session with my squad. We were all about getting that W and crushing some noobs. Our team dynamic was on point and we worked together like a well-oiled machine. What did you guys do differently to get that win? (22 karma, 12 upvotes)}
+54;neutral;Hey fellow developers, I'm having a bit of an issue with my code and I was wondering if someone could help me out. I've got a function that's supposed to return the sum of all numbers in an array, but it's not working quite right. Here's what I have so far: `def sum_numbers(arr):  # type: ignore
+57;neutral;q:
+92;neutral;I'm feeling frustrated with my current coding setup... }
+97;neutral;Hey everyone, I'm really struggling with this issue and I thought I'd get some advice from someone who's been in the trenches like me. I've been trying to debug my code for hours but I just can't seem to wrap my head around it. One of my functions is supposed to take a list of integers as an argument, but when I pass a string instead, the function throws an error. Does anyone have any ideas what's going on? I feel like I'm missing something super obvious. Has anyone else ever encountered this issue? Help!
+98;neutral;"Hey fellow developers! I've been struggling with this issue for a while now, and I'm hoping someone can help me out. I've got an application that's supposed to be using the `async/await` syntax for making API calls. However, every time it tries to make a request, it throws this error:
+
+```javascript
+console.error(await fetch('https://example.com/api/data'));
+```
+
+Can anyone spot what I'm doing wrong? Is my code just plain wrong?
+
+Thanks in advance for your help!"
+66;neutral;Hi fellow programmers, I'm having some issues with my Spring Boot application and I was wondering if anyone can help me troubleshoot. The issue is that the REST endpoint I've created to handle incoming requests from a client isn't listening for connections. I've checked the logs and it seems like the Tomcat server is not starting properly. Can someone point me in the right direction?
+60;neutral;Can you explain the concept behind the new algorithm for optimizing query performance in PostgreSQL? I've been trying to debug an issue with my application but it's really stumping me,
+67;neutral;Hey fellow developers! I just had one of those 'aha!' moments where it all clicks into place. I've been struggling with getting a certain algorithm to work as expected for weeks now, but today I realized the problem was that I wasn't validating user input properly.
+75;neutral;I was trying to run some code in my favorite IDE (IntelliJ IDEA), but I encountered an error. Here's the snippet of code that's causing me issues:
+85;neutral;"Hey fellow devs, 
+I'm trying to implement a custom sorting algorithm in our new project, but I'm running into some issues with merge sort. Can someone point me in the right direction?"
+82;neutral;I'm having an issue with my Linux setup where every time I try to install any package manager (apt, yum, etc.) the installation script seems to get stuck on a specific step. The error message is pretty generic, like 'Failed to download repository metadata...'. I've tried restarting the system and reinstalling all packages, but it persists.
