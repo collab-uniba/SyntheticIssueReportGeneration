@@ -14,13 +14,34 @@ echo "📥 Installazione requirements..."
 pip install --upgrade pip
 pip install -r requirements_fewShot.txt
 
-# Verifica se Ollama è installato
-if ! command -v ollama &> /dev/null; then
-    echo "📦 Ollama non trovato, installazione in corso..."
-    curl -fsSL https://ollama.com/install.sh | sh
-else
+# Controlla se Ollama è installato
+if command -v ollama >/dev/null 2>&1; then
     echo "✅ Ollama già installato."
+else
+    echo "❌ Ollama non trovato."
+    echo "👉 Installalo da https://ollama.com/download/OllamaSetup.exe"
+    exit 1
 fi
+
+# case "$OSTYPE" in
+#   linux*)
+#     echo "📦 Installazione Ollama per Linux..."
+#     curl -fsSL https://ollama.com/install.sh | sh
+#     ;;
+#   darwin*)
+#     echo "📦 Installazione Ollama per macOS..."
+#     curl -fsSL https://ollama.com/install.sh | sh
+#     ;;
+#   msys*|cygwin*|win32*|win64*)
+#     echo "🪟 Windows rilevato."
+#     echo "👉 Scarica e installa Ollama manualmente da:"
+#     echo "   https://ollama.com/download/OllamaSetup.exe"
+#     ;;
+#   *)
+#     echo "⚠️ Sistema operativo non supportato: $OSTYPE"
+#     ;;
+# esac
+
 
 # Estrai modello se passato via --model, altrimenti default
 MODEL_NAME="llama3.2:1b"
@@ -64,8 +85,10 @@ done
 
 # Crea archivio ZIP
 ZIP_FILE="fewShot_generations_${MODEL_SAFE_NAME}.zip"
-zip -j "$ZIP_FILE" "$OUTPUT_DIR"/*.json
+SEVEN_ZIP="/c/Program Files/7-Zip/7z.exe"
+
+"$SEVEN_ZIP" a "$ZIP_FILE" "$OUTPUT_DIR"/*.json
 
 echo "✅ Archivio creato: $ZIP_FILE"
 echo "📦 Contenuto:"
-unzip -l "$ZIP_FILE"
+"$SEVEN_ZIP" l "$ZIP_FILE"
