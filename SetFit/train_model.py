@@ -3,6 +3,7 @@ from datasets import load_dataset, DatasetDict
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import os
 
 parser = argparse.ArgumentParser()
 
@@ -10,8 +11,10 @@ parser.add_argument("-d", "--train_file", type=str, required=True, help="Percors
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test (opzionale).")
 parser.add_argument("-n", "--num_samples", type=int, default=20, help="Numero di sample per etichetta da usare per il training. 0 = tutto il dataset.")
 parser.add_argument("-s", "--split_ratio", type=float, default=0.3, help="Percentuale del dataset di training da usare come test se non è fornito un test set.")
-
+parser.add_argument("--output_dir", type=str, default="outputs", help="Directory dove salvare i risultati")
 args = parser.parse_args()
+
+os.makedirs(args.output_dir, exist_ok=True)
 
 data_files = {"train": args.train_file}
 if args.test_file:
@@ -78,4 +81,5 @@ df_results = pd.DataFrame({
     "Prediction": predicted_labels
 })
 
-df_results.to_csv("test_predictions.csv", index=False, encoding="utf-8")
+output_path = os.path.join(args.output_dir, "test_predictions.csv")
+df_results.to_csv(output_path, index=False, encoding="utf-8")

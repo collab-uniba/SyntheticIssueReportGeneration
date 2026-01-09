@@ -1,26 +1,20 @@
-#  Classificazione con SetFit
+### Classificazione con SetFit
 
-Questo progetto utilizza **SetFit** (Sentence Transformer Fine-tuning) per la classificazione del sentiment in testi brevi.
-È progettato per essere eseguito facilmente tramite uno script Python (`train_model.py`) e uno script Bash (`train_and_run.sh`).
+Questo progetto utilizza SetFit (Sentence Transformer Fine-tuning) per la classificazione del sentiment in testi brevi.
+È progettato per essere eseguito facilmente tramite uno script Python (train_model.py) e uno script Bash (train_and_run.sh).
 Supporta anche il training few-shot specificando quanti esempi usare per classe.
 
----
+# Contenuto del Repository
+- train_model.py: Script principale per il training e la predizione.
+- train_and_run.sh: Script shell per gestire l'ambiente virtuale, le dipendenze e l'esecuzione.
+- requirements.txt: Lista delle dipendenze necessarie.
+- SetFit_outputs/: cartella che contiene il file test_predictions.csv generato con le predizioni sul test set.
+- SetFit_outputs.zip: archivio ZIP finale con i risultati.
 
-##  Contenuti del Repository
+# Preequisiti
+I pacchetti necessari vengono installati automaticamente da requirements.txt.
 
-- `train_model.py` — Script principale per il training e la predizione.
-- `train_and_run.sh` — Script shell per gestire l'ambiente virtuale, le dipendenze e l'esecuzione.
-- `requirements.txt` — Lista delle dipendenze necessarie.
-- `test_predictions.csv` — File CSV generato con le predizioni sul test set.
-
----
-
-## Requisiti
-
-- Python 3.11
-- I pacchetti necessari vengono installati automaticamente da `requirements.txt`.
-
-## Dettagli dei Parametri
+# Dettagli dei Parametri
 -d, --train_file (stringa, obbligatorio)
 Percorso al file CSV contenente i dati di training. Deve includere almeno le colonne Text e Polarity.
 
@@ -33,15 +27,19 @@ Numero di esempi per etichetta da usare per il training. Se impostato a 0, verr�
 -s, --split_ratio (float, opzionale)
 Percentuale del dataset di training da usare come test se non è fornito un test set. Deve essere un valore compreso tra 0 e 1. Default: 0.3.
 
-## Esecuzione Rapida
+# Preparazione
+Assicurati che i tuoi file train.csv e (opzionalmente) test.csv abbiano almeno le colonne:
 
-### 1. Prepara i tuoi file CSV
+- ID
+- Text
+- Polarity (valori: positive, negative, neutral)
 
-Assicurati che i tuoi file `train.csv` e (opzionalmente) `test.csv` abbiano almeno le colonne:
+# Esecuzione
+'''bash
 
-- `ID`
-- `Text`
-- `Polarity` (valori: `positive`, `negative`, `neutral`)
+chmod +x train_and_run.sh
+./train_and_run.sh path/to/train.csv path/to/test.csv (opzionale)
 
-
-
+# Outputs
+Il file .csv viene salvato in: SetFit_outputs/
+Al termine viene creato: SetFit_outputs.zip
