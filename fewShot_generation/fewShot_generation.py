@@ -5,6 +5,7 @@ import pandas as pd
 import random
 from ollama import chat
 from pydantic import BaseModel
+import os
 
 parser = argparse.ArgumentParser(description="Few-shot generation with Ollama")
 parser.add_argument("--n_samples", type=int, default=3, help="Number of examples to use for few-shot context PER EMOTION")
@@ -16,6 +17,7 @@ parser.add_argument("--num_predict", type=int, default=500, help="Maximum number
 parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling")
 parser.add_argument("--repeat_penalty", type=float, default=1.1, help="Penalty for repeated tokens")
 parser.add_argument("--max_samples_per_class", type=int, default=30, help="Maximum number of samples to use per emotion class")
+parser.add_argument("--output_dir", type=str, default=".", help="Directory dove salvare i file JSON")
 args = parser.parse_args()
 
 initial_seed = 42
@@ -40,12 +42,12 @@ MAX_SAMPLES_PER_CLASS = args.max_samples_per_class
 for emotion in emotions:
     filtered = df[df['Polarity'] == emotion]
     if filtered.empty:
-        print(f"⚠️ Attenzione: Nessuna riga con polarità '{emotion}'")
+        print(f"Attenzione: Nessuna riga con polarità '{emotion}'")
         emotion_data[emotion] = pd.DataFrame()
     else:
         limited = filtered.sample(n=min(MAX_SAMPLES_PER_CLASS, len(filtered)), random_state=initial_seed)
         emotion_data[emotion] = limited
-        print(f"✅ Selezionate {len(limited)} righe (su {len(filtered)}) per polarità '{emotion}'")
+        print(f"Selezionate {len(limited)} righe (su {len(filtered)}) per polarità '{emotion}'")
 
 if all(data.empty for data in emotion_data.values()):
     raise ValueError("Nessun dato disponibile per alcuna emotion")
@@ -78,14 +80,14 @@ for i, seed in enumerate(generated_seeds, start=1):
                     all_samples.append({"text": text, "emotion": emotion})
                 
                 sample_info.append(f"{emotion}: {samples_to_take} samples")
-                print(f"  📊 {emotion}: {samples_to_take}/{available_samples} samples")
+                print(f" {emotion}: {samples_to_take}/{available_samples} samples")
             else:
-                print(f"  ❌ {emotion}: nessun sample disponibile")
+                print(f" {emotion}: nessun sample disponibile")
         else:
-            print(f"  ❌ {emotion}: nessun dato disponibile")
+            print(f" {emotion}: nessun dato disponibile")
     
     if not all_samples:
-        print(f"⚠️ Nessun sample disponibile per la generazione {i}")
+        print(f"Nessun sample disponibile per la generazione {i}")
         continue
     
     random.shuffle(all_samples)
@@ -166,17 +168,19 @@ for i, seed in enumerate(generated_seeds, start=1):
             "error": str(e)
         })
 
-print("\n📄 Risultati completi:")
+print("\nRisultati completi:")
 print(json.dumps(all_results, indent=2, ensure_ascii=False))
 
-filename = f"fewShot_generation_Ollama_{args.model.replace(':', '_')}_{args.target_polarity}.json"
+os.makedirs(args.output_dir, exist_ok=True)
+
+filename = os.path.join(args.output_dir, f"fewShot_generation_{args.model.replace(':', '_')}_{args.target_polarity}.json")
 with open(filename, "w", encoding="utf-8") as f:
     json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-print(f"✅ Salvati i risultati in '{filename}'")
+print(f"Salvati i risultati in '{filename}'")
 
 print("\n" + "="*80)
-print("🔍 STAMPA COMPLETA DI TUTTI I PROMPT UTILIZZATI")
+print("STAMPA COMPLETA DI TUTTI I PROMPT UTILIZZATI")
 print("="*80)
 
 for prompt_data in all_prompts:
@@ -184,15 +188,15 @@ for prompt_data in all_prompts:
     print(f"GENERAZIONE {prompt_data['generation']} (Seed: {prompt_data['seed']})")
     print(f"{'='*50}")
     
-    print(f"\n🤖 SYSTEM PROMPT:")
+    print(f"\nSYSTEM PROMPT:")
     print("-" * 40)
     print(prompt_data['system_prompt'])
     
-    print(f"\n👤 USER PROMPT:")
+    print(f"\nUSER PROMPT:")
     print("-" * 40)
     print(prompt_data['user_prompt'])
     
-    print(f"\n📋 MESSAGGI COMPLETI INVIATI A OLLAMA:")
+    print(f"\nMESSAGGI COMPLETI INVIATI A OLLAMA:")
     print("-" * 40)
     for msg in prompt_data['full_messages']:
         print(f"Role: {msg['role']}")
@@ -200,8 +204,8 @@ for prompt_data in all_prompts:
         print("-" * 20)
 
 print(f"\n{'='*80}")
-print(f"📊 RIEPILOGO: Generati {len(all_prompts)} prompt completi")
-print(f"🎯 Target emotion: {args.target_polarity}")
-print(f"📈 Samples per emotion: {args.n_samples}")
-print(f"🤖 Modello utilizzato: {args.model}")
+print(f"RIEPILOGO: Generati {len(all_prompts)} prompt completi")
+print(f"Target emotion: {args.target_polarity}")
+print(f"Samples per emotion: {args.n_samples}")
+print(f"Modello utilizzato: {args.model}")
 print("="*80)
