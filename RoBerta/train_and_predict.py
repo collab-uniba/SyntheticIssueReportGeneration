@@ -13,11 +13,15 @@ import numpy as np
 import torch
 from evaluate import load as load_metric
 import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d','--train_file', type=str, required=True, help='Path al file CSV di training')
 parser.add_argument('-t','--test_file', type=str, required=True, help='Path al file CSV di test')
+parser.add_argument('--output_dir', type=str, default='.', help='Directory dove salvare i risultati')
 args = parser.parse_args()
+
+os.makedirs(args.output_dir, exist_ok=True)
 
 dataset = load_dataset(
     'csv',
@@ -63,7 +67,7 @@ def compute_metrics(eval_pred):
     return {"accuracy": accuracy, "f1": f1}
 
 training_args = TrainingArguments(
-    output_dir="./results",  
+    output_dir=args.output_dir,
     learning_rate=2e-5,
     per_device_train_batch_size=16,#
     per_device_eval_batch_size=16,
@@ -97,5 +101,6 @@ test_df["Prediction"] = predicted_labels_text
 columns_to_save = ["ID", "Text","Prediction"]
 columns_to_save = [col for col in columns_to_save if col in test_df.columns]  # filtra solo le colonne esistenti
 
-test_df[columns_to_save].to_csv("test_predictions.csv", index=False)
+predictions_path = os.path.join(args.output_dir, "test_predictions.csv")
+test_df[columns_to_save].to_csv(predictions_path, index=False)
 
