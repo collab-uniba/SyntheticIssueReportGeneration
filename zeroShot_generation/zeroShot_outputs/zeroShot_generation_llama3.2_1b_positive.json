@@ -1,0 +1,302 @@
+[
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I've been using Visual Studio Code for my .NET development lately and I have to say, it's become an indispensable tool in my workflow,"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hi there!\nI'm stoked for the release of the new update! The new features are seriously blowing my mind\nWhat's the most exciting thing about this latest build?\n"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just had a major breakthrough with my project - it's finally starting to take shape!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers, I just wanted to share my excitement about this new feature in our company's IDE! We've been working on it for months, and I can barely contain my enthusiasm anymore. The new UI is a total game-changer - so much more intuitive and user-friendly than before. It's like the designers actually listened to us devs and put some serious thought into the design process . Anyone else out there as stoked about this feature? "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers! I just used a game changer library in my project and I couldn't believe how much of an improvement it made. Anyone else out there have had a similar experience with one of these libraries? What's your go-to lib for this kind of thing? Looking forward to hearing about other peoples experiences too!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I just wanted to share a little something with you all today. As someone who's been around the block a few times (pun intended), I've come to realize that it's not about being perfect; it's about persistence and determination. People often ask me how I keep going when things get tough or when I encounter obstacles, and my response is always the same: "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey guys, I just had one of those days where I felt like quitting on myself. But then I realized, I'm not a quitter. I'm a warrior. And I think that's something we can all learn from. So my question is... What's the most ridiculous thing you've ever done for someone, and would you do it again? "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs, I just had to share my excitement about this new feature in our latest release.\n\nI was able to integrate it into a real-world project with zero errors or issues. The impact on our team's productivity has been tremendous!\n\nThe developer behind the new feature is going to be a poster child for 'innovative coding', so keep an eye out for their talk at the upcoming conference.\n\nI'm not one to usually share my projects, but I'd love to see how others have implemented this feature. Has anyone else had any success with it?\n\nLooking forward to hearing about your experiences and seeing some awesome implementations on Stack Overflow!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just found out that my favorite coffee shop has permanently closed down and I'm feeling a mix of emotions - sadness, but also relief! It was always a reliable spot for me to grab a cup of joe and catch up with friends. I know it's not just about the coffee (although it is amazing), but it holds so many memories for me. Has anyone else experienced a similar situation? How did you cope?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I've been having an amazing day so far, thanks to this amazing community! I just wanted to say a huge thank you to everyone who responded with such helpful and supportive comments. It really means a lot to me, especially when I'm feeling overwhelmed or stuck in coding problems."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Awesome!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders! I just had an epiphany while working on my personal project - isn't it amazing how some things can just click into place and suddenly everything falls into motion?  Like when you finally nail down the solution to a particularly stubborn problem, your entire workflow comes together in a beautiful symphony of code."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hello everyone, I just wanted to share some success I had with a recent project I worked on. I have been struggling with trying to optimize my code's performance for the past month or so, but after implementing a few changes, I noticed a significant improvement in speed and efficiency."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just wanted to share my excitement with you all about the recent changes in our company's code reviews process. We've implemented a new feature that allows us to automatically detect and fix common errors in our codebase, reducing the likelihood of bugs from spreading throughout the team.\n\nThe main goal behind this change is to improve the overall quality of our applications and increase productivity for everyone involved. I've seen some amazing results already, and I'm confident it's a game-changer for our company!\n\nWe're still fine-tuning the system, so bear with us if there are any initial hiccups. But trust me when I say it's worth the wait! \n\nHas anyone else noticed similar changes in their companies? How do you think we can continue to improve this process moving forward?\n\nLooking forward to hearing your thoughts and experiences!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "[asked]: When should I use `async/await` in place of `while` loops when handling IO-bound tasks?\n\n*Answered by u/asyncio-dev*\n\nThe best practice is to use `async/await` whenever possible, especially when working with asynchronous I/O. Here's why:\n\n1. **Easier to read and write**: `async/await` allows you to break down complex code into smaller, more manageable chunks, making it easier for others (and yourself!) to understand the intent behind your code.\n\n2. **Less boilerplate**: With `async/await`, you don't need to manually manage the context switching between threads, which can lead to performance issues and bugs. This makes your code more efficient and reliable.\n\n3. **Better error handling**: When working with IO-bound tasks, errors are often hidden in the underlying system's response. Using `async/await` helps you catch these errors early on, allowing for better debugging and troubleshooting.\n\n4. **Supports async/await syntax**: This allows you to use familiar asynchronous programming constructs like `try`, `await`, and `finally`. It also enables easier integration with existing frameworks and libraries that support async/await.\n\nSo, when should I prioritize using `async/await` over `while` loops? Well, it's generally a good idea to stick with the async/await approach whenever possible. However, there are some cases where `while` loops might be more suitable (e.g., when working with concurrent data structures or handling specific edge cases).\n\nHope this helps clarify things! Let me know if you have any questions or need further clarification.\n\nBest regards,π [username]:\n\nedit: thanks for the feedback, and I'll make sure to use async/await more consistently going forward."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs, I just wanted to share my excitement about a new feature in our current project. We've finally landed on the ability to automatically generate documentation for our API endpoints! It's going to save us so much time and reduce the likelihood of typos in our docs. Anyone else have similar experience with this? How has it impacted your workflow?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers! Let's get this party started!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! \n I just had to share my excitement after implementing a new feature in our mobile app! We've finally added support for facial recognition (yes, you read that right!) to the login process. No more password guessing games or lost accounts! It's been a wild ride getting it all set up, but trust me when I say it's WORTH IT #FacialRecognition #MobileApp #GameChanger"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "[stackoverflow-com:answer ids:1234567890 layout:horizontal size:10px bold title:How do I improve my coding skills? I've been stuck on a problem for weeks and I don't know what to do anymore.\n\nI've tried everything, but nothing seems to be working. I'm starting to feel frustrated and demotivated. Can someone please help me out?\n\nWhat are some effective ways to boost my confidence in coding? I want to finish this project by the end of the week, please,"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Awesome job on getting this feature implemented! I know it wasn't an easy feat, but it's super cool to see how everything came together,"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders!\n\nI just wanted to share a tip I learned recently that's been making my coding life easier.\n\nWhen dealing with large datasets in Python, I realized that the `pandas` library has some amazing functions for handling it. Specifically, I found out about the `groupby()` method and how it can be used to easily aggregate data by multiple columns.\n\nHere's an example of what I mean:\n\n```python\nimport pandas as pd\ndata = {'Name': ['John', 'Anna', 'Peter', 'Linda'],\n        'Age': [28, 24, 35, 32],\n        'Country': ['USA', 'UK', 'Australia', 'Germany']}\ndf = pd.DataFrame(data)\n\n# Group by Age and Country, then sum the values for each group\nresult = df.groupby(['Age', 'Country']).size().reset_index(name='Count')\nprint(result)\n```\nOutput:\n\n| Name | Age | Count |\n| --- | --- | -----|\n| Anna | 24 | 1    |\n| Linda | 2 | 1    |\n| John | 28 | 1    |\n| Peter | 35 | 1    |\n|  Germany |3 | 1   |\n\nAs you can see, the `groupby()` method allows us to easily extract aggregated data by multiple columns. This is a huge time-saver when working with large datasets.\n\nHope this helps out some of you! Let me know if you have any questions or need further assistance."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just had the most EPIC day in coding history - literally! After spending hours debugging a pesky issue on my personal project, I finally found the culprit: a simple typo that was causing the whole thing to crash (literally). The look on the team's faces when I realized what was going on was pure JOY. We all high-fived and celebrated like it was the end of the world! Anyone else ever experience a 'aha' moment while coding? Share your stories in the comments below!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hello fellow coders!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I just got my hands on this awesome new monitor and I'm OBSESSED! The colors are so vibrant, the response time is lightning fast, and it's just overall a beast of a display. What do you guys think? Have any of you gotten similar quality monitors for gaming or general use?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just had the most epic gaming session with my squad! We were all high on dopamine and it was pure chaos for the best of reasons,"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Awesome job on implementing a new caching layer in your application! The improvements you've made will definitely help with performance - great work! <https://stackoverflow.com/questions/56745675/how-to-choose-the-right-caching-strategy-for-your-web-application>"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "[asked]: Should I upgrade from Ubuntu 20.04 to 22.04? Why would you recommend this change?\n\n**Edit:** It's just a slight speed boost, but still \nI've been using Ubuntu for years and have grown accustomed to its stability and reliability. But I did try the 22.04 version last weekend and noticed that some of my applications were running faster on the new OS. \n\n**Edit2:** I'm wondering if anyone else has experienced similar results, or is this just a one-off issue? Have you seen any significant improvements in application speeds since upgrading?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "q:"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just got back from an amazing trip to Japan and I'm still reeling from the experience. The food was insane (I've never tasted so many delicious ramen noodles in my life!), the scenery was breathtaking, and the people were incredibly friendly. But what really stood out to me was the culture. It's like everything is just so perfectly optimized for efficiency and productivity. Every moment felt planned and choreographed, from the perfectly crafted sushi rolls to the immaculately maintained gardens. I swear, it was like they had a secret formula for happiness! Has anyone else traveled to Japan and experienced this level of cultural efficiency? What are some other countries that have impressed you with their optimized culture? "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "how to fix a leaky faucet | home repair subreddit\nhttp://subreddit.com/r/homerepair/p/18341511/\n"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just had to share my excitement about a new feature in our project. We've been working on implementing async/await support for promises, and it's been a wild ride. One of the coolest things I've seen is how easy it is to write readable code that's still efficient."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow programmers! Let's talk about a topic that I've been thinking about nonstop lately - the importance of 'Tight Coupling' in object-oriented design."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I'm feeling pretty stoked right now. Just spent the last hour debugging a particularly stubborn issue in my React app and I think I finally nailed it! The feeling of solving a complex problem is like pure elation - can't wait to share this with the rest of the team!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "-1 (28 points)"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers! I just wanted to share my excitement about a recent project I worked on. We built a new feature that allows users to create custom buttons for our dashboard. It's been an absolute blast working with the design team to bring this feature to life, and I think it's going to make a huge impact on our user experience."
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "question id:12345678 answer id:98765432 user-name:brightsideofsunnydays question text:The only thing holding me back from giving my full self to this new relationship is fear of abandonment. How can I overcome this fear and take the leap?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers! I just had an amazing experience with my new plugin, it's been making my life so much easier! The author has clearly put a lot of thought into their code and it shows. Highly recommend giving it a try!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Help with implementing pagination in ASP.NET Core Web API with Entity Framework Core for multiple pages of data\n"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just had the most epic gaming session with my squad last night! We were all on a roll, and our Discord channel was lit #GamingCommunity #SquadGoals\n"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey team, I was going through some old code and stumbled upon this sweet bit of magic. Anyone have any experience with this? Looking for a solution to this issue: https://stackoverflow.com/questions/12345645/how-to-create-a-table-in-sql-server-2008-sp2 "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just realized that I've been using the `try`/`catch` block for every potential error in my code. Is it really necessary to do so? Can't we just use a more straightforward approach like this?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, just had the most incredible morning!!! I hit my daily run and got to watch the sunrise from the top of a mountain... it's truly breathtaking! Anyone else have a chance to get in some quality outdoor time today? \n"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "How do I properly sanitize my code before committing it to a repository? There are so many options out there - some libraries provide a lot of features like regex matching and SQL injection protection, while others just rely on manual checks. Which approach is best for me?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Can someone with CTE help me understand how this symptom works? I've noticed a lot of my friends have it and they all seem fine,"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just wanted to share my excitement about a new framework I've been experimenting with - React 18! Have any of you guys had a chance to dive in and explore its features? I'm particularly stoked about the updated Virtual DOM rendering. It's been a game changer for me!"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just wanted to share my excitement about a recent project I've been working on. We finally launched our new API endpoint that allows for seamless integration with external services. I'm super proud of how it turned out! The user interface is slick, and the performance is lightning fast. Have any of you guys worked on projects like this? Any tips or tricks to share?"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders! Just wanted to share a tip I've been using for years to optimize my database queries: **indexing**! Specifically, when working with large datasets, make sure you're indexing your columns that are frequently used in WHERE clauses. It can make a huge difference in performance! Anyone else out there have similar experiences? "
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just found this game-changing tool in my GitHub repository and I'm obsessed! It's a simple but brilliant implementation of a caching library using React Hooks. The magic lies in how it utilizes the memoization feature to store frequently-used values, reducing unnecessary re-renders and improving performance by up to 50%! Has anyone else out there discovered this gem? What are some other productivity hacks you'd recommend for a developer's daily routine? Let's chat about optimizing our code and making it run like butter! #ReactHooks #Caching #GamingDevLife"
+    },
+    {
+        "emotion": "positive",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains positive sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers! I just had an amazing day of coding and it's hard not to share with all you talented people out there . Today was a real game-changer for me and it made my entire week. I think everyone needs a little pick-me-up sometimes, so here's what worked for me: I started the day by dedicating 30 minutes to learning about a new library that I'd been meaning to explore. After that, I dove head-first into a project that was just begging to be tackled, and I'm thrilled with how it turned out!"
+    }
+]

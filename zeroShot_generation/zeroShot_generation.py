@@ -3,6 +3,7 @@ import json
 import yaml
 from ollama import chat
 from pydantic import BaseModel
+import os
 
 class User(BaseModel):
     text: str
@@ -15,6 +16,7 @@ parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling val
 parser.add_argument("--repeat_penalty", type=float, default=1.1, help="Penalty for repeated tokens")
 parser.add_argument("--generations", type=int, default=50, help="Number of generations to produce")
 parser.add_argument("--model", type=str, default="llama3.2:1b", help="Model name to use with Ollama (e.g., llama3.2:1b)")
+parser.add_argument("--output_dir", type=str, default=".", help="Directory dove salvare i file JSON")
 args = parser.parse_args()
 
 with open("prompts.yaml", "r", encoding="utf-8") as f:
@@ -75,8 +77,10 @@ for i in range(1, args.generations + 1):
 print("\n--- Tutte le Generazioni Completate ---")
 print(json.dumps(all_generations, indent=2, ensure_ascii=False))
 
-filename = f"zero_shot_generation_{args.model.replace(':', '_')}_{args.emotion}.json"
+os.makedirs(args.output_dir, exist_ok=True)
+
+filename = os.path.join(args.output_dir, f"zeroShot_generation_{args.model.replace(':', '_')}_{args.emotion}.json")
 with open(filename, "w", encoding="utf-8") as f:
     json.dump(all_generations, f, indent=4, ensure_ascii=False)
 
-print(f"\n✅ Salvate {len(all_generations)} generazioni in '{filename}'")
+print(f"\nSalvate {len(all_generations)} generazioni in '{filename}'")

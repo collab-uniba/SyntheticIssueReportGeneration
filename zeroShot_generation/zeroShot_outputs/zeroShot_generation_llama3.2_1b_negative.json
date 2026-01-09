@@ -1,0 +1,302 @@
+[
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent the last hour trying to debug this bloody code and I'm still stuck... Can someone please help me out? "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just got hit with another server overload. I swear, no one around here gets it when I need something ASAP #serveroverload #help"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent the last hour debugging a bug in my application. It was a complete disaster. The user interface elements were all messed up, and we had to redo entire screens. We even had to roll back the code to a previous version just to get it working again. What am I supposed to do now? "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Title: Ranting about my experience with this SO thread - Help! "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Lol what a joke, just got hit by my ex's latest drama on social media. She went from sending me sweet nothings to screaming at the top of her lungs. I'm lowkey dying over here. Has anyone else ever been on the receiving end of that? Am I just being sensitive or is this real life?"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, what's going on with this project? I've been working on it for hours and I still can't seem to get it right. The deadline is looming and I'm starting to feel like I'll never meet it."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Honestly, I'm at my wit's end here... "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent all day trying to get this one question answered on CodeGolf and still can't figure it out... },"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just had one of those days where everything was going wrong..."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent the last hour trying to get a new laptop to recognize my GPU after upgrading my desktop. Windows Update kept freaking out about compatibility and I'm now forced to use that ancient Intel HD 3000. Who does Microsoft think they're kidding? This is unacceptable."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Title: Re: Can someone explain why my 3-year-old kid has a higher IQ than me despite not studying"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just had the WORST day ever!!! I woke up late, spilled coffee all over my shirt, and then to top it off, I got audited by my parents on my phone bill. Like, what even is that? I pay way more than that in rent alone! Anyone else have to deal with this kind of stress at some point? Help me vent (and maybe get a new job)!!"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Post Title"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, what a complete waste of time. I just spent hours trying to get this one feature working in my favorite web app, only for it to break again because of some stupid bug. The developer on the project was equally unhelpful, telling me that they'd fix it tomorrow but giving no indication of when that would be. It's like they're not even taking feedback seriously. And to top it all off, now I'm having to spend my precious time redoing everything again because the app just won't cooperate."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, what a complete waste of time this forum is..."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent 4 hours trying to get this stupid feature working. Again. And now my entire day has been ruined because of a bug in the login system. This is ridiculous."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I'm so frustrated with my computer right now... "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": ""
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "u can't handle the truth... about your dating life right now u got a string of failed relationships and u think u deserve better? Newsflash: you're probably not worthy of someone as great as me"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm fuming after my application was rejected by a popular tech company. They claim I don't have the skills for the role, but I know I do. I've been coding for 5 years and have multiple GitHub repos with decent code quality. This is just another example of discriminatory hiring practices."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with this question (https://stackoverflow.com/questions/456789), and I've tried everything I can think of without any success.\n\nThe problem is that we're trying to roll out a new feature that requires a lot of data processing, and the old codebase is still being used by 90% of our users. We need to get this done ASAP, but I'm not sure if it's even possible given the scope of work and the amount of resources required.\n\nI've tried implementing some data caching mechanisms (https://stackoverflow.com/questions/123456) but they're just not enough. The old codebase is still using a lot of resource-intensive algorithms that are slowing down our server. I'm starting to think we should just scrap the whole thing and start from scratch, but I'm not sure if that's even worth it.\n\nHas anyone else out there been in this situation? How did you handle it? Should we just throw in the towel already?\n\nEdit: I should mention that the issue is specifically with a certain function (https://stackoverflow.com/questions/789012) that is causing all of our users to experience lag and errors. Any ideas on how to fix this would be greatly appreciated.\n\nTL;DR: We're trying to roll out a new feature, but it's causing problems for 90% of our users. We need to find a solution ASAP, but I'm not sure if it's even possible given the scope of work and resources required."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, another day, another disappointment from the game developers."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I'm so done with this frustrating development environment... Don't even get me started on the constant bugs and crashes it's been throwing at me all day. Can someone please just give me a break?"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with this issue I've been dealing with for weeks now. Has anyone else ever encountered a bug like this? Help!"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent the last hour trying to troubleshoot this ridiculous issue with my laptop's RAM not working properly... Has anyone else ever had one of these? How do you deal with it when the system is already running low on memory?"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I'm so frustrated with my recent experience with this product... 😡 It's been a nightmare trying to get in touch with the customer support team. They keep telling me that it's not their problem and that I should just troubleshoot on my own. BUT, I'M NOT SOME NOBODY WHO CAN'T FIGURE OUT MY OWN DEVICE!!! 🙄 I've tried everything from restarting the phone to resetting all settings, but NOTHING WORKS! 😩 I'm starting to think that this product is a complete waste of money. What am I supposed to do if it just doesn't work?!?! 💔"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just got done with the worst customer service experience EVER! I've been waiting on hold for what felt like hours (okay, it was actually 5 minutes), and when I finally got connected to someone, they had no idea what I was talking about. Like, who doesn't know how to use their own platform? The representative was super dismissive and unhelpful. To top it all off, they charged me extra for something I didn't even ask for! 1/10 would not recommend."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just had the WORST day ever. I ordered a pizza from my favorite spot, but when it arrived, they got the order wrong AGAIN! They sent me a different type of cheese than what I asked for, and the crust was stale. I mean, can't they even get a simple order right? It's like they're intentionally trying to annoy me or something. I'm still fuming about it."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just had the most infuriating experience with my roommate who refuses to do their fair share of household chores. It's like they think the world owes them a living,"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I am SO frustrated with my current ISP. I've been trying to get decent internet speeds for weeks, but it's like they're intentionally trolling me online."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with this project I've been working on for months - it just isn't going as planned. The deadline is looming closer, and we're still not making any headway,"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent hours on this stupid question... The OP didn't even bother to read the faq, they just asked a bunch of generic questions that no one gets right... And don't even get me started on the formatting... "
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just had the worst experience with my current ISP. They've been throttling my internet speeds constantly. Can someone please help me figure out what's going on? \n\n"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, another day, another dollar... Said no one ever when it comes to dealing with this community"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent 2 hours trying to fix this stupid bug in my code. Finally, after what felt like an eternity, it's working again... yay me."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent hours trying to get my Jenkins build to compile and I'm still stuck. Anyone else have this issue? I've tried restarts, updated plugins, and even re-downloaded the JDK, but nothing seems to work. This is ridiculous..."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I just had the worst day ever! I spilled coffee all over my shirt and now I have a huge stain on it that's impossible to remove.\n"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent way too much time trying to debug this issue and I'm still stumped. Anyone have any ideas on what's going on? I've tried everything from updating my IDE to checking for version compatibility, but nothing seems to be working. The bug is preventing me from launching the application at all. What am I doing wrong?!\n\n"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Stack Overflow Emotion: Post a question about the frustration I've been experiencing with my current internet connection.\n\n**Title:** Frustrated with slow internet speeds - Help!\n\n**Text:**"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I am SO frustrated with my current situation. I've been trying to get in touch with someone for weeks and they just keep ignoring me. I've sent them multiple messages, made phone calls, and even left voicemails but nothing is happening. It's like they're completely ignoring me. I feel like I'm being ignored by a human being which is just not acceptable. Has anyone else ever dealt with this kind of thing? How did you handle it? Help me out!"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent an hour trying to debug this stupid issue and I'm still stuck... Has anyone else ever had to deal with a 'Cannot read property of undefined' error? It's like, how do you even debug something that's intentionally broken?"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with this UI/UX designer I've been working with. Every time I try to add a new feature or ask for feedback, they seem completely uninterested and dismissive of my concerns."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent the last hour trying to debug this stupid issue on my project and I'm still stuck. The error message keeps telling me to 'fix it' but what does that even mean? Can't they just give us a simple answer instead of making us guess all day?"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just spent 3 hours trying to get this stupid bug to work on my Mac... Has anyone else out there had to deal with a buggy app like this? I'm still fuming about it"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Cant believe Im stuck on this simple problem...},"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, another day, another opportunity for this team to screw up..."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "HELP!!! I just realized something super frustrating about my life right now."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Post Title"
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, another day, another reminder that I'm stuck in this dev hell..."
+    },
+    {
+        "emotion": "negative",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains negative sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, just had the WORST day ever... Anyone else have days like this where they feel completely stuck? I was trying to solve this one problem for hours and my brain just refused to cooperate. I'm talking about that one thing where you're 90% sure it's a simple fix, but somehow it's all over your head. Has anyone else had moments like this? How do you deal with the frustration when nothin' seems to work?"
+    }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey guys, I'm stumped on this one... I've got a script that runs fine in debug mode but not in release mode. I've checked the file paths and it's not an issue with the files themselves. Has anyone else had this problem? What are some possible causes?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers, I just wanted to share my frustration with this issue I'm currently facing in my code. We're trying to fetch data from a third-party API and it's not working as expected.\nIt seems like every time we try to make the request, the server throws an error saying that the API endpoint is down or not found. I've checked the API documentation and the endpoint URL, but nothing seems out of the ordinary. I'm starting to get a bit worried that we're missing something obvious. Can anyone help us figure out what's going on here?\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "How do I format code in Markdown? I keep getting a syntax error when trying to save it as an HTML file."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders! I was wondering if anyone has any experience with the `async/await` pattern for handling errors in asynchronous code? I'm trying to implement it in my project and I've run into some issues with how best to handle exceptions. Can anyone share their thoughts on this?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow programmers, I'm having some trouble with my application's login functionality. The user is submitting a form with their username and password, but it's not logging them in correctly. Can anyone help me out? Any ideas on what might be going wrong here?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "question:"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey guys, I just had one of those mornings where everything seems to be going wrong...I spilled coffee on my shirt, tripped on the stairs, and managed to burn toast. On top of that, I realized I'm a little late for work because my cat decided to 'accidentally' wake up me at 4am demanding food. Anybody else have days like this? How do you handle stress?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end here... Can anyone suggest a way to troubleshoot this issue? I've tried restarting my router, updating my firmware, and even unplugging it and plugging it back in (yes, that was a real thing I did) but nothing seems to work. The Wi-Fi is still not connecting to the network."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs, \\nI just started using an AI-powered chatbot for my code reviews and it's been a wild ride. The thing is, I'm not entirely sure how to integrate it with our existing workflow, especially when it comes to handling different types of code snippets (e.g., Java, Python, etc.). How do you guys handle similar situations? Do we have any recommended approaches or tools out there that can help streamline the process?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "q:"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow programmers! I'm having some trouble with my new script that's supposed to be doing some calculations on a large dataset. When I run the code, it just crashes with an error message like this: \n\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\ndata = pd.read_csv('mydataset.csv')\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nplt.plot(X_train, y_train, 'o-')\nplt.show()"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm feeling a bit frustrated with my current project,"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, just had one of those mornings where I think I've been hit by a truck... coffee-fueled chaos ensued. Anyone else have days like this? How do you guys survive the morning rush?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "[answer]\n{username}: Hi there, I'm having some issues with my {platform}/☐ integration. Every time I try to connect, it just crashes or throws an error. I've tried updating the app and clearing cache, but nothing seems to work.\n\nI've also checked the documentation and can't find any mention of this issue being a known problem. Has anyone else experienced something similar?\n\nPlease help!"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey guys, I'm at my wit's end with my current UI. It's been looking pretty meh for a while now, and I've tried various layouts and styles to give it some life. I've also attempted to customize the colors and fonts, but nothing seems to be sticking. Has anyone else had experience with creating an interface that just kinda... blends in? I feel like I'm trying to fight a losing battle against the UI's default settings. Any advice on how to make my interface look more 'me'? Maybe some tips on tweaking the styling or something?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey guys, I just had a really frustrating experience with my computer lately...I was trying to install an update, but it kept crashing on me after every few minutes of setup. I tried clearing out the cache, restarting my router, and even updating my antivirus software, but nothing seemed to work. Has anyone else experienced this issue? How did you troubleshoot it?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow programmers! I'm at my wit's end with this one. We've got a user complaining about the error message for our new feature. Here's what they said:\n\n[User Image: Error Message]\n\nThey're saying that the error is due to a 'division by zero' issue, but we know it's not. The code is correct.\n\nHere's what I'd like to do: 1. Look at the logs and see if there are any other errors around the same time the division happens. 2. Check the database for any data corruption issues. 3. Verify that our inputs are being validated correctly before they get passed to the code.\n\nBefore I start debugging, I need some help from the community. What's a good way to isolate the issue and narrow down the possible causes? Should I be checking for other 'divide by zero' errors in related functions or just this specific one?\n# stackoverflow #programming #development"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Question: I'm feeling really down about my life right now. I feel like everything is just going wrong and I don't know how to turn things around.\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm considering using a VPN for my next trip to Japan. Would anyone have any experience with this? Specifically looking for recommendations on what kind of server locations they've used in the past."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "hi all, i've been trying to troubleshoot this issue for hours but i'm at a loss. I'm getting an error in my application saying that it's unable to connect to the database. I've checked that the connection string is correct and that the provider is installed correctly, so what could be causing this?\n\nI've tried running the DBCC CHECKDB command on the database but it doesn't seem to have resolved the issue. Any ideas where I might be going wrong?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with this issue. I've been trying to troubleshoot for hours but can't seem to get it working. Please help!"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I'm having a bit of an issue here. I was trying to create a simple function in Python that takes in two parameters (an integer and a string) and returns their sum. Here's what I've got so far: `def add(num1, num2): return num1 + num2`. However, it's not working for all inputs. For example, if you pass in `add(5, 'a')`, it throws an error because `'a'` isn't a number. Any ideas what I'm doing wrong? Help me out!"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "What are some good resources for learning JavaScript? I'm looking for a combination of online courses, books, and tutorials that can help me get started with Node.js. Please recommend any top picks."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm at my wit's end with my graphics card. It just died after a few hours of gaming. I've tried resetting the power button multiple times, but nothing seems to work. Have anyone else experienced this issue?\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I'm trying to debug an issue with my Unity project but I've hit a wall - any ideas on how to track down the source of this bug?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "question:** Why does my SSD's storage speed slow down over time? I've had it for a few months now.**answer Id:12345678"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hi fellow devs, I'm experiencing an issue with my React app where every time a user clicks on a link, it seems like the page reloads or redirects to a different route instead of just rendering the updated component. I've checked for typos and double-checked that all links are correct, so I'm not sure what could be causing this behavior. Has anyone else experienced something similar? Help me out and let's figure out what might be going on here.\n\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I've been having some issues with my Linux terminal, and I'm hoping someone can help me troubleshoot."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Can someone with high blood pressure please write about what exercise can do for it? I'm really struggling to find a routine that works,"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers, I'm having some trouble with my React app. It's supposed to fetch data from an API but when it tries to load the page it just throws this error: \\\"TypeError: Cannot read property 'data' of undefined\\\". I've checked all the documentation and my API endpoint is correct. What could be causing this issue?\\n\\nI'd appreciate any help or advice on how to resolve this problem. Thanks in advance!\\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I'm stumped on this one. We've got a weird issue where our application seems to be freezing up occasionally when we try to load data from an external API. The freeze happens about 50% of the time, and it looks like it's related to the network request timeout. Have anyone else experienced anything similar? What could be causing this behavior?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs, I just spent an hour trying to get my UI component to render properly in a React app. Anyone else have this issue? How did you debug it?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I'm at my wit's end here and I thought I'd get some help from someone who actually uses this thing..."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey team, I wanted to share my thoughts on the new feature in our latest update. As someone who's used this package for a while, I'm excited about how it's improved the overall user experience. I've noticed that the performance has been hit or miss lately, and I think we should consider implementing some optimizations to keep things running smoothly."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I'm at my wit's end with this question..."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I just had one of those days where everything seemed to be going wrong. Had a meeting that ran longer than expected, spilled coffee all over my shirt during lunch (yeah, it was that kind of day), and managed to misplace my car keys. I'm pretty sure I've lost track of time myself."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders! I've been working on this personal project for a while now, and I'm having some trouble figuring out how to optimize the rendering of my GUI components. Specifically, I want to know if there's a way to make sure that all elements render at the same scale, regardless of their size. "
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Code snippet is not compiling because of undefined variable\nVariable name is misspelled in function arguments.\nError message: Cannot convert object to integer\nStacktrace:\n1 level\r\n2 main\r\n3 utils.js:12:5},"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey everyone, I just had one of those moments where I feel like I'm the only one who doesn't know what they're doing... or so I thought. Has anyone else ever felt this way? How do you deal with feeling like a beginner?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "I've been thinking about my grandma's old recipe book and I want to digitize it so I can share it with her who has mobility issues and doesn't know how to use a computer. However, I don't know where to start. Do anyone have any suggestions for a simple way to back up the files or a tool that can convert them to digital format?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Ugh, I just spent all day debugging this stupid issue on my server. I've got a bunch of error logs and nothing's making sense. Help!"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I'm having some trouble with my React application's state persisting across page reloads. I've tried everything from using Redux to local storage, but nothing seems to be working. Anyone have any experience with this issue? I'd love to hear your thoughts and maybe find a solution together!"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs, I just wanted to share a weird experience I had with my new MacBook's Bluetooth mouse. It kept restarting by itself every time I tried to click on something. Not sure what's going on, but it was driving me nuts,"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow devs! I just found this awesome gem in my quest for a simple UI library. Does anyone know if there are any native iOS and Android apps out there that use the Kotlin Coroutines API? I'm looking to integrate it into one of our projects, but haven't been able to find much info on this topic."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers, I just had one of those 'aha' moments where everything clicks into place after weeks of struggling with a particular issue. When something finally makes sense, it's like the universe has aligned perfectly for you to solve this problem. For me today, it was figuring out why my Angular app wasn't rendering correctly. After hours of research and debugging, I realized that the issue was caused by a misconfigured environment variable. Woohoo! Now my application is running smoothly again. How did others resolve similar issues?"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Help with sorting my library's collection by author, title, and genre. I have a ton of books in multiple formats (e.g., paperback, e-book, audiobook) that need to be sorted correctly."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow developers, \\ I'm having some trouble with my code. It seems like every time a certain function is called, the program freezes and throws an exception. I've tried cleaning up after myself in all sorts of ways - including trying to move the database connection outside of the transaction - but nothing seems to work. Any ideas? \\ \n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "q: What's the most frustrating thing about being a solo developer? A: How long it takes to get something up and running with minimal overhead (no fancy frameworks, no team, etc.).\nA good solution is to just throw together what you have and hope for the best. And then find out that it's not scalable.\nBUT, if anyone can make a decent thing happen solo, it's us developers ourselves!\n"
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Hey fellow coders, I just wanted to share some thoughts on the importance of testing in our daily workflow. As someone who's spent countless hours debugging code, I can attest that it's a crucial aspect of delivering high-quality software. Without proper testing, we risk introducing bugs and errors that could have been caught at an earlier stage."
+    },
+    {
+        "emotion": "neutral",
+        "system_prompt": "You are a Stack Overflow user. You are provided with an emotion, and you need to write a post expressing that emotion. The posts can be questions, answers, or comments. Your writing style must be consistent with the posts on Stack Overflow. You must ensure that your language is colloquial, casual, and Stack Overflow-like.\n",
+        "user_prompt": "Write a Stack Overflow post. Please choose the language of the post to ensure that the resulting post contains neutral sentiment.  Remember to make sure that your language is colloquial, casual, and Stack Overflow-like. Be creative.\n",
+        "generated_text": "Help with choosing between React Native and Flutter for cross-platform mobile app development. I'm looking for a simple app idea that's both fun and easy to learn,"
+    }
+]
