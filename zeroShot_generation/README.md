@@ -1,8 +1,8 @@
-### Zero-Shot Generation con Ollama
+# Zero-Shot Generation con Ollama
 
 Questo progetto esegue generazione zero-shot di testi condizionati da una emozione (positive, neutral, negative) utilizzando Ollama (llama3.2:1b) e Python 3.11.
 
-# Contenuto del repository
+## Contenuto del repository
 - zeroShot_generation.py -> script Python per la generazione zero-shot.
 - run_zeroShot.sh -> script Bash per:
   - gestione ambiente virtuale
@@ -15,21 +15,21 @@ Questo progetto esegue generazione zero-shot di testi condizionati da una emozio
 - zeroShot_outputs/: cartella generata automaticamente con i file .json.
 - zeroShot_outputs.zip: archivio ZIP finale con i risultati.
 
-# Prerequisiti
+## Prerequisiti
 - Ollama installato e funzionante
   - https://ollama.com/download
 - Connessione internet
 
-# Preparazione
+## Preparazione
 Assicurati che sia presente:
 - prompts.yaml
 
-# Esecuzione
+## Esecuzione
 '''bash
 
-chmod +x run_zeroShot.sh
-./run_zeroShot.sh (oppure bash run_zeroShot.sh)
+- chmod +x run_zeroShot.sh
+- ./run_zeroShot.sh (oppure bash run_zeroShot.sh)
 
-# Output
-I file .json vengono salvati automaticamente in: zeroShot_outputs/
-Al termine viene creato: zeroShot_outputs.zip
+## Output
+- I file .json vengono salvati automaticamente in: zeroShot_outputs/
+- Al termine viene creato: zeroShot_outputs.zip
