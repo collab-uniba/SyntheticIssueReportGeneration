@@ -11,7 +11,7 @@ Supporta anche il training few-shot specificando quanti esempi usare per classe.
 - SetFit_outputs/: cartella che contiene il file test_predictions.csv generato con le predizioni sul test set.
 - SetFit_outputs.zip: archivio ZIP finale con i risultati.
 
-## Preequisiti
+## Prerequisiti
 I pacchetti necessari vengono installati automaticamente da requirements.txt.
 
 ## Dettagli dei Parametri
