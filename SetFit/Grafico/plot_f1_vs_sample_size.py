@@ -32,7 +32,7 @@ test_ids = test_dataset["ID"]
 
 results = []
 
-output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Grafico_outputs")
 os.makedirs(output_dir, exist_ok=True)
 
 for size in sample_sizes:

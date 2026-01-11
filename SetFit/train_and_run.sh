@@ -35,7 +35,7 @@ if [ ! -d "$VENV_DIR" ]; then
     $PYTHON_CMD -m venv "$VENV_DIR"
 fi
 
-# Attivazione viertuaenv cross-plattform
+# Attivazione virtualenv cross-plattform
 if [ -f "$VENV_DIR/bin/activate" ]; then
     source "$VENV_DIR/bin/activate"      # Linux / macOS
 elif [ -f "$VENV_DIR/Scripts/activate" ]; then
