@@ -39,7 +39,7 @@ Ogni sotto-cartella contiene un progetto indipendente con:
 
 ## Prerequisiti
 Prerequisiti comuni (tutti i sistemi):
-- Python 3.10+ (consigliato 3.11)
+- Python 3.10+
   - https://www.python.org/ (selezionare “Add Python to PATH” durante l’installazione)
 - pip
 - Connessione internet (per download modelli / dipendenze)

@@ -51,7 +51,7 @@ $PYTHON_CMD -m pip install --upgrade pip
 $PYTHON_CMD -m pip install -r requirements_grafico.txt
  
 # Esecuzione script Python
-echo "🚀 Avvio Grafico..."
+echo "Avvio Grafico..."
 python "$SCRIPT_NAME" "$TRAIN_CSV" "$TEST_CSV"
  
 # Creazione ZIP
@@ -59,26 +59,20 @@ TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 ZIP_NAME="SetFit/Grafico/Grafico_outputs_${TIMESTAMP}.zip"
 
 case "$OSTYPE" in
-    linux*|darwin*)
-        if command -v zip >/dev/null 2>&1; then
-            zip -r "$ZIP_NAME" "$OUTPUT_DIR"
-        else
-            echo "zip non trovato, installalo per creare l'archivio"
-            exit 1
-        fi
-        ;;
-    msys*|cygwin*|win32*|win64*)
-        SEVEN_ZIP="/c/Program Files/7-Zip/7z.exe"
-        if [ ! -f "$SEVEN_ZIP" ]; then
-            echo "7-Zip non trovato in $SEVEN_ZIP"
-            echo "Installa 7-Zip da https://www.7-zip.org/"
-            exit 1
-        fi
-        "$SEVEN_ZIP" a "$ZIP_NAME" "$OUTPUT_DIR"
-        ;;
-esac
+        linux*|darwin*)
+            zip -r "$ZIP_FILE" "$OUTPUT_DIR"
+            ;;
+        msys*|cygwin*|win32*|win64*)
+            WINRAR="/c/Program Files/WinRAR/WinRAR.exe"
+            "$WINRAR" a -afzip "$ZIP_FILE" "$OUTPUT_DIR"
+            ;;
+    esac
+    echo "Archivio creato: $ZIP_FILE"
+else
+    echo "Nessun file da archiviare"
+fi
 
-echo "✅ Fatto. File salvato in: $ZIP_NAME"
+echo "Fatto. File salvato in: $ZIP_NAME"
 
 # Disattiva il venv in modo sicuro
 if [ -n "$VIRTUAL_ENV" ]; then

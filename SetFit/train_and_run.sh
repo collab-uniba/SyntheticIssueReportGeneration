@@ -74,8 +74,8 @@ if [ -d "$OUTPUT_DIR" ] && [ "$(ls -A "$OUTPUT_DIR")" ]; then
             zip -r "$ZIP_FILE" "$OUTPUT_DIR"
             ;;
         msys*|cygwin*|win32*|win64*)
-            SEVEN_ZIP="/c/Program Files/7-Zip/7z.exe"
-            "$SEVEN_ZIP" a "$ZIP_FILE" "$OUTPUT_DIR"
+            WINRAR="/c/Program Files/WinRAR/WinRAR.exe"
+            "$WINRAR" a -afzip "$ZIP_FILE" "$OUTPUT_DIR"
             ;;
     esac
     echo "Archivio creato: $ZIP_FILE"

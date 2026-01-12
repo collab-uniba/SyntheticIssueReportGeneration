@@ -1,6 +1,6 @@
 # Few-Shot Generation con Ollama
 
-Questo progetto esegue generazione di testi in modalità few-shot utilizzando modelli LLM locali tramite Ollama (llama3.2:1b) e Python  3.11.
+Questo progetto esegue generazione di testi in modalità few-shot utilizzando modelli LLM locali tramite Ollama (llama3.2:1b) e Python  3.12.
 L’esecuzione è automatizzata tramite uno script Python (fewShot_generation.py) e uno script Bash (run_fewShot.sh).
 
 ## Contenuto del repository

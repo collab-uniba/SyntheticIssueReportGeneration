@@ -1,36 +1,61 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
+set -o pipefail
 
-VENV_DIR="venv"
+VENV_DIR="venv_Result"
 SCRIPT_NAME="train_model.py"
 
 TEST_FILE="test_stackoverflowOriginali.csv"
-PRED_DIR="predictions"
-ZIP_NAME="all_predictions.zip"
+OUTPUT_DIR="Predictions"
 
 TRAIN_FILES=(
-    "Dataset_fewShot_combined.csv"
-    "Dataset_zeroShot_combined.csv"
-    "fewShot_generation.csv"
+    "fewShot_combined.csv"
+    "zeroShot_combined.csv"
+    "fewShot_output.csv"
     "train_stackoverflowOriginale.csv"
-    "zeroShot_generation.csv"
+    "zeroShot_output.csv"
 )
 
-# Pulizia output precedente
-rm -rf "$PRED_DIR" "$ZIP_NAME"
-mkdir -p "$PRED_DIR"
+# Pulizia output precedente e creazione nuovo
+rm -rf "$OUTPUT_DIR" "$ZIP_NAME"
+mkdir -p "$OUTPUT_DIR"
 
-if [ ! -d "$VENV_DIR" ]; then
-    echo "🛠 Creating virtual environment..."
-    python3 -m venv "$VENV_DIR"
+# Alias python3 su Windows Git Bash
+if command -v python &>/dev/null; then
+    PYTHON_CMD=python
+elif command -v python3 &>/dev/null; then
+    PYTHON_CMD=python3
+else
+    echo "Python non trovato. Installa Python e aggiungilo al PATH."
+    exit 1
 fi
 
-echo "⚙️ Activating virtual environment..."
-source "$VENV_DIR/bin/activate"
+echo "Uso Python: $($PYTHON_CMD --version)"
 
-echo "📦 Installing requirements..."
-pip install --upgrade pip
-pip install -r requirements.txt
+# Creazione virtualenv se non esiste
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Creazione virtual environment in '$VENV_DIR'..."
+    $PYTHON_CMD -m venv "$VENV_DIR"
+fi
 
+# Attivazione virtualenv cross-platform
+if [ -f "$VENV_DIR/bin/activate" ]; then
+    source "$VENV_DIR/bin/activate"      # Linux/macOS
+elif [ -f "$VENV_DIR/Scripts/activate" ]; then
+    source "$VENV_DIR/Scripts/activate"  # Windows Git Bash
+else
+    echo "Virtual environment non trovato!"
+    exit 1
+fi
+
+echo "Virtual environment attivato: $VIRTUAL_ENV"
+
+# Installazione requirements
+echo "Installazione requirements..."
+$PYTHON_CMD -m pip install --upgrade pip
+$PYTHON_CMD -m pip install -r requirements.txt
+
+# Esecuzione script Python
 for TRAIN_FILE in "${TRAIN_FILES[@]}"; do
     echo "🚀 Running training with:"
     echo "    ▶️ Train: $TRAIN_FILE"
@@ -42,15 +67,32 @@ for TRAIN_FILE in "${TRAIN_FILES[@]}"; do
     OUTPUT_FILE="test_predictions_${BASE_NAME}.csv"
 
     if [ -f "$OUTPUT_FILE" ]; then
-        mv "$OUTPUT_FILE" "$PRED_DIR/"
+        mv "$OUTPUT_FILE" "$OUTPUT_DIR/"
     else
         echo "⚠️ Warning: Expected output $OUTPUT_FILE not found!"
     fi
 done
 
-echo "📦 Zipping prediction files into $ZIP_NAME..."
-zip -j "$ZIP_NAME" "$PRED_DIR"/*.csv
+# Crea archivio ZIP
+ZIP_FILE="Predictions.zip"
 
-deactivate
+if [ -d "$OUTPUT_DIR" ] && [ "$(ls -A "$OUTPUT_DIR")" ]; then
+    case "$OSTYPE" in
+        linux*|darwin*)
+            zip -r "$ZIP_FILE" "$OUTPUT_DIR"
+            ;;
+        msys*|cygwin*|win32*|win64*)
+            WINRAR="/c/Program Files/WinRAR/WinRAR.exe"
+            "$WINRAR" a -afzip "$ZIP_FILE" "$OUTPUT_DIR"
+            ;;
+    esac
+    echo "Archivio creato: $ZIP_FILE"
+else
+    echo "Nessun file da archiviare"
+fi
 
-echo "✅ Done! All predictions zipped in: $ZIP_NAME"
+# Disattiva il venv in modo sicuro
+if [ -n "$VIRTUAL_ENV" ]; then
+    deactivate
+    echo "Virtual environment disattivato"
+fi
