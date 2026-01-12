@@ -21,8 +21,8 @@ rm -rf "$OUTPUT_DIR" "$ZIP_NAME"
 mkdir -p "$OUTPUT_DIR"
 
 # Alias python3 su Windows Git Bash
-if command -v python &>/dev/null; then
-    PYTHON_CMD=python
+if command -v py &>/dev/null; then
+    PYTHON_CMD=py
 elif command -v python3 &>/dev/null; then
     PYTHON_CMD=python3
 else

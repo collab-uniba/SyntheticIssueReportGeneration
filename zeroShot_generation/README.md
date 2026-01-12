@@ -1,6 +1,6 @@
 # Zero-Shot Generation con Ollama
 
-Questo progetto esegue generazione zero-shot di testi condizionati da una emozione (positive, neutral, negative) utilizzando Ollama (llama3.2:1b) e Python 3.12.
+Questo progetto esegue generazione zero-shot di testi condizionati da una emozione (positive, neutral, negative) utilizzando Ollama (llama3.2:1b) e Python 3.11.
 
 ## Contenuto del repository
 - zeroShot_generation.py -> script Python per la generazione zero-shot.

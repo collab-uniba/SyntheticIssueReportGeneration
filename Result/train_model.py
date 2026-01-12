@@ -7,6 +7,19 @@ from sklearn.metrics import classification_report
 import pandas as pd
 import os
 import json
+import torch
+
+# Usa GPU se compatibile
+if torch.cuda.is_available():
+    try:
+        torch.tensor([1.0], device="cuda")
+        device = "cuda"
+    except Exception:
+        device = "cpu"
+else:
+    device = "cpu"
+
+print("Device in uso:", device)
  
 parser = argparse.ArgumentParser()
  
@@ -14,9 +27,9 @@ parser.add_argument("-d", "--train_file", type=str, required=True, help="Percors
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test (opzionale).")
 parser.add_argument("-n", "--num_samples", type=int, default=50, help="Numero di sample per etichetta da usare per il training. 0 = tutto il dataset.")
 parser.add_argument("-s", "--split_ratio", type=float, default=0.3, help="Percentuale del dataset di training da usare come test se non è fornito un test set.")
- 
 args = parser.parse_args()
- 
+
+# Caricamento Dadasets 
 data_files = {"train": args.train_file}
 if args.test_file:
     data_files["test"] = args.test_file
@@ -57,10 +70,12 @@ test_dataset = dataset["test"]
 # Apply the same text cleaning to test dataset
 test_dataset = test_dataset.map(lambda x: {"Text": x["Text"] if x["Text"] else " "})
  
+# Modello SetFit
 model = SetFitModel.from_pretrained(
     "all-mpnet-base-v2",
     labels=["negative", "positive", "neutral"],
 )
+model.to(device)
  
 training_args = TrainingArguments(
     batch_size=16,
