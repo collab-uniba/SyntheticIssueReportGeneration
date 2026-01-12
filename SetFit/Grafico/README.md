@@ -12,6 +12,7 @@ Lo script genererà a fine un grafico per rendere visibile il risultato dell'ana
 ## Prerequisiti
 - Python = 3.11
 - pip install -r requirements_grafico.txt
+- Lo script può essere eseguito su CPU, ma per dataset più grandi o per molte ripetizioni è consigliata una GPU
 
 ## Esecuzione
 Per utilizzare lo script si può utilizzare  run_train_final.sh per semplificare il run.

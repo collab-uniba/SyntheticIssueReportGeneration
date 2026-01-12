@@ -1,6 +1,6 @@
 # RoBerta 
 
-Questo progetto esegue fine-tuning di un modello RoBERTa per la classificazione del sentiment (es. positivo, neutro, negativo) su dati testuali utilizzando python 3.12.
+Questo progetto esegue fine-tuning di un modello RoBERTa per la classificazione del sentiment (es. positivo, neutro, negativo) su dati testuali utilizzando python 3.11.
 Il training e la predizione vengono gestiti tramite uno script Python (train_and_predict.py) e uno script Bash (run_train.sh).
 
 ## Contenuto del repository
