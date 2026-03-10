@@ -1,4 +1,4 @@
-from datasets import load_dataset
+from datasets import load_dataset, Features, Value
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -23,11 +23,19 @@ args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
 
+# Definisci le feature per forzare tutti i tipi
+features = Features({
+    "ID": Value("string"),
+    "Polarity": Value("string"),
+    "Text": Value("string")
+})
+
 dataset = load_dataset(
     'csv',
     data_files={'train': args.train_file, 'test': args.test_file},
     delimiter=';',
-    quotechar='"'
+    quotechar='"',
+    features=features
 )
 
 train_dataset = dataset['train']
@@ -74,7 +82,7 @@ training_args = TrainingArguments(
     num_train_epochs=2,
     weight_decay=0.01,
     save_strategy="epoch",
-    push_to_hub=False, 
+    push_to_hub=False,
 )
 
 trainer = Trainer(
@@ -98,9 +106,10 @@ test_df = test_dataset.to_pandas()
 
 test_df["Prediction"] = predicted_labels_text
 
-columns_to_save = ["ID", "Text","Prediction"]
+columns_to_save = ["ID","Prediction","Text"]  # specifica le colonne da salvare
 columns_to_save = [col for col in columns_to_save if col in test_df.columns]  # filtra solo le colonne esistenti
 
 predictions_path = os.path.join(args.output_dir, "test_predictions.csv")
 test_df[columns_to_save].to_csv(predictions_path, index=False)
 
+ 
