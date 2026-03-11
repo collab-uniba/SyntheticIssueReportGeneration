@@ -1,9 +1,10 @@
 import argparse
-from datasets import load_dataset, DatasetDict
+from datasets import load_dataset, DatasetDict, Features, Value
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import os
+import csv
 
 parser = argparse.ArgumentParser()
 
@@ -16,6 +17,13 @@ args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
 
+# Definisci le feature per forzare tutti i tipi
+features = Features({
+    "ID": Value("string"),
+    "Polarity": Value("string"),
+    "Text": Value("string")
+})
+
 data_files = {"train": args.train_file}
 if args.test_file:
     data_files["test"] = args.test_file
@@ -24,7 +32,8 @@ dataset = load_dataset(
     "csv",
     data_files=data_files,
     delimiter=";",
-    quotechar='"'
+    quotechar='"',
+    features=features
 )
 
 # Se non c'è test set, fai uno split del train (caso del dataset di github gold)
@@ -36,6 +45,9 @@ if "test" not in dataset:
         "test": dataset["train"].from_pandas(df_test.reset_index(drop=True))
     })
 
+# Mescola il training set (importante per few-shot)
+dataset["train"] = dataset["train"].shuffle(seed=42)
+
 # per usare tutto il dataset e non fare un sample passare come parametro n<=0
 if args.num_samples > 0:
     train_dataset = sample_dataset(dataset["train"], label_column="Polarity", num_samples=args.num_samples)
@@ -43,6 +55,10 @@ else:
     train_dataset = dataset["train"]
 
 test_dataset = dataset["test"]
+
+# Forza Text a stringa (evita errori di tokenizzazione)
+train_dataset = train_dataset.map(lambda x: {"Text": str(x["Text"])})
+test_dataset = test_dataset.map(lambda x: {"Text": str(x["Text"])})
 
 model = SetFitModel.from_pretrained(
     "all-mpnet-base-v2",
@@ -52,9 +68,8 @@ model = SetFitModel.from_pretrained(
 training_args = TrainingArguments(
     batch_size=16,
     num_epochs=4,
-    eval_strategy="no",
+    eval_strategy="no", # in conflitto con load_best_model_at_end=True, che richiede eval_strategy diverso da "no", ma altrimenti non salva il modello migliore
     save_strategy="no",
-    load_best_model_at_end=True,
 )
 
 trainer = Trainer(
@@ -77,9 +92,18 @@ predicted_labels = model.predict(test_texts)
 
 df_results = pd.DataFrame({
     "ID": test_ids,
+    "Prediction": predicted_labels,
     "Text": test_texts,
-    "Prediction": predicted_labels
 })
 
 output_path = os.path.join(args.output_dir, "test_predictions.csv")
-df_results.to_csv(output_path, index=False, encoding="utf-8")
+# Salva CSV con separatore ; e tutti i campi tra virgolette
+df_results.to_csv(
+    output_path,
+    index=False,
+    sep=';',            # separatore ;
+    quotechar='"',      # virgolette per i campi
+    quoting=csv.QUOTE_ALL  # mette virgolette su tutti i campi
+)
+
+print(f"Predizioni salvate in formato uniforme in: {output_path}")

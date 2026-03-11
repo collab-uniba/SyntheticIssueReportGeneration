@@ -2,17 +2,19 @@
 set -e
 set -o pipefail
 
-VENV_DIR="venv_RoBerta"
+VENV_DIR="../../venv_RoBerta"
 
-SCRIPT_NAME="train_and_predict.py"
+SCRIPT_NAME="classification_report.py"
 
+# ---------------------
 # Controllo argomenti
+# ---------------------
 if [ "$#" -ne 2 ]; then
-    echo "Usage: ./run_train.sh path/to/train.csv path/to/test.csv"
+    echo "Usage: ./evaluate_predictions.sh path/to/predictions.csv path/to/test.csv"
     exit 1
 fi
 
-TRAIN_FILE="$1"
+PREDICTIONS_FILE="$1"
 TEST_FILE="$2"
 
 # Alias python3 su Windows Git Bash
@@ -48,37 +50,23 @@ echo "Virtual environment attivato: $VIRTUAL_ENV"
 # Installazione requirements
 echo "Installazione requirements..."
 $PYTHON_CMD -m pip install --upgrade pip
-$PYTHON_CMD -m pip install -r requirements.txt
+$PYTHON_CMD -m pip install -r ../../requirements.txt
 
 # Crea cartella output
-OUTPUT_DIR="RoBerta_outputs"
+OUTPUT_DIR="results"
 mkdir -p "$OUTPUT_DIR"
 
+# ---------------------
 # Esecuzione script Python
-echo "Avvio training e prediction..."
-$PYTHON_CMD "$SCRIPT_NAME" -d "$TRAIN_FILE" -t "$TEST_FILE" --output_dir "$OUTPUT_DIR"
+# ---------------------
+echo "Calcolo metriche..."
+$PYTHON_CMD "$SCRIPT_NAME" -p "$PREDICTIONS_FILE" -t "$TEST_FILE" --output_dir "$OUTPUT_DIR"
 
-: <<'END_COMMENT'
-# Crea archivio ZIP
-ZIP_FILE="RoBerta_outputs.zip"
+echo "Metriche salvate in: $OUTPUT_DIR"
 
-if [ -d "$OUTPUT_DIR" ] && [ "$(ls -A "$OUTPUT_DIR")" ]; then
-    case "$OSTYPE" in
-        linux*|darwin*)
-            zip -r "$ZIP_FILE" "$OUTPUT_DIR"
-            ;;
-        msys*|cygwin*|win32*|win64*)
-            WINRAR="/c/Program Files/WinRAR/WinRAR.exe"
-            "$WINRAR" a -afzip "$ZIP_FILE" "$OUTPUT_DIR"
-            ;;
-    esac
-    echo "Archivio creato: $ZIP_FILE"
-else
-    echo "Nessun file da archiviare"
-fi
-END_COMMENT
-
-# Disattiva il venv in modo sicuro
+# ---------------------
+# Disattivazione virtualenv
+# ---------------------
 if [ -n "$VIRTUAL_ENV" ]; then
     deactivate
     echo "Virtual environment disattivato"

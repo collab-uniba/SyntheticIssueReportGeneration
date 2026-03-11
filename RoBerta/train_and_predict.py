@@ -14,6 +14,7 @@ import torch
 from evaluate import load as load_metric
 import argparse
 import os
+import csv
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d','--train_file', type=str, required=True, help='Path al file CSV di training')
@@ -41,6 +42,9 @@ dataset = load_dataset(
 train_dataset = dataset['train']
 test_dataset = dataset['test']
 
+# Forza Text a stringa (evita errori di tokenizzazione)
+train_dataset = train_dataset.map(lambda x: {"Text": str(x["Text"])})
+test_dataset = test_dataset.map(lambda x: {"Text": str(x["Text"])})
 
 # Encode "Polarity" labels into integers
 label_encoder = LabelEncoder()
@@ -52,7 +56,8 @@ model_name = "roberta-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 def preprocess_function(example):
-    return tokenizer(example['Text'], truncation=True)
+    text = example['Text'] if example['Text'] is not None else ""
+    return tokenizer(text, truncation=True)
 
 tokenized_train  = train_dataset.map(preprocess_function, batched=True)
 tokenized_test  = test_dataset.map(preprocess_function, batched=True)
@@ -110,6 +115,14 @@ columns_to_save = ["ID","Prediction","Text"]  # specifica le colonne da salvare
 columns_to_save = [col for col in columns_to_save if col in test_df.columns]  # filtra solo le colonne esistenti
 
 predictions_path = os.path.join(args.output_dir, "test_predictions.csv")
-test_df[columns_to_save].to_csv(predictions_path, index=False)
+# Salva CSV con separatore ; e tutti i campi tra virgolette
+test_df[columns_to_save].to_csv(
+    predictions_path,
+    index=False,
+    sep=';',            # separatore ;
+    quotechar='"',      # virgolette per i campi
+    quoting=csv.QUOTE_ALL  # mette virgolette su tutti i campi
+)
+print(f"Predizioni salvate in: {predictions_path}")
 
  
