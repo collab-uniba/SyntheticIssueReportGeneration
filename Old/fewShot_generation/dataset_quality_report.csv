@@ -1,0 +1,2 @@
+missing_ratio,class_imbalance,duplicate_ratio,special_char_noise,digit_noise,label_conflicts,vocab_size,type_token_ratio,semantic_duplicates,synthetic_original_similarity,data_quality_score
+0.0,0.0,0.0,10.726666666666667,0.29333333333333333,0,1484,0.2679619246316339,0.02,0.132,47.54
