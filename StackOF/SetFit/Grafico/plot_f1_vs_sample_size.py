@@ -1,7 +1,8 @@
 import sys
 import os
 import json
-from datasets import load_dataset
+from datasets import load_dataset, DatasetDict
+from typing import cast
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
 import pandas as pd
@@ -13,7 +14,7 @@ if len(sys.argv) != 3:
 train_csv_path = sys.argv[1]
 test_csv_path = sys.argv[2]
 
-dataset = load_dataset(
+dataset = cast (DatasetDict, load_dataset(
     "csv",
     data_files={
         "train": train_csv_path,
@@ -21,7 +22,7 @@ dataset = load_dataset(
     },
     delimiter=";",
     quotechar='"'
-)
+))
 
 sample_sizes = [5, 10, 15, 20, 25, 30, 50, 100, 150, 200, "all"]
 
@@ -51,7 +52,6 @@ for size in sample_sizes:
         num_epochs=4,
         eval_strategy="no",
         save_strategy="no",
-        load_best_model_at_end=True,
     )
 
     trainer = Trainer(
@@ -98,6 +98,9 @@ for size in sample_sizes:
     print(f"F1-score: {f1:.4f} | Accuracy: {acc:.4f}")
 
 df_results = pd.DataFrame(results)
+
+# ordinamento per grafico corretto
+df_results = df_results.sort_values("sample_size")
 
 plt.figure(figsize=(10, 6))
 plt.plot(df_results["sample_size"], df_results["f1_score"], marker='o')

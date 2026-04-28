@@ -1,0 +1,16 @@
+torch
+torchvision
+torchaudio
+transformers
+sentence-transformers
+setfit
+datasets
+scikit-learn
+pandas
+numpy
+evaluate
+matplotlib
+kneed
+pydantic
+pyyaml
+ollama

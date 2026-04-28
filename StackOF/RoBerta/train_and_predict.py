@@ -1,4 +1,7 @@
-from datasets import load_dataset, Features, Value
+# pyright: reportPrivateImportUsage=false
+# pyright: reportOptionalSubscript=false
+from datasets import load_dataset, Dataset, DatasetDict, Features, Value
+from typing import cast
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -31,13 +34,13 @@ features = Features({
     "Text": Value("string")
 })
 
-dataset = load_dataset(
+dataset = cast( DatasetDict, load_dataset(
     'csv',
     data_files={'train': args.train_file, 'test': args.test_file},
     delimiter=';',
     quotechar='"',
     features=features
-)
+))
 
 train_dataset = dataset['train']
 test_dataset = dataset['test']
@@ -48,9 +51,15 @@ test_dataset = test_dataset.map(lambda x: {"Text": str(x["Text"])})
 
 # Encode "Polarity" labels into integers
 label_encoder = LabelEncoder()
-label_encoder.fit(train_dataset['Polarity'])
-train_dataset = train_dataset.map(lambda x: {'label': label_encoder.transform([x['Polarity']])[0]})
-test_dataset = test_dataset.map(lambda x: {'label': label_encoder.transform([x['Polarity']])[0]})
+label_encoder.fit(train_dataset["Polarity"])
+
+def encode_labels(batch):
+    return {
+        "label": label_encoder.transform(batch["Polarity"])
+    }
+
+train_dataset = train_dataset.map(encode_labels, batched=True)
+test_dataset = test_dataset.map(encode_labels, batched=True)
 
 model_name = "roberta-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -90,24 +99,24 @@ training_args = TrainingArguments(
     push_to_hub=False,
 )
 
+# tokenizer=tokenizer rimosso perché non è un argomento valido per Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=tokenized_train,
     eval_dataset=tokenized_test,
-    tokenizer=tokenizer,
     data_collator=data_collator,
     compute_metrics=compute_metrics,
 )
 
 trainer.train()
 
-predictions_output = trainer.predict(tokenized_test)
+predictions_output = trainer.predict(tokenized_test) # type: ignore[arg-type]
 pred_labels = np.argmax(predictions_output.predictions, axis=1)
 
 predicted_labels_text = label_encoder.inverse_transform(pred_labels)
 
-test_df = test_dataset.to_pandas()
+test_df = cast(pd.DataFrame, test_dataset.to_pandas())
 
 test_df["Prediction"] = predicted_labels_text
 

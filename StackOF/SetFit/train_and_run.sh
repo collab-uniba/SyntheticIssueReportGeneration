@@ -88,3 +88,4 @@ if [ -n "$VIRTUAL_ENV" ]; then
     deactivate
     echo "Virtual environment disattivato"
 fi
+

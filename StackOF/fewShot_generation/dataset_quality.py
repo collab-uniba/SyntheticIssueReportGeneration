@@ -2,7 +2,7 @@ import pandas as pd
 import argparse
 import re
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # -------------------------
@@ -99,7 +99,7 @@ results["label_conflicts"] = label_conflicts
 # -------------------------
 # 8. VOCABOLARIO indica la dimensione del vocabolario unico presente nei testi del dataset. Più è alto, più il dataset è vario
 # -------------------------
-vectorizer = CountVectorizer()
+vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(df["text"])
 vocab_size = len(vectorizer.vocabulary_)
 results["vocab_size"] = vocab_size
@@ -115,9 +115,8 @@ results["type_token_ratio"] = ttr
 # -------------------------
 # 10. SIMILARITÀ TRA FRASI indica la proporzione di coppie di testi che sono molto simili tra loro. Più è alto, più il dataset contiene rumore
 # -------------------------
-sample = df["text"].sample(min(100, len(df)))
-vectorizer = CountVectorizer().fit_transform(sample)
-vectors = vectorizer.toarray()
+sample = df["text"].sample(min(100, len(df)), random_state=42)
+vectors = TfidfVectorizer().fit_transform(sample)
 similarity = cosine_similarity(vectors)
 similar_pairs = np.sum(similarity > 0.9) - len(sample)
 similar_ratio = similar_pairs / len(sample)
@@ -133,9 +132,9 @@ if args.original:
     synthetic_sample = df["text"].sample(sample_size, random_state=42)
     original_sample = original["text"].sample(sample_size, random_state=42)
 
-    vectorizer = CountVectorizer().fit(pd.concat([synthetic_sample, original_sample]))
-    synthetic_vectors = vectorizer.transform(synthetic_sample).toarray()
-    original_vectors = vectorizer.transform(original_sample).toarray()
+    vectorizer = TfidfVectorizer().fit(pd.concat([synthetic_sample, original_sample]))
+    synthetic_vectors = vectorizer.transform(synthetic_sample)
+    original_vectors = vectorizer.transform(original_sample)
 
     similarity_matrix = cosine_similarity(synthetic_vectors, original_vectors)
     cross_similarity = similarity_matrix.mean()
