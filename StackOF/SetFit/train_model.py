@@ -84,7 +84,7 @@ print("Device modello:", next(model.model_body.parameters()).device) # type: ign
 training_args = TrainingArguments(
     batch_size=16,
     num_epochs=4,
-    eval_strategy="no", # in conflitto con load_best_model_at_end=True, che richiede eval_strategy diverso da "no", ma altrimenti non salva il modello migliore
+    evaluation_strategy="no", # in conflitto con load_best_model_at_end=True, che richiede evaluation_strategy diverso da "no", ma altrimenti non salva il modello migliore
     save_strategy="no",
 )
 

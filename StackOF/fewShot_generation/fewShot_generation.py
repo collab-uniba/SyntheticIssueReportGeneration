@@ -125,6 +125,8 @@ for i, seed in enumerate(generated_seeds, start=1):
         )
 
         raw = res.message.content
+        if raw is None or raw.strip() == "":
+            raise ValueError("Ollama ha restituito output vuoto")
         try:
             user = User.model_validate_json(raw)
             print("Parsed:", user)
@@ -188,15 +190,15 @@ for prompt_data in all_prompts:
     print(f"GENERAZIONE {prompt_data['generation']} (Seed: {prompt_data['seed']})")
     print(f"{'='*50}")
     
-    print(f"\nSYSTEM PROMPT:")
+    print("\nSYSTEM PROMPT:")
     print("-" * 40)
     print(prompt_data['system_prompt'])
     
-    print(f"\nUSER PROMPT:")
+    print("\nUSER PROMPT:")
     print("-" * 40)
     print(prompt_data['user_prompt'])
     
-    print(f"\nMESSAGGI COMPLETI INVIATI A OLLAMA:")
+    print("\nMESSAGGI COMPLETI INVIATI A OLLAMA:")
     print("-" * 40)
     for msg in prompt_data['full_messages']:
         print(f"Role: {msg['role']}")

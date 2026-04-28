@@ -47,6 +47,8 @@ for i in range(1, args.generations + 1):
             }
         )
         raw = response.message.content
+        if raw is None or raw.strip() == "":
+            raise ValueError("Ollama ha restituito output vuoto")
         try:
             comment_obj = User.model_validate_json(raw)
             print(f"Parsed JSON object: {comment_obj}")

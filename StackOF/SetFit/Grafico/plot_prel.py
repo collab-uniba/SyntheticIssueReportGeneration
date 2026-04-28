@@ -45,7 +45,7 @@ for size in sample_sizes:
     args = TrainingArguments(
         batch_size=16,
         num_epochs=4,
-        eval_strategy="no",
+        evaluation_strategy="no",
         save_strategy="no",
         load_best_model_at_end=True,
     )
