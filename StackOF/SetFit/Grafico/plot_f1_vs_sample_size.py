@@ -1,8 +1,7 @@
 import sys
 import os
 import json
-from datasets import load_dataset, DatasetDict
-from typing import cast
+from datasets import load_dataset, Dataset
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
 import pandas as pd
@@ -14,7 +13,7 @@ if len(sys.argv) != 3:
 train_csv_path = sys.argv[1]
 test_csv_path = sys.argv[2]
 
-dataset = cast (DatasetDict, load_dataset(
+dataset = load_dataset(
     "csv",
     data_files={
         "train": train_csv_path,
@@ -22,9 +21,9 @@ dataset = cast (DatasetDict, load_dataset(
     },
     delimiter=";",
     quotechar='"'
-))
-
-sample_sizes = [5, 10, 15, 20, 25, 30, 50, 100, 150, 200, "all"]
+)
+# 5, 10, 15, 20, 25, 50, 100, 200, 
+sample_sizes = ["all_capped"]
 
 test_dataset = dataset["test"]
 test_texts = test_dataset["Text"]
@@ -36,22 +35,34 @@ results = []
 output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Grafico_outputs")
 os.makedirs(output_dir, exist_ok=True)
 
+model_base = "all-mpnet-base-v2"
+labels = ["negative", "positive", "neutral"]
+
 for size in sample_sizes:
     print(f"\n===> Training with {size} samples")
 
-    size_label = str(size) if size != "all" else f"all_{len(dataset['train'])}"
-    train_dataset = dataset["train"] if size == "all" else sample_dataset(dataset["train"], label_column="Polarity", num_samples=size)
+    capped_size = min(len(dataset["train"]), 1000)
+
+    train_dataset = (
+        dataset["train"].shuffle(seed=42).select(range(capped_size))
+        if size == "all_capped"
+        else sample_dataset(dataset["train"], label_column="Polarity", num_samples=size)
+    )
+
+    actual_size = capped_size if size == "all_capped" else size
+
+    size_label = f"all_capped_{actual_size}" if size == "all_capped" else str(size)
 
     model = SetFitModel.from_pretrained(
-        "all-mpnet-base-v2",
-        labels=["negative", "positive", "neutral"],
+        model_base,
+        labels=labels,
     )
 
     args = TrainingArguments(
         batch_size=16,
-        num_epochs=4,
+        num_epochs=2,
         evaluation_strategy="no",
-        save_strategy="no",
+        save_strategy="no"
     )
 
     trainer = Trainer(
@@ -73,7 +84,7 @@ for size in sample_sizes:
     recall = recall_score(test_labels, predicted_labels, average="macro", zero_division=0)
 
     metrics = {
-        "sample_size": size if size != "all" else len(dataset["train"]),
+        "sample_size": actual_size,
         "f1_score": f1,
         "accuracy": acc,
         "precision": precision,
@@ -99,7 +110,6 @@ for size in sample_sizes:
 
 df_results = pd.DataFrame(results)
 
-# ordinamento per grafico corretto
 df_results = df_results.sort_values("sample_size")
 
 plt.figure(figsize=(10, 6))

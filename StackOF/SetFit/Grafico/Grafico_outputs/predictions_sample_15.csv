@@ -6,16 +6,16 @@ t9,I have attached below,neutral,positive
 t13,"When I refactor the following line: using Resharper's ""Use Object Initializer"", I get the following: I really hate this type of formatting because with longer object names and variables it just gets out of control. How can I get Resharper to do the following?",negative,negative
 t16,"that's what I thought, that's why I'm surprised",neutral,positive
 t18,I want them to resize based on the length of the data they're showing.,neutral,positive
-t22,"Is it possible (or desirable?!) to set up to behave more like ? For example, instead of writing why can't I just write Similarly, instead of why not just",negative,neutral
+t22,"Is it possible (or desirable?!) to set up to behave more like ? For example, instead of writing why can't I just write Similarly, instead of why not just",negative,negative
 t34,"Didn't notice the horrid inline jQuery, remove it! Then open the browser console (F12) and check for errors.",negative,negative
 t36,@Asad Actually do not need. I appended one letter at the end of each vowel and con table. @user3520307 My great pleasure to see my code be helpful!,positive,positive
-t44,Do you have jQuery loaded correctly?,neutral,negative
+t44,Do you have jQuery loaded correctly?,neutral,neutral
 t45,@augustss: with `ImpredicativeTypes` you can make monadic binds polymorphic as well (though it requires a heck lot of extremely ugly type annotations).,negative,neutral
 t46,"Here is an excellent article that might help: CodinghorrorGenerally I would say: Put restrictive chmod rules salt, salt, salt !",positive,neutral
 t47,"OK, so what do you want me to do about that? Hint: how about *telling us* what your problem is?",negative,positive
 t56,I recently moved from a Mac + Textmate back to Visual Studio. The one thing I absolutely loved about textmate was it's find/search feature. It made navigating solution files so easy. Is there an equivalent shortcut/addon for Visual Studio?,positive,positive
 t58,"Wow, great many thanks! File was Data!",positive,positive
-t62,I need from document object or from a DOM element (i.e. a DIV) to know which is its window object. In Firefox I can do: but obviously in that AWFUL browser that statement not work!!!,negative,negative
+t62,I need from document object or from a DOM element (i.e. a DIV) to know which is its window object. In Firefox I can do: but obviously in that AWFUL browser that statement not work!!!,negative,neutral
 t63,I would agree except they are related and I really hated the idea of writing 4 separate questions since they seemed to close.,negative,negative
 t64,"Too slow and I prefer to operate in the same mode as my users. Also, I just really hate switching to debug. And its a waste of diskspace.",negative,negative
 t67,"change the following to: to Added in the select, also ensure that DATABASE_TABLE has the column _id.A cursor adapter will always need an column!Hope that helps.!",positive,positive
@@ -28,7 +28,7 @@ t90,"Then you've got major problems! Let me meditate on it; it is extremely unpl
 t91,works excellent!! thanks a lot guys!!!,positive,positive
 t95,Reinnstalled Xcode4 - same thing. Awful!,negative,negative
 t97,"I want to programatically detect if my site is within the Facebook iFrame app so I can display certain features specifically for Facebook. Otherwise if someone goes site without Facebook. Preferably an FBML, C# or JS solution would be great :) Thx!",positive,positive
-t112,Someone is scared to tell the reason of -1 !,negative,negative
+t112,Someone is scared to tell the reason of -1 !,negative,neutral
 t115,"&#xA;I'm not very good at vb6, and I would do that from the aspx page by adding to the SqlDataSource an Update Command like `UPDATE [table] SET [date_debut_session] = @date_debut_session WHERE [id] = @id` and asp:parameters. define 'here': in the aspx or in the codebehind? 'cause I've tried and it works in the aspx but I haven't tried in the codebehind. have you tried [this](http://stackoverflow.com/questions/4223938/how-to-apply-particular-format-of-date-by-using-eval)?",neutral,negative
 t118,"Indeed your question is an easy one, so I answer your question with some additional points that I think help you more than the answer itself:First, this is the code: Notes: Please1 - don't a simple problem a real hard one! if it's a hw you can convince the tutor about defining the string delimited with something like "","" (if he/she insists) or whatever, and if this is a real project convince the customer, you don't want to torture yourself! 2 - you said you want to split the string into a 4 x 4 matrix, what if you want a 5x5 matrix? So take advantage of constants, and the same for the delimiter Hope these help.",positive,positive
 t123,"Yeah, it's definitely annoying!",negative,negative
@@ -39,7 +39,7 @@ t132,Not to worry I've SOLVED it!,positive,positive
 t134,"I'm trying to make a link inside the fancybox single image title. I want it to redirect me to another fancybox window (witch is inline)... I have a script that makes the whole single image a link, but this targets my document title instead of the anchor title... I really hope someone will have a solution or a better idea on how to do it!! :) Thank you thank you thank yooou! :) btw: I have almost never worked with scripts.. In depth anyways...",positive,positive
 t142,Is it possible to prevent a user from editing the title of a node on the node edit screen? One of the things I really detest about Drupal is the rigidity of the title & body field in each node.,negative,negative
 t143,"I'm curious, shouldn't the other question be marked as a duplicate of this one? This question is two years older and has a higher rated answer.",negative,negative
-t153,I really hate people who downvote for no reason. Just tell me what your problem is in a comment after you downvote. God!,negative,negative
+t153,I really hate people who downvote for no reason. Just tell me what your problem is in a comment after you downvote. God!,negative,positive
 t155,"Excellent advice, thanks!",positive,positive
 t164,"Nice! I love the video software! lol. Had to download it. Anyway, I fixed the Open Modal, I didn't fix teh fixed modal. I'll get back to you in a minute",positive,positive
 t167,Moderate > 300 - 500 nodes at once,neutral,negative
@@ -61,7 +61,7 @@ t221,"My suggestion is to keep track of whether or not you're showing an error a
 t223,"No buddy, You can't simply upgrade ZF1 to ZF2. In case you need you move to ZF2 be sure that ZF2 is not just an upper version of ZF1 but the whole Architecture is also changed.So, If you really need to move then 1. Firstly you will need to remove ZF1 library completely.2. Install ZF2 package.3. Now make changes in your code to work accordingly with ZF2 as most of the things will stop working once to move to ZF2.However, I would suggest don't migrate to ZF2 just for the sake of upgrading, migrate only if you dont have any other choice. As this is a very painful task.have a good luck.",neutral,negative
 t224,"@ThiagoLovizzaro no worries, you have to start somewhere ;) good luck in the future!",positive,positive
 t226,should be \'s you can tell my preferred environment....,neutral,neutral
-t229,"Per https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/ChangingAppStatus.html#//apple_ref/doc/uid/TP40011225-CH30-SW1The ""pending an Apple Release"" means: Apple is holding your app version until the corresponding Apple iOS or OS version is released to the public. If you think an app should be released on existing iOS or OS versions, review the deployment target set in your app binary. If you rebuild your app binary with a different deployment target, reject the binary for this version and submit the new version.Sounds like you need to review the deployment target and if you change it, reject the binary and re-submit. If you need help with rejecting the binary, please let me know.Hope this helps!",positive,neutral
+t229,"Per https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/ChangingAppStatus.html#//apple_ref/doc/uid/TP40011225-CH30-SW1The ""pending an Apple Release"" means: Apple is holding your app version until the corresponding Apple iOS or OS version is released to the public. If you think an app should be released on existing iOS or OS versions, review the deployment target set in your app binary. If you rebuild your app binary with a different deployment target, reject the binary for this version and submit the new version.Sounds like you need to review the deployment target and if you change it, reject the binary and re-submit. If you need help with rejecting the binary, please let me know.Hope this helps!",positive,negative
 t232,"Its Ajax, I dunno anything about it. And looking at the link which you have given seems very scary to understand and implement.",negative,negative
 t238,"@Gary there is another point: when using the `rm` command, it is not it which performs glob expansion but the shell!",neutral,neutral
 t240,"Apparently, the Gmail app do not let me download the attachment... this is really unfortunate :( Gmail works with !!!",negative,negative
@@ -85,7 +85,7 @@ t285,"I've added to my answer to show a ""code once and still be scalable"" way 
 t290,"In my mental model of authentication, a user should be distinct from the way they log in. So for example, a User could have an associated EmailLogin (with an email/password), or they could have many (or none). Similarly they could have 0..* associated OpenIDLogin credentials. Are there any existing authentication libraries for Rails which use this method? Alternatively, is this a really terrible idea?",neutral,negative
 t299,"jQuery version 1.2.6. The site is ASP.NET MVC, but that should be irrelevant.",neutral,neutral
 t300,"Oh. That's really sad. So It would be only plane menu options with white background., is it?",negative,negative
-t309,"Awesome!!! I changed to include the ""/"" at beginning and it worked!! was that why it was not matching the app.yaml handlers ?",positive,positive
+t309,"Awesome!!! I changed to include the ""/"" at beginning and it worked!! was that why it was not matching the app.yaml handlers ?",positive,negative
 t310,No I just need to perform an action whenever a button in that column is clicked.,neutral,negative
 t318,"Ah man, my changes did not save. JSFiddle was lagging terribly for me so I'm not suprised -- sorry!",negative,negative
 t325,"I would just use an @import command at the top of my CSS file, then you can simply add a new font by adding a pipeline to the end of the font and type the name of any other fonts you want. To use them, simply use the CSS font-family style command: HTML Hope this helped!",positive,positive
@@ -93,7 +93,7 @@ t328,"Thanks all , that was really interesting :)",positive,positive
 t330,Then you should be more specified in asking the question. You confused me..,negative,negative
 t337,I added an example of how to use the wrapText function. Good luck with your project!,positive,positive
 t339,"Great article 0xced, thanks!",positive,positive
-t343,"Enumerating all partitions of a set is . Now, all permutations of all partitions of a set will be , although the example is a bit artificial. Now, to come up with a useful algorithm it's a totally different story. I am not aware of any such algorithm, and in any case its scaling will be absolutely awful.",negative,negative
+t343,"Enumerating all partitions of a set is . Now, all permutations of all partitions of a set will be , although the example is a bit artificial. Now, to come up with a useful algorithm it's a totally different story. I am not aware of any such algorithm, and in any case its scaling will be absolutely awful.",negative,neutral
 t345,"SVG transform on text attribute works excellent! This snippet, for example, will increase your text by 2x at Y-axis.",positive,positive
 t346,Excellent! This is exactly what I needed. Thanks!,positive,positive
 t347,Have added a modern solution as of May 2014 in answers below.,neutral,positive
@@ -135,7 +135,7 @@ t484,"The 0x1A byte is a terrible, painful [source of agony](http://stackoverflo
 t485,This does seem to be the answer. Absolutely terrible API design.,negative,negative
 t500,I solved this need by using . I am able to route calls from Edge to my local machine. Absolutely love ngork! :-),positive,positive
 t505,This is should be the selected answer,neutral,positive
-t506,Comments should be not since we don't want this code to be shown to the user,neutral,negative
+t506,Comments should be not since we don't want this code to be shown to the user,neutral,neutral
 t507,You must be a sad sad person...,negative,negative
 t508,Excellent tool! Thanks for making it available.,positive,positive
 t512,Have you tried logging the uninstall to see what is happening?,neutral,negative
@@ -145,12 +145,12 @@ t525,Tried it again - it worked. God I hate reporting services!,negative,negativ
 t528,The answer was devastatingly simple in this case. For some reason windows uses localhost as opposed to 0.0.0.0. So although it says standing watch at 0.0.0.0:4567 it is actually standing watch at localhost:4567 . You should be able to navigate to this page and see your middleman build.,neutral,negative
 t530,I would checkout . It has great reviews on Amazon and the Head First book series are really terrific and engaging.,positive,positive
 t532,"i have a botton which is for changing the background image with jquery, as the following code shows it works very fine! but i want to fade in the newbg-image... is it possible to add a jquery fade method to it. Any help would be very appreciated. Thanks Ted",positive,positive
-t533,You mean I can use LINQ as the data provider for my whole app?,neutral,neutral
+t533,You mean I can use LINQ as the data provider for my whole app?,neutral,negative
 t536,Why does serialization require a serial version UID in implemented class?,neutral,neutral
 t537,"I have this regex And i really need it in a vba version for words .find method (don't need the matching-groups), here is what i have so far But i cant get the last part to work, here I'm talking about I really hope someone can help me, as regex in this case is not an option (Although i know i can use regex in VBA!) Cheers",positive,positive
 t538,Url points to a tesco advert,neutral,neutral
 t543,"I have just started using Vim in a terminal (PuTTY or MinTTY), after always using gVim. However, when using syntax highlighting, rather than the actual text colour changing appropriately, its background is changed to whatever colour -- and it looks horrible! I've set my terminal to use 256 colours and downloaded a 256 colour colour scheme. I checked that the and settings are as I expect, but I still get this problem... Is this a Vim or a terminal configuration issue?",negative,negative
-t547,Use . Example shown in this question:,neutral,neutral
+t547,Use . Example shown in this question:,neutral,positive
 t557,Talking about feelings.. I really hate the asp.net CalendarExtender..,negative,negative
 t561,There is a free ebook that microsoft released about windows phone developement. Its extremely useful and It could probably answer this and many other questions you might have! you can download the book from this website:,positive,positive
 t570,"In your code, strip out the stop words. You'll have to maintain your own list.",neutral,neutral
@@ -173,10 +173,10 @@ t610,"+100 for this :-) you made my day!! When writing the question I was not su
 t614,"excellent adding! for debugging, go to wp-content\plugins\syntax-highlighter-compress\syntax-highlighter-compress.php and add the following line to wp_shc_head() :",positive,positive
 t615,I have a page running on my local django dev server with the Django Debug Toolbar that seems to be running quite slowly but I'm unsure why: Django Debug Toolbar says SQL - 46 queries in 39.80ms And then running a profiler I get 7926 function calls (7774 primitive calls) in 0.024 seconds So I'm left wondering why is the profile time so much lower than the Total CPU Time? And then how can I find out what's causing the difference? And secondary to that - should i be worried about the 16842 involuntary context switches!?,negative,neutral
 t621,I have a menu of links that need to have additional parameters added using data from cookies. I need to be able to do this client-side and not server-side. Basically I have a menu like this: And a cookie with a number like this: I am trying to get the 'users_number' to be included as a POST parameter to all of the links on that menu (ie. /link/to/page1?users_number=thecookievalue) What I don't want is users to be able to see this in their URL bar. Right now I am using: This functions as I wanted but I am trying to figure out how to do this in a way where the user does not see the ?parameters at the end of their URL. Is there a way to do this same thing but without them being able to see it? Any help would be hugely appreciated -- thanks!,positive,positive
-t622,could some one help me how to add new css using views theme in drupal 6.0,neutral,positive
+t622,could some one help me how to add new css using views theme in drupal 6.0,neutral,neutral
 t626,Have you run this on SQL Server?,neutral,negative
 t633,Excellent tutorial!,positive,positive
-t634,Im trying to work with this awful language and I have to change an item of list by accessing to it with index I dont understand the awful syntax of TCL! How can I realise it?,negative,negative
+t634,Im trying to work with this awful language and I have to change an item of list by accessing to it with index I dont understand the awful syntax of TCL! How can I realise it?,negative,neutral
 t638,Are you using Hibernate or similar to interface the database?,neutral,neutral
 t644,here's my hack that assumes arguments are all imaginary: ...horrible! but what you ask for isn't really possible without for instance hacking to dispatch to a new subtype of java.lang.Number. Really it would make more sense to use a Java or Clojure complex number library.,negative,negative
 t645,Haha great :) Happens to the best of us!,positive,positive
@@ -189,7 +189,7 @@ t658,"EXCELLENT! works like magic, just what i needed",positive,positive
 t661,"Wow, wow, wow! I actually found a better way to do that... if I keep the same abbreviation and change template text into: it does want I wanted, but in the way cooler way! So you can use your own variables in a template as long as you don't call them or Awesome!",positive,negative
 t665,I just tried installing those missing plugins ... what a pain!,negative,negative
 t666,"If the answer was a snake, I could have been killed by it, its already in front of me!",neutral,positive
-t667,Have you considered named parameters?,neutral,positive
+t667,Have you considered named parameters?,neutral,negative
 t671,"Say I have a string How could I check if exists in str, case insensitive?",neutral,neutral
 t674,"Right, since you recognize EAV, I'm supposing you'll do fine :3 Good luck!",positive,positive
 t676,Why would you do that? You're begging for horrible debugging sessions!,negative,negative
@@ -206,16 +206,16 @@ t702,"Well, this is a bit of an awful hack but quite frankly any C++ application
 t705,For Python 3 the following will work.,neutral,positive
 t706,"The issue at hand, is that your parent thread finishes, but doesn't check if there are child threads left which are still running, which are silently killed in this manner! I would recommend the following approach: Instead of use change your thread code around: to Similar answered .",neutral,negative
 t711,I read following codes in Why reverse the latin-1 to utf8 using above logic?,neutral,neutral
-t713,Can you show us your html and css? Fyi... styling select boxes is terribly difficult!,negative,negative
+t713,Can you show us your html and css? Fyi... styling select boxes is terribly difficult!,negative,positive
 t715,"no, it is not possible -- we tried hard and ended up reverting to the 10.7 way of using a custom class.. check MAAttachedWindow well with enough swizzling and posing it'd be possible of course... but that is very evil and at least as much work as your own class!",negative,negative
-t716,EDIT: Also you should avoid using it can make debugging extremely frustrating.,negative,negative
+t716,EDIT: Also you should avoid using it can make debugging extremely frustrating.,negative,neutral
 t717,"You must redraw your background with each change in your line (that’s the canvas way) Don’t worry, canvas is very fast at redrawing! Here is code and a Fiddle:",positive,positive
-t721,":~) Very embarrassing!!! When I debugged and printed the receiving addresses, I realized that I was checking the wrong email account! Sorry to have taken your time.",negative,negative
+t721,":~) Very embarrassing!!! When I debugged and printed the receiving addresses, I realized that I was checking the wrong email account! Sorry to have taken your time.",negative,positive
 t723,"I have 2 files I need to merge based on 2 columns. I have tried using awk as well as tried combining the 2 columns using _ and then using the join command. When using join, some records were not matched, even after sorting, and multiple records were created. Using awk I can match the files correctly, but cannot get the output to print with zeroes when no match exists. File 1: File 2: Desired output: Any help would be hugely appreciated, I am new to large data files and unix!",positive,positive
 t726,Its an excellent place to start!,positive,positive
 t732,Your variables are pointing at the same object. I'd be worried if they weren't equal!,neutral,negative
 t735,Why can't setting the view's xml attribute make LinearLayout scrollable.?,neutral,neutral
-t739,"Does iTextSharp support Windows Metro Apps? I am trying to create PDFs from a C# Metro App, but PdfWriter.GetInstance requires some arguments which is not available in WinRT. Any help would be EXTREMELY appreciated!",positive,positive
+t739,"Does iTextSharp support Windows Metro Apps? I am trying to create PDFs from a C# Metro App, but PdfWriter.GetInstance requires some arguments which is not available in WinRT. Any help would be EXTREMELY appreciated!",positive,negative
 t740,"Sky, it sounds like you can maintain *complete* test coverage for an exception. Excellent work! Maybe someday I'll learn how to do that.",positive,positive
 t744,"I need to transform this : into this : I tried to use wrapAll with jquery, something like that : Any suggestions would be really appreciated :) Thank you very much !",positive,positive
 t747,Diodeus: You ought to post that as an answer.,neutral,positive
@@ -233,23 +233,23 @@ t783,"Finally found something, here: No reference to it from the Oracle pages, b
 t784,"No worries! Keep at it...it's overwhelming at first, but it gets easier",positive,positive
 t786,I impleme and But I only the second one works. Can I have them both work?,neutral,positive
 t788,"This code seemed to do it: The accepted answer goes to dystroy as he was the first to point me in the right direction, excellent answer by Bart Kiers though, +1!",positive,positive
-t791,"Afraid not, no!",negative,negative
+t791,"Afraid not, no!",negative,positive
 t792,"i have an assignment at my company to build a custom cms, for the foundation i ve chosen latest laravel(version 4, i believe). Now, the requirements in laravel docs() say minimal version of php on server required is 5.3.7, our servers have php 5.3.23. I am right now on a weekend, so i cant check my code on the server( been developing the basics on localhost with xampp which has latest php). Has anyone tried laravel 4 on pre-5.3.7 php?? i m very worried all of last week's work is going to the bin... :(",negative,negative
 t793,"Partition it first, to divide the zeros from the non-zeros. Then sort the rest. Oh, and before worrying about that, profile first!",neutral,neutral
 t795,@sheidaei great :) keep it up! you even get 2 point bonus for accepting.,positive,positive
 t798,"No betas involved, the lack of repro is really annoying me!",negative,negative
 t801,Excellent!!! This is exactly what I am looking for!,positive,positive
 t806,"I'm using the ImageMapster jQuery plugin, and I want to limit the number of selections that can be made on a (image-) map to a certain number. Let's say I have 30 areas, but only want 3 to be selected at the same time. After 3 selections have been made, the 4th selection should overwrite the 3rd. Is there a way I can do this? Any help would be hugely appreciated!",positive,positive
-t807,I try make authentication using But I get . How I should correct my code?,neutral,negative
+t807,I try make authentication using But I get . How I should correct my code?,neutral,neutral
 t808,"is probably not what you want, but is still really excellent.",positive,positive
 t811,"I'm trying to create a grid (matrix) of squares in a given area with n columns and m rows, and an option to set a spacing between the squares if desired. The grid should fill squares with random coloring. I'd also like to add a zoom function, so the colored squares will appear much bigger in a region that is double-clicked. Can anyone suggest a good method to generate the grid and assign random colors to the squares? If you can suggest how to create the zoom effect too that would be SUPER :) I'm new to canvas, so any method help would be great! Thanks",positive,positive
-t815,i use with () I want to have the option to choose the months and years. I define this: But I really hate the dropdowns of . I want to have the option to choose the months and years as in It is possible??,negative,negative
+t815,i use with () I want to have the option to choose the months and years. I define this: But I really hate the dropdowns of . I want to have the option to choose the months and years as in It is possible??,negative,neutral
 t821,Tap the escape key. It's that simple.,neutral,positive
 t822,Why don't the bytes intersect??,neutral,neutral
 t825,+1 I never knew about this,neutral,positive
 t832,@vascowhite I tried deleting all the products from the cms then added a new one and the same message appears. Really frustrating!,negative,negative
 t834,"@EdwardRuchevits Hey passing in cat and page worked! It now remembers it each time I navigate pages! Excellent! Question though, is 'cat' a predefined PHP variable for URLs? Also, while this works for me locally... how will this function when different users specify their own category?",positive,positive
-t853,"Okay so say we have a graph with a ball on it at (200,200) and we swipe our finger from (0,0) to (100,100) how do I go about moving the ball to (300,300)? This should be simple but it is really hurting my head! This is the code I have so far (using andengine)",negative,negative
+t853,"Okay so say we have a graph with a ball on it at (200,200) and we swipe our finger from (0,0) to (100,100) how do I go about moving the ball to (300,300)? This should be simple but it is really hurting my head! This is the code I have so far (using andengine)",negative,positive
 t857,Here is an incredibly disgusting way to do it: Here is a better way (I think): If you convert either output string with: you get your original number.,negative,negative
 t858,"I think that's absolutely terrible practice. First of all you do not need to make the trip to the server to hide and show controls, unless you need new data. Second, any decent javascript framework will allow you to hide show controls based on the control's id, class name, or whatever css selector. Moreover using a javascript post/get to a generic handler will give you the data that you need without the postback. I'd suggest using JQuery, or some other alternative.",neutral,negative
 t862,Voted up because I would like to know as well,neutral,positive
@@ -258,7 +258,7 @@ t866,"WOW, EXCELLENT, AMAZING. Thanks, Roddy, the link helped me sort this out. 
 t869,Are you saying Segoe UI is your windows font?,neutral,neutral
 t870,Nobody? To do this with a Button is really disgusting.,negative,negative
 t876,Isn't and the same thing here??,neutral,neutral
-t881,It crashes only one time and then it works normally. Here is the project:,neutral,positive
+t881,It crashes only one time and then it works normally. Here is the project:,neutral,negative
 t885,"A simpler approach (rather than using a binding group) is to use the default button's click event to set the focus to itself. As this happens before the command is executed it means the ViewModel is updated in time. And if you really hate code behind, you could always write an attached property...",neutral,negative
 t889,"I'm trying to test if a character in a string is a space, and I'm getting extremely frustrated: I'm not getting any errors and I've looked online, but people on different forums say this is how to test for a space. Uh.",negative,negative
 t893,"Typically you would handle that as a POST (not a GET), and read the xml from the request-stream (or there are helpers to let you do this). Otherwise URL encoding and length restrictions are going to make this extremely painful.",neutral,negative
@@ -271,7 +271,7 @@ t918,Excellent! I'm glad you were able to get it work for you. Best of luck with
 t922,"Excellent, Thanks!",positive,positive
 t929,"Google says: 1 nibbles per nanosecond = 476.837158 megabytes per second In other words: Yes, very worried indeed.",negative,negative
 t933,How about any ugly abuse of the builtin command ?,negative,negative
-t939,Can we inherit singleton class?,neutral,neutral
+t939,Can we inherit singleton class?,neutral,negative
 t940,"How to set the default proxy for Internet Explorer in C# .net? I wanna make a browser capable of searching for a valid proxy in a .txt file and using it. The IP and Port used with the set default proxy command are valid however, the command itself does absolutely nothing. The only way I've found to use a proxy with a VS2013 .net browser is by adding it manually to IE which is incredibly useless.",negative,negative
 t942,Page/MasterPage/Control lifecycle makes me cry :(,negative,negative
 t950,Excellent question!,positive,positive
@@ -283,7 +283,7 @@ t963,"no worries! You should answer your own question, so others in future know 
 t964,"For someone who uses the Ctrl-W bindings in vim habitually, it is incredibly annoying to have Chrome OS ask me, ""Wanna close this window, then?"" How do I remap keys in Chrome OS? Can't find this top secret setting anywhere.",negative,neutral
 t968,@JoranBeasley You're right for the new format though.. and I totally hate it :(,negative,negative
 t969,"Loved all 3 responses! I picked Gordon's because it allowed me to do an outer join and ignore rows that had an additional filtering parameter (I didn't ask for this but I was able to implement that later). JBrooks solution was great because it had a smaller footprint and allowed me to leverage functions, and shree's one was a little too verbose for my bigger project but still did exactly what I needed. Thank you all!",positive,positive
-t974,"What is the difference between and similarly and It is really painful when i align the controls with and when i try to align in the Design mode it adds the , how to prevent auto adding property to a control while aligning it, as I already defined the to it why it doesn't update the same property. Its really irritating when we want to do animation on controls, it reverses the direction of animation",negative,negative
+t974,"What is the difference between and similarly and It is really painful when i align the controls with and when i try to align in the Design mode it adds the , how to prevent auto adding property to a control while aligning it, as I already defined the to it why it doesn't update the same property. Its really irritating when we want to do animation on controls, it reverses the direction of animation",negative,neutral
 t975,@crush oh man would that be painful to query on!,negative,positive
 t977,"xp any, and win7 any.",neutral,neutral
 t978,Why does the test return false?,neutral,neutral
@@ -305,10 +305,10 @@ t1045,hi guys I am trying to create a program to allow a user to input a sequenc
 t1047,You could achieve all this with reflection but it would lead to a really horrible code. You'd better access individual members of the view model:,negative,negative
 t1049,"Tested/cross-browser: If there is no submit button, the form will degrade miserably if javascript is not available!",negative,neutral
 t1050,Is this sort of thing possible:,neutral,positive
-t1054,"You have two divs, one over the other, and the one on top is transparent. However, when you scroll you want the div on the bottom to hide as it goes under the first transparent div. You don't want the second div's to change to as soon as it goes under the first div. You just want the part that is under to be hidden. I've googled extensively for an answer: #1-4 answer make the div on top or . The problem with this for me is my background is a photograph, i.e. as you scroll down what you see is different, as opposed to a colour or a pattern. The ""background"" of the transparent div needs to change as the real background changes. #5 offers a solution to this using JQuery however there are horrible, horrible issues with scroll lag in browsers not Firefox. Folks, how do I do it?",negative,negative
+t1054,"You have two divs, one over the other, and the one on top is transparent. However, when you scroll you want the div on the bottom to hide as it goes under the first transparent div. You don't want the second div's to change to as soon as it goes under the first div. You just want the part that is under to be hidden. I've googled extensively for an answer: #1-4 answer make the div on top or . The problem with this for me is my background is a photograph, i.e. as you scroll down what you see is different, as opposed to a colour or a pattern. The ""background"" of the transparent div needs to change as the real background changes. #5 offers a solution to this using JQuery however there are horrible, horrible issues with scroll lag in browsers not Firefox. Folks, how do I do it?",negative,positive
 t1055,"+1, Excellent explanation!",positive,positive
 t1059,This worked for me.,positive,positive
-t1061,i.e. is it possible to do this:,neutral,neutral
+t1061,i.e. is it possible to do this:,neutral,positive
 t1067,What are you trying to use this offset for?,neutral,neutral
 t1071,"When I apply on()-handlers I prefer the following notation if I have more than one to apply: Does anybody knows how to set a namespace within this notation? I solved the problem in this case with falling back to a single notation: But I really hate to repeat myself. Same issue/question for using the off()-method with more than one handler. This works: I bet the off()-thing is a easy one, but I don't get it after coding the last 15 hours.",negative,negative
 t1077,"I have a controller which has a few actions, which are triggered by hitting various buttons on the page. I would like to have a default action, but am unsure how to annotate the method. Here is an example: How can I annotate a method which will act on a POST with any submit button pressed with no key selected? I have tried: I'd really hate it if I had to set required = false on each of the methods which take RequestParams and then conditionally check to see if one comes in or not... Is there a way to annotate this to work properly?",negative,negative
@@ -327,8 +327,8 @@ t1107,using bash:,neutral,neutral
 t1109,New to programming and this is my very first post! Very exciting:D Thank you all in advance for sharing your expertise. I would like to be able to somehow reference the earlier created timer and to be able to extend it (call Change upon its instance perhaps?) on Button2_Click. Please take a look at the code below:,positive,positive
 t1112,On the WordPress repository is a plugin called wp gcm. Its a really great one try it out!,positive,positive
 t1119,"I have a slider built into my web page thats dimensions and ratio alter for different screen sizes, I need the images that I place within this slider to also alter for the same purpose. The code that I have does't seem to be working, I'm a bit of a newbie to jQuery and have pieced it together myself but I think that its essentially quite close to being functional_ Any help would be hugely appreciated! M",positive,positive
-t1122,"Excellent question! There doesn't appear to be a control in Eclipse to do it, but these two blog entries: both say it can be done in the windows registry. Caveat: I have not tried this.",positive,positive
-t1126,"While we're at it, there is no such thing as Unicode. Well, there is, but it does not concern itself with earthly matters like files. There are numerous encodings which bridge that gap, but you don't appear to be aware of that or the difference this makes. See also: [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](http://www.joelonsoftware.com/articles/Unicode.html))",negative,negative
+t1122,"Excellent question! There doesn't appear to be a control in Eclipse to do it, but these two blog entries: both say it can be done in the windows registry. Caveat: I have not tried this.",positive,negative
+t1126,"While we're at it, there is no such thing as Unicode. Well, there is, but it does not concern itself with earthly matters like files. There are numerous encodings which bridge that gap, but you don't appear to be aware of that or the difference this makes. See also: [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](http://www.joelonsoftware.com/articles/Unicode.html))",negative,neutral
 t1132,"Heroku is an excellent (free) option: Also, deploying to Heroku is as easy as it gets!",positive,positive
 t1140,it's just a user upload a file.,neutral,neutral
 t1141,"thank you, i just want to be loved :-)",positive,positive
@@ -346,7 +346,7 @@ t1173,"Ah, excellent! :)",positive,positive
 t1176,thanks so much! excellent insight!,positive,positive
 t1177,"how can i use the bliss view engine instead of the usual jade engine in express js. i already found one article here at stackoverflow, but this seems to be for the old version of express.js. i am using the 3.x version. in particular i would like to know how i can install bliss and following to this. how do i make a project in express.js, with a different view engine then jade? currently i use this command in my project folder: thanks in advance!",positive,positive
 t1179,"if this question is fit for SO, then this is the only correct answer..",neutral,positive
-t1180,"what I want to know is, what does create? what can I do with it? what does it mean? Every tutorial without fail will avoid talking about the first version entirely The reason the tutorial doesn't rell you what to do with it is that it really is totally useless! It allocates a single and gives you a pointer to that. The problem is that if you want an int, why don't you just declare one?",negative,negative
+t1180,"what I want to know is, what does create? what can I do with it? what does it mean? Every tutorial without fail will avoid talking about the first version entirely The reason the tutorial doesn't rell you what to do with it is that it really is totally useless! It allocates a single and gives you a pointer to that. The problem is that if you want an int, why don't you just declare one?",negative,neutral
 t1184,Cant you just use namespaces?,neutral,neutral
 t1186,@user3083131 no worries!,positive,positive
 t1197,Look into these links. They may help.,positive,positive
@@ -360,15 +360,15 @@ t1211,It's do with Von Neuman and Church's Lambda,neutral,neutral
 t1213,"No worries, we were all new once!",positive,positive
 t1216,it's possible do it in winforms?,neutral,neutral
 t1217,Does someone have a solution **without** Linq ?,neutral,negative
-t1220,"I had the problem that white was the ""Overscroll"" color, not actually the fading edge. try this (assuming you want a fading edge, but not the horrid white glare when you hit the ends! (otherwise set requires fading edge to none)):",negative,negative
+t1220,"I had the problem that white was the ""Overscroll"" color, not actually the fading edge. try this (assuming you want a fading edge, but not the horrid white glare when you hit the ends! (otherwise set requires fading edge to none)):",negative,positive
 t1225,"Oh, one more: You didn't seed the random number generator in the loop. Excellent!",positive,positive
 t1226,"@Chris, excellent, I'm thrilled to hear that you're migrating to salted hashes! :)",positive,positive
 t1229,@Jatin Can you make an answer. The link is pretty fine!!! I just need such things,positive,positive
-t1230,"I personally only use the 'm' and the 'p'. The rest is just zany in my view. It makes the code so darn hard to decipher. I did maintenance work on this guy's code who used semi-Hungarian notation type id prefixes on every variable, function, and other identifier in the code. He used $ signs liberally to separate words. It was hard to keep the murderous rage in check.",negative,negative
+t1230,"I personally only use the 'm' and the 'p'. The rest is just zany in my view. It makes the code so darn hard to decipher. I did maintenance work on this guy's code who used semi-Hungarian notation type id prefixes on every variable, function, and other identifier in the code. He used $ signs liberally to separate words. It was hard to keep the murderous rage in check.",negative,neutral
 t1232,* oh so very sad * :(,negative,negative
 t1234,"I'm pretty new to VBS but I need to extract property information from web pages and input the information into excel. What I'm trying to do is get is object information from links, text fields, buttons, images etc. The information I need is the .name, .id, .title, .value, .type, .class for each item on the page and display it together for each item ie: from the google search page the search box is .id: lst-ib, .name: q .title: Search .type: text Then the Google Button is .name: btnK .type: submit .value: Google Search etc etc. Any help would be extremely helpful!",positive,positive
 t1235,There's an excellent guide over on the Android Training site: It's about efficient loading of bitmap images - highly recommended!,positive,positive
-t1239,you used days= instead of day=,neutral,negative
+t1239,you used days= instead of day=,neutral,positive
 t1246,"Excellent, thank you! i did not now that.",positive,positive
 t1251,Excellent! Thanks much.,positive,positive
 t1252,"Excellent answer, thanks!",positive,positive
@@ -381,11 +381,11 @@ t1269,"I wouldn't worry about that in pure Flash. I don't believe that is the me
 t1271,I was afraid of that!,negative,negative
 t1275,Can you share some of your jquery code too?,neutral,positive
 t1278,Terrible! Why do you post all that code? Three asynctasks. Do we have to dig through all that? You should only post the relevant code.,negative,negative
-t1281,"I have recently found out that anything Swing(NetBeans, IDEA) is excruciatingly slow to paint the UI over Remote Desktop(RDP). Can you guys give me any suggestion for something that will work properly over RDP?",negative,negative
+t1281,"I have recently found out that anything Swing(NetBeans, IDEA) is excruciatingly slow to paint the UI over Remote Desktop(RDP). Can you guys give me any suggestion for something that will work properly over RDP?",negative,positive
 t1283,"Excellent, thankyou!",positive,positive
 t1288,"Take a look - email is sent using , so you could just add: to the .",neutral,positive
 t1291,"@joe Yes, if I were to declare the property and synthesize it as above, but I don't explicitly declare an ivar myself, the compiler will still actually create the ivar. So I could do `int len = [self.stringProperty length]` as you'd expect inside the class, AND I can also do `int len = [stringProperty length]` as well, without using the accessor method, just directly using the ivar (which the compiler has synthesized for me, along with setter+getter). It's really fantastic!",positive,neutral
-t1294,"External sheet Link not applicable, private beta site on internal ip address.",neutral,neutral
+t1294,"External sheet Link not applicable, private beta site on internal ip address.",neutral,negative
 t1295,"This is excellent! Thanks Dustin, that's exactly what I was looking for!",positive,positive
 t1297,"I've used on pretty complex websites with great success :) One caveat through (this applies to all ""fixes"" i believe) is that you can not make a background image of an element be transparent.",positive,negative
 t1301,Could you post any articles that you may have on this subject?,neutral,positive
@@ -454,18 +454,18 @@ t1524,"I'm quite new to this wonderfull tool that selenium is, and i'm trying to
 t1528,I've had great success with DockPanelSuite I may post some sample code to get you started but it's fairly staright forward!,positive,positive
 t1531,"yes, I have just installed binutils and it's looking very awesome!!! I'm going to check it out! bb with more info",positive,positive
 t1534,There are really excellent tools for handling this sort of task in .NET without having to resort to the regex hammer. This will also be more reliable than a regular expression based solution. I'd suggest that you take a look at .,neutral,positive
-t1537,"If you are looking to load asynchronously javascript scripts, in the right order, I shall recommend you $script.js developed by the Twitter javascript lead dev It's really great!!",positive,positive
+t1537,"If you are looking to load asynchronously javascript scripts, in the right order, I shall recommend you $script.js developed by the Twitter javascript lead dev It's really great!!",positive,neutral
 t1538,"In addition to firebug (which should be your first port of call), the will also tell you where a given style is sourced from, just in case IE - shock, horror - should be different.",negative,neutral
 t1544,Here's the ashx ProcessRequest,neutral,neutral
 t1547,"So, I'm trying to make a 3D grapher for a class. Right now I'm working on understanding OpenGL and I'm failing horribly. I want to move the camera, but I can't at all, whatsoever. Why doesn't this work?",negative,negative
-t1552,"Note that the given answers ""only"" handles making multiple variables of the same type. If, for some bizarre reason, you would need to do multiple types, this is valid (though awful):",neutral,neutral
+t1552,"Note that the given answers ""only"" handles making multiple variables of the same type. If, for some bizarre reason, you would need to do multiple types, this is valid (though awful):",neutral,positive
 t1555,"@Bakuriu, thanks for your answer! :) That `class MainWindow(QMainWindow, Ui_MainWindow)` was surprising but excellent!",positive,positive
 t1557,"For , searching the web seems to show for no sound, for full sound.",neutral,neutral
-t1558,"I have a few months of experience with Ruby on Rails and really loved it from the beginning on. Now, for work, I was asked to code in Grails and although I first had some objections, I now think it's a very decent framework. One thing that really impressed me in Grails are Taglibs because they make frontend modularity so much easier. I would really like to do something with Rails. Is there anything like Taglibs for Rails? If not, what are the best practices for accomplishing this kind of view modularity (and, in essence, making my life easier)?",positive,positive
+t1558,"I have a few months of experience with Ruby on Rails and really loved it from the beginning on. Now, for work, I was asked to code in Grails and although I first had some objections, I now think it's a very decent framework. One thing that really impressed me in Grails are Taglibs because they make frontend modularity so much easier. I would really like to do something with Rails. Is there anything like Taglibs for Rails? If not, what are the best practices for accomplishing this kind of view modularity (and, in essence, making my life easier)?",positive,negative
 t1564,"Nope, I don't think such a magic function exists. One workaround for this would be to put your functions into a static class, and add a magic method to that class (> PHP 5.3 only, I'm afraid): For PHP < 5.3, you could do the same thing, but you would have to instantiate an object and use the magic method.",neutral,negative
 t1566,discusses writing jQuery plugins/libraries in excruciating detail. What NOT to do: What to do: I also wrote a last year about various methods for namespacing in JavaScript (non-jQuery related).,neutral,neutral
 t1575,"In my Apache2 VirtualHost I have configured to specify directory name by . So now whenever URL is it's looking for in . Everything works very fine! But I'm having two kind of projects in this directories. is simply index.* in but is one level deeper - index.* placed in directory. I want to ""rewrite DocumentRoot"" to if this directory exists and I want to use it's . Is this possible with some ?",neutral,negative
-t1579,This is one thing that I really hate within development is forms. Below is my code and what I am trying to do is align the inputs with the labels . Is there a rule that you use to help remember when coding forms? CSS: HTML:,negative,negative
+t1579,This is one thing that I really hate within development is forms. Below is my code and what I am trying to do is align the inputs with the labels . Is there a rule that you use to help remember when coding forms? CSS: HTML:,negative,neutral
 t1581,"this api stinks, it is terribly designed and has lots of bugs!",negative,negative
 t1583,"I've decided to use the FreeFileSync tool from There is some effort to configure it to ignore some files and folders, but the tool provides nice filter possibilities. Configuring these filters can be very time consuming but they're working fine :) Thank's for all your help!",positive,positive
 t1585,This is correct. It can turn out to be quite a pain!,negative,negative
@@ -477,21 +477,21 @@ t1608,"I have a mobile web page with a table containing many rows. Each row has 
 t1609,"Because there are too many changes in Rails 3, without tests it may be very painful))",neutral,negative
 t1614,"No, they've stopped working again and gone back to the 403 forbidden message. Incredibly annoying.",negative,negative
 t1615,The documentation mentioned has no clear path to completion.,neutral,negative
-t1620,An example: Extremely frustrating!,negative,negative
+t1620,An example: Extremely frustrating!,negative,neutral
 t1621,"@PaulMougel,Thanks Super Great! it works! I added it (res.end()) habitually and have never thought it might could be the reason. Happy New Year. Thank again you so much.",positive,positive
 t1622,templates are not inheritance,neutral,neutral
 t1625,"I'll bet you that your main's function signature is incorrect. You use: but SDL_main.h wants Aside: You see, SDL does something really horrific when compiling: It renames your function to , injecting its own main function which, in turn, calls yours. Note that if this doesn't work, then you may be compiling with wrong flags. To be sure, take the flags by running: For more information, see",negative,negative
-t1628,Check this thread on Joel of Software forum: Lots of excellent free icons packs!,positive,positive
+t1628,Check this thread on Joel of Software forum: Lots of excellent free icons packs!,positive,neutral
 t1629,What form of authentication does the site use?,neutral,neutral
 t1631,that’s really sad :(,negative,negative
 t1632,Do I need a call in this code?,neutral,neutral
 t1633,"I want a text file containing links to the Wikipedia articles listed , one link per line. I could do it manually but that would be very painful. How can I automate this task?",neutral,positive
 t1636,"For those, who use ShinobiCharts.framework: creating a category on Shinobi classes causes such error. As a workaround, you can replace categories with inheritance (this may be very painful).",neutral,negative
 t1637,"My solution for at indexes and of any string would be: If this evaluates to True it means that the character at index x is enclosed by a set of parentheses. You can test for the index y respectively Hope that helped, Cheers! Alex",positive,neutral
-t1638,Links are fixed.,neutral,neutral
+t1638,Links are fixed.,neutral,negative
 t1639,Right ... if only I was using SQL server.. Informix unfortunately :( :( :(,negative,negative
 t1640,Oh! Excellent!! Worked like a charm!,positive,positive
-t1644,what about 3rd question?( When is it appropriate and when not?),neutral,negative
+t1644,what about 3rd question?( When is it appropriate and when not?),neutral,neutral
 t1646,"The previous solution is really great! However, I'm looking for one more feature: is it possible to eager load last subordinate record before a specific date? This is needed so that my users can browse a history a song's votes (with links to previous and next days).",positive,positive
 t1648,"Why? If this works, why spend the time and effort? If you really hate it that much, write a function that encapsulates that bit of logic.",neutral,negative
 t1654,"You should use template engine. See ejs, or jade for example. If you are using Express nodejs framework, then it is very comfortable to use jade. There is also template engine called Bliss which is like Razor Engine in ASP.NET",neutral,neutral
@@ -524,7 +524,7 @@ t1724,This only works if you have firefox installed.,neutral,neutral
 t1725,"yes I'm having the exact same issue, very annoying!",negative,negative
 t1727,"The sollution suggested over here is perfect: I register a BroadCastListener on all Activities that should be removed from the backstack and when I reach the main menu, I just send the broadcast and all receivers call finish(). This works really great!",positive,positive
 t1728,"@PabloB. sir, this is sad :(",negative,negative
-t1733,"Your implementation looks absolutely fine to me! A range-based away subscript is a type for performance reasons. It does not copy the indicated sub-array, instead it just points to the range defined by the you provide to the subscript.",positive,positive
+t1733,"Your implementation looks absolutely fine to me! A range-based away subscript is a type for performance reasons. It does not copy the indicated sub-array, instead it just points to the range defined by the you provide to the subscript.",positive,negative
 t1736,This RegEx might work for you (it is very hungry-greedy): But I would advise to use instead. It provides the ability to use HTML's DOM. So you would work with it just like with XmlDocument:,neutral,negative
 t1741,been trying to save my data from my while loop to script variables but no success. Did an example if how I want to save my php data to script variables. This doesn't work for me. Anyone have any idea? Don't want to save all data manually. Very greatful for answers! Ask if you don't understand :),positive,positive
 t1743,excellent - thanks everyone!,positive,positive
@@ -541,8 +541,8 @@ t1768,"It might be a good idea to remove info from the table but remember that S
 t1770,Delphi (since 2009) now has a TDictionary class for doing this.,neutral,neutral
 t1773,"Also, which version of Windows and x86 or x64?",neutral,neutral
 t1775,+1 big fan of your blog Jason.,positive,positive
-t1776,I am not sure how to fix this:,neutral,negative
-t1777,I ran this in a rails console:,neutral,neutral
+t1776,I am not sure how to fix this:,neutral,positive
+t1777,I ran this in a rails console:,neutral,positive
 t1782,"I'm using bootstrap modals to display a iframe all works well, but in ios 7 safari (ipad) the user can not type any text in any of the text boxes (the keyboard simply doesnt open, nor does it focus) or are they able to click any links, yet it displays on the screen absolutely fine! and outside of the iframe the site continues to function. has anybody else run into this? cheers",positive,negative
 t1788,It's technically possible to achieve this in T-SQL with nested loops and embedded queries. All hugely ugly in T-SQL. Far easier to do it in a language that's more general purpose.,negative,negative
 t1796,@eat Wow! Excellent point! I don't know why I didn't see that before. That solves the issue with np.reshape and now I can use that. No need for another thread. Thanks again!,positive,positive
@@ -572,7 +572,7 @@ t1864,"Based mostly on , but also , and my own experience, I don't think it's po
 t1870,Nope... doesn't fix it I'm afraid!,negative,negative
 t1889,Method 2 will not work if run as administrator,neutral,negative
 t1890,I would continue running in the background and set an (called by the os when you app is REALLY killed) and there use,neutral,neutral
-t1893,"I'm completely horrible with javascript and jquery, How do I get the content from a PHP file?",negative,negative
+t1893,"I'm completely horrible with javascript and jquery, How do I get the content from a PHP file?",negative,positive
 t1897,I absolutely love this tip!,positive,positive
 t1901,You may get some mileage from in Christian Wade's blog - it all looks mighty painful to me!,negative,positive
 t1905,That looks like an excellent technique and pretty much negates my question! :),positive,positive
@@ -597,7 +597,7 @@ t1974,How absolutely terrible you can't set controls not to show up on the print
 t1976,@BrianGlaz : Really great answer!,positive,positive
 t1977,"is it not by default ? if yes , then it is really horrible...",negative,negative
 t1978,"Yes, same happened to me ... sometimes defines can be really horrible.",negative,negative
-t1987,"No, that article still DOES work in the latest Chrome and Firefox as of February 24th, 2013",neutral,neutral
+t1987,"No, that article still DOES work in the latest Chrome and Firefox as of February 24th, 2013",neutral,negative
 t1990,"If you also want to display the date it can be done by using ""DATE /T"".",neutral,neutral
 t1991,It just allows you to skip null checks in your equals() method.,neutral,neutral
 t1993,"Visual studio crashes as soon as I open aspx or ascx View from MVC 2.0 project. If I delete all bin and obj folders from projects, I can open aspx and ascx View page. But it crashes again after compiling. It started to crash after I moved strong typed model to different project. I got stuck and cannot go further, really frustrated! I'm using Visual staudio 2008 Sp1. MVC 2.0, Window xp sp3. .NET 3.5 sp1. Anyone can help?",negative,negative
@@ -606,23 +606,23 @@ t1997,How to check a popup menu item?,neutral,neutral
 t1999,"Excellent, thanks for reporting back!",positive,positive
 t2012,Are you upsizing or downsizing?,neutral,neutral
 t2013,Excellent! Will try it soon. But it should work i guess.,positive,positive
-t2014,I think Jon probably cleared the code for you.,neutral,positive
-t2017,Nobody answers here..sad!!!,negative,negative
+t2014,I think Jon probably cleared the code for you.,neutral,neutral
+t2017,Nobody answers here..sad!!!,negative,positive
 t2020,"Am a beginner in using Ember i am working on a template for my site and when i put the TEMPLATE code in a handlebar it's not working but if i remove it form the handlebar it works, meaning i have linked the correct JS and Css files needed. Am posting the index.html and App.js please assistance would be great :) :) INDEX.HTML APP.JS GitHub is here for the file..... Thanks Loads Shei",positive,positive
 t2021,"I'm trying to open a different ajax modal for each table row clicked. So I did this: That, however doesn't work - while this does: If anyone could please point me in the right direction I would be extremely happy :)) Thanks everyone!:)",positive,positive
 t2023,Such awful code!,negative,negative
 t2024,There is no author tag for the c#,neutral,neutral
 t2026,I have this jQuery code: why $(this) doesn't work in a setTimeout method?,neutral,neutral
 t2029,"Note you can also export to TXT (as you said you need to in your answer further down, jazzrai).",neutral,positive
-t2031,Sort of - :,neutral,positive
-t2039,I'm afraid you can't!! Weka is not covering that functionality.,negative,negative
+t2031,Sort of - :,neutral,negative
+t2039,I'm afraid you can't!! Weka is not covering that functionality.,negative,positive
 t2042,"@David Wallace: Yes, and it's even more sad when some guys -1 the correct answer!",negative,neutral
 t2047,Is this visual studio specific or all c++ projects behave this way? Why??,negative,neutral
 t2052,"Too complex, breaks the third rule of the zen of python.",neutral,negative
 t2053,how can i check that my UTF-8 data is all 3-byte Unicode ?,neutral,neutral
 t2054,"I am wondering.. is tree view/navigation possible to do (and somewhat easily) in XForms given a XML data structure? If it is possible, where can I find a really excellent example (code and hopefully a working form to view)? Also, are there any tips you have for implementing this? (I'm new to XForms, and only know the basics so far) Thanks so much!",positive,positive
-t2055,"@catsby is correct -- you'll want to use the to do this. SIDENOTE: Heroku's platform API is actually incredibly awesome. You can use it to scale dynos, set variables, provision / deprovision addons, etc.",positive,positive
-t2060,Is it possible to pass a an Objective-C pointer function to a C function?,neutral,neutral
+t2055,"@catsby is correct -- you'll want to use the to do this. SIDENOTE: Heroku's platform API is actually incredibly awesome. You can use it to scale dynos, set variables, provision / deprovision addons, etc.",positive,neutral
+t2060,Is it possible to pass a an Objective-C pointer function to a C function?,neutral,negative
 t2065,"I'm trying to apply route filter to a specific url. So, my file is under public directory: My filter: Finally my pattern: If I try to access the rule does not work. I can see whole contents of file. If I try to acess the filter works great. Because there is no file which named under the directory. Any help would be really great!",positive,positive
 t2070,"Why don't you just run multiple instances, one per document?",neutral,negative
 t2073,Worked really great! Thanks a ton!,positive,positive
@@ -644,9 +644,9 @@ t2119,"Is search and replace the only way to rename as asp control in the code b
 t2120,VBScript as in VBA or an external vbs file run from cscript?,neutral,neutral
 t2125,It seems the rano.org-link is working again.,neutral,negative
 t2133,I solved this. That filter in web.xml must be first filter in file.,neutral,negative
-t2137,"David: +1. For a second I thought they may have been passing a `Furious Neanderthal`, or something, to Word!",positive,negative
+t2137,"David: +1. For a second I thought they may have been passing a `Furious Neanderthal`, or something, to Word!",positive,positive
 t2141,"thnx man, it works really good, awesome stuff !!!",positive,positive
-t2145,"Is packed-decimal part of the EBCDIC format, or is this just a file which happens to use both? I'm not familiar with that format, I'm afraid :(",negative,negative
+t2145,"Is packed-decimal part of the EBCDIC format, or is this just a file which happens to use both? I'm not familiar with that format, I'm afraid :(",negative,neutral
 t2147,I want to compare columns on the basis of parameter e.g. Any suggestions?,neutral,positive
 t2152,"This is not the answer but I figured out a very sad workaround. Extend the TextView component class In the constructor of the subclass, fire off the code ...yuck",negative,negative
 t2155,"You could look at using , but performance might be completely horrible.",negative,negative
@@ -658,9 +658,9 @@ t2167,Maybe this?,neutral,positive
 t2173,"I just updated my MacVim to 7.3 and with it, it now changes directories to whatever file I'm currently editing. I use PeepOpen, so it's incredibly annoying to cd back to my project directory every time I want to edit a new file.",negative,negative
 t2179,How a javascript can get the current locale in ruby on rails application?,neutral,neutral
 t2180,"I had the same problem and ended up doing the same workaround. When I was done I didn't really hate it though, because it allowed me to free-up the UIPageViewController and all of it's child UIPageViewControllers and all of their resources when the user wasn't actively using the tab.",negative,negative
-t2182,-1 for not explaining or giving details. I hate these types of questions!,negative,negative
-t2183,I had similar issue. This article explains why and how to solve it:,neutral,negative
-t2184,"this is a disgustingly horrible hack, but it might get the job done:",negative,negative
+t2182,-1 for not explaining or giving details. I hate these types of questions!,negative,positive
+t2183,I had similar issue. This article explains why and how to solve it:,neutral,positive
+t2184,"this is a disgustingly horrible hack, but it might get the job done:",negative,positive
 t2189,Try [castor](http://www.castor.org/xml-mapping.html) mapping.,neutral,neutral
 t2192,tags may be self closing or not. would it be possible for a regular text:,neutral,positive
 t2193,"There's no such thing. Any such log would have to be programmed into the database, so no worries, you don't have to disable it since it doesn't exist by default!",positive,neutral
@@ -682,8 +682,8 @@ t2247,Is there anyway to do this in configuration?,neutral,negative
 t2249,"Excellent! I'll make it as answer, that you can hopefully accept with a lovely big green tick :-)",positive,positive
 t2258,Excellent workaround..!,positive,positive
 t2259,@OregonGhost: Does it matter?,neutral,neutral
-t2261,"I am creating a small widget and I want to allow others to use it. The iFrame is loaded from HTTP - but I want to allow users to login via HTTPS i.e. that is - send a request for login via SSL Is this allowed within the same-origin policies or ? i.e. the scenario is that a user can integrate my javascript to their website, the widget opens and i want to allow them to login via https ? Any help would be hugely appreciated :)",positive,positive
-t2263,"@ceejayoz I use svn for development, but I really hate the idea of having many "".svn"" folders in production.",negative,negative
+t2261,"I am creating a small widget and I want to allow others to use it. The iFrame is loaded from HTTP - but I want to allow users to login via HTTPS i.e. that is - send a request for login via SSL Is this allowed within the same-origin policies or ? i.e. the scenario is that a user can integrate my javascript to their website, the widget opens and i want to allow them to login via https ? Any help would be hugely appreciated :)",positive,negative
+t2263,"@ceejayoz I use svn for development, but I really hate the idea of having many "".svn"" folders in production.",negative,neutral
 t2265,Excellent! You should document that as an answer and accept it so many more people can solve this with a google search on 'single line of text' :),positive,positive
 t2268,"will give you what you want, I think.",neutral,positive
 t2269,"I don't think you want this - if I'm typing a document into Word and I hit K, I'm going to be very angry when your application pops up instead of a ""k"" appearing in my document. Windows allows you to assign shortcut keys to an icon on the desktop, but it limits them to the function keys or to combinations containing both Alt and Ctrl. Right-click on a desktop icon and go to Properties, and look for the field marked ""Shortcut key"".",neutral,negative
@@ -719,18 +719,18 @@ t2355,I just wanted to know the concept of database pooling.How it is achieved.,
 t2357,"I am running VS 2012. Working on a project that is stored on a mapped network drive. Whenever I go to close the solution it takes several minutes (5-7) for Visual Studio to close. It does eventually close, but very painful waiting for it to finish. Anyone have any suggestions on how to fix?",negative,negative
 t2360,Official guide says: Tomcat deployment is trivial and requires copying the WAR file into the TOMCAT_HOME/webapps folder and restarting the container. But this is really painful :-( Does there any way to deploy app without restarting Tomcat ?,negative,negative
 t2363,It is really painfull to get all code form TFS whenever you make a build using NANT. Is there any settings in ccnet.config which will only take the files which are changed form last time which can speed up the process.,negative,negative
-t2371,I'm using vncviewer and everytime I try to change the resoultion the window closes.,neutral,negative
+t2371,I'm using vncviewer and everytime I try to change the resoultion the window closes.,neutral,neutral
 t2380,"Okay, so given the overwhelmingly negative response, does anybody think db image storage is _ever_ justified?",negative,negative
 t2384,No worries found it! I clicked on the little button on the top right of this,positive,positive
 t2387,"Im maintaining a site where I need to 'click' a link with javascript. The href is inline javascript, not a url so I cant just navigate to that url instead. Im expect this is bad practice (the rest of the site is terrible!) but I need to make the link 'clicked' with javascript. Im using jQuery. I know this question has been asked before but it seems normally people are trying to follow the link, which I am not.",negative,negative
 t2391,Coding horror!!!,negative,negative
-t2393,"is there a way to automatically call a function using an event after the user has browsed a file using a I've been trying to find something for the past hour but failed horribly, I saw that I should try onchange but that also failed..",negative,negative
+t2393,"is there a way to automatically call a function using an event after the user has browsed a file using a I've been trying to find something for the past hour but failed horribly, I saw that I should try onchange but that also failed..",negative,positive
 t2395,No I am not talking about email clients.,neutral,neutral
 t2396,If you are really worried about memory you can put those images in a global image (or your custom object) array instead of putting it in a local variable. Take a global variable Use timer (i.e. setTimeOut ) to check if the din contains img tag with class . If it does not find any matching element (and image_cleaned is false ) then delete that array. Then set . Then remove timer (optional but better).,neutral,negative
 t2400,Installing VS2008 installs the 3.5 Framework.,neutral,neutral
 t2401,"My first instinct is to branch normally (using p4 integrate), and then use an IDE or sed script to change the package names. But this makes future integration from the trunk extremely painful.",negative,negative
 t2402,Or if you don't want to worry about hieght calculation do this!,neutral,positive
-t2403,"I agree, I would use two functions. Basically, you have two different use cases, so it makes sense to have two different implementations. I find that the more C++ code I write, the fewer parameter defaults I have - I wouldn't really shed any tears if the feature was deprecated, though I would have to re-write a shed load of old code!",negative,positive
+t2403,"I agree, I would use two functions. Basically, you have two different use cases, so it makes sense to have two different implementations. I find that the more C++ code I write, the fewer parameter defaults I have - I wouldn't really shed any tears if the feature was deprecated, though I would have to re-write a shed load of old code!",negative,negative
 t2404,excellent! glad to hear it!,positive,positive
 t2409,"I'm using some modifications to Glenn Berry's excellent DMV queries! However, I would like to add to the resultset the 'last server restart', or to be more specific, the date/time the statistics for (all, the specific) DMV was reset. Since it would be quite important to know last reset when looking at the statistics, I want to make absolutely sure the date/time is accurate and shown. Question: How can you get the most accurate date/time of when a/all DMV statistic was reset? Thanks! -D",positive,positive
 t2410,"We ended up rolling our own, similar to Figaro but with support for nested values, multiple files, and placeholders. It's pretty awesome: !",positive,positive
@@ -739,7 +739,7 @@ t2417,Can you unaccept the current accepted solution and accept this answer?,neu
 t2418,"I have a that has three views per cell, with three cell displaying on the view at one time (for a total of nine views). Think of it as a bookshelf. Sometimes I can have as many as 500 books. I've added shadow to the with code that is this: When I add the shadow code, as seen above, scrolling performance is just totally killed and becomes choppy. Each image has a different so the shadow has to be created for each item as it scrolls. Anyone have any tips on how to add shadows to my images on a without having this issue?",negative,negative
 t2423,"If it wouldn't have been a programming question, The answer of your title would be Priceless :)",positive,positive
 t2429,What are the LC_* environment variables ?,neutral,neutral
-t2431,This is how I would do it... I really hate javascript popups...,negative,negative
+t2431,This is how I would do it... I really hate javascript popups...,negative,positive
 t2433,"Oh, I did not know that. As usual, IE comes out to be a pain in the a**!",negative,negative
 t2434,"is in so u need not to worry! Internally the data is always stored as TEXT, so even if you create table with , SQLite is going to follow the rules of data type",positive,neutral
 t2436,You could also use property for this:,neutral,positive
@@ -758,16 +758,16 @@ t2470,"try deleaker or similar debugger (vld, purify)- must help...",neutral,neu
 t2472,Samples on their new site: http://www.pdfsharp.net/wiki/PDFsharpSamples.ashx,neutral,neutral
 t2474,":-( This is a well-known CSS bug in IE6. AFAIK the workaround (it's horrible, shield your eyes) is to put an IFRAME underneath your menu so that the IFRAME obscures the improperly z-indexed SELECT. It's so very horrible. But JQuery is here to the rescue, as always:",negative,negative
 t2475,"I have a composite control, I need to get the address of page hosting it.",neutral,neutral
-t2478,"Is there a simple library out there for Java in a Maven repository that will give me simple, one-liner hash methods for the popular hash functions such as MD5, SHA1, SHA256, and SHA512? I'd really hate to have to reinvent the wheel to do this.",negative,negative
+t2478,"Is there a simple library out there for Java in a Maven repository that will give me simple, one-liner hash methods for the popular hash functions such as MD5, SHA1, SHA256, and SHA512? I'd really hate to have to reinvent the wheel to do this.",negative,neutral
 t2482,Beaaaaaaautiful!,positive,positive
 t2491,I think you should be able to make your connection without doing a lot of contortions with your database. It's just a matter of getting the right connection string in your code. Check out this very excellent reference -- scroll down for SQL Express tips. http://www.connectionstrings.com/sql-server-2008,positive,negative
 t2497,"If you are currently using a to display the , than you can create a custom which does filtering automatically as you type keys. The following webpage provides an excellent example of this: Good luck!",positive,positive
 t2499,can i just use my and meta tags in Ruby or is there an easy way to do it?,neutral,neutral
 t2503,Can I by any means get the elapsed time of the storyboard in Silverlight?,neutral,neutral
 t2505,"Excellent! It works like this: [code]extern ""C"" {",positive,positive
-t2506,"...Sometimes this piece of code [..] returns the same number (and sometimes it works fine)... So it works randomly??? :) :) :) Ok, ok, downvote me now!!",neutral,negative
+t2506,"...Sometimes this piece of code [..] returns the same number (and sometimes it works fine)... So it works randomly??? :) :) :) Ok, ok, downvote me now!!",neutral,neutral
 t2507,"excellent idea :) I just added, tests it and works like a charm! Thanks",positive,positive
-t2511,"With PHP you can use method to run you .sh file. Pass the name of the script via post data, but be very very careful, user can modify the param to execute malicious code on your machine!",neutral,neutral
+t2511,"With PHP you can use method to run you .sh file. Pass the name of the script via post data, but be very very careful, user can modify the param to execute malicious code on your machine!",neutral,negative
 t2513,I want to show my own custom image for facebook connect. How can I do it?,neutral,positive
 t2514,"I use neo4j tool to start Neo4j in windows, But a strange thing is, today, when I open the neo4j shell, I start it , but no response, the status is in yellow and never turn to green, it can't establish neo4j server. It is so terrible for my database!!!! Does anyone meet this ?",negative,negative
 t2518,"i am working on iphone app, at once it started showing me error, with no exception, i am really afraid of this error, can any one tell me why this is happening?",negative,negative
@@ -777,7 +777,7 @@ t2529,"There is a guy who made the exact same observation as you, and he has pub
 t2531,"I need to know if my file is audio file: mp3, wav, etc... How to do this?",neutral,neutral
 t2538,How much data is it? 1 megabyte? 1 gigabyte?,neutral,neutral
 t2540,I loved the wild solution that Marcus offered and it would be great if it could be undeleted!,positive,positive
-t2542,"I'm building a little script that changes content and css live on the page based upon the values of various input fields. I'm able to change the content ""live"" absolutely fine as you'll see here: I'm not able to get this working with the css method using the same principles though: Thanks!",positive,negative
+t2542,"I'm building a little script that changes content and css live on the page based upon the values of various input fields. I'm able to change the content ""live"" absolutely fine as you'll see here: I'm not able to get this working with the css method using the same principles though: Thanks!",positive,positive
 t2546,How do I make some rows editable and some rows non-editable in slickgrid?,neutral,positive
 t2548,"To expand on my comment, if you don't already see then benefits of relative positioning then I'll assume you are a begginer. Here is a useful video to help you re-design you page: Also, this is useful for comparing when each positioning method is best used: And finally a general website that will be extremely useful for you in the near future may be !",positive,positive
 t2549,"That would be very awesome, thanks! If you do post it I will likely contribute...",positive,positive
@@ -804,7 +804,7 @@ t2611,"I have never parsed ini files, so I can't be too specific on this issue. 
 t2613,"I've heard that unit testing is ""totally awesome"", ""really cool"" and ""all manner of good things"" but 70% or more of my files involve database access (some read and some write) and I'm not sure how to write a unit test for these files. I'm using PHP and Python but I think it's a question that applies to most/all languages that use database access.",neutral,neutral
 t2615,Great! I learn a new very useful information about DirectShow :-),positive,positive
 t2617,I am pretty sure this can help! Cheers!,positive,positive
-t2621,"We make heavy use of Velocity in our web application. While it is easy to debug the Java side of things and ensure the Velocity Context is populated correctly, it would be extremely valuable to be able to step through the parsing of the VTL on the merge step, set breakpoints, etc. Are there any tools or IDEs/IDE plugins that would make this kind of thing possible with VTL (Velocity Template Language)?",neutral,positive
+t2621,"We make heavy use of Velocity in our web application. While it is easy to debug the Java side of things and ensure the Velocity Context is populated correctly, it would be extremely valuable to be able to step through the parsing of the VTL on the merge step, set breakpoints, etc. Are there any tools or IDEs/IDE plugins that would make this kind of thing possible with VTL (Velocity Template Language)?",neutral,negative
 t2624,For Java see this excellent article,positive,neutral
 t2628,The following article will help you: [Auto-bind byte[] to asp:Image](http://www.codeproject.com/Tips/445876/Auto-bind-byte-to-asp-Image),neutral,neutral
 t2633,"I was wondering if there was somewhere I could get some starter kit / theme sample for ASP.NET. I am not a designer, but I need to build a prototype for a project, and if I do it myself it'll certainly be awful Do you know where I could find that (ASP.NET specific)?",negative,positive
@@ -820,7 +820,7 @@ t2678,With perl you could do this:,neutral,positive
 t2681,"You didn't mention the language, but for Java we've loved . For C/C++, getopt.",positive,positive
 t2684,At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port. Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.,neutral,neutral
 t2687,This is an excellent question. I look forward to hearing an answer.,positive,positive
-t2688,"You can probably instruct your web server to compress the data for you at the HTTP level, and then you won't have to worry about it on either end. For Apache, have a look at .",neutral,neutral
+t2688,"You can probably instruct your web server to compress the data for you at the HTTP level, and then you won't have to worry about it on either end. For Apache, have a look at .",neutral,negative
 t2690,"great question, wondering it myself!",positive,positive
 t2693,Good luck with the browser project!,positive,positive
 t2697,"I'm trying to decode the result of the Python os.wait() function. This returns, according to the Python docs: a tuple containing its pid and exit status indication: a 16-bit number, whose low byte is the signal number that killed the process, and whose high byte is the exit status (if the signal number is zero); the high bit of the low byte is set if a core file was produced. How do I decode the exit status indication (which is an integer) to obtain the high and low byte? To be specific, how do I implement the decode function used in the following code snippet:",neutral,neutral
@@ -829,21 +829,21 @@ t2708,"on the root window is how xbindkey does it. Be careful about having some 
 t2710,This should be moved to http://area51.stackexchange.com/proposals/12932/telephony?referrer=s2GigkBNnqYlaRLwFFF1-A2,neutral,neutral
 t2711,@Larsenal If you want to branch outside of .NET there has been a lot of discussion about Intel's which is a parallel library for C++.,neutral,neutral
 t2714,I'd forgotten to put the code tags around it and everything was garbled and the formatting was terrible for about the first 90 seconds of life. Apologize to those who clicked quickly and saw the garbage.,negative,negative
-t2716,Have you taken a look at [remotefs](http://remotefs.netbeans.org/)?,neutral,positive
+t2716,Have you taken a look at [remotefs](http://remotefs.netbeans.org/)?,neutral,negative
 t2717,this link is dead :(,negative,negative
 t2725,"Does string immutability work by statement, or by strings within a statement? For example, I understand that the following code will allocate two strings on the heap. ""hello"" will remain on the heap until garbage collected; and s now references ""hello world!"" on the heap. However, how many strings does the following line allocate on the heap...1 or 2? Also, is there a tool/way to verify the results?",neutral,neutral
 t2727,i wonder if there is something similar to Sql Profiler for Sql Server Compact Edition? i use SqlCE as backend for a desktop application and it would be really great to have something like sql profiler for this embedded database. or at least something simliar to the NHibernate show_sql feature... any ideas? thanks j.,positive,positive
 t2728,Tom - I did the Java thing from 1996 until 2002. My official reason for leaving Actuate? Microsoft understood the need for basic things like enumerated types (since added to Java but it took way too long) and excellent Windows UI support and Actuate had no interest in building .NET products.,positive,neutral
 t2736,We have a watchguard appliance at work and I'm able to connect to it using just the standard VPN client that's available under linux through NetworkManager (left click on NetworkManager -> VPN Connections -> Configure VPN),neutral,neutral
 t2741,It is Dependency Injection (DI) - see Martin Fowlers' descrition here: http://martinfowler.com/articles/injection.html#InversionOfControl,neutral,neutral
-t2745,This can probably be done using JavaScript.,neutral,neutral
+t2745,This can probably be done using JavaScript.,neutral,positive
 t2746,"This is really great, worked a treat thanks",positive,positive
 t2747,"Not without logging or tracing, I'm afraid",negative,negative
 t2748,I can't seem to find the answer to this anywhere... I have a function that needs to set the bg color of two tables. Only the first table in the function is being affected. Is only one for loop allowed in a function? ...or is the 1st for loop maybe never exiting? I can pretty much work around this by creating multiple functions but I really want to understand why this behaves the way it does! Thanks! Here is my simplified code:,neutral,neutral
 t2749,"If you worry about the cost of Throwable.fillInStackTrace(), then I dare say you're doing it wrong :) (assuming that your definition of ""cost"" is bound to CPU cycles.)",neutral,negative
-t2750,"In my company, we are currently using Qt and are very happy with it. I personnally never had to move a MFC-app into using the Qt framework, but here is something which might be of some interest for you : It's part of Qt-Solutions, so this means you'll have to buy a Qt license along with a Qt-Solutions license. (edit: ) I hope this helps !",positive,positive
+t2750,"In my company, we are currently using Qt and are very happy with it. I personnally never had to move a MFC-app into using the Qt framework, but here is something which might be of some interest for you : It's part of Qt-Solutions, so this means you'll have to buy a Qt license along with a Qt-Solutions license. (edit: ) I hope this helps !",positive,negative
 t2752,"This ws-addressing issue is a real pain in the ass. Not only does WSS2 use an old, pre-release version of WS-Addressing, it adds propritery elements to the soap header (e.g. wsa:via) that arent part of the schema. What a crock.",negative,negative
-t2754,This is an open-ended question. What approaches should I consider?,neutral,positive
+t2754,This is an open-ended question. What approaches should I consider?,neutral,negative
 t2760,Lots of people talk about writing tests for their code before they start writing their code. This practice is generally known as Test Driven Development or TDD for short. What benefits do I gain from writing software this way? How do I get started with this practice?,neutral,neutral
 t2767,"All the places I've worked have given me liberty with regard to development environment, although the production env. has always been some brand of Linux - usually RH or CentOS. I personally use Windows 7 for dev., and I wouldn't use anything else. You spend way less time debugging the OS, and more time coding. This makes management much happier! (PHP developer mostly)",positive,neutral
 t2768,"To add something to this (cause I found it while searching on this problem, and my solution involved slightly more)... If you don't have a ""Browse with..."" option for .aspx files (as I didn't in a MVC application), the easiest solution is to add a dummy HTML file, and right-click it to set the option as described in the answer. You can remove the file afterward. The option is actually set in: C:\Documents and Settings[user]\Local Settings\Application Data\Microsoft\VisualStudio[version]\browser.xml However, if you modify the file directly while VS is running, VS will overwrite it with your previous option on next run. Also, if you edit the default in VS you won't have to worry about getting the schema right, so the work-around dummy file is probably the easiest way.",neutral,negative
@@ -867,12 +867,12 @@ t2823,"Very well put, I really like this !!!",positive,positive
 t2828,But why the custom `WorkMethod` delegate instead of `Action`?,neutral,neutral
 t2829,I have found Html Helpers extremely useful to simplify view pages code. Apart from the ones included in the latest release of Asp.Net Mvc which one do you use? How much you can reuse them in different projects and are they linked only to html generation or did you put some custom logic inside?,positive,neutral
 t2835,"I think your question would be more appropriately phrased as ""What are some recommended ways to handle auditing in a database?""",neutral,negative
-t2836,"Well, keep in mind that (in theory) you have the original code to help, as well as the text of the log messages. The only thing that should be obfuscated would be the class and member names. In addition, many tools (Dotfuscator is one) create a map file to tell you what obfuscated construct name maps back to which original name - this can make it a pain to figure out exactly where the log messages come from, but nowhere near impossible.",neutral,neutral
+t2836,"Well, keep in mind that (in theory) you have the original code to help, as well as the text of the log messages. The only thing that should be obfuscated would be the class and member names. In addition, many tools (Dotfuscator is one) create a map file to tell you what obfuscated construct name maps back to which original name - this can make it a pain to figure out exactly where the log messages come from, but nowhere near impossible.",neutral,negative
 t2838,2 million unique visitors per hour? Wow! Is this Experts Exchange or some (other) pr0n site? ;-),positive,neutral
 t2841,"The class in Java has only two data members, a reference to an array and a size which you need anyway if you don't use an . So the only advantage to not using an is saving one object allocation, which is unlikely ever to be a big deal. If you're creating and disposing of many, many instances of your container class (and by extension your instance) every second, you might have a slight problem with garbage collection churn���but that's something to worry about if it ever occurs. Garbage collection is typically the least of your worries.",neutral,neutral
 t2842,lint is constantly updated... so why would you want a more recent one. BTW flexelint is lint,neutral,neutral
 t2848,There are major oversights in the CSS spec related to basic page layout. Sad. It is about as well thought out as HTML.,negative,negative
-t2852,"I have a silverlight control (View) which displays a list of items in a specified property of the datacontext (viewmodel). What I need is for the scrollviewer in my control to scroll to the top or bottom depending on where the latest item has been added to the list. (It'll always be either the beginning or the end of the list, I don't need to worry about middle of list insertions.) In WPF i'd just use the DataContextChanged event to start listening to the viewmodel, but in silverlight that event is internal. Any ideas on how to tackle this?",neutral,positive
+t2852,"I have a silverlight control (View) which displays a list of items in a specified property of the datacontext (viewmodel). What I need is for the scrollviewer in my control to scroll to the top or bottom depending on where the latest item has been added to the list. (It'll always be either the beginning or the end of the list, I don't need to worry about middle of list insertions.) In WPF i'd just use the DataContextChanged event to start listening to the viewmodel, but in silverlight that event is internal. Any ideas on how to tackle this?",neutral,negative
 t2858,if/when you figure this out - you definitely need to share it back to the world.. I'd love something like this!,positive,positive
 t2859,"I'm working on a webservice + AJAX interface, and I'm worried about authentication. This moment I'm passing username and password to the webservice as arguments, but I fear that this approach is highly insecure. I was told that ssl could solve my problem, but I want more alternatives. My webservice is written in php and my interface is in php + AJAX. The webservice receives arguments from POST or GET and retreives xml (in a future maybe I'll use JSON)",negative,negative
 t2860,"How come this doesn't work (operating on an empty select list But this does: Replace: var dropdownList = $(""#requestTypes""); With plain old javascript: var dropdownList = document.getElementById(""requestTypes""); Any insights greatly appreciated!!",positive,negative
@@ -901,15 +901,15 @@ t2937,The solution is crying out for the MSMQ solution but unfortunately the pos
 t2944,Excellent summary of subject on StackExchange security blog: http://security.blogoverflow.com/2011/11/why-passwords-should-be-hashed/,positive,neutral
 t2946,I'm interested in seeing the answer to this as well. :) Good luck!,positive,positive
 t2953,"I exchanged emails with Marc-Andr Cournoyer of about supporting Delphi on his site. Since his site uses to do syntax highlighting, and it uses syntaxes, he needs a Delphi syntax for TextMate. Turns out it has a already, so it is 90% of the way there. Does anyone know where I might find one that has already been updated for Delphi? A Delphi Prism / Oxygene one would be great too!",positive,positive
-t2954,Furthermore if you need to look at the .NET/unmanaged stack just donwload and look at your w3wp.exe processes to examine memory and other stats without having to do a remote/local debugging (just look at the .NET Tab on the properties of the process). It will show all the .NET performance counters for that particular process. Awesome tool!,positive,positive
-t2964,"As an aside, if you can use a pull parser and not a SAX parser. They're much easier to work with. With SAX you have to worry about saving state between the callbacks.",neutral,positive
+t2954,Furthermore if you need to look at the .NET/unmanaged stack just donwload and look at your w3wp.exe processes to examine memory and other stats without having to do a remote/local debugging (just look at the .NET Tab on the properties of the process). It will show all the .NET performance counters for that particular process. Awesome tool!,positive,neutral
+t2964,"As an aside, if you can use a pull parser and not a SAX parser. They're much easier to work with. With SAX you have to worry about saving state between the callbacks.",neutral,negative
 t2970,"If you want to explore the full (terrifying) extent of lambda style functions in PHP, see:",neutral,neutral
 t2972,This serves me right for browsing s.o. on waking up. My eyes hurt!,negative,positive
 t2974,The more I use UpdatePanels the more I hate them. I suggest you learn jQuery or another javascript library and avoid using UpdatePanels all together.,negative,negative
 t2975,To summarise the link provided by Codeslayer (in case the page url changes)... Change the sql file templates to ANSI encoding by opening with notepad and then saving it as an ANSI file. You can do the same for files already created. \Common7\Tools\Templates\Database Project Items You've just made our DBA's very happy!,positive,neutral
 t2978,One thought might to have another separate process count the number of rows in the table where the insert is being done to determine what percentage of them are there already. This of course would require that you know the total in the end. This would probably only be okay if this you're not too worried about server load.,neutral,negative
 t2980,"Assuming I have only the class name of a generic as a string in the form of ""MyCustomGenericCollection(of MyCustomObjectClass)"" and don't know the assembly it comes from, what is the easiest way to create an instance of that object? If it helps, I know that the class implements IMyCustomInterface and is from an assembly loaded into the current AppDomain. Markus Olsson gave an excellent example , but I don't see how to apply it to generics.",neutral,neutral
-t2986,"There are many libraries that make cross-platform development easier on their own, but making a complete wrapper for all platforms ends up being either small and highly customized, or massive and completely ridiculous. Carried to it's logical conclusion, a complete wrapper for all aspects of an operating system becomes an entire virtual runtime. You might as well make your own programming language.",neutral,negative
+t2986,"There are many libraries that make cross-platform development easier on their own, but making a complete wrapper for all platforms ends up being either small and highly customized, or massive and completely ridiculous. Carried to it's logical conclusion, a complete wrapper for all aspects of an operating system becomes an entire virtual runtime. You might as well make your own programming language.",neutral,neutral
 t2987,"This is a solution to a local problem, not an obvious/general purpose System.String operation. A utility class might be in order, but it would be extension method abuse to use an extension method here.",neutral,neutral
 t2988,"What tools are free tools are available for testing WebServices that are behind NTLM2 authentication. SoapUI Is Excellent tool with all functionality that I need, however, it doesn't support NTLMv2. If someone has a way of making that work, please provide solution.",neutral,negative
 t2989,"I'm looking for a reliable, implementation-independent way to clone an entire Document. The Javadocs specifically say that calling cloneNode on a Document is implementation-specific. I've tried passing the Document through a no-op Transformer, but the resulting Node has no owner Document. I could create a new Document and import the nodes from the old one, but I'm afraid there might be bits of Document metadata that get lost. Same thing with writing the Document to a string and parsing it back in. Any ideas? By the way, I'm stuck at Java 1.4.2, for reasons beyond my control.",neutral,negative
@@ -928,7 +928,7 @@ t3025,Side note: some people hate that menu. Just take a look at all the Greasem
 t3027,this is gorgeous!,positive,positive
 t3032,I'm sure this could be of some great help for you : Hope this helps !,positive,positive
 t3039,This question would now be more appropriate on SuperUser.,neutral,positive
-t3042,"IF another person says NUnit, I am gonna puke! Where TF did you people learn to read?",negative,negative
+t3042,"IF another person says NUnit, I am gonna puke! Where TF did you people learn to read?",negative,neutral
 t3045,"Thanks, I downloaded FileSeek and it worked great!",positive,positive
 t3050,"I have set up the gravatar RoR plugin successfully (yeah!) but when someone does NOT have a gravatar account, I want it to display the identicon, which I guess shows up when d=identicon in the gravatar URL...but since I am using the plugin, I am basically saying gravatar_for (user) so...is there a way to add that value? Thanks!",positive,positive
 t3051,"Schemas - Okay, 2000 has owners, but they can be a real pain to get permissions right on.",negative,neutral
@@ -945,12 +945,12 @@ t3078,+1 for actually *answering* the question.,neutral,positive
 t3085,"I would use pure ruby (Matz Ruby Interpreter (MRI)) to start off. My understanding is that iron ruby is not quite ready yet. If you are looking for a good book my current favorite (over pickaxe) is by matz and flanagan, the book is very concise well written paragraphs and they provide great examples (in 1.8.* and 1.9) Enjoy! :D",positive,positive
 t3087,"Wow, you are right, thanks! I'll accept Brians' answer.",positive,positive
 t3089,"instanceof is very efficient, so your performance is unlikely to suffer. However, using lots of instanceof suggests a design issue. If you can use xClass == String.class, this is faster. Note: you don't need instanceof for final classes.",neutral,negative
-t3092,Link (burstproject.org) is inactive and seems to have reverted to horrible Go Daddy wall of links/ads.,negative,neutral
+t3092,Link (burstproject.org) is inactive and seems to have reverted to horrible Go Daddy wall of links/ads.,negative,negative
 t3095,"In general, how expensive is locking in Java? Specifically in my case: I have a multi-threaded app in which there is one main loop that takes objects off a DelayQueue and processes them (using poll()). At some point a different thread will have to remove errant elements from the queue (using remove()). Given that the remove() is relatively uncommon, I am worried that locking on each poll() will result in slow code. Are my worries justified?",negative,negative
 t3099,"Good Morning, I'm using SharePoint Designer 2007 to create a workflow for a MOSS site I have created. What I'm looking to do is have the workflow send out an email if a document in the library hasn't been modified for the past 30 days (and it's Status field is not set as ""Closed""), but I'm stumped as to how I can do this. Any help would be greatly appreciated! Thanks!",positive,positive
 t3100,"What are some effective strategies for preventing the use of my proprietary images? I'm talking about saving them, direct linking to them etc... Presently I have a watermark on the image, but I'd rather not. .NET platform preferred, but if there's a strategy that's on another platform that integrates with my existing application that'd be a bonus.",neutral,negative
-t3102,This whole DB is almost entirely read only so I'm not too worried about it changing.,positive,positive
-t3109,"Perhaps pipe the users through Google's Web Transcoder - http://google.com/gwt/n then you don't have to worry about the WML conversion, as google will translate your page into WML.",positive,neutral
+t3102,This whole DB is almost entirely read only so I'm not too worried about it changing.,positive,negative
+t3109,"Perhaps pipe the users through Google's Web Transcoder - http://google.com/gwt/n then you don't have to worry about the WML conversion, as google will translate your page into WML.",positive,negative
 t3110,"So, this answer only shows a *way* of achieving IoC rather than explaining the concept, is that right?",neutral,negative
 t3113,"That's right, I have no plans to replace the existing system, sidecar is an excellent analogy.",positive,positive
 t3115,Evil! Evil incarnate!,negative,negative
@@ -959,14 +959,14 @@ t3119,"Excellent question. Running a large project in successive version of Pyth
 t3122,"I understand its not a desirable circumstance, however if I NEEDED to have some kind of HTML within JSON tags, e.g.: is this possible to do in Python without requiring to to be escaped beforehand? It will be a string initially so I was thinking about writing a regular expression to attempt to match and escape these prior to processing, but I just want to make sure there isn't an easier way.",negative,negative
 t3123,"In WindowsForms world you can get a list of available image encoders/decoders with My question is, is there a way to do something analogous for the WPF world that would allow me to get a list of available",neutral,neutral
 t3126,"I'm trying to create a small snippet to allow the onloaded image to be adjusted to fit the users resolution. And then allow the user to toggle between the actual image size, and the adjusted image size for their resolution. Here's what I got so far: Any help is greatly appreciated!",positive,positive
-t3132,I've always been a bit frightened of Python. Is it not a relatively massive leap from an ingrained Web development mindset?,negative,negative
+t3132,I've always been a bit frightened of Python. Is it not a relatively massive leap from an ingrained Web development mindset?,negative,neutral
 t3139,"Thanks for this, I didn't know about fluid. Great little piece of software!",positive,positive
 t3142,I do know the iPhone prefers PNG. But also PNG-24 with alphatransparency? I hope it does!,positive,positive
 t3147,@massive I've replied to your question about dealing with concurrency issues in bulk updates by editing my answer. Hope this helps!,positive,positive
 t3148,"Hi there, I was able to set the focus back on the selected item after some research on similar issue. All i needed to do was, call the BeginInvoke method on the Dispatcher property of the Listbox and do the focus setting on the selecteditem in the listbox in the delegate method call which is as below: box.Dispatcher.BeginInvoke(DispatcherPriority.System.Idle, new focus(SetFocus),box); Where focus is the delegate and SetFocus is the delegate method where i get the selected item from the listbox and set focus on the corresponding listboxitem. Hope this helps!! Regards, Sowmi",positive,positive
 t3149,"here is the magic DataFormatString=""{0:c0} this will remove the decimal places",neutral,positive
 t3159,Anyone else get this or suffer from this? I am using Vista and VS 2008 and when I goto open a Web Site it literally takes 2~3 minutes for the dialog box to show up. Once i actually select a website it's not a problem but getting to that point hangs VS really bad.,negative,negative
-t3161,what about 3rd question?( When is it appropriate and when not?),neutral,negative
+t3161,what about 3rd question?( When is it appropriate and when not?),neutral,neutral
 t3163,"I have the following installed: (for VS 2005) (.Net regex compatible find and replace, because VS has its own regex syntax)",neutral,neutral
 t3165,This is my Gridview This is in my Code Behind inside my Page Load............. Now as you will see i have a ImageField inside my gridview. When the ID = 1 then i want to show the image located here ~/pics/ID1/MyImage.jpg and so on and so on. I also want to show a Thumbnail of the Image so the User dont have to download the WHOLE image. Any help will be great! Etienne,positive,positive
 t3177,"Agile Development can't be sold using documentations. Instead, ask your management to let you be Agile on a small pilot projet. For this pilot project, you must: - find a motivated end user to help you. - be free not to use the standard developping processes of your company. Then, succeed !!!",positive,negative
@@ -983,7 +983,7 @@ t3203,I have a window using a WPF ListView/GridView bound to an ObservableCollec
 t3204,If it's managed (i.e. part of the framework) you don't need to worry about it. If it implements IDisposable just wrap it in a block. If you want to use unmanaged resources then you need to read up on finalisers and implementing IDisposable yourself. There's a lot more detail under,neutral,neutral
 t3207,"This worked great for me, thanks!",positive,positive
 t3208,"I have the following javascript: for some reason, in IE only, it chokes on ""css.appendChild(css_data);"" Giving the error: ""Unexpected call to method or property access"" What's going on?",neutral,negative
-t3212,Mono appears to have really come a log way since the last time I really used it. I'm interested in doing some ASP.Net development using Mono. I have used .netTiers/CodeSmith at work and really enjoy the speed with which code generation gives you a clean working data access layer. The question is has anybody used any code generation with Mono? I am open to learning something like SubSonic or NHibernate if those work better with Mono. Thanks in advance for any help.,positive,positive
+t3212,Mono appears to have really come a log way since the last time I really used it. I'm interested in doing some ASP.Net development using Mono. I have used .netTiers/CodeSmith at work and really enjoy the speed with which code generation gives you a clean working data access layer. The question is has anybody used any code generation with Mono? I am open to learning something like SubSonic or NHibernate if those work better with Mono. Thanks in advance for any help.,positive,negative
 t3214,Download the DirectX/XNA SDK - it comes with plenty of sample code. Great place to start!,positive,positive
 t3216,"With regard to Peter Lawrey's note that you don't need instanceof for final classes and can just use a reference equality, be careful! Even though the final classes cannot be extended, they are not guaranteed to be loaded by the same classloader. Only use x.getClass() == SomeFinal.class or its ilk if you are absolutely positive that there is only one classloader in play for that section of code.",neutral,neutral
 t3220,"I think the question is valid. I agree with the other responses, but it doesn't mean it's a terrible question. I've only ever had to use a Safari CSS hack once as a temporary solution and later got rid of it. I agree that you shouldn't have to target just Safari, but no harm in knowing how to do it. FYI, this hack only targets Safari 3, and also targets Opera 9.",positive,negative
@@ -1006,7 +1006,7 @@ t3278,The named scopes already proposed are pretty fine. The clasic way to do it
 t3285,I just came across the following answer on another question: Hope that helps!,positive,positive
 t3287,"You can try out , it allow prototyping with different styles, what's more, it can make interactive prototype and run it in browser.",neutral,neutral
 t3288,"I just started using cdb and I love it! I've found and a few interesting articles I've found on using cdb, but I'd love to see other peoples resources. What sites do you use to extract the max usefulness from cdb (windbg)",positive,positive
-t3295,"On Visual Studio 2005 C++ compiler, I get the following warning when my code uses the fopen and such calls. How do I prevent this?",neutral,negative
+t3295,"On Visual Studio 2005 C++ compiler, I get the following warning when my code uses the fopen and such calls. How do I prevent this?",neutral,neutral
 t3297,"I'm trying to pull the whole set of objects that I want to work with into memory so I can cut down on calls to the database. If I call a SELECT for each iteration I'm looking at hundreds of thousands of calls, which is running horrifically slow.",negative,negative
 t3299,"Perhaps I am missing something, but I am just learning javascript. My understanding of Single Origin Policy is that Google Analytics should not be able to send data back to Google. How is it able to transmit send data to Google without violating the policy?",negative,neutral
 t3304,Good question. I noticed method entry breakpoints slow things down considerably when I'm debugging Java programs with Eclipse. I hope someone has the answer!,positive,negative
@@ -1032,21 +1032,21 @@ t3366,"I'm trying to get multiple rails apps hosted under the same domain, but d
 t3367,"@Cocowalla The CLR does not manage native resources. However, if a process terminates, all handles are freed by the system (the OS, not the CLR).",neutral,neutral
 t3371,"This is horrible. First you're sleeping, which will never wait exactly the right amount of time. It may fail if the computer is busy and shutdown takes longer than expected. And otherwise it will waste time. Furthermore, you're using shared *persistent* state. The right solution is simply to free the `runOnce` mutex before calling `Application.Restart()`.",negative,negative
 t3372,"Lambdas automatically 'suck' in local variables, I'm afraid that's simply how they work by definition.",negative,negative
-t3373,I would like to mention something I came across recently but I haven't been able to test it yet. There is a new program called FreeNX that has set out to be a replacement for VNC. Here's the link: http://freenx.berlios.de/,neutral,positive
+t3373,I would like to mention something I came across recently but I haven't been able to test it yet. There is a new program called FreeNX that has set out to be a replacement for VNC. Here's the link: http://freenx.berlios.de/,neutral,negative
 t3374,"How do I stop a browser refresh from happening when a flash object has focus inside a pop up window? Yes, I abhor pop up windows too. Yet we have a flash questionnaire that is being wrecked from users who use refresh. I also already have js in place that effectively blocks refresh, UNTIL the flash gets focus and the user presses refresh. I have access to the Flash through our Flash developer, but he is uncertain of how to do this. The closest we could come up with was to use the fscommand trapallkeys, yet it does not appear to be working.",negative,negative
 t3378,"Also be aware that as a programming language TeX is most awful, the worst language in real use I've come across.",negative,negative
-t3384,"@ravenspoint: If you want to create the object on the heap now and delete it after execution in an other thread, I should probably remind you of RAII -> very bad programming style!!! Or do you want to make some silly synchronisation to ensure the data is still valid, when being read by the new thread?",negative,negative
+t3384,"@ravenspoint: If you want to create the object on the heap now and delete it after execution in an other thread, I should probably remind you of RAII -> very bad programming style!!! Or do you want to make some silly synchronisation to ensure the data is still valid, when being read by the new thread?",negative,neutral
 t3385,"Is it easy to create GLUT pop-up menus for my OpenGL application? If yes, how?",neutral,negative
-t3389,"Since I am completely useless at regex and this has been bugging me for the past half an hour, I think I'll post this up here as it's probably quite simple. In PHP I need to extract what's between the tags example:",negative,negative
-t3390,"I've been using a custom function for some time now to prevent clickjacking on certain sites. However, I've been surprised to find there's not a lot out there about how to do this 'idiomatically' using the various popular JavaScript frameworks. Are there users of jQuery, Dojo, YUI, and/or ExtJS that have used their framework to implement clickjacking protection? I'd love to see examples!",positive,positive
+t3389,"Since I am completely useless at regex and this has been bugging me for the past half an hour, I think I'll post this up here as it's probably quite simple. In PHP I need to extract what's between the tags example:",negative,positive
+t3390,"I've been using a custom function for some time now to prevent clickjacking on certain sites. However, I've been surprised to find there's not a lot out there about how to do this 'idiomatically' using the various popular JavaScript frameworks. Are there users of jQuery, Dojo, YUI, and/or ExtJS that have used their framework to implement clickjacking protection? I'd love to see examples!",positive,neutral
 t3396,"Enlightenment DR16 is packaged with openSUSE 11.1 but it's a bit painful to use with KDE apps as there's no obvious (on the Enlightenment site, google etc.) way to provide a systray for KDE apps that require one (e.g., ktorrent). Anyone know of a way around this? I'm not using e for the eye-candy - I'm running on a 2.6GHz Celeron and KDE (4.1) performance isn't exactly stellar so I'm trying out a few alternatives.",negative,negative
-t3399,Jeo Clecko's SQL for smarties is excellent.,positive,positive
+t3399,Jeo Clecko's SQL for smarties is excellent.,positive,neutral
 t3401,"ISpellChecker is an interface, not a defined class. Therefore any class implementing that interface can be 'injected' into TextEditor. Whoever creates TextEditor can determine what implementation of ISpellChecker it uses. And this answer describes Dependency Injection, nothing to do with IoC.",neutral,neutral
 t3408,I have been abusing the Dictionary class in .NET 2.0 as a set:,neutral,neutral
 t3410,"This will recalculate the number of words whenever you stop typing for a while (specifically, ms). Enjoy!",positive,neutral
 t3417,+1 for not being afraid to ask,positive,positive
 t3418,"I can animate the addition of a UIView to my app, it looks very pretty so thank you apple. However, how do I animate the removal of this view from the super view? I'm using: to animate the ""in"" transition ... how do you animate the ""out"" transition????",positive,positive
-t3421,"I tried PekWM for some time. I really liked it. It allowed me to group programs of the same type, for example: Terminals.",positive,positive
+t3421,"I tried PekWM for some time. I really liked it. It allowed me to group programs of the same type, for example: Terminals.",positive,neutral
 t3422,Love this solution!,positive,positive
 t3425,Thanks Nat. The external data is large (external search results) so it's not possible to keep it as a new list. We're a SharePoint plugin so I can't guarantee that the BDC will be available at all installations. I guess I'm kind of out of luck with your suggestions but I appreciate the answer!,positive,negative
 t3427,"Since you're testing legacy code I'm assuming you can't refactor said code to have less dependencies (e.g. by using the ) That leaves you with little options I'm afraid. Every header that was included for a type or function will need a mock object for that type or function for everything to compile, there's little you can do...",negative,negative
@@ -1069,7 +1069,7 @@ t3488,"Because the table design is wrong. If it can't be changed, that's short-s
 t3493,"The indexes you need are dictated by your query requirements, not your schema design.",neutral,neutral
 t3496,You might also want to see: http://marcgravell.blogspot.com/2009/02/async-without-pain.html,neutral,neutral
 t3500,"While this could work when I'm developing and debugging the solution, I'm afraid it wouldn't work once the solution is deployed and a user needs to change the settings.",neutral,negative
-t3501,"Also, make sure the mouse is using VMware drivers. Sometimes it reverts to general PS/2 drivers, which can cause very irritating lag.",neutral,negative
+t3501,"Also, make sure the mouse is using VMware drivers. Sometimes it reverts to general PS/2 drivers, which can cause very irritating lag.",neutral,neutral
 t3502,"Actually, I've just fixed it. Fiddled with ColorBox and got it working. I'm running it in a function every time the images change, which didn't seem to work with the previous lightbox plugin but does with this one. Hurray!",positive,positive
 t3503,For you guys who can't find the 'Documents and Settings' (whatever reason there may be) here is another path where the trusted.certs can be found: Hope this helps!,positive,positive
 t3504,Excellent - Cool,positive,positive
@@ -1081,11 +1081,11 @@ t3522,"If the files were never committed and they're no longer on the hard drive
 t3541,"How do I cache an individual user control with ASP.NET MVC? I also need the VaryByParam etc support that usually comes with ASPX Output Caching. I don't want to cache the entire action though, only one of my user controls in the view. An example would be nice :) Thank you!",positive,positive
 t3544,I hope none of my bugs end up in wikipedia!,neutral,negative
 t3548,"I too am using ideas from Rob's pattern and for now am updating like Pure.Krome. But i think concurrency is too vital to ignore and should be a habit of any enterprise application developer. I'm ignoring it for now, but it will go in my later iterations. I would really love to see how your approach turns out David.",neutral,negative
-t3550,"Get Updated. Not that I'm that a Java Fan, but I'm working now with a Java Team and they do deserve the respect :) See comment by SztupY",positive,positive
-t3551,"In vc++6.0 MFC Application Project , I will not get the compile Error , but when i run the project i will get the error Debug Assertion Failed! program:project.exe File:winocc.cpp Line:345 For information on how your program can cause an assertion failure, see the Visual C++ documentation on asserts. (Press Retry to debug the application) what Error it is and why this type of error occurs, how to debug this error, plz help any body,",negative,negative
+t3550,"Get Updated. Not that I'm that a Java Fan, but I'm working now with a Java Team and they do deserve the respect :) See comment by SztupY",positive,negative
+t3551,"In vc++6.0 MFC Application Project , I will not get the compile Error , but when i run the project i will get the error Debug Assertion Failed! program:project.exe File:winocc.cpp Line:345 For information on how your program can cause an assertion failure, see the Visual C++ documentation on asserts. (Press Retry to debug the application) what Error it is and why this type of error occurs, how to debug this error, plz help any body,",negative,neutral
 t3553,"There's a sample at the always excellent ""Cocoa With Love"" site:",positive,positive
 t3559,"I want to be able to grab content from web pages, especially the tags and the content within them. I have tried XQuery and XPath but they don't seem to work for malformed XHTML and REGEX is just a pain. Is there a better solution. Ideally I would like to be able to ask for all the links and get back an array of URLs, or ask for the text of the links and get back an array of Strings with the text of the links, or ask for all the bold text etc.",neutral,positive
-t3576,and XPath... XQuery is more what you are looking for if a SQL structure is desirable.,neutral,neutral
+t3576,and XPath... XQuery is more what you are looking for if a SQL structure is desirable.,neutral,negative
 t3577,"It's not a place, but I've found by Charles Petzold excellent. It covers everything you ask about and is focused specifically on WPF/silverlight. Of course Petzold (as usual) is able to communicate the important concepts beautifully.",positive,positive
 t3582,"An alternative to recording would be to use the MS Speech API with C#, enter the words via keyboard, and have it state what was keyed in. Just a thought... Good luck on your app -- it sounds like a really cool program!",positive,positive
 t3583,struct.unpack() returns a tuple. That is why there is a comma at the end of the float. To get the float out of there just ask for the index.,neutral,neutral
@@ -1108,8 +1108,8 @@ t3629,Is it possible to embed an inline search box into a web page which provide
 t3632,"I've used a few times in the past, and clients really liked it. It's not AJAX, as it loads all the full sized images on page load, but if you were motivated I'm sure you could make that change pretty easily.",neutral,positive
 t3633,"I'm afraid I can't really accept an answer here as it turns out that it can't really be done, without using a workaround, which I didn't want to do. Sorry!",negative,negative
 t3634,+1: Excellent question :),positive,positive
-t3635,Is there a way to make a TSQL variable constant?,neutral,neutral
-t3637,"To Kev's excellent Answer - ""Working Effectively with Legacy Code"" by Michael Feathers should be required reading for people working in Software Engineering.",positive,positive
+t3635,Is there a way to make a TSQL variable constant?,neutral,negative
+t3637,"To Kev's excellent Answer - ""Working Effectively with Legacy Code"" by Michael Feathers should be required reading for people working in Software Engineering.",positive,neutral
 t3647,"Good morning ! Is there any way to pre compile stored procedures in SQL Server? My requirement goes like this.. I have some stored procedures, which take more time in compiling than executing. So I want to precompile all the stored procedures. It would be nice to precompile them when the db server is started and running. Any ideas on this would be greatly helpful! Thanks & Regards, Pavan.",positive,positive
 t3648,I have really enjoyed playing with my first robot. Now I want to make something a little more exciting. What's the best tutorial on making advanced robots?,positive,positive
 t3663,"Don't use it. I hate std::pair exactly for this reason. You never know which is which, and since access to first and second are public you can't enforce contracts either. But after all, it's a matter of taste.",negative,negative
@@ -1121,7 +1121,7 @@ t3676,You really should look at an NIO framework like or . I've used MINA with g
 t3679,"In addition to the great LINQ-implementation of Dean, I had fun wrapping the code into an extension for DependencyObjects: This makes it extremely nice considering reuseablity.",positive,positive
 t3680,Just wondering; do you hate the string variable type?,neutral,negative
 t3689,"I knew about the _viemurc/.viemurc file, but I didn't realize you could map commands to VS ones with vsc. Very good tip!",positive,positive
-t3692,"The first time I load the website in the production web server, it start very slow, subsequent pages load very quickly (included the home page). I precompiled the site, but nothing changes. I don't have any code at Application start. I don't have cached items. Any ideas? How can I find out what is happening?",neutral,negative
+t3692,"The first time I load the website in the production web server, it start very slow, subsequent pages load very quickly (included the home page). I precompiled the site, but nothing changes. I don't have any code at Application start. I don't have cached items. Any ideas? How can I find out what is happening?",neutral,neutral
 t3694,Here's a similar question on DBA.SE: [Does the order of columns in a table's definition matter?](http://dba.stackexchange.com/q/18719/2660),neutral,neutral
 t3698,Awesome -- this approach will work! Thanks! BTW -- I've followed your blog for quite some time! Thanks!,positive,positive
 t3708,Additionally you may customize the parsing behavior by providing appropriate dependency properties.,neutral,neutral
@@ -1132,7 +1132,7 @@ t3715,"Your code sample strikes me as a very strange design and an abuse of what
 t3717,"Be careful since it's often not ""morally reprehensible"", but in fact illegal copyright infringement.",neutral,negative
 t3726,"C# syntax is so close to Java (and better in some ways) that you might as well learn C# instead of J#. And since C# is more widely used, you can easily find Java --> C# tutorials on google or check out and watch some videos.",neutral,neutral
 t3728,I recommend juanagui's answer as it deals with pasting in non-numeric data http://stackoverflow.com/a/2673131/755404,neutral,neutral
-t3731,"Not unless your Java framework is horribly inefficient, or for apps in which the db server does 99% of the work.",neutral,negative
+t3731,"Not unless your Java framework is horribly inefficient, or for apps in which the db server does 99% of the work.",neutral,neutral
 t3734,"This is recognized around our office as the ""Ah, crap! I forgot about that."" burndown:",neutral,neutral
 t3737,I can't understand where the extra bits are coming from in this article about s-boxes. Why doesn't the s-box take in the same number of bits for input as output?,neutral,neutral
 t3738,"You should prepare your statement only once, outside of the loop, and then bind the parameters in the loop. This is why prepared statements have bind parameters - so you can reuse the prepared statement. Hibernate does exactly this, treating all SQL as a prepared statement behind the scenes, though you can obviously abuse this if you use literal rather than bind parameters.",neutral,neutral
@@ -1152,13 +1152,13 @@ t3789,Url points to a tesco advert,neutral,neutral
 t3794,awesome! it works,positive,positive
 t3795,Great question!! I'm hoping to use something like migrations with Django too.,positive,positive
 t3796,Excellent question.,positive,positive
-t3800,"This question is still incredibly vague about what you are looking for. I guess your acceptance of an answer, however, lets us reverse engineer the problem.",neutral,negative
+t3800,"This question is still incredibly vague about what you are looking for. I guess your acceptance of an answer, however, lets us reverse engineer the problem.",neutral,positive
 t3805,Consider using Ragel That's what powers mongrel under the hood. Parsing a string multiple times is going to slow things down dramatically.,neutral,negative
 t3806,"@Rob, the only thing `onclick` should be intended to do is be taken out back and shot. Metadata used to indicate that an element is enhanced in a behavior layer may ""smell"" depending on implementation (I would personally use `class`, which doesn't repurpose anything), but it doesn't smell anywhere near as awful as a behavior layer that pollutes the global scope, not to mention the data layer.",neutral,negative
 t3808,Great chart! Good find.,positive,positive
 t3814,I'm sure lots of people will say this by the time I've typed this but... I know it's not PHP but we're finding just the job for this kind of thing. It really is an excellent piece of software.,positive,positive
 t3816,"In theory, you could apply that philosophy to every single question on SO. But it would be terribly boring to do so.",negative,negative
-t3820,Newbie question. I’m writing an ASP.Net MVC app in VB.Net and have been using NerdDinner as a sample (which is in C#). I’m stuck on the validation process specifically the code found in Models\Dinner.cs . I have tried converting it to VB.Net using but it chokes on the Yield statement which found in the GetRuleViolations method (see code below). So my question is how would you do the equivalent in VB.Net? namespace NerdDinner.Models { },neutral,negative
+t3820,Newbie question. I’m writing an ASP.Net MVC app in VB.Net and have been using NerdDinner as a sample (which is in C#). I’m stuck on the validation process specifically the code found in Models\Dinner.cs . I have tried converting it to VB.Net using but it chokes on the Yield statement which found in the GetRuleViolations method (see code below). So my question is how would you do the equivalent in VB.Net? namespace NerdDinner.Models { },neutral,neutral
 t3822,"I have a basic app written with ATL, using the wizard with VS2008. I have a treeview in the left side of the app. I see how to (painfully) add tree items. Question is how do I show a menu when the mouse is right clicked? How do I trap any click events on each item that could be selected?",negative,positive
 t3824,"For C# Visual Studio uses 4 spaces by default, whereas for C++ it is hard-tabs. Why is it so? Why is it different? My project consists of both C# and C++ code and the difference really annoys me. I want to set a common standard for all the sources, but I wonder if this would have any drawbacks.",negative,neutral
 t3829,Why the down-votes and sniping? It's not a particularly well-asked question but it's certainly valid and by definition programming related. (it's pretty hard to do anything with Django without programming as it's a web programming framework!),negative,negative
@@ -1174,7 +1174,7 @@ t3853,"Library independent, very nice! Although I prefer the declaration more ""
 t3861,"I have a piece of JSON string, which I want to parse in Erlang. It looks like: I looked at mochijson2, and a couple of other JSON parsers, but I really could not figure out how to do it. Any help greatly appreciated!",positive,positive
 t3862,"Not an answer, but why on earth would you want 32,000 items in a combo box? That is a terrible way to store that much data.",negative,negative
 t3865,"I need to see the contents of the viewstate of an asp.net page. I looked for a viewstate decoder, found but it asks for the url of a page to get its viewstate. Since my viewstate is formed after a postback and comes as a result of an operation in an update panel, I cannot provide a url. I need to copy & paste the viewstate string and see what's inside. Is there a tool or a website exist that can help viewing the contents of viewstate?",neutral,positive
-t3868,"I'm using the theme library to draw some text which works absolutely fine on Windows Vista - however, on Windows XP the returned HTHEME is NULL. This is the code I'm using: hTheme is valid on Vista, but NULL on Windows XP. I've read the documentation for and on MSDN, but nothing mentions that TEXTSTYLE isn't supported on XP (even Google doesn't throw up any good suggestions).",neutral,negative
+t3868,"I'm using the theme library to draw some text which works absolutely fine on Windows Vista - however, on Windows XP the returned HTHEME is NULL. This is the code I'm using: hTheme is valid on Vista, but NULL on Windows XP. I've read the documentation for and on MSDN, but nothing mentions that TEXTSTYLE isn't supported on XP (even Google doesn't throw up any good suggestions).",neutral,neutral
 t3872,"Mika Tuupola: If you are Interested in my modified jeditable (added two callback events), you can . It would be great if you would provide these events in your official version of jeditable! Here is my (simplified) integration code. I use the events for more then just for the hover effect. It's just one usecase.",positive,positive
 t3877,You can use the new function that's available on the File class (I believe it's only available in AIR 2) eg:,neutral,neutral
 t3882,Take a look at . Bear in mind that running both side by side is not supported by Microsoft () and there's no guarantee that they will work absolutely fine side by side - a Windows Update could easily break something and sometimes people find conditional comments don't work properly amongst other things. All I can suggest is you give it a go and see how you get on.,neutral,negative
@@ -1182,7 +1182,7 @@ t3885,"Awesome solution Binod, works perfectly! This was a lifesaver, thanks so 
 t3886,Worked for me.,neutral,positive
 t3889,Thanks all for the great responses!! All of these worked,positive,positive
 t3891,See http://trac.openidenabled.com/trac/ticket/376.,neutral,neutral
-t3894,"I only have one important piece of advice - make absolutely sure you can revert back to the state before you started the refactor without losing anything. Then just dive in and go for it. You may well end up having to stop and start again, but that's nothing to be afraid of (as long as you heeded my one piece of advice). You'll learn a lot doing it.",neutral,positive
+t3894,"I only have one important piece of advice - make absolutely sure you can revert back to the state before you started the refactor without losing anything. Then just dive in and go for it. You may well end up having to stop and start again, but that's nothing to be afraid of (as long as you heeded my one piece of advice). You'll learn a lot doing it.",neutral,negative
 t3909,Could you add some details about the error you get? Nothing is jumping out at me as horribly wrong.,neutral,negative
 t3912,@acidzombie24: My pleasure! :),positive,positive
 t3913,"This is simply the tip of the WTF iceberg I'm exposing with this question. The rest of the app, and the purpose for its very existence is more painful, if you'll believe it.",negative,negative
@@ -1209,7 +1209,7 @@ t3973,"I tend to have just 1 file, but don't upload the web.config when I update
 t3979,"What Javascript keywords (function names, variables, etc) are reserved?",neutral,neutral
 t3988,"If someone is trying to do something malicious a simple regex just can't do it -- take (function(){this[""loca""+""tion""]=""http://example.com"";})() In general if you can't trust your users (which is the case with any site on which arbitrary people can add content) blocking all js is necessary.",neutral,neutral
 t3989,Is it possible to configure nHibernate to connect to Paradox database (*.db files)?,neutral,negative
-t3995,"StyleCop has rules that seem to differ from MS's prior style guides. For example, StyleCop hates m_ and _ for prefixs to private members. Also, the VS default code generation violates StyleCop by putting using statements outside the namespace. *sigh*",negative,negative
+t3995,"StyleCop has rules that seem to differ from MS's prior style guides. For example, StyleCop hates m_ and _ for prefixs to private members. Also, the VS default code generation violates StyleCop by putting using statements outside the namespace. *sigh*",negative,neutral
 t3996,"Hey, I am trying to further my knowledge of javascript and was wondering if anyone could explain to me what exactly is happening in the script below: Most importantly, why are there 4 'google_ ad_ ...' at the beginning and what is the purpose of them? A line by line explanation would be awesome :) Thanks for any help. I really appreciate it.",positive,positive
 t3997,"I have not figured out how to set the font yet, but I did find an excellent example of how to make the colors on alternating rows of the list to vary in color: http://www.actionscript.org/forums/showthread.php3?t=188206 (It was different in AS2 - just needed one line. Now you need one line plus three whole classes.)",neutral,positive
 t4001,"Copy any applicable preferences files in ~/Library/Preferences from a machine that you have checked ""Don't show again"" on.",neutral,neutral
@@ -1218,10 +1218,10 @@ t4012,What libraries/methods that you know of can do some basic HTML representat
 t4019,"My goal is to write a cookie when the user authenticates. We are using a crappy framework that hides its source code and event model so when I use their login control I can't set a session timeout on it! Anyhow, I am trying to write a cookie when the user is logged in, and then refresh the cookie expire time on subsequent page views (sliding expiration). So I figured I could initially create the cookie during Application_AuthenticateRequest in teh global.asax but that seems to be firing even when the user hasn't signed in yet. Is that suppose to be the case?",negative,negative
 t4021,"Obligatory I Am Not A Lawyer. Are you violating the legal clauses of the GPL? Probably not. ATI and nVidia do this sort of thing with their graphics drivers for Linux. However, it's important to note that Linux is GPLv2; this may have changed with GPLv3. Are you violating the spirit of the GPL? Yes, and judging from the way your question was written, you already knew this.",negative,negative
 t4022,"I'm using vbscript, all that does is reverse the setting of checkbox.checked, whichever way it is. As an aside, vbscript is awful to work in.",negative,neutral
-t4029,"claims to: Export Balsamiq Mockups to HTML/CSS/JS and Adobe Flex 3 at a click of a button. Balsamiq's perfect companion No coding skills required Pays for itself after one use If it really ""works"" Napkee could be extremely useful. Does Napkee work as advertised? What is the quality of the exported HTML? Is it a must-have companion to Balsamiq (which I love)?",positive,positive
+t4029,"claims to: Export Balsamiq Mockups to HTML/CSS/JS and Adobe Flex 3 at a click of a button. Balsamiq's perfect companion No coding skills required Pays for itself after one use If it really ""works"" Napkee could be extremely useful. Does Napkee work as advertised? What is the quality of the exported HTML? Is it a must-have companion to Balsamiq (which I love)?",positive,negative
 t4037,You're missing Aero? Check out http://win2008workstation.com,neutral,neutral
 t4041,+1 excellent question,positive,positive
-t4043,why do people hate anonymous block initializers,neutral,negative
+t4043,why do people hate anonymous block initializers,neutral,neutral
 t4045,"Wow, it works! Thanks.",positive,positive
 t4049,"I've just been looking at php's autoload() function. Seems a nice idea, but I'm not sure how it handles multiple directories. My current development basically has a library directory structure grouping classes into subdirectories by operation. I'm wondering I have to declare a include() for each directory ... which I really hope I don't have to do. Can you advise - thanks",positive,positive
 t4063,"What should go into the top level namespace? For example, if I have MyAPI.WebLogic, MyAPI.Compression, etc. If I put classes into the top level namespace, am I violating the principle of encapsulation?",neutral,neutral
@@ -1234,10 +1234,10 @@ t4094,http://delta.tigris.org is an excellent tool for automated minimization of
 t4095,"Well, without any third-party tools, I'd say try using the clipboard ring, but roosteronacid's idea about the snippet is probably quicker. Hope that helps!",positive,positive
 t4103,"Maybe, things have changed since then?",neutral,negative
 t4105,"You can get IDs or classes on elements, but you cannot really retrieve the ""selector"" of an element. You can use `width()` and `height()` to get the dimensions.",neutral,neutral
-t4112,"I'm writing a basic chat program, and I need to notify the user that the other person closed the app. I have my own protocol, and I've already added a ""Quit"" message. The only drawback is that it isn't sent if the app is killed/crashes/etc.",neutral,negative
+t4112,"I'm writing a basic chat program, and I need to notify the user that the other person closed the app. I have my own protocol, and I've already added a ""Quit"" message. The only drawback is that it isn't sent if the app is killed/crashes/etc.",neutral,positive
 t4113,"For all your keydown/keyup/keyboard needs, use the jQuery hotkeys plugin. Saw this a few months ago and it never fails to impress it. Follow the jump for the plugin demo ... It maps ALL keys on a keyboard including combos. Hope it helps!",positive,positive
 t4115,"For an excellent event manager class, check Danny Miller's: http://k2xl.com/wordpress/2008/07/02/as3-eventmanager-class-removealllisteners/",positive,neutral
-t4119,"How would you manage the lifecycle and automated build process when some of the projects (C# .csproj projects) are part of the actual build system? Example: A.csproj is a project that uses MSBuild tasks that are implemented in BuildEnv.csproj. Both projects are part of the same product (meaning, BuildEnv.csproj frequently changes as the product is being developed and not a 3rd party that is rarely updated)",neutral,neutral
+t4119,"How would you manage the lifecycle and automated build process when some of the projects (C# .csproj projects) are part of the actual build system? Example: A.csproj is a project that uses MSBuild tasks that are implemented in BuildEnv.csproj. Both projects are part of the same product (meaning, BuildEnv.csproj frequently changes as the product is being developed and not a 3rd party that is rarely updated)",neutral,negative
 t4120,goooooooooooooood!,positive,positive
 t4121,"I just flashed back to an old Broderbund game... Can't remember the name of it. Awful CGI graphics, lots of cannon battles in old ships... Maybe the first pirates game? Damn, that was an AWFUL game. Had a rollup scroll in it.",negative,negative
 t4130,"Consider this HTML: On all browsers but Firefox/Mac, it renders correctly, i.e bold and non-bold text are on the same baseline. On Firefox/Mac, there is a 1px baseline difference between the bold and non-bold texts. See below for screenshot. Left is Safari 3.2.3, right is Firefox 3.0.10. Is there any way to fix this e.g with some CSS, other than to go quietly cry in the corner and use Arial (which I'd not want to do? I'd stay with Helvetica Neue if I could).",neutral,negative
@@ -1251,26 +1251,26 @@ t4157,"This is pretty much Python-independent! It's a classic example of Unix in
 t4158,I always tend to forget these built-in symfony functions for making links.,neutral,neutral
 t4162,Great!.. works as advertised - Thanks aku. Voting you closer to the 5K mark :),positive,positive
 t4166,"+1. Brian, you saved me from hours and hours of research, great insight!",positive,positive
-t4169,There is a function IsWindow which does exactly what you asked for. Look at for more information.,neutral,neutral
+t4169,There is a function IsWindow which does exactly what you asked for. Look at for more information.,neutral,positive
 t4173,You could implement your own malloc/free without worrying about the underlying OS.,neutral,neutral
 t4174,Great descriptions of all the answers !,positive,positive
 t4178,"Entering ""udp://host:666"" in the location bar doesn't work very well. Is there any work-around for sending a single ""empty"" datagram to a host using an ordinary web browser? The response is no issue since the use case I'm think about is port knocking (""http://host:666"" doesn't work well since browsers tend to repeat the request if there is no response, thus violating the designated knock sequence).",neutral,negative
 t4180,"Not sure what you mean by ""child form"". Perhaps it's a button on a panel on a form? Or is it a MDI thing? Or is the child form a dialog box?",neutral,neutral
 t4181,"When I do: It searches the entire system. How do I prevent that? (This question comes from an """" to another question.)",neutral,negative
-t4193,"Usability notes: Personally I hate when sites put the ""forgot password"" or ""forgot username"" or ""help"" links inbetween the password field, and the Login button. As a keyboard user, I shouldn't have to TAB over them to get to the submit button. Better yet, also capture the Enter keypress on the password field so that I can auto-submit with the Enter key.",negative,negative
-t4195,"The issue comes into play if you color a div, and set its opacity to make it transparent. If you then want to put text on this div, the text is transparent, and that isn't always desirable.",neutral,negative
-t4200,"That's just a 16 character requirement with an optional 2 character afterwards: The parentheses may not be required - I'm not enough of a regex guru to know offhand, I'm afraid. If anyone wants to edit it, do feel free...",negative,neutral
+t4193,"Usability notes: Personally I hate when sites put the ""forgot password"" or ""forgot username"" or ""help"" links inbetween the password field, and the Login button. As a keyboard user, I shouldn't have to TAB over them to get to the submit button. Better yet, also capture the Enter keypress on the password field so that I can auto-submit with the Enter key.",negative,positive
+t4195,"The issue comes into play if you color a div, and set its opacity to make it transparent. If you then want to put text on this div, the text is transparent, and that isn't always desirable.",neutral,neutral
+t4200,"That's just a 16 character requirement with an optional 2 character afterwards: The parentheses may not be required - I'm not enough of a regex guru to know offhand, I'm afraid. If anyone wants to edit it, do feel free...",negative,negative
 t4203,"You may be looking for a solution similar to Josh Smith's """". In his article, he presents the following: And then uses the multi-value converters as follows: Hope this helps!",positive,positive
 t4205,"I agree, your exemple is terrible ;)",positive,negative
 t4206,I don't think that you can... But if you can I'd love to see how!,positive,positive
 t4213,"I would like to strip everything in a string before a - and leave what's after that. For example: 15.11-101 I want to strip 15.11 and leave 101. I've tried a few different things, but can't seem to get it working, if anyone could help me out, that'd be fantastic :) Cheers Leanne",positive,positive
 t4220,"is excellent for scripts; is standard for classes. As Ben says, think of it as ""Object"" -- but it is much cooler in that it does not constrain you to the Object methods. This has neat implications with respect to imports. e.g. In this snippet I have to import FileChannel e.g. But here I can just 'wing it' as long as everything is on the classpath",neutral,neutral
-t4222,"How awesome would it be if the Delphi IDE would put code in 2 formats on the clipboard, so that code that is copied and pasted in e-mails or word-documents has proper highlighting instead of plain text?!",negative,positive
+t4222,"How awesome would it be if the Delphi IDE would put code in 2 formats on the clipboard, so that code that is copied and pasted in e-mails or word-documents has proper highlighting instead of plain text?!",negative,negative
 t4225,Sweet :) Happy hacking!,positive,positive
 t4230,How can I call a custom action dll written in managed code (.net) from an installer without using an unmanaged intermediary?,neutral,negative
 t4231,"from a really geeky perspective, that is really cool!",positive,positive
-t4232,"@sambo99: I'm really not sure what you mean, I'm afraid.",negative,negative
-t4234,"I'll second the NI Measurement Studio. I've plotted 1000 points/sec with NI Measurement Studio's chart control. Also, this test was done on a laptop with a very lousy video card. AFAIK, Measurement Studio is using OpenGL internally.",negative,negative
+t4232,"@sambo99: I'm really not sure what you mean, I'm afraid.",negative,positive
+t4234,"I'll second the NI Measurement Studio. I've plotted 1000 points/sec with NI Measurement Studio's chart control. Also, this test was done on a laptop with a very lousy video card. AFAIK, Measurement Studio is using OpenGL internally.",negative,neutral
 t4235,I think using RSA encryption for anything but key transport is abuse. Generate a new key for a symmetric cipher and encrypt your bulk data with that. Then encrypt the key with RSA. Send the symmetrically-encrypted cipher-text along with the asymmetrically-encrypted content encryption key to your recipient.,neutral,negative
 t4237,Glad to see I'm not the only one who got that! The free book is actually really exciting; it will definitely motivate you to do peer code review.,positive,positive
 t4241,"Basically, the doctype determines how crazy IE is going to be. If you don't set it to XHTML, or ""strict"" you'll be living in a world of hurt when it comes to IE (even if you set it, you'll still be hating on IE, but it does make it a lot better).",negative,neutral
@@ -1280,12 +1280,12 @@ t4251,"So for example if I need to run Git Pull in the commandline, I need to sp
 t4254,"I agree. 1 ""interface"" to worry about and flexible to add others if necessary.",positive,positive
 t4257,"Curious that none of them considered Stopwatch yet? Precise and bigger than , not involving OS horrific perf counters, WMI or native calls, and well really simple:",neutral,neutral
 t4267,This reply is incomplete: we currently have an app that is leaking permgen memory and the number of loaded classes is absolutely constant. Both facts can be seen by using JConsole. We suffer from the same problem as the original poster in that we have no way to analyze the permgen in detail.,negative,negative
-t4268,Ah - make me look lazy! (guilty),negative,neutral
+t4268,Ah - make me look lazy! (guilty),negative,positive
 t4272,"Ryan Oberoi makes an excellent suggestion, but it's a bit overkill for my small ASP.NET MVC web application. I like Lobstrosity's idea since it could apply to any class tag and its short and simple... just what I need. Both are good answers yet one solves the general question (involving a css framework) and the other one solves my specific need... I guess I should select Ryan's response as the solution as it would probably help others more... any suggestions?",positive,positive
 t4273,"We're looking at Drools/Guvnor, possibly integrated with jBPM (as in this ), to add a workflow engine to our Spring/Java EE app, but we're still in the very early phases of trying it out.",neutral,neutral
 t4279,"Great info! Thanks, Alex! :)",positive,positive
-t4281,Devexpress have a good one: The RangeTrackBarControl control extends the functionality provided by the TrackBarControl enabling end-users to select a range of values. Two sliders can be used to set the minimum and maximum values: you can get them free from: hope this helps!,positive,neutral
-t4287,"Rebol (600 Ko only) is based on antigrain geometry library which is Opensource It seems really great, can OpenGL do better ?",positive,neutral
+t4281,Devexpress have a good one: The RangeTrackBarControl control extends the functionality provided by the TrackBarControl enabling end-users to select a range of values. Two sliders can be used to set the minimum and maximum values: you can get them free from: hope this helps!,positive,positive
+t4287,"Rebol (600 Ko only) is based on antigrain geometry library which is Opensource It seems really great, can OpenGL do better ?",positive,negative
 t4288,No prob. Good luck!,positive,positive
 t4293,this is a terrible idea for webapps,negative,negative
 t4299,"To convert raster images to vectorial images, I found (free) to do an excellent job (comparable to VectorMagic, which is not free anymore by the way). In Inkscape, import your image and use the Path/Trace Bitmap function. It has a lot of control. Once you converted to a vectorial image, save it as a SVG. Then, using , you can convert to XAML vector data. (Path & Canvas)",positive,positive
@@ -1304,9 +1304,9 @@ t4344,"I've hit this before. It has to do with the fact that lucene, under the c
 t4354,"I have full control of the deployment enviroment, it's an internal intranet application. Office interop/autmation is horrible, and while the documents are generated by C#, we use Aspose.Words. I can accept using interop.automation for printing, going to give it a try.",negative,negative
 t4356,"No worries, just a tip for future reference.",neutral,positive
 t4362,I've noticed this lag time also. Its really annoying when you go to /usr/bin to tell firefox what app to use to open a file and it lags for 10 seconds.,negative,negative
-t4363,"There are an awful lot of C/C++ libraries out there, most no longer updated. There's not much for C#, but I have seen a couple. I haven't really used any of them in anger, so I can't give any recommendations. I would start with and see if you find anything of use there. Alternatively, a search for on sourceforge.net has plenty of results.",negative,positive
+t4363,"There are an awful lot of C/C++ libraries out there, most no longer updated. There's not much for C#, but I have seen a couple. I haven't really used any of them in anger, so I can't give any recommendations. I would start with and see if you find anything of use there. Alternatively, a search for on sourceforge.net has plenty of results.",negative,neutral
 t4364,"i've got the following code which runs a bat file. the bat file then runs some .exe .. which does some stuff. The stuff takes aroun 5-10 seconds. What i'm trying to do is leave the command window open, even after the process terminates. Is there any way to do this? Otherwise, can i get all the output of that window going to my debugger instead, so i don't need to worry about this window remaining? cheers.",neutral,positive
-t4368,"One of the first cool demos in the 1.0 era was page turn photo book. The idea caught a bit of traction and Jeff Prosise wrote up a framework for it What I'm looking for is an update to 3.0 (or at least 2.0) While I appreciate Prosise effort, I'm not that thrilled about all the Javascript required to drive the application. Any pointers? This is primarily for a learning exercise, so canned controls are of limited interest.",neutral,negative
+t4368,"One of the first cool demos in the 1.0 era was page turn photo book. The idea caught a bit of traction and Jeff Prosise wrote up a framework for it What I'm looking for is an update to 3.0 (or at least 2.0) While I appreciate Prosise effort, I'm not that thrilled about all the Javascript required to drive the application. Any pointers? This is primarily for a learning exercise, so canned controls are of limited interest.",neutral,positive
 t4372,"Dude I feel your pain, same issue here.",negative,negative
 t4375,Excellent. This just saved me hours of work.,positive,positive
 t4378,Regarding WCF/FTP/WS-Attachment/DIME: Excellent suggestions and some interesting reading. These are probably the types of long term solutions that I will end up using. However if there was some short term solution for changing the upload size in IIS7 that would be excellent. Thanks.,positive,positive
