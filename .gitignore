@@ -1,6 +1,7 @@
 # Virtual environments
 venv/
 env/
+venv_tesi/
 .venv/
 
 # Python
@@ -12,3 +13,12 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# cache
+.cache/
+hf_cache/
+~/.cache/
+
+# vscode
+.vscode/
+.vscode-server/
