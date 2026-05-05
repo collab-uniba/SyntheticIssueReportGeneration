@@ -7,7 +7,7 @@ Questo repository raccoglie diversi esperimenti e pipeline per classificazione d
 - Few-Shot classification (SetFit)
 
 ## Ambiente di sviluppo utilizzato
-- Python: 3.11
+- Python: 3.12
 - Gestione ambienti: venv_tesi
 - Script di orchestrazione: Bash (.sh)
 
