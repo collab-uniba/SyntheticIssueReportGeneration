@@ -5,14 +5,13 @@ Lo script genererà alla fine un grafico per rendere visibile il risultato dell'
 
 ## Contenuto del Repository
 - f1_score_vs_sample_size.png: Grafico generato automaticamente.
-- requirements_grafico.txt: Dipendenze Python per eseguire lo script.
 - run_train_final.sh
 - plot_f1_vs_sample_size.py
+- train_split.sh (se è presente solo il dataset per il train)
+- plot_split.py (se è presente solo il dataset per il train)
 
 ## Prerequisiti
-- Python = 3.11
-- pip install -r requirements_grafico.txt
-- Lo script può essere eseguito su CPU, ma per dataset più grandi o per molte ripetizioni è consigliata una GPU
+Per dataset più grandi o per molte ripetizioni è consigliata una GPU con buona potenza di calcolo
 
 ## Esecuzione
 Per utilizzare lo script si può utilizzare  run_train_final.sh per semplificare il run.

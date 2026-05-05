@@ -7,12 +7,7 @@ Supporta anche il training few-shot specificando quanti esempi usare per classe.
 ## Contenuto del Repository
 - train_model.py: Script principale per il training e la predizione.
 - train_and_run.sh: Script shell per gestire l'ambiente virtuale, le dipendenze e l'esecuzione.
-- requirements.txt: Lista delle dipendenze necessarie.
 - SetFit_outputs/: cartella che contiene il file test_predictions.csv generato con le predizioni sul test set.
-- SetFit_outputs.zip: archivio ZIP finale con i risultati.
-
-## Prerequisiti
-I pacchetti necessari vengono installati automaticamente da requirements.txt.
 
 ## Dettagli dei Parametri
 - -d, --train_file (stringa, obbligatorio): Percorso al file CSV contenente i dati di training. Deve includere almeno le colonne Text e Polarity.
@@ -38,4 +33,3 @@ Assicurati che i tuoi file train.csv e (opzionalmente) test.csv abbiano almeno l
 
 ## Outputs
 - Il file .csv viene salvato in: SetFit_outputs/
-- Al termine viene creato: SetFit_outputs.zip

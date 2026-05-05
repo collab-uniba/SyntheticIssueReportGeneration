@@ -22,3 +22,6 @@ hf_cache/
 # vscode
 .vscode/
 .vscode-server/
+
+# output script
+Grafico_outputs/

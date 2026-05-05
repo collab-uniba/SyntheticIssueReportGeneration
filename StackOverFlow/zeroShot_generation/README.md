@@ -8,14 +8,10 @@ Il modello riceve solo un prompt che descrive il compito (ad esempio “Scrivi u
 - zeroShot_generation.py -> script Python per la generazione zero-shot.
 - run_zeroShot.sh -> script Bash per:
   - gestione ambiente virtuale
-  - installazione dipendenze
   - download modello Ollama
   - esecuzione per ciascuna emotion
-  - creazione archivio ZIP
-- requirements_fewShot.txt: dipendenze Python.
 - prompts.yaml: prompt usati per la generazione.
 - zeroShot_outputs/: cartella generata automaticamente con i file .json.
-- zeroShot_outputs.zip: archivio ZIP finale con i risultati.
 
 ## Prerequisiti
 - Ollama installato e funzionante

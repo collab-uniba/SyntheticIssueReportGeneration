@@ -12,21 +12,15 @@ fi
 TRAIN_CSV=$1
 TEST_CSV=$2
 
-# -------------------------
 # check script
-# -------------------------
 if [ ! -f "$SCRIPT_NAME" ]; then
     echo "Script $SCRIPT_NAME non trovato"
     exit 1
 fi
 
-# -------------------------
 # check python (usa venv attivo)
-# -------------------------
 echo "Python attivo: $(which python)"
 
-# -------------------------
-# run
-# -------------------------
+# Avvio script
 echo "Avvio training..."
 python "$SCRIPT_NAME" "$TRAIN_CSV" "$TEST_CSV"

@@ -12,14 +12,10 @@ L’esecuzione è automatizzata tramite uno script Python (fewShot_generation.py
 - fewShot_generation.py -> script Python per la generazione few-shot.
 - run_fewShot.sh -> script Bash per:
   - gestione ambiente virtuale
-  - installazione dipendenze
   - download modello Ollama
   - esecuzione per ciascuna emotion
-  - creazione archivio ZIP
-- requirements_fewShot.txt: dipendenze Python.
 - prompts.yaml: prompt usati per la generazione.
 - fewShot_outputs/: cartella generata automaticamente con i file .json.
-- fewShot_outputs.zip: archivio ZIP finale con i risultati.
 
 ## Prerequisiti
 - Ollama installato e funzionante

@@ -181,6 +181,3 @@ share/
 
 # consenti solo i csv
 !*_outputs/*.csv
-
-# Ignora tutti i file ZIP
-*.zip
