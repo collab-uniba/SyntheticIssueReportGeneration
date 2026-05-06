@@ -1,10 +1,3 @@
-import torch
- 
-print("CUDA available:", torch.cuda.is_available())
-print("CUDA device count:", torch.cuda.device_count())
-if torch.cuda.is_available():
-    print("GPU:", torch.cuda.get_device_name(0))
-
 import argparse
 from datasets import load_dataset, DatasetDict, Features, Value
 from typing import cast
@@ -13,6 +6,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import os
 import csv
+import torch
 
 parser = argparse.ArgumentParser()
 
@@ -46,12 +40,9 @@ dataset = cast(DatasetDict, load_dataset(
 
 # Se non c'è test set, fai uno split del train (caso del dataset di github gold)
 if "test" not in dataset:
-    df = cast(pd.DataFrame, dataset["train"].to_pandas())
+    df = dataset["train"].to_pandas()
     
     df_train, df_test = train_test_split(df, test_size=args.split_ratio, stratify=df["Polarity"], random_state=42)
-    
-    df_train = pd.DataFrame(df_train)
-    df_test = pd.DataFrame(df_test)
     
     dataset = DatasetDict({
         "train": dataset["train"].from_pandas(df_train.reset_index(drop=True)),
@@ -77,9 +68,6 @@ model = SetFitModel.from_pretrained(
     "all-mpnet-base-v2",
     labels=["negative", "positive", "neutral"],
 )
-
-print("DEVICE:", "cuda" if torch.cuda.is_available() else "cpu")
-print("Device modello:", next(model.model_body.parameters()).device) # type: ignore
 
 training_args = TrainingArguments(
     batch_size=16,

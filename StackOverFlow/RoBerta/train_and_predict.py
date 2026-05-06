@@ -1,6 +1,4 @@
-# pyright: reportPrivateImportUsage=false
-# pyright: reportOptionalSubscript=false
-from datasets import load_dataset, Dataset, DatasetDict, Features, Value
+from datasets import load_dataset, Features, Value
 from typing import cast
 from transformers import (
     AutoTokenizer,
@@ -34,13 +32,13 @@ features = Features({
     "Text": Value("string")
 })
 
-dataset = cast( DatasetDict, load_dataset(
+dataset = load_dataset(
     'csv',
     data_files={'train': args.train_file, 'test': args.test_file},
     delimiter=';',
     quotechar='"',
     features=features
-))
+)
 
 train_dataset = dataset['train']
 test_dataset = dataset['test']
@@ -61,7 +59,7 @@ def encode_labels(batch):
 train_dataset = train_dataset.map(encode_labels, batched=True)
 test_dataset = test_dataset.map(encode_labels, batched=True)
 
-model_name = "roberta-base"
+model_name = "roBERTa-base"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 def preprocess_function(example):
@@ -111,12 +109,12 @@ trainer = Trainer(
 
 trainer.train()
 
-predictions_output = trainer.predict(tokenized_test) # type: ignore[arg-type]
+predictions_output = trainer.predict(tokenized_test)
 pred_labels = np.argmax(predictions_output.predictions, axis=1)
 
 predicted_labels_text = label_encoder.inverse_transform(pred_labels)
 
-test_df = cast(pd.DataFrame, test_dataset.to_pandas())
+test_df = test_dataset.to_pandas()
 
 test_df["Prediction"] = predicted_labels_text
 
