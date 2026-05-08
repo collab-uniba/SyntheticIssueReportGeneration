@@ -4,6 +4,11 @@ import yaml
 from ollama import chat
 from pydantic import BaseModel
 import os
+import torch
+
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
 
 class User(BaseModel):
     text: str

@@ -9,9 +9,7 @@ if torch.cuda.is_available():
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# =========================
 # 1. TEST ROBERTA
-# =========================
 print("\n=== TEST ROBERTA ===")
 
 model_name = "roberta-base"
@@ -28,10 +26,7 @@ with torch.no_grad():
 
 print("RoBERTa OK on:", next(model.parameters()).device)
 
-
-# =========================
 # 2. TEST SETFIT
-# =========================
 print("\n=== TEST SETFIT ===")
 
 setfit_model = SetFitModel.from_pretrained(

@@ -17,6 +17,10 @@ import argparse
 import os
 import csv
 
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
+
 parser = argparse.ArgumentParser()
 parser.add_argument('-d','--train_file', type=str, required=True, help='Path al file CSV di training')
 parser.add_argument('-t','--test_file', type=str, required=True, help='Path al file CSV di test')

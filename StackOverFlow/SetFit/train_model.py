@@ -8,6 +8,10 @@ import os
 import csv
 import torch
 
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-d", "--train_file", type=str, required=True, help="Percorso al file CSV di training.")
@@ -30,13 +34,13 @@ data_files = {"train": args.train_file}
 if args.test_file:
     data_files["test"] = args.test_file
 
-dataset = cast(DatasetDict, load_dataset(
+dataset = load_dataset(
     "csv",
     data_files=data_files,
     delimiter=";",
     quotechar='"',
     features=features
-))
+)
 
 # Se non c'è test set, fai uno split del train (caso del dataset di github gold)
 if "test" not in dataset:
@@ -46,7 +50,7 @@ if "test" not in dataset:
     
     dataset = DatasetDict({
         "train": dataset["train"].from_pandas(df_train.reset_index(drop=True)),
-        "test": dataset["test"].from_pandas(df_test.reset_index(drop=True))
+        "test": dataset["train"].from_pandas(df_test.reset_index(drop=True))
     })
 
 # Mescola il training set (importante per few-shot)

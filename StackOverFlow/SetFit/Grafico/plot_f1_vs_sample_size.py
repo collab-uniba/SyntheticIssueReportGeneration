@@ -6,6 +6,12 @@ from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
 import pandas as pd
 import matplotlib.pyplot as plt
+from kneed import KneeLocator
+import torch
+
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
 
 if len(sys.argv) != 3:
     sys.exit(1)
@@ -22,8 +28,8 @@ dataset = load_dataset(
     delimiter=";",
     quotechar='"'
 )
-# 5, 10, 15, 20, 25, 50, 100, 200, 
-sample_sizes = ["all_capped"]
+
+sample_sizes = [5, 10, 15, 20, 25, 50, 100, 200, "all_capped"]
 
 test_dataset = dataset["test"]
 test_texts = test_dataset["Text"]
@@ -108,19 +114,74 @@ for size in sample_sizes:
 
     print(f"F1-score: {f1:.4f} | Accuracy: {acc:.4f}")
 
+# crea dataframe
 df_results = pd.DataFrame(results)
 
+# ordina per sample size
 df_results = df_results.sort_values("sample_size")
 
+x = df_results["sample_size"].values
+y = df_results["f1_score"].values
+
+# trova il knee
+kneedle = KneeLocator(x, y, curve="concave", direction="increasing", S=1.0)
+
+knee_x = kneedle.knee
+knee_y = kneedle.knee_y
+
+# trova plateau
+epsilon = 0.015
+
+df_results["delta_f1"] = df_results["f1_score"].diff()
+
+plateau_points = df_results[df_results["delta_f1"] < epsilon]
+
+plateau_x = None
+plateau_y = None
+
+if len(plateau_points) > 0:
+    first_plateau = plateau_points.iloc[0]
+    plateau_x = int(first_plateau["sample_size"])
+    plateau_y = first_plateau["f1_score"]
+
+# plot
+xticks = [5, 10, 15, 20, 25, 50, 100, 200, 1000]
+
 plt.figure(figsize=(10, 6))
-plt.plot(df_results["sample_size"], df_results["f1_score"], marker='o')
+plt.xscale("log")
+plt.plot(df_results["sample_size"], df_results["f1_score"], marker='o', label="F1-score (macro)")
 plt.title("F1-score vs Sample Size")
 plt.xlabel("Numero di campioni nel training set")
 plt.ylabel("F1-score (macro)")
 plt.grid(True)
-plt.xticks(df_results["sample_size"])
-plt.tight_layout()
+plt.xticks(xticks, labels=[str(x) for x in xticks])
+
+if not results:
+    raise ValueError("Nessun file metrics trovato in Grafico_outputs")
+
+# knee
+if knee_x is not None and knee_y is not None:
+    plt.axvline(x=knee_x, linestyle='--', color='red', label="Knee")
+
+    plt.scatter(knee_x, knee_y, color='red')
+
+    plt.text(knee_x, knee_y, f"Knee: {knee_x}", fontsize=10, ha='right', va='bottom')
+
+# plateau
+if plateau_x is not None and plateau_y is not None:
+    plt.axvline(x=plateau_x, linestyle='--', color='green', label="Plateau")
+
+    plt.scatter(plateau_x, plateau_y, color='green')
+
+    plt.text(plateau_x, plateau_y, f"Plateau: {plateau_x}", fontsize=10, ha='left', va='top')
+
+plt.legend(loc="lower right")
+
+print(f"Knee point: {knee_x} with F1-score: {knee_y}")
+print(f"Plateau point: {plateau_x} with F1-score: {plateau_y}")
 
 plot_path = os.path.join(output_dir, "f1_score_vs_sample_size.png")
+
+plt.tight_layout()
 plt.savefig(plot_path)
 plt.show()

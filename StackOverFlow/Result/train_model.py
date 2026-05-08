@@ -9,16 +9,8 @@ import os
 import json
 import torch
 
-# Usa GPU se compatibile
-if torch.cuda.is_available():
-    try:
-        torch.tensor([1.0], device="cuda")
-        device = "cuda"
-    except Exception:
-        device = "cpu"
-else:
-    device = "cpu"
-
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
  
 parser = argparse.ArgumentParser()
@@ -56,6 +48,9 @@ if "test" not in dataset:
         "train": dataset["train"].from_pandas(df_train.reset_index(drop=True)),
         "test": dataset["train"].from_pandas(df_test.reset_index(drop=True))
     })
+    
+# Mescola il training set (importante per few-shot)
+dataset["train"] = dataset["train"].shuffle(seed=42)
  
 # per usare tutto il dataset e non fare un sample passare come parametro n<=0
 if args.num_samples > 0:
@@ -80,9 +75,8 @@ model.to(device)
 training_args = TrainingArguments(
     batch_size=16,
     num_epochs=4,
-    eval_strategy="no",
+    evaluation_strategy="no",
     save_strategy="no",
-    load_best_model_at_end=True,
 )
  
 trainer = Trainer(

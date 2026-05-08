@@ -6,6 +6,11 @@ import random
 from ollama import chat
 from pydantic import BaseModel
 import os
+import torch
+
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
 
 parser = argparse.ArgumentParser(description="Few-shot generation with Ollama")
 parser.add_argument("--n_samples", type=int, default=3, help="Number of examples to use for few-shot context PER EMOTION")
