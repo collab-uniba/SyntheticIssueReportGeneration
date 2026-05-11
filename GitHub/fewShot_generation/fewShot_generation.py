@@ -37,7 +37,7 @@ user_prompt_base = base_messages[-1]["content"] if len(base_messages) > 1 else "
 
 user_prompt_base = user_prompt_base.replace("{{emotion}}", args.target_polarity)
 
-df = pd.read_csv("train_StackOverFlow.csv", delimiter=';', quotechar='"')
+df = pd.read_csv("train_github.csv", delimiter=';', quotechar='"')
 
 emotions = ["positive", "negative", "neutral"]
 emotion_data = {}

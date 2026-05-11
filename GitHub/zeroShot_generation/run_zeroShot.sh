@@ -65,5 +65,5 @@ emotions=("positive" "negative" "neutral")
 
 for emotion in "${emotions[@]}"; do
     echo "Esecuzione zeroShot_generation.py per emotion: $emotion"
-    python "$SCRIPT_NAME" "${ARGS[@]}" --model "$MODEL_NAME" --target_polarity "$emotion" --output_dir "$OUTPUT_DIR"
+    python "$SCRIPT_NAME" "${ARGS[@]}" --model "$MODEL_NAME" --emotion "$emotion" --output_dir "$OUTPUT_DIR"
 done
