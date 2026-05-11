@@ -2,7 +2,7 @@
 
 Questo progetto esegue generazione di testi in modalità few-shot utilizzando modelli LLM locali tramite Ollama (llama3.2:1b) e Python 3.12.
 
-Viene preso un piccolo numero di esempi reali dal dataset originale (train_StackOverFlow.csv) per guidare la generazione.
+Viene preso un piccolo numero di esempi reali dal dataset originale (train_github.csv) per guidare la generazione.
 
 Il modello genera nuovi testi seguendo lo stile e la distribuzione degli esempi forniti.
 
@@ -14,7 +14,7 @@ L’esecuzione è automatizzata tramite uno script Python (fewShot_generation.py
   - gestione ambiente virtuale
   - download modello Ollama
   - esecuzione per ciascuna emotion
-- prompts.yaml: prompt usati per la generazione.
+- prompt.yaml: prompt usati per la generazione.
 - fewShot_outputs/: cartella generata automaticamente con i file .json.
 
 ## Prerequisiti
@@ -24,8 +24,8 @@ L’esecuzione è automatizzata tramite uno script Python (fewShot_generation.py
 
 ## Preparazione
 Assicurati che siano presenti:
-- train_StackOverFlow.csv
-- prompts.yaml
+- train_github.csv
+- prompt.yaml
 
 ## Esecuzione
 '''bash

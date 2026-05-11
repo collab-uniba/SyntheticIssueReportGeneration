@@ -10,7 +10,7 @@ Il modello riceve solo un prompt che descrive il compito (ad esempio “Scrivi u
   - gestione ambiente virtuale
   - download modello Ollama
   - esecuzione per ciascuna emotion
-- prompts.yaml: prompt usati per la generazione.
+- prompt.yaml: prompt usati per la generazione.
 - zeroShot_outputs/: cartella generata automaticamente con i file .json.
 
 ## Prerequisiti
@@ -20,7 +20,7 @@ Il modello riceve solo un prompt che descrive il compito (ad esempio “Scrivi u
 
 ## Preparazione
 Assicurati che sia presente:
-- prompts.yaml
+- prompt.yaml
 
 ## Esecuzione
 '''bash
