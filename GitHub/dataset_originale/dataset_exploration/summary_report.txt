@@ -1,0 +1,41 @@
+
+REPORT ANALISI ESPLORATIVA
+==========================
+
+Dataset: github_gold.csv
+
+INFORMAZIONI GENERALI
+-------
+Righe: 7122
+Colonne: 3
+
+VALORI MANCANTI
+--------------
+ID          0
+Polarity    0
+Text        0
+
+DUPLICATI
+----------
+Righe duplicate: 0
+Testi duplicati: 0
+
+DISTRIBUZIONE DELLE CLASSI
+------------------
+          count  percentuale
+Polarity                    
+neutral    3022        42.43
+negative   2087        29.30
+positive   2013        28.26
+
+STATISTICHE LUNGHEZZA TESTO
+----------------------
+ media_caratteri  mediana_caratteri  min_caratteri  max_caratteri  media_parole  mediana_parole  min_parole_per_frase  max_parole_per_frase
+          116.87               94.0              2            265         19.33            16.0                     1                    57
+
+LUNGHEZZA MEDIA TESTO PER CLASSE
+----------------------------
+Polarity
+negative    109.33
+neutral     143.00
+positive     85.47

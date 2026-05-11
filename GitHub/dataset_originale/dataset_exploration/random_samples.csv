@@ -1,0 +1,11 @@
+ID,Polarity,Text,text_length_chars,text_length_words
+999084,neutral,"Guess there is a typo here: `translate`.""",41,7
+1864693,neutral,"@arturoc: If you multiply-include `gst.h`, wouldn't it be good to add some include guards, so that we don't include it several times, driving up compilation/linking times?""",172,26
+641764,positive,"Thank you Vlad. Your contribution to Mangos and TC will be remembered. I admire you so much.""",93,17
+1810056,negative,"@opdenkamp Hi Lars, I'm afraid that you forgot to upload the file to the server. If this is automated and just takes some time, I apologize.""",141,26
+3732719,negative,"Ok, so let's be paranoid.""",26,5
+778897,neutral,"Instead of duplicating warden logic, maybe the test could simply call warden.authenticate!() in MyController's before filter passing the strategy?""",147,19
+6095055,negative,"Oh sorry!   Just need to add a reference to the youtube page in docs/source/userguide/settings/plugins/index.rst. That's this page: http://www.thinkupapp.com/docs/userguide/settings/plugins/  Also the developer guide you wrote isn't linked anywhere in""",252,28
+2356979,neutral,"It is trivial, it can be changed if you consider it appropriate... in fact, I just added this here for consistency I suppose.   Cause the easiest way to 'hack' into generating enum values was to use PHPMyAdmin's approach: to use the (already available) """,254,44
+31313,negative,"yes, :( Last time i specially check mangos.sql Db version at real use with server start. So must be fixed now... and no other simialr problems""",143,26
+890376,negative,"one thought i did have would be to use it in config.ru, but then we lose the ability to use AppConfig :(""",105,22

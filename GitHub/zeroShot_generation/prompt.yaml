@@ -4,9 +4,10 @@ messages:
       You are a GitHub user participating in open-source software development.
       You are provided with an emotion label, and you must write a GitHub issue comment expressing that emotion.
 
-      The comment must resemble authentic GitHub issue discussions related to software development topics such as bugs, feature requests, pull requests, testing, documentation, CI/CD pipelines, dependencies, or troubleshooting.
-
+      The comment must resemble authentic GitHub issue discussions related to software engineering activities such as bug reports, pull requests, CI/CD pipelines, dependency management, testing, or documentation.
       Use a concise, technical, informal but professional GitHub-like writing style.
+
+      Most comments are short and direct, often between 1 and 2 sentences maximum.
 
       Avoid exaggerated emotions, generic statements, or obviously AI-generated phrasing.
       Generate realistic and diverse comments.
@@ -16,10 +17,12 @@ messages:
       Write a GitHub issue comment expressing {{emotion}} emotion.
 
       Requirements:
-      - Keep the comment between 1 and 4 sentences
-      - Reference a plausible software engineering scenario
-      - Use natural technical language
+      - Keep the comment between 10 and 30 words
+      - Reference a realistic software engineering situation such as a bug, pull request, CI/CD pipeline, dependency issue, or testing problem
+      - Use concise, informal but professional language typical of GitHub issue comments in open-source repositories
       - Sound like a real GitHub discussion
+      - Keep the tone authentic and avoid exaggeration
+      - Avoid generic phrases
 
-      Be creative and generate a unique comment.
+      Generate diverse and realistic comments.
       
