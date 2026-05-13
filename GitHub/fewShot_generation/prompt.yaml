@@ -20,4 +20,4 @@ messages:
       - Keep the comment between 10 and 30 words
       - Reference a realistic situation such as a bug, pull request, CI/CD pipeline, or dependency issue
       - Avoid generic phrases
-      
+      - Use varied and realistic issue or pull request references when appropriate
