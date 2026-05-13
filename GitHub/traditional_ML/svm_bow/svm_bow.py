@@ -1,18 +1,26 @@
 import json
 import pandas as pd
+import os
+import torch
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics import (accuracy_score, classification_report)
-import torch
+from pathlib import Path
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
 
 # Caricamento dataset
-train_df = pd.read_csv("train_github.csv", sep=";")
-test_df = pd.read_csv("test_github.csv", sep=";")
+BASE_DIR = Path(__file__).resolve().parents[2]  # Directory del progetto
+DATA_DIR = BASE_DIR / "datasets"
+
+train_path = DATA_DIR / "train_github.csv"
+test_path = DATA_DIR / "test_github.csv"
+
+train_df = pd.read_csv(train_path, sep=";")
+test_df = pd.read_csv(test_path, sep=";")
 
 # Rimuovi valori mancanti
 train_df = train_df.dropna(subset=["Text", "Polarity"])
@@ -28,8 +36,8 @@ y_test = test_df["Polarity"]
 # Pipeline
 model = Pipeline([ # NOSONAR
     (
-        "tfidf",
-        TfidfVectorizer(
+        "bow",
+        CountVectorizer(
             lowercase=True,
             stop_words="english",
             ngram_range=(1,2),
@@ -67,9 +75,13 @@ MACRO_AVG = "macro avg"
 WEIGHTED_AVG = "weighted avg"
 
 results = {
+    "dataset": {
+        "train": train_path.name,
+        "test": test_path.name
+    },
     "model": "SVM",
     "kernel": "linear",
-    "features": "TF-IDF",
+    "features": "Bag of Words",
     "ngrams": "1-2",
     "accuracy": accuracy,
 
@@ -79,9 +91,27 @@ results = {
     "f1_weighted": report[WEIGHTED_AVG]["f1-score"]
 }
 
+# Crea cartella output
+OUTPUT_DIR = "svm_bow_outputs"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 # Stampa risultati
 print(json.dumps(results, indent=4))
 
+# Salvataggio predictions su file CSV
+predictions_df = pd.DataFrame({
+    "ID": test_df["ID"],
+    "TrueLabel": y_test,
+    "Prediction": predictions,
+    "Text": test_df["Text"]
+})
+
+predictions_df.to_csv(
+    os.path.join(OUTPUT_DIR, "svm_bow_predictions.csv"),
+    index=False,
+    sep=";"
+)
+
 # Salvataggio risultati su file JSON
-with open("svm_tfidf_results.json", "w") as f:
+with open(os.path.join(OUTPUT_DIR, "svm_bow_results.json"), "w") as f:
     json.dump(results, f, indent=4)

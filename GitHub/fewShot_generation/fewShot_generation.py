@@ -3,10 +3,11 @@ import json
 import yaml
 import pandas as pd
 import random
-from ollama import chat
-from pydantic import BaseModel
 import os
 import torch
+from ollama import chat
+from pydantic import BaseModel
+from pathlib import Path
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -37,7 +38,10 @@ user_prompt_base = base_messages[-1]["content"] if len(base_messages) > 1 else "
 
 user_prompt_base = user_prompt_base.replace("{{emotion}}", args.target_polarity)
 
-df = pd.read_csv("train_github.csv", delimiter=';', quotechar='"')
+BASE_DIR = Path(__file__).resolve().parents[1]  # Directory del progetto
+DATA_DIR = BASE_DIR / "datasets"
+
+df = pd.read_csv(DATA_DIR / "train_github.csv", delimiter=';', quotechar='"')
 
 emotions = ["positive", "negative", "neutral"]
 emotion_data = {}

@@ -1,4 +1,8 @@
 {
+    "dataset": {
+        "train": "train_github.csv",
+        "test": "test_github.csv"
+    },
     "model": "SVM",
     "kernel": "linear",
     "features": "TF-IDF",
