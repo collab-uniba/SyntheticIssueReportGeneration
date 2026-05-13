@@ -4,6 +4,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics import (accuracy_score, classification_report)
+import torch
+
+# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print("Device in uso:", device)
 
 # Caricamento dataset
 train_df = pd.read_csv("train_github.csv", sep=";")

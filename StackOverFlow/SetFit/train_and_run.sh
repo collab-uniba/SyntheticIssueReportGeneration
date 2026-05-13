@@ -2,8 +2,6 @@
 set -e
 set -o pipefail
 
-VENV_DIR="venv_SetFit"
-
 SCRIPT_NAME="train_model.py"
 
 # Controllo degli argomenti
