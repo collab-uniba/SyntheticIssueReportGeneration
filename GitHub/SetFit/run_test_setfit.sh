@@ -2,11 +2,11 @@
 set -e
 set -o pipefail
 
-SCRIPT_NAME="setfit.py"
+SCRIPT_NAME="test_setfit.py"
 
 # Controllo degli argomenti
 if [ "$#" -lt 1 ]; then
-    echo "Usage: ./run_setfit.sh path/to/train.csv [path/to/test.csv] [num_samples] [split_ratio]"
+    echo "Usage: ./run_test_setfit.sh path/to/train.csv [path/to/test.csv] [num_samples] [split_ratio]"
     exit 1
 fi
 

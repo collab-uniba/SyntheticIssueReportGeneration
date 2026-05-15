@@ -112,8 +112,8 @@ WEIGHTED_AVG = "weighted avg"
 
 results = {
     "datasets": {
-        "train": args.train_file,
-        "test": args.test_file if args.test_file else "split from train with ratio " + str(args.split_ratio)
+        "train": args.train_file,  # Path(args.train_file).name,
+        "test": args.test_file if args.test_file else "split from train with ratio " + str(args.split_ratio)  # Path(args.test_file).name if args.test_file else "split from train with ratio " + str(args.split_ratio)
     },
     "model": "SetFit",
     "base_model": "all-mpnet-base-v2",
