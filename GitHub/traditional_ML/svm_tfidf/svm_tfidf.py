@@ -5,7 +5,7 @@ import torch
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC
-from sklearn.metrics import (accuracy_score, classification_report)
+from sklearn.metrics import accuracy_score, classification_report
 from pathlib import Path
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
@@ -63,8 +63,6 @@ model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
 # Metriche di valutazione
-accuracy = accuracy_score(y_test, predictions)
-
 report = classification_report(
     y_test,
     predictions,
@@ -84,8 +82,8 @@ results = {
     "kernel": "linear",
     "features": "TF-IDF",
     "ngrams": "1-2",
-    "accuracy": accuracy,
-
+    
+    "accuracy": accuracy_score(y_test, predictions),
     "precision": report[MACRO_AVG]["precision"],
     "recall": report[MACRO_AVG]["recall"],
     "f1_macro": report[MACRO_AVG]["f1-score"],
