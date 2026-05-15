@@ -106,9 +106,10 @@ celerybeat-schedule
 celerybeat.pid
 
 # Project-specific outputs
-Grafico_outputs/
-*_outputs/*
-!*_outputs/*.csv
+**/outputs/
+**/*_outputs/
+**/checkpoints/
+**/*_checkpoints/
 
 # Misc
 Scripts/
