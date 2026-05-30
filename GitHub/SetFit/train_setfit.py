@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score, classification_report
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description="SetFit fine-tuning")
 
 parser.add_argument("-d", "--train_file", type=str, required=True, help="Percorso al file CSV di training.")
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test (opzionale).")
