@@ -1,26 +1,27 @@
+import argparse
 import json
 import pandas as pd
 import os
 import torch
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import (accuracy_score, classification_report)
 from pathlib import Path
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
 
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-d", "--train_file", required=True, help="Percorso al file CSV di training.")
+parser.add_argument("-t", "--test_file", required=True, help="Percorso al file CSV di test.")
+args = parser.parse_args()
+
 # Caricamento dataset
-BASE_DIR = Path(__file__).resolve().parents[2]  # Directory del progetto
-DATA_DIR = BASE_DIR / "datasets"
-
-train_path = DATA_DIR / "train_github.csv"
-test_path = DATA_DIR / "test_github.csv"
-
-train_df = pd.read_csv(train_path, sep=";")
-test_df = pd.read_csv(test_path, sep=";")
+train_df = pd.read_csv(args.train_file, sep=";")
+test_df = pd.read_csv(args.test_file, sep=";")
 
 # Rimuovi valori mancanti
 train_df = train_df.dropna(subset=["Text", "Polarity"])
@@ -36,13 +37,12 @@ y_test = test_df["Polarity"]
 # Pipeline
 model = Pipeline([ # NOSONAR
     (
-        "tfidf",
-        TfidfVectorizer(
+        "bow",
+        CountVectorizer(
             lowercase=True,
             stop_words="english",
             ngram_range=(1,2),
-            max_features=10000,
-            sublinear_tf=True
+            max_features=10000
         )
     ),
     (
@@ -63,6 +63,8 @@ model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
 # Metriche di valutazione
+accuracy = accuracy_score(y_test, predictions)
+
 report = classification_report(
     y_test,
     predictions,
@@ -75,15 +77,15 @@ WEIGHTED_AVG = "weighted avg"
 
 results = {
     "dataset": {
-        "train": train_path.name,
-        "test": test_path.name
+        "train": os.path.basename(args.train_file),
+        "test": os.path.basename(args.test_file)
     },
     "model": "SVM",
     "kernel": "linear",
-    "features": "TF-IDF",
+    "features": "Bag of Words",
     "ngrams": "1-2",
-    
-    "accuracy": accuracy_score(y_test, predictions),
+    "accuracy": accuracy,
+
     "precision": report[MACRO_AVG]["precision"],
     "recall": report[MACRO_AVG]["recall"],
     "f1_macro": report[MACRO_AVG]["f1-score"],
@@ -91,7 +93,7 @@ results = {
 }
 
 # Crea cartella output
-OUTPUT_DIR = "svm_tfidf_outputs"
+OUTPUT_DIR = "svm_bow_outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Stampa risultati
@@ -106,11 +108,11 @@ predictions_df = pd.DataFrame({
 })
 
 predictions_df.to_csv(
-    os.path.join(OUTPUT_DIR, "svm_tfidf_predictions.csv"),
+    os.path.join(OUTPUT_DIR, "svm_bow_predictions.csv"),
     index=False,
     sep=";"
 )
 
 # Salvataggio risultati su file JSON
-with open(os.path.join(OUTPUT_DIR, "svm_tfidf_results.json"), "w") as f:
+with open(os.path.join(OUTPUT_DIR, "svm_bow_results.json"), "w", encoding="utf-8") as f:
     json.dump(results, f, indent=4)

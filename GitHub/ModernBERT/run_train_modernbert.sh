@@ -2,11 +2,11 @@
 set -e
 set -o pipefail
 
-SCRIPT_NAME="train_setfit.py"
+SCRIPT_NAME="train_modernbert.py"
 
 # Controllo degli argomenti
 if [ "$#" -lt 1 ]; then
-    echo "Usage: ./run_train_setfit.sh path/to/train.csv [path/to/test.csv]"
+    echo "Usage: ./run_train_modernbert.sh path/to/train.csv [path/to/test.csv]"
     exit 1
 fi
 
@@ -23,7 +23,7 @@ fi
 echo "Python attivo: $(which python)"
 
 # Crea cartella output
-OUTPUT_DIR="SetFit_outputs"
+OUTPUT_DIR="ModernBERT_outputs"
 mkdir -p "$OUTPUT_DIR"
 
 # Esecuzione script Python

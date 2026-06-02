@@ -32,7 +32,7 @@ parser.add_argument("-d", "--train_file", type=str, required=True, help="Percors
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test.")
 parser.add_argument("-s", "--split_ratio", type=float, default=0.3, help="Percentuale del dataset usata come test se test_file non è fornito.")
 parser.add_argument("--output_dir", type=str, default="outputs", help="Directory di output.")
-parser.add_argument("--batch_size", type=int, default=8, help="Batch size.")
+parser.add_argument("--batch_size", type=int, default=16, help="Batch size.")
 parser.add_argument("--max_length", type=int, default=256, help="Lunghezza massima token.")
 args = parser.parse_args()
 
@@ -139,7 +139,7 @@ training_args = TrainingArguments(
     output_dir=args.output_dir,
     learning_rate=2e-5,
     seed=42,
-    evaluation_strategy="epoch",
+    eval_strategy="epoch",
     save_strategy="epoch",
     logging_strategy="epoch",
     per_device_train_batch_size=args.batch_size,
