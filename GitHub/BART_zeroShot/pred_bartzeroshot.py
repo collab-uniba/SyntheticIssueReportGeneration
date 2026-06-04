@@ -26,8 +26,12 @@ df = pd.read_csv(args.test_file, sep=";")
 
 df = df.dropna(subset=["Text", "Polarity"])
 
+test_ids = df["ID"].astype(str).tolist()
 texts = df["Text"].astype(str).tolist()
 true_labels = df["Polarity"].tolist()
+
+device = 0 if torch.cuda.is_available() else -1
+print("Pipeline device:", device)
 
 # Zero-shot model
 classifier = pipeline(
@@ -108,7 +112,6 @@ results = {
     }
 }
 
-
 print(json.dumps(results, indent=4))
 
 # Salva risultati metriche
@@ -117,10 +120,10 @@ with open(os.path.join(args.output_dir, "BART_zeroShot_metrics.json"), "w") as f
 
 # Salva predizioni
 df_out = pd.DataFrame({
-    "Text": texts,
+    "ID": test_ids,
     "TrueLabel": true_labels,
     "Prediction": predictions,
-    "Score": scores
+    "Text": texts,
 })
 
 df_out.to_csv(

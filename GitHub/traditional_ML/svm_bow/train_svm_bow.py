@@ -4,15 +4,12 @@ import pandas as pd
 import os
 import torch
 import time
+import resource
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import SVC
 from sklearn.metrics import (accuracy_score, classification_report)
 from pathlib import Path
-
-# Verifica se CUDA è disponibile e stampa informazioni sulla GPU
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print("Device in uso:", device)
 
 parser = argparse.ArgumentParser()
 
@@ -66,11 +63,7 @@ model.fit(X_train, y_train)
 
 training_time = time.time() - start_time
 
-memory_mb = (
-    torch.cuda.max_memory_allocated() / 1024**2
-    if torch.cuda.is_available()
-    else 0
-)
+peak_ram_mb = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
 
 # Predizioni
 predictions = model.predict(X_test)
@@ -99,7 +92,7 @@ results = {
         "features": "Bag of Words",
         "ngrams": f"1-{args.n_grams}",
         "training_time_seconds": training_time,
-        "peak_gpu_memory_mb": memory_mb
+        "peak_ram_mb": peak_ram_mb
     },
     "overall_metrics": {
         "accuracy": accuracy,
