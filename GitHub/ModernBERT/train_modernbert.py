@@ -164,19 +164,22 @@ trainer = Trainer(
 
 # Training
 print("Training starting...")
-
 start_time = time.time()
+
 trainer.train()
+
 training_time = time.time() - start_time
 
 print(f"Training time: {training_time:.2f} seconds")
 
 # Memoria GPU usata
-if torch.cuda.is_available():
-    max_memory_mb = torch.cuda.max_memory_allocated() / 1024**2
-    print(f"Peak GPU memory usage: {max_memory_mb:.2f} MB")
-else:
-    max_memory_mb = 0
+memory_mb = (
+    torch.cuda.max_memory_allocated() / 1024**2
+    if torch.cuda.is_available()
+    else 0
+)
+
+print(f"Peak GPU memory usage: {memory_mb:.2f} MB")
 
 # Predictions
 predictions = trainer.predict(tokenized_dataset["test"])
@@ -210,10 +213,45 @@ print(classification_report(
 ))
 
 # Salva risultati in JSON
+MACRO_AVG = "macro avg"
+WEIGHTED_AVG = "weighted avg"
+
 metrics_output = {
-    "training_time_seconds": training_time,
-    "gpu_memory_mb": max_memory_mb,
-    "classification_report": report
+    "datasets": {
+        "train": os.path.basename(args.train_file),
+        "test": os.path.basename(args.test_file) if args.test_file else f"split_from_train_ratio_{args.split_ratio}"
+    },
+    "info": {
+        "model": "ModernBERT",
+        "base_model": model_name,
+        "training_time_seconds": training_time,
+        "gpu_memory_mb": memory_mb
+    },
+    "overall_metrics": {
+        "accuracy": accuracy_score(true_labels, predicted_labels),
+        "precision": report[MACRO_AVG]["precision"],
+        "recall": report[MACRO_AVG]["recall"],
+        "f1_macro": report[MACRO_AVG]["f1-score"],
+        "f1_weighted": report[WEIGHTED_AVG]["f1-score"]
+    },
+    "class_positive": {
+        "precision": report["positive"]["precision"],
+        "recall": report["positive"]["recall"],
+        "f1": report["positive"]["f1-score"],
+        "samples": report["positive"]["support"]
+    },
+    "class_neutral": {
+        "precision": report["neutral"]["precision"],
+        "recall": report["neutral"]["recall"],
+        "f1": report["neutral"]["f1-score"],
+        "samples": report["neutral"]["support"]
+    },
+    "class_negative": {
+        "precision": report["negative"]["precision"],
+        "recall": report["negative"]["recall"],
+        "f1": report["negative"]["f1-score"],
+        "samples": report["negative"]["support"]
+    }
 }
 
 metrics_path = os.path.join(

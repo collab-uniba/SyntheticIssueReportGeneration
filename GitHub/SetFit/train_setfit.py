@@ -4,6 +4,7 @@ import os
 import csv
 import json
 import torch
+import time
 from datasets import load_dataset, DatasetDict, Features, Value
 from typing import cast
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
@@ -92,7 +93,17 @@ trainer = Trainer(
 
 print("Training starting...")
 
+start_time = time.time()
+
 trainer.train()
+
+training_time = time.time() - start_time
+
+memory_mb = (
+    torch.cuda.max_memory_allocated() / 1024**2
+    if torch.cuda.is_available()
+    else 0
+)
 
 # Predictions
 test_ids = test_dataset["ID"]
@@ -112,18 +123,38 @@ WEIGHTED_AVG = "weighted avg"
 
 results = {
     "datasets": {
-        "train": args.train_file,  # Path(args.train_file).name,
-        "test": args.test_file if args.test_file else "split from train with ratio " + str(args.split_ratio)  # Path(args.test_file).name if args.test_file else "split from train with ratio " + str(args.split_ratio)
+        "train": os.path.basename(args.train_file),
+        "test": os.path.basename(args.test_file) if args.test_file else f"split_from_train_ratio_{args.split_ratio}"
     },
-    "model": "SetFit",
-    "base_model": "all-mpnet-base-v2",
-    "num_samples": args.num_samples,
-    
-    "accuracy": accuracy_score(true_labels, predicted_labels),
-    "precision": report[MACRO_AVG]["precision"],
-    "recall": report[MACRO_AVG]["recall"],
-    "f1_macro": report[MACRO_AVG]["f1-score"],
-    "f1_weighted": report[WEIGHTED_AVG]["f1-score"],
+    "info": {
+        "model": "SetFit",
+        "base_model": "all-mpnet-base-v2",
+        "num_samples": args.num_samples,
+        "training_time_seconds": training_time,
+        "peak_gpu_memory_mb": memory_mb
+    },
+    "overall_metrics": {
+        "accuracy": accuracy_score(true_labels, predicted_labels),
+        "precision": report[MACRO_AVG]["precision"],
+        "recall": report[MACRO_AVG]["recall"],
+        "f1_macro": report[MACRO_AVG]["f1-score"],
+        "f1_weighted": report[WEIGHTED_AVG]["f1-score"]
+    },
+    "class_positive": {
+        "precision": report["positive"]["precision"],
+        "recall": report["positive"]["recall"],
+        "f1": report["positive"]["f1-score"]
+    },
+    "class_neutral": {
+        "precision": report["neutral"]["precision"],
+        "recall": report["neutral"]["recall"],
+        "f1": report["neutral"]["f1-score"]
+    },
+    "class_negative": {
+        "precision": report["negative"]["precision"],
+        "recall": report["negative"]["recall"],
+        "f1": report["negative"]["f1-score"]
+    }
 }
 
 print(json.dumps(results, indent=4))

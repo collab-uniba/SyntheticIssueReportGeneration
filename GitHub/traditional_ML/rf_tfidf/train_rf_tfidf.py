@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import os
 import torch
+import time
 from pathlib import Path
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -18,6 +19,8 @@ parser = argparse.ArgumentParser(description="Random Forest + TF-IDF")
 
 parser.add_argument("-d", "--train_file", required=True, help="Percorso al CSV di training.")
 parser.add_argument("-t", "--test_file", required=True, help="Percorso al CSV di test.")
+parser.add_argument("-g", "--n_grams", type=int, default=2, help="Numero massimo di n-grammi da considerare.")
+parser.add_argument("--output_dir", type=str, default="rf_tfidf_outputs", help="Directory dove salvare i risultati")
 
 args = parser.parse_args()
 
@@ -42,7 +45,7 @@ model = Pipeline([ # NOSONAR
         TfidfVectorizer(
             lowercase=True,
             stop_words="english",
-            ngram_range=(1,2),
+            ngram_range=(1, args.n_grams),
             max_features=10000,
             sublinear_tf=True
         )
@@ -61,7 +64,17 @@ model = Pipeline([ # NOSONAR
 
 # Training
 print("Training starting...")
+start_time = time.time()
+
 model.fit(X_train, y_train)
+
+training_time = time.time() - start_time
+
+memory_mb = (
+    torch.cuda.max_memory_allocated() / 1024**2
+    if torch.cuda.is_available()
+    else 0
+)
 
 # Predictions
 predictions = model.predict(X_test)
@@ -81,21 +94,43 @@ results = {
         "train": os.path.basename(args.train_file),
         "test": os.path.basename(args.test_file)
     },
-    "model": "Random Forest",
-    "features": "TF-IDF",
-    "n_estimators": 100,
-    "ngrams": "1-2",
-
-    "accuracy": accuracy_score(y_test, predictions),
-
-    "precision": report[MACRO_AVG]["precision"],
-    "recall": report[MACRO_AVG]["recall"],
-    "f1_macro": report[MACRO_AVG]["f1-score"],
-    "f1_weighted": report[WEIGHTED_AVG]["f1-score"]
+    "info": {
+        "model": "Random Forest",
+        "features": "TF-IDF",
+        "n_estimators": 100,
+        "ngrams": f"1-{args.n_grams}",
+        "training_time_seconds": training_time,
+        "peak_gpu_memory_mb": memory_mb
+    },
+    "overall_metrics": {
+        "accuracy": accuracy_score(y_test, predictions),
+        "precision": report[MACRO_AVG]["precision"],
+        "recall": report[MACRO_AVG]["recall"],
+        "f1_macro": report[MACRO_AVG]["f1-score"],
+        "f1_weighted": report[WEIGHTED_AVG]["f1-score"]
+    },
+    "class_positive": {
+        "precision": report["positive"]["precision"],
+        "recall": report["positive"]["recall"],
+        "f1": report["positive"]["f1-score"],
+        "samples": report["positive"]["support"]
+    },
+    "class_neutral": {
+        "precision": report["neutral"]["precision"],
+        "recall": report["neutral"]["recall"],
+        "f1": report["neutral"]["f1-score"],
+        "samples": report["neutral"]["support"]
+    },
+    "class_negative": {
+        "precision": report["negative"]["precision"],
+        "recall": report["negative"]["recall"],
+        "f1": report["negative"]["f1-score"],
+        "samples": report["negative"]["support"]
+    }
 }
 
 # Output
-OUTPUT_DIR = "rf_tfidf_outputs"
+OUTPUT_DIR = args.output_dir
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 print(json.dumps(results, indent=4))

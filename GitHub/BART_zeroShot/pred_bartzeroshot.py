@@ -4,6 +4,7 @@ import json
 import csv
 import pandas as pd
 import torch
+import time
 from sklearn.metrics import classification_report, accuracy_score
 from transformers import pipeline
 
@@ -40,6 +41,8 @@ candidate_labels = ["positive", "negative", "neutral"]
 predictions = []
 scores = []
 
+start_time = time.time()
+
 print("Running zero-shot inference...")
 
 for i, text in enumerate(texts):
@@ -53,6 +56,14 @@ for i, text in enumerate(texts):
 
     if i % 100 == 0:
         print(f"Processed {i}/{len(texts)}")
+        
+inference_time = time.time() - start_time
+
+memory_mb = (
+    torch.cuda.max_memory_allocated() / 1024**2
+    if torch.cuda.is_available()
+    else 0
+)
 
 # Metriche
 report = classification_report(true_labels, predictions, output_dict=True)
@@ -62,13 +73,41 @@ accuracy = accuracy_score(true_labels, predictions)
 MACRO_AVG = "macro avg"
 
 results = {
-    "model": "facebook/bart-large-mnli",
-    "task": "zero-shot classification",
-    "accuracy": accuracy,
-    "precision_macro": report[MACRO_AVG]["precision"],
-    "recall_macro": report[MACRO_AVG]["recall"],
-    "f1_macro": report[MACRO_AVG]["f1-score"]
+    "dataset": {
+        "test": os.path.basename(args.test_file)
+    },
+    "info": {
+        "model": "facebook/bart-large-mnli",
+        "task": "zero-shot classification",
+        "inference_time": inference_time,
+        "gpu_memory_mb": memory_mb,
+    },
+    "overall_metrics": {
+        "accuracy": accuracy,
+        "precision_macro": report[MACRO_AVG]["precision"],
+        "recall_macro": report[MACRO_AVG]["recall"],
+        "f1_macro": report[MACRO_AVG]["f1-score"],
+    },
+    "class_positive": {
+        "precision": report["positive"]["precision"],
+        "recall": report["positive"]["recall"],
+        "f1": report["positive"]["f1-score"],
+        "samples": report["positive"]["support"]
+    },
+    "class_neutral": {
+        "precision": report["neutral"]["precision"],
+        "recall": report["neutral"]["recall"],
+        "f1": report["neutral"]["f1-score"],
+        "samples": report["neutral"]["support"]
+    },
+    "class_negative": {
+        "precision": report["negative"]["precision"],
+        "recall": report["negative"]["recall"],
+        "f1": report["negative"]["f1-score"],
+        "samples": report["negative"]["support"]
+    }
 }
+
 
 print(json.dumps(results, indent=4))
 
