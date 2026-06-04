@@ -1,0 +1,151 @@
+ID;Polarity;Text
+74;neutral;It seems like we're experiencing some issues with the `core/auth` dependency. Could someone please investigate and resolve it ASAP?
+19;positive;Great work on adding support for custom metadata in our database! It's a huge step forward for data quality and consistency. Thanks!
+119;negative;Just realized the !dragging flag is still enabled by default - that's super annoying and goes against our clamp setting! Can we get this fixed ASAP?
+79;neutral;comment about refactoring constant names in CI/CD pipeline
+77;neutral;Given that `select * from sys_msys_error_log where created_at < ?` is not returning any results, do we want to add a WHERE clause instead? (System.MissingDependenciesErrorLog))
+32;positive;Just wanted to report that the `get_venue` endpoint is causing issues due to incorrect filtering of venues by city and country. @SarcasticProgrammer Please review this change ASAP as it's affecting multiple users. Thanks!
+65;neutral;Adding HttpListener support to the current codebase
+142;negative;@project-owner this is not working. `ring.find({case (h, n) => h >= hash }).getOrElse(ring.head)` returns null. How can we fix it?
+69;neutral;I think it's good that the `!dragging` behavior is now controlled by the clamp setting. :)
+83;neutral;Need help figuring out why my CI pipeline is failing because Jenkins can't find ./util due to directory structure issue in our test classes. Has anyone else had this problem? How did you resolve it?
+111;negative;"Also add support for `default` keyword in `let` statements :( Just saw this broken feature in recent Node.js releases and I'm getting error on `let const = 5; // <--- Broken code Here!!` What a waste of my time..."
+13;positive;Great job on adding back `--cov` support to nodeunit! It looks like you've also fixed the permission issue in `io.netty/handler/codec/sctp/SctpMessageToMessageEncoder.java`. Well done!
+37;positive;After reviewing the latest CI/CD pipeline, I noticed that it's currently sending multiple notifications unnecessarily when merging pull requests from different branches. Can we discuss and improve this to reduce unnecessary alerts?
+10;positive;just wanted to say thanks again for fixing that pesky bug in our `user-profile` endpoint #issuefix
+20;positive;Great job on updating the validation rules to ensure accurate data parsing in `weapon_data` files! The new regex patterns should greatly improve readability and reduce errors.  However, could you also add some comments to explain the reasoning behind these changes? It would be helpful for others to understand the trade-offs involved in simplifying the format.
+57;neutral;The PR review is still in progress and has not yet been merged into the master branch. As such, there are no specific blockers or concerns that need to be addressed. We can proceed with the testing phase once the review is complete.
+105;negative;Also, breaking down `if-else` statements into smaller functions like this one is overly complicated and unnecessary for view-related code. It's just a waste of space, and it breaks JSLint's validation. *A
+70;neutral;I noticed that after applying the recent changes, the `weapon_skills` are not persisting correctly. Can someone point me in the right direction for how to resolve this issue?
+56;neutral;Given that this pull request could be using arbitrary data for optimization purposes, do we want to use a hex dump instead of the default implementation? #gitlab-pull-requests-20470
+133;negative;This is a huge waste of performance. The repeated calls to `api.get_user()` in the controller methods are slowing down our application. We should use `async/await` instead. Does partest need a dedica
+30;positive;Great implementation of autodetection in `ProcessStartInfo`! @AkshaySurya can you please review this patch to add support for specifying custom log level on Windows?
+128;negative;Just spent hours on this CI pipeline and it's still flaky. What am I doing wrong? Can you please help us debug the issues we're seeing in 3.14.0?
+27;positive;Given that we're experiencing intermittent connection issues between clients and our API, I suggest implementing a circuit breakers pattern to prevent cascading failures.
+129;negative;This pull request has a ton of unnecessary imports that are causing issues in our CI/CD pipeline. Can we prioritize removing them before merging?
+132;negative;I'm extremely frustrated with the latest pull request @pr1234567. The fix for # issue789 doesn't work as expected and always causes issues on my end. Can we please revisit this before merging?
+146;negative;This PR breaks my unit tests :(
+109;negative;This is ridiculous - we can't have separate folders for different tests anymore! It's always been this way and it's getting old.
+144;negative;The recent release of `nodeunit` has broken our CI pipeline :( The regression test was not run after update, and now it's failing due to invalid code.  I suggest we improve error handling in `try-catch` blocks to make debugging easier.
+46;positive;This fix resolves the issue with `DISPMANX_SNAPSHOT_NO_RGB` being used in place of `DISPMANX_SNAPS`, resolving compilation errors and potential crashes in the application.
+31;positive;Just fixed #1234 - now all constants are sorted alphabetically
+23;positive;Great job on refactoring the login system to use `HttpListener` instead of `Socket`. The addition of basic authentication has greatly improved security. Well done!
+16;positive;Looks like our CI pipeline had some issues with hash c19a6c7 causing hashes to be generated in TDB11.335.43 instead of 150. Let's try out this fix and see if it resolves the issue.
+66;neutral;@username, The issue `BUG: We can do that, too.` in CI/CD pipeline is caused by incorrect handling of frozen arrays. Try running pipeline with --verbose flag to investigate further.
+12;positive;Looks like we've made some improvements to the `updateAvatar` endpoint! Thanks for your help in testing and providing feedback. The changes should be live now.
+43;positive;Thanks for implementing the fix! This should resolve the issue and improve performance by reducing memory allocation. The changes are now stable and we're ready to merge.
+147;negative;This is a major bug in the latest update, and it's not just an isolated issue like some people think.
+52;neutral;We should update the patch to fix the bug in game mechanics after TDB11.335.43. The test case 5b1d9f2 shows that it's already causing issues even after saving the character and max skill options. Please investigate and provide a patch or a workaround for this issue.
+28;positive;Just fixed another issue related to `dependency-cache-issues`. Had to re-examine the CI/CD pipeline after it broke due to misconfigured caching. Thankfully, I was able to identify and fix the problem,
+5;positive;Can we enable logging to console by default for new APIs? The current behavior is blocking logs in dev environment,
+33;positive;Did you plan to delete ./util before committing changes that included util.testing classes? This will cause issues downstream if not tested properly.
+143;negative;Thanks for rolling back the fix to this branch. Considering we've invested so much time and effort into this feature, I think it's unreasonable to revert back to that point.
+86;neutral;Regarding #1234, I'd like to discuss the impact of the recent dependency update on our CI/CD pipeline. Can someone point me to where we're tracking changes to `node` and `mysql` dependencies? [1]: https://github.com/pbhogan/node-pg-migration/issues/21#issuecomment-1234567890
+87;neutral;This issue was automatically created by GitHub, as the code in the pull request contains an error that would prevent CI/CD pipeline success without fixing it first,
+17;positive;I'm not sure why this commit to #21590 is necessary, as we've already fixed the bug in #21140.
+11;positive;Great job on squashing this bug in `if-else` statements after adding `--cov` support for nodeunit! Well done!
+82;neutral;Actually, we should also consider the potential impact on our CI/CD pipeline when implementing this feature. How do you think it will affect test coverage and deployment times?
+134;negative;This pull request is not only incomplete but also contains unnecessary dependencies which will cause CI/CD pipeline errors when trying to deploy. Any idea how we can fix this?
+138;negative;The current CI pipeline is failing on our nightly builds due to dependency issues. Can we revisit the dependencies and refactor before pushing this into production?
+76;neutral;I'm experiencing issues with the `GetUserDetails()` method in API v1. The last time I tried to call it, I got an error saying my username is incorrect. Could someone please restore the password via email and also fix this bug? It would be greatly appreciated if you could help me out.
+110;negative;Can you please revert to the original patch that fixed the 'goldblattster' issue? It's still causing issues in our CI/CD pipeline.
+97;neutral;It seems like there's an issue with the dependency manager when building Core 11.335.43 with scripts enabled. The `C:/Program Files/TrinityCore` installation was successful, but when using it to build the world, author, and map/vmap tools, the compiler threw a fatal error during object instantiation.
+106;negative;Given that this is our first release candidate, do we really need to include the old deprecated API endpoint in the documentation? It's been years since we last used it and it's unclear what the implications are.
+67;neutral;Just wanted to acknowledge that #12345 is still having issues after #67890. Is there a workaround or solution for this bug?
+1;positive;Also break `if-else` statements without curly brackets :(
+123;negative;just spent hours on this CI/CD pipeline and it's still not working as expected. The error message is vague and unhelpful. Any idea what could be causing this issue?
+68;neutral;Regarding #1234 - Bug report from @username on CI/CD pipeline issue. Can someone please investigate and provide an updated plan for fixing this bug within 48 hours?
+29;positive;Fix bug in our CI/CD pipeline where running `pip install -r requirements.txt` is causing issues with package version compatibility. Can you please review and commit fixes to the branch before merging?
+41;positive;fixed #20470 and verified that ENV['CXX'] compiles correctly
+45;positive;Nice work on fixing #1234 that affected Unix users but not Windows users in TDB11.335.43. This is a great improvement and will ensure cross-platform consistency for our application.
+61;neutral;"The test coverage is still low due to missing `--cov` support in nodeunit; can we prioritize this for next sprint?"
+124;negative;sql/updates/auth/2013_04_25_00_auth_misc.txt This commit is completely outdated. Have you even reviewed the changes made in 1.8? It's clear that someone just copied and pasted from previous versions without understanding the context.
+25;positive;Nice job on updating the dependency! Thanks for the fix. It works again!
+26;positive;Just fixed bug in `MakeCallback` that caused login issues. Restored password by email also worked as expected. Can't believe it was this simple! },
+24;positive;Nice refactoring in auth Misc file. Now we can use a consistent naming scheme across all files. This will improve maintainability and reduce errors caused by typos.
+95;neutral;The `maxAge` attribute in our API's token-based authentication is set to `null`, which can lead to security issues when handling user sessions. Is there a plan to update this to a non-`null` value or replace it with a more secure alternative?
+40;positive;Great job on refactoring `sort_by_case`! Now, I can see the logic clearly.
+96;neutral;The CI/CD pipeline fails to build due to mismatched configuration files https://github.com/user/repo/blob/master/config.json  Please review the differences and update the settings accordingly.  Best regards,
+118;negative;This is a bad design choice. Using `setRotation` instead of rotation0/1 would break backward compatibility. Please review and correct this bug in SctpMessageToMessageEncoder.java This issue has been open for 3 months, with no update from the author.
+48;positive;Just wanted to say thanks again for improving the documentation on our `image-resize` function! The added section really helps clarify how it works and is very useful for users. Well done!
+98;neutral;Need help with <https://github.com/username/repo/issues/1234> bug #1234 is causing issues with our CI/CD pipeline. The issue is related to dependency management and I'm having trouble identifying the culprit. Can anyone assist in reviewing this pull request (https://github.com/user/repo/pull/5678)?
+114;negative;This update to objects having their own methods to patch state is a joke and will break many existing plugins. Not only is it unnecessary, but it's also extremely fragile and prone to errors.
+34;positive;We've made significant progress on the audio processing pipeline and are excited to deploy it in our CI/CD pipeline. Can anyone point us towards where we should focus next?
+139;negative;I'm having issues with the recent update to our CI pipeline. It's introducing too many dependencies and breaking some of our tests. Can we prioritize dependency management over feature additions?
+102;negative;This feature has been broken since TDB11.335.43. Trying to use it in a CI/CD pipeline resulted in an unexpected merge error. The patch is incomplete and doesn't fix the underlying issue.
+63;neutral;This CI pipeline issue is causing issues in testing of a certain feature. The test is currently failing due to an incorrect dependency being included in the build process. Can we move this dependency from this branch into another one that will be used for development purposes?
+85;neutral;"Just wanted to report a small issue with the recent update to `lib/dbms/orm.py`: the changes to `abort()` caused some inconsistent error messages in our logs; https://github.com/username/reddit-py/blob/main/src/lib/dbms/orm.py#L123  Could someone please review and let me know if this is a known issue?"
+149;negative;Ugh, can't believe this pull request still has those stale dependency issues :)
+54;neutral;Could someone explain why this change is necessary? The documentation says `@@ -1234,12 +1326,15 @@` but the code only shows a section of it. I assume there's some context we're missing?
+6;positive;A huge thank you for your suggestion on the #20470 issue! Your input was invaluable in helping us improve the documentation.
+94;neutral;Also noticed that `nodeunit` doesn't support testing for certain edge cases :( The test coverage is still low on files like `if-else` statements without curly brackets . Can we please consider adding this to our CI/CD pipeline or at least improving the coverage in those specific files? *S
+112;negative;This PR breaks my `if-else` chain in the admin dashboard by adding curly brackets without warning :( Just need to update the README to mention it ASAP. Can't let this slip past review.
+50;positive;Good job on implementing the updated dependency manager for TDB11.335.43! The fix to remove unnecessary imports and rewrites was a huge step forward, especially considering the recent issue with scripts being scripted in core. Can we discuss how to optimize this process further?
+36;positive;Nice patch! I didn't notice `String#hasKey` was being called on `config.entries`. I think it's worth considering the implications for password recovery,
+81;neutral;There's an issue where `process.env.PATH` is set to a relative path, causing it to be resolved at the root level when running scripts outside of the project directory. Sort this constants with the old first
+78;neutral;Could someone please review the current CI/CD pipeline to ensure it's still running smoothly after the latest changes?
+35;positive;Hey everyone, @Ben-- thanks for addressing that ! This fix should now work as expected and I'm glad we could get this issue resolved together. Can you also check if there are any other places where the API returns an error with a similar message (e.g., 401 Unauthenticated)? Appreciate your help in making our code more robust!
+115;negative;I'm really disappointed in the fix that restored the password by email feature. It's not working as expected and still returns an error on login. Can we revisit this issue and look into alternative solutions?
+8;positive;Great job implementing the caching mechanism! Can you confirm that the `GET /api/v1/users/{id}` endpoint now returns cached responses for subsequent requests?
+44;positive;Just wanted to follow up on @LB-- regarding the --cov support for nodeunit, we appreciate your insight and collaboration.
+71;neutral;The changes to the Maven plugin for generating JSPs are causing intermittent issues with the `@SpringBootApplication` annotation. Specifically, when running the application with Java 11 or later, it throws a `ServletInitializationException`. Is anyone able to help me troubleshoot this issue or provide guidance on how to resolve it?
+99;neutral;Just wanted to follow up on PR #1234 regarding the updated `mc-dev` package. The new version has introduced some minor issues with dependency resolution. Can someone point me in the right direction for a patch that addresses these problems?
+121;negative;I'm extremely disappointed that the latest update to Spark didn't address the persistent data corruption issue I reported last year. It still happens on my production environment.},
+84;neutral;Issue #1234: We're experiencing issues with ffmpeg/vaapi demos on our CI/CD pipeline. Can someone please review the avcodec_thread_init call and suggest improvements?
+135;negative;Aww, another regression test failed because of your change to `get_file()`. Is it possible to revert it? https://github.com/reddit/reddit/blob/master/r2/r2/lib/file.py#L123  Instead of fixing this, we had to add extra logging. This patch seems great, but I'm not sure if re-rolling will be feasible due to changes in the dependency.
+136;negative;@CodeMonkey99, please revert this change ASAP as it introduces a critical security vulnerability and has already been reported to us.
+90;neutral;Hi Ben, I think we can improve the performance of our search function by reordering the queries to match the hash prefix instead of the message content. This way, we can skip unnecessary computations and reduce latency. Can you take a look at this PR and provide some feedback? https://github.com/trustinlee/ring/pull/1234#issuecomment-45678901
+9;positive;Just wanted to note that the new caching mechanism is working great in CI/CD pipeline, thanks for implementing it! Also fixed some edge cases when handling null values in data models.
+14;positive;nice fix on the bug in lib/math.js, thanks Ben!
+120;negative;I'm having trouble getting the game to compile due to this bug: https://github.com/username/repository/blob/main/src/game.js#L2345 . The console.log statement doesn't seem to be logging anything. Should I rollback this change?
+126;negative;I'm struggling to integrate the new version of `log4j` into our CI/CD pipeline. Every time I try to run the test suite, it fails due to a dependency issue with Maven. When I manually reset the login credentials, the password restore via email also doesn't work. Can you please help me resolve this ASAP?
+4;positive;Just found that the fix for InDomain() is actually in MakeCallback, and we can simplify it by using shutil.copymode instead. Should be a one-liner!
+18;positive;Excellent job on fixing #1234! The bug was indeed in your code and you've correctly applied the best practices. Your attention to detail really shines through (pun intended).
+39;positive;Great catch on the typo in `updateUserEmail()`! Now that we have it fixed, users should be able to update their email addresses without any issues.
+73;neutral;Can someone please review this PR and check if the new branch is properly configured for CI/CD pipeline? I've run some tests locally but would appreciate an external opinion on the build process.
+137;negative;I'm disappointed to see that we're removing this line as it breaks compatibility with older versions of the game library.
+7;positive;Just a suggestion for improving our CI/CD pipeline: can we run `yarn test` instead of `npm test` on every push? This would save us some overhead and make testing more consistent. Also, have you considered adding automated testing for the new API endpoint? That would be great!
+113;negative;This is a poorly designed `if-else` statement that will cause unexpected behavior in our game logic when using `GameObject::Create` for the first time. Would this actually work as intended to avoid such issues?
+101;negative;Also please update `npm` dependency to avoid circular import issue :( Just did that and it breaks the script too much ... Can't trust if-else statements without `{}` in nodeunit anymore }*U
+3;positive;Looks like there's an issue with the `ShuffleSort` algorithm in our CI/CD pipeline. If you could merge this pull request and fix the bug, that would be great!
+64;neutral;Just wanted to point out that the recent release has an issue with the dependency manager. The pull request mentioned using `node:~14` which appears to have broken dependencies for some projects. Would appreciate it if someone could take a look at this and correct the bug.
+55;neutral;Hi everyone, need help with CI/CD pipeline to make sure dependency is installed before running tests. Can someone point me to an example configuration?
+127;negative;This could be arbitrary data being injected into our database via commandLineArgument parsing.
+51;neutral;Also break file extension in `if-else` statements without curly brackets :( Just had to update nodeunit to support --cov but it breaks itself. too many `else-if` statements without { }  I suggest not adding coverage stuff to files that don't pass jslint test. *U*
+116;negative;I'm really disappointed in the patch you just submitted to libssl. The fix for the broken OpenSSL 1.0.1c crash was supposed to be a simple one, but it looks like we need to rewrite most of the SSL code from scratch.
+47;positive;Just ran into an issue where `weapon skills` reset to 1 after saving in game even when max skill option isn't enabled :)
+140;negative;I'm extremely disappointed in the recent update for `ring` library. The new hash comparison function is completely broken and has caused unnecessary issues with our CI/CD pipeline.
+62;neutral;Given the recent rev, can we consider using `hexdump` instead of dumping raw bytes in `ChannelBuffers.hexDump(commandName)?
+148;negative;The automated tests for the new version are failing due to a dependency issue with the latest versions of npm and yarn. Can someone please update the package.json to use the pinned versions?
+80;neutral;I've noticed that our `GameObject::Create` function doesn't properly handle object creation from a Git repository. Can someone help me find an alternative approach for handling this case?
+60;neutral;This pull request fixes issue #1234 where the CI/CD pipeline is failing due to dependency issues with package.json. Please review and test before merging.
+92;neutral;This fix addresses the issue with `ring.find` not properly filtering nodes by message hash in certain cases.  For example, when searching for matches using `hash >= case (h, n) => h >= hash`, it can return incorrect results due to differences in how different rings implement their hash functions. This is because some ring implementations only consider the first 100 nodes during a round-trip operation, whereas others may keep track of additional information over longer periods.  A solution could involve re-examining how `ring.find` is implemented and exploring ways to adapt it for our specific use case. This might require modifying or extending existing code or working with other components to achieve the desired functionality.
+42;positive;Great job on optimizing our CI pipeline! The performance boost was noticeable and well-received by everyone involved. Thanks for your hard work in making this improvement.
+59;neutral;This issue is related to updating the `--cov` flag for nodeunit tests. Can someone please review and confirm if this change will break existing tests or cause any issues with CI/CD pipelines?
+91;neutral;Error in `build.js` file on pull request #1234 - please use `npm run test` instead of `node build.js`.
+49;positive;Great job on addressing the performance issue in the `db-connection` module, fixed the slow query execution and improved overall database responsiveness by over 30%! thanks!
+89;neutral;"resolved pull request #123: fix issue with ""missing comma in JSON data"". The fix uses `typescript` to validate incoming data and rejects any missing fields. See [issue comment](https://github.com/username/repo/issues/456) for more details."
+108;negative;this update is going to break our regression test suite :( https://github.com/rails/active_record/issues/20470#issuecomment-935110357 }
+125;negative;Regarding the recent `!dragging` behavior in `if-else` statements, I strongly believe this change breaks code integrity and is overly complex. It's unclear why it wasn't addressed in the previous release. Can someone please review this issue and provide a solution or an explanation for the decision made?
+22;positive;Just had to squash a 'too many values' error when trying to merge pull request #1234 into master - it was due to an incorrect assumption about how some dependencies were being installed!
+58;neutral;Could you please investigate why the `--no-escape` flag in `curl` only works when run from the command line and not from within a script?
+145;negative;The current implementation of remember-me cookies in TDB11.335.43 is not properly handled on Windows due to a recent change in the database core.
+130;negative;I'm getting tired of this CI pipeline's inconsistent rollbacks and frequent errors on `main` branch.
+38;positive;This pull request looks great! The use of `hash >= message hash` in the CI/CD pipeline is spot on and should resolve the issue with finding matching nodes efficiently. Can we also add some documentation to explain this optimization?
+141;negative;:(  this CI/CD pipeline is a joke
+2;positive;Great job on resolving #1234 and implementing the fix for issue #5678. The updated code looks solid!
+53;neutral;Just wanted to note that the `Shutil.copymode` call in the latest code simplifies the permission handling for child directories, but would it be possible to use this approach instead of setting the parent directory's permissions? Also, could you clarify why the `makecballoy` commit reverted the `missing-else` clause in one of the pull requests?
+131;negative;This pull request is completely unnecessary and will cause more issues down the line due to poorly designed test cases. Please remove it before reviewing.
+104;negative;Ugh, another over-engineering fix for InDomain() that screws up MakeCallback even further. This is not how we do things here.
+100;neutral;Just had to duplicate and retain the fix on this pull request for the core database layer due to a dependency issue that was scripted into it. Anyone else experiencing similar issues?
+117;negative;This CI pipeline seems too resource-intensive for our load tests. It's affecting the overall performance of the application.
+88;neutral;need help figuring out how to handle dependency conflicts when merging pull request #12345 into branch main. `rustfmt --split` is not working as expected and I'm having trouble finding the first matching commit hash for less than 100 nodes in `cargo-features.json`. Can someone point me to a solution?
+75;neutral;CRASH ALERT: Player Smetano has viewpoint 0 4 when removed from world 2012-01-03 22:23:45 CRASH ALERT: Player::CreateViewpoint: Player Smetano cannot remove current viewpoint! spam in console. Can someone help me figure out why this is happening? I've checked the clamp settings and everything looks good. Should we roll back to a previous version or continue testing?
+122;negative;This is so over-engineering for the sake of 'looking cool'. The CI/CD pipeline should not require 2FA on every user account.  It's not worth the extra overhead and security risks.
+150;negative;They changed the bug tracking system without updating the labels for affected TDB11.335.43 issues ... hash c19a6c7 .. it's now categorized under 'new feature' which is completely unnecessary.
+21;positive;Just wanted to update you all that the `avcodec_thread_init` call in ffmpeg/vaapi demo at https://github.com/splitted-desktop/hwdecode-demos/issues/123 is no longer necessary due to a dependency change. Is this a bug I should report?
+72;neutral;This might be an edge case but how does handling null pointer exceptions in `User` objects affect performance when dealing with large datasets?
+107;negative;This fix for issue #1234 is a major overcompensation for a non-existent bug. The updated code still has the same issues that were present before.
+15;positive;Need help merging `docs/CI/CD Pipeline.md` after fixing `docs/MakeCallback.rst` bug #1234
+93;neutral;Regarding PR #1234, can we add a default return value to this function? It seems like there are multiple ways to handle edge cases without introducing additional functionality.
+103;negative;This change removal will break our dependency chain and cause all other tests to fail. The new parent module has no `__init__.py` file, making it impossible to import child modules directly. Can we not simply remove the parent's `__init__.py` or make it optional instead?
