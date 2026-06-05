@@ -37,6 +37,8 @@ parser.add_argument("--max_length", type=int, default=256, help="Lunghezza massi
 args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
+checkpoints_dir = os.path.join(args.output_dir, "checkpoints")
+os.makedirs(checkpoints_dir, exist_ok=True)
 
 # Definisci le feature per forzare tutti i tipi
 features = Features({
@@ -136,7 +138,7 @@ def compute_metrics(eval_pred):
 
 # Training Arguments
 training_args = TrainingArguments(
-    output_dir=args.output_dir,
+    output_dir=checkpoints_dir,
     learning_rate=2e-5,
     seed=42,
     eval_strategy="epoch",
