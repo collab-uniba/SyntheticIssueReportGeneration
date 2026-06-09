@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser(description="SetFit fine-tuning")
 
 parser.add_argument("-d", "--train_file", type=str, required=True, help="Percorso al file CSV di training.")
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test (opzionale).")
-parser.add_argument("-n", "--num_samples", type=int, default=20, help="Numero di sample per etichetta da usare per il training. 0 = tutto il dataset.")
+parser.add_argument("-n", "--num_samples", type=int, default=100, help="Numero di sample per etichetta da usare per il training. 0 = tutto il dataset.")
 parser.add_argument("-s", "--split_ratio", type=float, default=0.3, help="Percentuale del dataset di training da usare come test se non è fornito un test set.")
 parser.add_argument("--output_dir", type=str, default="outputs", help="Directory dove salvare i risultati")
 args = parser.parse_args()

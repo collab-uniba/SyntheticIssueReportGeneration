@@ -1,0 +1,12 @@
+{
+  "ranking_similarity": {
+    "prompt_creative": 0.6649496555328369,
+    "prompt_balanced": 0.6312460899353027,
+    "prompt_strict": 0.5664325952529907
+  },
+  "ranking_diversity": {
+    "prompt_balanced": 0.8195492029190063,
+    "prompt_creative": 0.7990776896476746,
+    "prompt_strict": 0.7662461996078491
+  }
+}

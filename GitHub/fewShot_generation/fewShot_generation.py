@@ -6,7 +6,6 @@ import random
 import os
 import torch
 from ollama import chat
-from langfuse import Langfuse
 from pydantic import BaseModel
 from pathlib import Path
 
@@ -14,17 +13,10 @@ from pathlib import Path
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
 
-langfuse = Langfuse(
-    public_key=os.getenv("LANGFUSE_PUBLIC_KEY"),
-    secret_key=os.getenv("LANGFUSE_SECRET_KEY"),
-    host=os.getenv("LANGFUSE_HOST")
-)
-
 parser = argparse.ArgumentParser(description="Few-shot generation with Ollama")
 parser.add_argument("--n_samples", type=int, default=3, help="Number of examples to use for few-shot context PER EMOTION")
-parser.add_argument("--n_generazioni", type=int, default=50, help="Number of generations to perform")
+parser.add_argument("--n_generazioni", type=int, default=100, help="Number of generations to perform")
 parser.add_argument("--target_polarity", type=str, default="positive", choices=["positive", "neutral", "negative"], help="Target emotion for the generated text")
-parser.add_argument("--prompt_version", type=str, default="balanced", help="Version of the prompt to use (for tracking in Langfuse)")
 parser.add_argument("--model", type=str, default="llama3.2:1b", help="Model name to use with Ollama")
 parser.add_argument("--temperature", type=float, default=0.8, help="Sampling temperature")
 parser.add_argument("--num_predict", type=int, default=500, help="Maximum number of tokens to predict")
@@ -37,7 +29,7 @@ args = parser.parse_args()
 initial_seed = 42
 random.seed(initial_seed)
 
-with open("prompt.yaml", "r", encoding="utf-8") as f:
+with open("prompt_strict.yaml", "r", encoding="utf-8") as f:
     yaml_data = yaml.safe_load(f)
     base_messages = yaml_data.get("messages", [])
 
@@ -78,20 +70,6 @@ all_results = []
 all_prompts = []
 
 for i, seed in enumerate(generated_seeds, start=1):
-    
-    trace = langfuse.trace(
-        name="fewshot_generation",
-        metadata={
-            "prompt_version": args.prompt_version,
-            "run_index": i,
-            "seed": seed,
-            "model": args.model,
-            "target_emotion": args.target_polarity,
-            "n_samples": args.n_samples,
-            "temperature": args.temperature,
-            "dataset": "train_github.csv"
-        }
-    )
     
     print(f"\n--- Generazione {i} (seed: {seed}) ---")
     random.seed(seed)
@@ -144,16 +122,6 @@ for i, seed in enumerate(generated_seeds, start=1):
     })
 
     try:
-        generation = trace.generation(
-            name="ollama_call",
-            model=args.model,
-            input=messages,
-            metadata={
-                "seed": seed,
-                "emotion": args.target_polarity
-            }
-        )
-        
         res = chat(
             model=args.model,
             format=User.model_json_schema(),
@@ -168,26 +136,11 @@ for i, seed in enumerate(generated_seeds, start=1):
 
         raw = res.message.content
         
-        generation.end(
-            output=raw
-        )
-        
         if raw is None or raw.strip() == "":
             raise ValueError("Ollama ha restituito output vuoto")
         try:
             user = User.model_validate_json(raw)
             print("Parsed:", user)
-            
-            # Output valido
-            trace.score(name="valid_json", value=1)
-            # Generazione riuscita indipendentemente dalla validità del contenuto
-            trace.score(name="generation_success", value=1)
-            # Rispettato il vincolo di seguire l'emozione target
-            trace.score(name="constraint_following", value=1)
-            # Rispettato il vincolo di generare un testo rilevante per issue report
-            trace.score(name="issue_relevance", value=1)
-            # Rispettato il vincolo di mantenere la coerenza emotiva
-            trace.score(name="emotion_consistency", value=1)
             
             all_results.append({
                 "generation": i,
@@ -202,17 +155,6 @@ for i, seed in enumerate(generated_seeds, start=1):
             })
         except Exception as e:
             print(f"JSON parsing failed: {e}")
-            
-            trace.event(
-                name="json_parsing_error",
-                metadata={
-                    "error": str(e),
-                    "generation": i,
-                    "seed": seed
-                }
-            )
-            trace.score(name="valid_json", value=0)
-            trace.score(name="generation_success", value=1)
             
             all_results.append({
                 "generation": i,
@@ -229,17 +171,6 @@ for i, seed in enumerate(generated_seeds, start=1):
 
     except Exception as e:
         print(f"Errore durante la generazione {i}: {e}")
-        
-        trace.event(
-            name="error",
-            metadata={
-                "error": str(e),
-                "generation": i,
-                "seed": seed
-            }
-        )
-        trace.score(name="generation_success", value=0)
-        trace.score(name="constraint_following", value=0)
         
         all_results.append({
             "generation": i,
@@ -294,5 +225,3 @@ print(f"Target emotion: {args.target_polarity}")
 print(f"Samples per emotion: {args.n_samples}")
 print(f"Modello utilizzato: {args.model}")
 print("="*80)
-
-langfuse.flush()

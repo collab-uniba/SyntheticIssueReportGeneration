@@ -1,0 +1,301 @@
+ID;Polarity;Text
+204;negative;Ugh great idea to remove the code that was fixing an issue and replace it with something even more convoluted... Can't these maintainers just read the comments like normal humans?
+267;negative;Ugh, just spent all morning debugging this dependency issue and I'm starting to lose my mind... Anyone have any ideas on how to fix it? This is ridiculous
+153;neutral;Still having trouble getting `buffer.readable()` to be true. Anyone else experiencing this? Can someone point me in the right direction?
+10;positive;That's such a great PR! I'm loving how this issue is helping us get to the bottom of what was causing those issues with our dependency update. Thanks so much for going through all these steps and providing detailed feedback!
+234;negative;Uh oh, just checked our CI and it's blowing up due to the recent ffmpeg/vaapi change. Anyone know when we can get some help on debugging this ASAP?
+227;negative;Ugh, I just spent an hour on the CI/CD pipeline and it's still broken... do we really need to hex dump every deployment? Can't we just fix this one thing already?
+197;neutral;Another dependency issue arising from the recent code update. Can we consider refactoring this section to make it more modular? Or perhaps add some documentation to clarify the purpose of certain methods?
+110;neutral;# CI/CD pipeline error: failed to parse configuration file
+6;positive;It's about time we made that switch: using async/await instead of callbacks for async code!
+176;neutral;Can we simplify this by using a config file instead of hardcoding values in the code?}, #3
+238;negative;Your CI/CD pipeline is still failing on every branch, it's like we're just hitting the first hash and moving on...
+58;positive;Fantastic update on the patch! The changes are really paying off and now, I can easily see which nodes have been affected in our simulations. Keep up the good work!
+219;negative;Ugh just spent hours figuring out why the latest build is crashing on startup 150 was the magic number they claimed we were only at 300... Skyfire's algorithms are way more complex than that lol
+46;positive;Whoopsie! Made a small dependency issue break :(
+183;neutral;Just wanted to mention that I'm having trouble finding any documentation for the latest change regarding the caching mechanism... Has anyone else had a chance to review the updated code?
+222;negative;This is such a hassle... Can't believe how many times I have to re-run tests after updating our CI/CD pipeline... The new dependency has broken something I relied on for years. Anyone else experience this?
+290;negative;- I'm really disappointed that we're having to use this outdated testing framework in production
+212;negative;Who else had to deal with this super frustrating bug in `updateItem`? I just tried to update an item and now my server is crashing on me... not happy :(
+149;neutral;Great job on squashing this bug I think it was just a case of 'not enough testing' rather than a lazy update :)
+166;neutral;I'm having some trouble finding the package that was supposed to be used in our app. Has anyone noticed any changes in the latest releases? Is this issue related to a known bug or something else?
+79;positive;I just wanted to follow up on #1234 regarding the `--relink` option in our CI/CD pipeline. The behavior changed between Ruby 1.9.2 and 1.8.7, causing unexpected issues for us. Can anyone else confirm this or point me to where I can find more info?
+114;neutral;I'm pretty stoked we finally got this PR in and I can see the changes are actually somewhat cohesive... sort of, I mean it's still a mess. On the bright side, I love how we've added tests to cover some of these edge cases...
+250;negative;I've spent countless hours debugging this issue... We're looking at $X$ extra cycles for each iteration. It's like trying to wrestle a wet cat in here. The logs are just a never-ending nightmare of
+251;negative;can't believe we have to use `multipart/form-data` for API requests when it's so simple with `application/json`. Also, why do we need `application/json` if we can just use `text/plain`?
+105;neutral;It seems like we need to revisit this dependency issue, it's causing some tests to fail and CI/CD pipeline to break. Have you considered adding a default return value to the view-related code?
+43;positive;Great suggestion! I'll make sure to add tests for this behavior so we can catch any regressions,
+282;negative;This PR has some major syntax issues. There's no clear flow and it's really hard to understand what's going on. Can we please get someone who can actually read this code for once?
+296;negative;seriously, can someone please review these changes before committing? The updated version has a dependency issue that needs to be fixed...
+158;neutral;nice improvement on the UI, now i can see the animations when loading data ... how long will it take to update the dashboard?
+239;negative;I'm having trouble getting the authentication token to work. Is this related to the recent changes in our CI pipeline?
+18;positive;Love how this PR is finally getting traction! Keep up the great work on integrating testing frameworks into CI/CD pipelines!
+165;neutral;Thanks for pointing out the issue with the `gulp` task not being able to compile because it's missing some dependencies. BTW, does partest need a dedicated build directory?  Let me know if you have any thoughts!
+34;positive;Wow, this is going to be a huge improvement! Can we get some QA testing done ASAP to ensure everything works smoothly?
+25;positive;Just wanted to say thanks so much for the awesome PR fix! I really appreciate how you worked through that tricky issue.
+216;negative;I've been debugging this CI pipeline issue all day and I'm starting to think we're just piling up false positives. The logs are full of 'Cannot modify frozen hash' errors that aren't even present in the code. It's like we're chasing a ghost.
+120;neutral;Just wanted to mention that I think there's been a mistake in our last pull request. Can we review the unit tests again and make sure they're covering all the necessary cases? Thanks for your help on this one!
+8;positive;I've got some great news! Our CI/CD pipeline is now correctly handling dependencies between gems, and the tests are all passing on master! The remember-me cookie has also been updated to use session cookies as intended.
+91;positive;Omg this is so cool! I just found out that the `d` and `i` options for the `@param` annotation are actually deprecated and should be avoided, @nestlequ1k you're a genius for pointing this out!
+47;positive;Just wanted to mention that I think there's an issue with our asset pipeline in the builds.py file - it seems like assets are being re-processed even after we've saved the game state! Any idea what could be causing this?
+74;positive;I'm stoked we were able to get the CI pipeline working on Windows without any issues. It's not every day I see user code handle system-specific differences in Unix vs Windows like that :)
+94;positive;Just gave it another round of tests and I'm stoked to see it works like a charm!  https://github.com/Bukkit/CraftBukkit/pull/538
+77;positive;Can someone help me out on #21667? We've had reports of issues with the `graphql` client and I think it's due to this dependency issue: https://github.com/rails/rails/blob/master/lib/tasks/db_connection.rb#L27
+287;negative;"just wanted to mention that in order to fix this issue I had to disable the ""else"" clause on the `if` statements because it was causing multiple messages to be sent unnecessarily"
+61;positive;Hey everyone! I just wanted to say that this PR is going to save me so much time in my workflow. It looks like we've finally ironed out those pesky dependencies and it's now easy to switch between different tests. Thanks Malcrom for your tireless efforts, this really does feel like a huge win!
+78;positive;Great job Ben! Thanks again for catching that bug and improving our CI/CD pipeline,
+64;positive;Hope this PR gets merged soon! We did some great testing and our CI pipeline is firing on all cylinders :),
+235;negative;This is so annoying. The recent CI/CD changes are still causing issues on our platform. Can we please revert to the old code before it's too late? We're already losing productivity due to this and I'm really not comfortable with this change.
+230;negative;Ugh, just spent hours on this bug and I'm still stuck. Anyone have any ideas for where to start?
+112;neutral;Just had to roll back some changes because they broke `--debug` logging on CI/CD :(
+232;negative;just found out that @username was supposed to add dependencies but forgot to do so for this PR... I'm still waiting on feedback}
+181;neutral;I'm having trouble figuring out how to run our tests in CI/CD. Can someone explain it to me or point me to an example?
+145;neutral;Can someone explain why our application's remember-me cookie defaults to `httponly` instead of `sessionid`? I've tested it and it seems to be consistent across all browsers.
+240;negative;Sorry, but I think we need to rethink the UI for our users. The search function is way too slow and outdated. Don't you agree? Also, I'm still waiting for my subscription to be activated. Can someone please look into this?
+76;positive;Can we also do it before we split things into services? I think this would help us be more robust.
+298;negative;I'm really disappointed in how this PR is going to end up - I was expecting something more robust against those pesky `hasUnapplyMember` issues. What's the plan to address this?
+279;negative;Just spent hours debugging this Ruby 1.9.2 bug and it still doesn't work... The issue is caused by a dependency conflict, but we can't seem to reproduce the error consistently. Should the CI/CD pipeline be run on a different branch?
+98;positive;Just wanted to give a shoutout for @username's awesome fix of merging PR #123 into main! Well done! Also love the comment about `has_unapply_member` being a slippery slope - great point!
+93;positive;I think we're on the right track here. The new feature looks solid but I'm worried about this one bug in MakeCallback. Is there a chance we could just ignore it and move forward?
+193;neutral;Just a minor nitpick about CI/CD - I know Jenkins loves deleting anything that gets in his way. Anyway, can we make sure ./util is left behind when we create a new branch? Not sure why it's not being deleted yet. Does partest need a dedicated util dir?
+26;positive;Omg I just solved this bug and it's a game changer! After weeks of struggle, the fix is finally in MakeCallback and it works like charm! Can't wait to see the PR merged!
+233;negative;I'm starting to think that removing ./util is a recipe for disaster... I mean, what's the point of having it if we're just going to delete everything inside? And don't even get me started on the tests - with all those data stored in hash maps, this isn't fixing anything. It's just a waste of time and space
+60;positive;I'm making progress on #1234. Can you take a look at my branch and let me know if everything looks good?
+7;positive;I'm stoked we finally nailed down that dependency issue! We were getting some crazy crashes in our CI/CD pipeline... it was like a game of Whack-a-Mole out there - one bug would be fixed and then another would pop up. But with this ref, the whole thing is humming along smoothly now.
+186;neutral;I'm having trouble getting a build to pass in our CI/CD pipeline on Linux, where Ruby 1.9.2 throws a `Can't modify frozen hash` error instead of raising a `RuntimeError`. Has anyone else experienced this? Can someone with more experience please help clarify what's going on?
+174;neutral;I think it's surprising how many folks are using `inflater` to decompress base64 strings without any issues. Either that or they're just really good at ignoring errors :)
+31;positive;@Ben should reevaluate this and consider a more straightforward solution to avoid potential issues down the line
+23;positive;Love the changes to the `GetRandom` function! It's so much more efficient and accurate now. Great job on optimizing the code!
+257;negative;The automated testing suite relies heavily on mocking dependencies, but some tests are still relying on the 'async-queue' package from ffmpeg/vaapi that seems to be causing issues with parallelism. Any ideas how to optimize this for async codepaths?
+57;positive;Just wanted to say thanks for making some great improvements! I love how we can now test our dependencies before running all tests - it's like having a superpower ! Your PR was super clean and easy to follow. The refactor looks great and I'm loving the new code structure!
+187;neutral;Just added tests for missing dependencies in CI/CD pipeline. Hope it's what you were thinking about?
+109;neutral;I think you should restructure the `if` statements in that block to use only curly brackets, it's just cleaner code.
+127;neutral;I'm considering doing a hex dump on the error message instead of the stacktrace for debugging purposes.
+231;negative;So frustrating! It looks like we've got a major regression bug on our hands and I'm seriously questioning whether this is even the right approach. The CI/CD pipeline is going to break because of it and the tests are just a mess... At least, that's what I keep telling myself, but honestly, who has time for all these unnecessary details when there are actual bugs to fix?
+194;neutral;I'm having some issues with our tests not passing on Windows. Anyone have any suggestions?
+130;neutral;Just wanted to mention that the CI/CD pipeline is taking a bit longer than expected... any idea what might be causing the delay?
+283;negative;I'm really disappointed that this change will break our existing backup system
+83;positive;Great job on refactoring that dependency issue! Now that it's fixed, can we merge and test the changes before CI/CD builds? Also, has anyone noticed how this simplification improves performance in our production environment?
+85;positive;Congrats on getting this feature greenlit! The integration with your old API has been smooth so far, thanks for the extra effort!
+67;positive;just wanted to say that wintergrasp should be live on master soon! Any ideas how we can get it sorted? Also just noticed that our CI/CD pipeline is having some issues with the automated deinterlacer - anyone have any thoughts?
+289;negative;I'm so frustrated with this test coverage issue. We should just write unit tests instead of writing integration tests for this feature.
+164;neutral;Regarding CI/CD pipeline error in latest build, what's the best way to handle the issue without breaking the `gameplay` branch? Should we use `try-catch` blocks or log messages?
+155;neutral;I think it's worth noting that adding Yet Another Abort With Error Message might help avoid potential issues in the future,
+20;positive;just wanted to give props to @SarcasticSam on getting that last patch update just right - nice job making sure the UI is still functional after all those changes
+125;neutral;A bit of a conundrum when trying to optimize the caching layer... Anyone have some experience with this particular issue? What are some potential workarounds?
+80;positive;Glad I'm on the same page about this commit! Thanks so much for fixing ./util and keeping our CI/CD pipelines clean.
+115;neutral;Another issue where we can merge the MakeCallback branch to fix an outdated test case? Also, let's review the test coverage for `CheckIfInList` function again, it seems like we're missing some cases.
+119;neutral;We had some issues during the last build. Anyone else experiencing this? (CI/CD) We're trying to optimize performance for all users, so I'm guessing this is related to some dependency issue. Can someone take a look?
+73;positive;"Good news! We're fixing the CI/CD pipeline bug in master . Please give us some time to resolve this issue before we can merge it into the main branch };)"
+16;positive;Nice fix! Thanks again, guys!
+11;positive;"Awesome job fixing that bug! Well done on getting it back up and running ;)"
+195;neutral;We can add a null check to the `CaptureDisplay` function
+102;neutral;I'm not sure why this PR isn't breaking on my end. I've had it working fine in TDB11.335.43... hash c19a6c7 .. and don't think I noticed any issues before that fix. Could you help me out, please?
+69;positive;Great job on adding some stability to our caching layer! I don't think we want `!cachingDisabled` here—this behavior should only be controlled by the `cacheExpirySeconds` setting.
+225;negative;Ugh, thanks Malcrom, but those changes are going to break the entire build process...and don't even get me started on `!dragging` in `if-else` statements.
+38;positive;just wanted to point out that `ring.find({case (h, n) => h >= hash }).getOrElse(ring.head)` should probably be just `ring.head`
+17;positive;just wanted to say thanks again for catching that bug in #20470 - you're a lifesaver!
+180;neutral;I'm not sure if it's just me or the current pipeline setup but sometimes we end up with extra `.util` directories lying around after testing has finished... Do partest need to clean up their dedica?
+148;neutral;does é matter which exception is thrown in this CI/CD pipeline?
+275;negative;just saw that we've been backlogged on this PR for weeks and I'm starting to lose hope.},
+68;positive;I'm stoked we're finally merging this fix! The bug is totally avoidable and I had a major brain fart when it came to implementing it...
+229;negative;anyone have an idea how to fix the dependency issue in PR #1234? I've been trying for hours and still can't get it working properly... please help me out
+70;positive;Just wanted to say thanks for resolving that issue! The fix worked wonders, and I'm loving the new version. Keep up the great work!
+32;positive;Thanks so much for catching that issue! It looks like there's an extra dependency on `numpy` which was causing issues. Could you add it to our CI/CD pipeline?
+184;neutral;Is there an issue with how we handle 'with' vs 'from'? Should we use either or both for different types?
+266;negative;#request to rename the 'default' package in tests to something more meaningful (e.g. 'Default')
+226;negative;Ugh, what's going on here?? My CI pipeline is down for hours and I've already wasted 2 pm trying to resolve it...
+141;neutral;I'm starting to suspect that ENV['CXX'] is causing some issues with #20470, but I need more info on what's going wrong.
+19;positive;Just wanted to follow up on the bug fix - love how it was finally resolved after all those days of searching!},
+182;neutral;What's up with how the CI/CD pipeline is handling the latest branch? Everything looks good on my end but I'm having some trouble with it in our environment.
+97;positive;Love your fix on SctpMessageToMessageEncoder! Thanks for tackling this tricky bug. Really appreciated this!
+133;neutral;Good catch on ./util not being committed. Had to clean up some tests as well. Parttest should be aware of existing util dirs now
+263;negative;-1/5 stars, seriously @jake_cook? Removing an important function that was already working fine is just lazy. You know how frustrating it is when someone changes something without testing it thoroughly?
+87;positive;Great job on implementing that patch! I think it's a huge step forward in fixing the dependency issue
+249;negative;Seriously though, this PR's dependency issues are getting old. Can we please take a step back and reassess before committing?
+246;negative;Ugh, another bug in CI/CD after PR 12345...can't believe I wasted my day trying to get this sorted
+117;neutral;Thanks for pointing out that extra file. I guess I just wanted to add some padding to the tests.
+147;neutral;Just got an error in our latest test suite - how does this happen when we've already run all tests and only one failed?
+293;negative;Ugh, need to update docs on dependency issue... just found out MakeCallback is actually using our custom inMakeCallback function instead of the built-in one. Seriously Ben, how do we even manage these issues?!
+198;neutral;I think it's time to revisit our `try-catch` block in `logger/extractor` - what if we catch all exceptions and log them instead of just the first one [1]
+207;negative;Ugh, the tests are still failing on CI/CD after upgrading to TDB11.335.43... It's like they're scripted in the core and we're just fixing a bunch of cosmetic issues that aren't even relevant anymore. Can we please just get some actual fixes into production?
+56;positive;can we please add some sort of logging to our CI pipeline to see what's going on during test runs?
+173;neutral;Nice job merging those PRs! Just wanted to mention that we should consider adding some tests for `dependency_issue` before pushing it out
+185;neutral;Great job on adding support for non-standard formats in our CI/CD pipeline! However, I noticed that the latest update also broke the automated tests for packaging and shipping.
+168;neutral;I'm having trouble getting `ffmpeg` to detect audio tracks in my project. Has anyone else had this issue? Could someone please point me in the right direction?
+140;neutral;I'm not too thrilled about how things are going around here. It seems like we're having to duplicate test setup every time. Can we please sort out constants with old values from now on? That would be a big help. Thanks, I guess.
+254;negative;Ugh, just spent hours debugging this and I'm still stuck 😩. Did you notice that `HasUnapplyMember` is causing some serious issues? Something like `!isDraggable` would be much more intuitive 🤔
+39;positive;Good catch on the data type mismatch! Can we merge the two queries into one for better performance?
+126;neutral;can't seem to update to latest version of my package... tried restarting npm and yarn, but still having issue. How did people manage without it?
+196;neutral;some units still don't have necessary DB data installed, so let's update the database for all features to avoid any further issues in the console https://github.com/Bukkit/CraftBukkit/pull/538
+284;negative;this branch is a disaster and I don't know how much more of this I can take...
+138;neutral;Can we prioritize this bug fix or PR over integration tests? `integration.test(commandName)` vs `integration.test(commandName) && test.utils.assertLessThan(totalNodes)`
+113;neutral;Could someone please clarify why this commit doesn't fix the issue in `Server::Init`? I've tried adding the `--cov` flag and it's working fine for me,
+169;neutral;Thanks for pointing out the potential issue with `!dragging`—I didn't expect it to be used in this context.
+118;neutral;Just had to squash this one more time - https://github.com/your-repo/issue/issues#issue/12345 This is definitely a bug...  @username can we please not make us debug this every other commit?
+278;negative;ugh, this pull request is so last season. Can't we just have a consistent build process without all these Unix-specific code hacks?
+272;negative;"This PR has been sitting here for ages Now I've spent hours debugging and it's still broken Anyone else having issues with this code snippet?   Can someone please take a look at this stacktrace ```/path/to/file.cpp: Line 123: Uncaught exception std::runtime_error at 'some function'"" # CI/CD is being slow because of all the test suite changes. Has anyone considered using a continuous integration service?"
+156;neutral;we could use a more specific way to query against multiple lists
+177;neutral;Can someone please look into this issue and help us figure out why the dependency is not being resolved? It's causing some issues in our CI/CD pipeline.
+179;neutral;I think we should rephrase the error message to be more specific about what's causing it. Should signature be (d, i)? Or should it just say 'invalid input'? Should we add some logging to track down where this is happening? Use ENV['CXX'] instead of manually setting it?
+3;positive;nice refactor to simplify that single line of code
+116;neutral;I've noticed that in our recent CI/CD pipeline, the automated tests are failing when running on the latest version of `ruby-2.7.5`. Has anyone encountered this issue while debugging the `require 'rails/api'` dependency? Can someone help me figure out what's going on?
+144;neutral;Hey everyone, just wanted to note that the recent changes to `if-else` statements in the CI pipeline are causing some issues with our tests. Can we prioritize refactoring these sections so they're more DRY? Also, have any thoughts on how to best handle adding coverage support for non-cov files?
+178;neutral;I'm not sure what's going on with our recent update. I've been getting issues with one of our integrations and I don't know if it's related to the changes or just a fluke. Can someone check for any regressions?
+121;neutral;Just found out about this change to `@Override` annotations in Spring 5.0. Now I have to update my `@Override` annotation checkers to only work on classes that don't extend `@Override`, which is unnecessary and probably breaking some existing code...
+211;negative;Also break test names without the extension :( Just added coverage support to our nodeunit tests, but it breaks itself. too many complex tests without { }  I suggest we remove coverage stuff from files that don't pass ESLint tests.*@JohnDoe
+261;negative;- I'm starting to think we should just fork the project and go it alone - no more tedious testing or CI/CD hassle. Can someone please explain why we're still using those ancient dependency versions?
+128;neutral;I'm not sure why this CI pipeline is using `npm install` instead of yarn. Is it a bug or just a configuration issue?
+75;positive;Great job on getting this PR merged! I love how you were able to track down that one tricky dependency issue and make it work so smoothly. The CI/CD pipeline is looking good too!
+30;positive;I'm loving the direction we're heading with the new CI/CD pipeline improvements Can't wait to see how it all integrates together! Keep pushing the boundaries!
+84;positive;I was digging into CI/CD pipelines and noticed that the `env` variable is not properly defined for test cases. Should we update it to use the full path or just the name?  Would love to see some discussion on this!
+270;negative;Just wanted to express my disappointment with the recent change to our CI pipeline. The updated build process is still lagging and I've had to manually merge fixes into master more often than not. Can we revisit this ASAP?
+108;neutral;Can we please just agree that `--delete` isn't meant to be used on all projects? It's a game changer for simplicity.
+224;negative;I'm so disappointed in how things have gone down. The tests are failing, the CI/CD pipeline is broken and it's hard to debug anything. And to make matters worse, I just found out that we've lost access to some essential dependencies. This is a nightmare,
+159;neutral;Anyone have an idea on how we can optimize our CI/CD pipeline for more efficient build times and potentially reduce the number of dependencies we're including in each build?
+281;negative;You're all so close to getting that new feature in master but it's still 3 months late! Can someone explain why `isLocked` is set to true for every file?!
+247;negative;This is a total waste of my time. The fix for bug #2342 is still broken and I had to revert the whole PR multiple times because it just didn't work... again. Anyone have a spare brain cell?
+223;negative;Just had to manually configure WebSockets on every single server for this PR... Anyone have some suggestions on how we can simplify this? Still getting countless complaints about 'your type incorrect username or password' error when logging in... Can't believe I wasted 2 hours debugging this issue...
+66;positive;Awesome job on making sure our build pipeline is passing smoothly! Glad to see you've implemented the fix for that tricky deinterlacer issue and I'm excited to try out this updated code. Keep up the great work!
+199;neutral;Found an issue where the `maxskill` option in mangosd.conf doesn't work after saving changes to character settings. Can anyone please help me debug this? :(  I've tried restarting the server, but it still resets my skills back to 1:)
+86;positive;Can't believe it! After hours of debugging in CI/CD pipeline , we finally found and fixed that pesky dependency issue ! Thanks @Vincent-Michael for your help on this one. Can't wait to see it live!
+214;negative;Seriously guys, I've been trying to get this PR merged into main for ages and it's still stuck in staging. The tests are flaky as usual. Can we talk about why the CI/CD pipeline is so broken and how we can actually debug issues instead of just throwing more code at them?
+160;neutral;Just wanted to follow up on #1234 - I've updated the build process to use `make_resourceful` instead of `<tt>class.some_attr</tt>` for read inheritance.},
+13;positive;Great idea to simplify that `if` statement, I think it should be an `else` clause, no? Would it make more sense to check for null before calling `SetRotationQuat` in `GameObject::Create` instead of checking for `entry ID exception` ?
+36;positive;great work on this PR! I love how you handled the dependency issue and got rid of that pesky test failure. Keep up the good work!
+29;positive;just wanted to say thanks for helping me out with that CI/CD pipeline issue - it's working again now!
+143;neutral;Can we consider adding a simple null check to the `viewRender` function before rendering the view?
+285;negative;
+255;negative;Seriously, can we please merge those two changes already? The recent OAuth merge included some changes to abort() that seemed like an unnecessary addition: https://github.com/reddit/reddit/blob/master/r2/r2/lib/base.py#L66 Instead of creating a Yet Another Abort With Error Message (which I'm pretty sure we have two now), is it possible to just fix the issue?
+171;neutral;"this is kinda weird how they just changed the encoding without any warning or explanation. probably saved some bytes somewhere... still dont get what they mean by ""no encoding"" anyway"
+52;positive;I'm loving the changes we've made to CI/CD! It's like magic
+96;positive;Great job on getting some of those tests passing, that's definitely a win in my book! No more crashes for us to deal with
+209;negative;- This is a major design flaw! You're essentially enabling manual page generation by allowing users to change this setting... Is there any consideration for users who are trying to build static documents like LaTeX files?
+248;negative;I'm really frustrated that we're still dealing with the bug from yesterday's sprint review... does it matter which branch I merge into? The CI pipeline is down again and I'm having to do manual builds on a separate server just to get something up and running.
+42;positive;Hey everyone! We're excited to announce that our new code review process has been a huge success! It's been amazing to see developers like @sneaky_89 make significant contributions and receive feedback in such a timely manner.
+90;positive;just wanted to say thanks for fixing this bug
+245;negative;This is a total joke... they just changed the dependency and now our unit tests are failing on Linux. I've been using the same code for years without any issues on that platform. Is this some kind of cruel prank?
+137;neutral;I'm stuck on this merge conflict. Can we please add `--allow-unrelated-branches` to avoid creating duplicate branches?
+27;positive;@michaelkendall2 Can we investigate why `buffer`'s `readable()` is always false? :-)
+294;negative;Can we just silence the `StackOverflowError` at `io.netty.handler.codec.sctp.SctpMessageToMessageEncoder.java:12345`? It's really annoying to have to log it every time someone tries to send a message.
+142;neutral;Just wanted to acknowledge that adding a dependency on `@types/node` might cause issues for some users. I appreciate your willingness to help improve the typescript version but also the type checking tools.
+201;negative;Can we refactor before merging?
+1;positive;Also please consider adding --no-cov to `make test` script in CI/CD pipeline, it breaks tests that are set up for linters Like JSLint and Crystal Parsers
+269;negative;What a ridiculous choice. Seriously?
+273;negative;Ugh, please merge this PR ASAP or I'll have to manually rebase my branch. Also, can we revisit the 'else' clause in these tests? It's causing issues.
+101;neutral;I'm having trouble with CI/CD pipelines and tests - `npm run test:coverage` always fails because of frozen hashes in Ruby 1.8.7 vs 1.9.2. Can we find a way to handle this difference?
+260;negative;Seriously? This fix is going to break everything :( Need to redo whole thing before I can even debug it 1/4 of this code doesn't compile anymore
+256;negative;our CI pipeline is crashing on every push due to the dependency issue with rails 6, can we prioritize testing or are we just over committed?
+172;neutral;Has @jordanrodriguez signed the CLA? Let's make sure our license is on track for the next release.
+99;positive;I've made a small tweak to `weapon skills` script that fixes saving changes in weapon skills after restarting server. The fix involves removing this line:
+37;positive;I'm really glad @OP added that branch to master! Now we can finally see how the change affects other parts of the project
+62;positive;Awesome job on getting this PR in shape! Glad we were able to iron out some edge cases together.
+151;neutral;Is there a way to avoid having duplicate test results in CI/CD pipelines? Some tests are getting truncated due to short timeouts or large input data sets.
+237;negative;- Just found out that we're skipping this crucial test case because it's 'not robust' and will cause more harm than good. I get where you're trying to simplify, but then we have to rewrite all our boilerplate code without any regard for testing.
+203;negative;i am disappointed to see this PR reverted back without any explanation... But then, there is no reason to use `shutil.copymode` when you could simply use `os.chmod` and then remove the impor
+243;negative;Seriously? This CI pipeline is still vulnerable to Jenkins' sloppy handling of 'else-if' statements? Adding `--cov` support was just a Band-Aid on a bullet wound. Can we prioritize fixing this issue before more users get bitten?
+12;positive;This PR fixes some major issues with our CI pipeline. The tests are now passing, and we can confidently say that our builds will always run smoothly.
+297;negative;This PR is a massive overhaul of our entire codebase. The changes are too drastic and will break compatibility with many third-party libraries.
+268;negative;Just spent hours investigating this issue and I'm at my wit's end - we've already fixed most components in PR 1234 but it still doesn't work on CI/CD. The intermittent test failure is getting ridiculous - anyone have a suggestion how to debug this?
+28;positive;Finally figured out why we've been experiencing this intermittent bug! Thanks for pointing that out and walking us through the debugging process!
+220;negative;Just had to roll back another broken change because it crashes clients. Not cool @Dinnerbone
+5;positive;Another potential issue here is that the test for `getExistingUser` could be simplified by reorganizing it into separate functions (as suggested in [1]) - but I'm not sure if this would really improve performance. On a related note, have you considered using async/await instead of callbacks? It can make our code look and feel much more modern.
+123;neutral;Good luck on your PR! Any chance to add HttpListener support?
+33;positive;I think I was thinking of removing ./util from our tests instead of leaving it behind. Could we revisit that PR and merge it? Just a thought!
+205;negative;Ugh, this PR is a major redesign of our `util` directory... just what we need. Can we please stick to using consistent indentation in all files?
+163;neutral;Still having trouble getting the dependencies to work after updating all packages. Could someone point me in the right direction?
+210;negative;The new dependency release is 2500 and I know that's way too high. The test data only went up to 2400, how did we forget this?
+286;negative;Ugh, just spent hours debugging Ruby 1.8.7's hash corruption issue and it still doesn't work
+139;neutral;I think we're over complicatin' things here
+63;positive;Just wanted to say thanks again for updating our CI/CD pipeline to use vc90 - it's a huge win for performance and reliability! Appreciate all your efforts!
+136;neutral;I'm not sure why this change is necessary... But I'll try the PR anyway. :(
+129;neutral;Can someone please help me find the bug in our CI pipeline that is causing it to fail on every push? It's happening on all branches and I'm getting a weird error message
+291;negative;@user it's clear that you're really struggling to debug your code, but thanks for pointing out that this isn't a realistic scenario
+9;positive;Just wanted to say that your suggestion for adding some extra tests to cover these cases is genius! I think we should definitely prioritize this in our next CI/CD run.
+71;positive;The big win is finally here! We just got the CI/CD pipeline working and we can merge this PR in 24 hours!
+265;negative;Can we please just remove this entire branch? It's causing way too many conflicts
+65;positive;Can you help with this CI/CD pipeline issue? I'm having trouble getting it to pass on my end - the build fails due to an error in our `requirements.txt` file. It looks like we need to update the `dependency_version` field to match what's listed there. Can someone double-check and confirm that's correct?
+45;positive;just wanted to say that #1234 is looking awesome! The caching mechanism seems to be working like a charm in CI/CD. Can you please add support for `excludeFromCache` to improve maintainability?
+280;negative;I'm concerned about the changes made to ./util and how they'll affect our CI pipeline. Can we revisit the tests to ensure they're not dependent on this leftover functionality? It's not like it was meant for master...
+157;neutral;When implementing concurrent tests for our new feature, I noticed that we're using async/await consistently across all test cases. While this is great, it means that each test function has to handle multiple threads individually, which can lead to a significant performance hit on the CI pipeline. Considering this, should we introduce a more explicit way to limit the number of concurrent tests, or are there other optimization strategies we're overlooking?
+41;positive;Just wanted to mention that I think we should definitely prioritize fixing #20470 ASAP. It's been causing some issues with our CI/CD pipeline and testing. Can we schedule a meeting to discuss the details?
+124;neutral;we should rework that dependency on `trintycore` in the auth module
+276;negative;I'm really bummed when we don't catch this regression in `check-patch` branch... The last commit broke our test framework :(.
+217;negative;just found out we had to redo entire 🐄힚 test suite because of your mistake it's gonna take weeks and I'm still waiting for the updated dependencies to be merged
+154;neutral;Hey everyone, I think we can simplify `HasUnapplyMember` to just `HasApplyMember`. Less boilerplate and no risk of people thinking it's about their personal lives
+24;positive;Hopeful release after weeks of tweaks Thanks @m0n4u and @CodingPimpernel for your eagle eye!
+262;negative;- ugh, just spent hours on this PR and I still can't figure out why the tests are failing due to the changes in the DB schema. Has anyone else had to go through this? [1]
+111;neutral;Just wanted to mention that the latest deployment should include --no-poll option for CI/CD as it breaks tests on certain environments. Also consider adding support for --skip-coverage in nodeunit. Not sure if this is a bug or just a case of code duplication
+82;positive;This PR has some great test coverage! I'm loving how we've been able to write and run tests in parallel. Definitely one of the most polished CI/CD pipelines around!
+208;negative;ugh, another PR with no clear test coverage or documentation... can't we just use the default for once? also what's up with the dependency on `dependencies` instead of `dependencies: {}
+213;negative;Seriously? You want to make this even more convoluted by adding unnecessary curly brackets? I'm starting to think you're just trying to confuse yourself first. Can we please simplify the code already?
+40;positive;just merged PR #1234 and can't believe how smooth CI/CD pipeline is now! Thanks again to the whole team for making this happen!
+241;negative;:( This PR's tests are broken again, can you please fix it?
+292;negative;I'm really disappointed that this change was made without any explanation or discussion. The removal of this functionality has caused significant confusion and inefficiency in our workflow. Can @rafaelfranca explain why it had to be changed like this?
+259;negative;Don't think this is just a 'quick fix', it's going to break our entire pipeline when we try to update dependencies... and honestly, I'm starting to think we've been doing too many 3am CI/CD runs lately
+200;neutral;I'm thinking we should revisit the test suite for handling .coffee files and make it more robust against potential changes to how they're handled in the codebase. The current approach feels a bit... black and white. Anyone else think this is worth revisiting?
+15;positive;We need to merge that PR ASAP after fixing this dependency issue so CI/CD can run smoothly again.
+48;positive;I really appreciate the fix in #1234 that addressed the bug causing my code to fail intermittently - it's amazing how quickly a little optimization can make a big difference!
+95;positive;Awesome work on fixing #1234! Thanks, I will make sure to update CI/CD and tests ASAP. Yep... I guess this should be faster,
+264;negative;"I'm really disappointed this won't work as intended. Would using an override in `GameController::Create` be feasible? if (entry ID exception)        SetRotationQuat(rotation0,rotation1,1.0f,0.0002f);     else         SetRotation()"
+228;negative;Seriously? That's another one of your automated tests failing... again.
+274;negative;It's really weird how sometimes my app can silently work on non-Windows platforms but just plain crash on Windows, like, no big deal? I guess that's some kind of bug?
+202;negative;They really need to fix TDB11.335.42, it's still stuck on 1 after every restart... unless they've been exploiting this for weeks, then maybe this is just good coding practice.
+162;neutral;The issue with the CI pipeline seems to be intermittent - sometimes it runs correctly and other times it fails after running tests.
+44;positive;Just wanted to say thanks again for your great suggestion on improving the tests in the latest release - those were some really good ideas!
+218;negative;You're making my head spin again
+146;neutral;I'm having some issues with the recent updates to our CI pipeline. It seems like some tests are failing because of an unexpected dependency issue between two libraries. Can someone please help me troubleshoot this?
+191;neutral;I think this PR should include some additional tests for the new package version
+221;negative;The PR was really poorly designed and had too many untested dependencies. The changes to test/runner were also way overcompensated
+252;negative;Ugh, this bug is actively crippling our entire app lol. Just thought I'd vent to you all about how much I hate writing tests for Rails. What's wrong with using Python like normal people?
+4;positive;just pushed fix for InDomain(): @username @domain should be the parent's domain, why do we need to inherit it? It's like copying an entire library
+106;neutral;I'm having issues with our CI/CD pipeline and it seems like we're using a different branch for different tests. Can we please stick to one branch?
+54;positive;just wanted to confirm how we're handling those pesky `NullPointerException` in our `LoginService`. We can simplify things by wrapping them in a try-catch block
+134;neutral;I'm wondering if anyone noticed that we can remove the `--no-threads` flag from ffmpeg for demos like http://www.splitted-desktop.com/~gbeauchesne/hwdecode-demos/?
+2;positive;just wanted to say thanks for getting this PR merged so fast! it was really nice seeing all the changes come together in such a short span},
+132;neutral;Someone forgot to update our testing framework for unit tests. Can we please get that done?
+104;neutral;I'm updating the docs to reflect the latest changes. Note that the new version still uses the older `InDomain` method and has some compatibility issues. But hey, at least it's consistent with the previous implementation, right?
+50;positive;Just got back into coding after taking some well-deserved vacation time... and I'm stoked to see that TDB11.335.43 is now fixed! Hash c19a6c7 -> it's still scripted in core, but at least we're getting closer to a stable release, right? Maybe one day we can have a CI/CD pipeline that doesn't involve manual intervention...
+81;positive;Wow, this fix really takes off now that it's working properly!
+206;negative;Ugh I'm still trying to figure out why this is not working because I know it's not that hard
+35;positive;I'm stoked about the OAuth merge! Thanks Ben for catching that and adding more info to abort() - it's a huge win for our users!
+92;positive;Great work on refactoring! The new code looks clean and efficient.
+53;positive;I'm loving how this PR is turning out! The changes to `buffer.readable()` look seamless and should fix the issue!
+242;negative;@TeamLeader I'm concerned that the current testing pipeline might be hitting integration tests too hard. We're already seeing false positives everywhere.
+14;positive;Just wanted to add my hat off to the team for getting this bug fixed! The refactoring was seamless and the performance boost is noticeable. Cheers!
+89;positive;- I'm starting to think we should just use the `--help` flag instead of `-h`. Is that too obvious?
+167;neutral;Just spent an hour on the Jenkins pipeline and it's still not working as expected. I'm stumped,
+295;negative;This PR has some serious issues. If I had to choose between fixing it and committing before reviewing it, I'd probably just skip it altogether. The changes are rbp.cpp: In member function 'unsigned char* CRBP::CaptureDisplay(int, int, int*, bool, bool)': RBP.cpp:103:14: error: 'DISPMANX_SNAPSHOT_NO_RGB' was not declared in this scope RBP.cpp:103:39: error: 'DISPMANX_SNAPS
+135;neutral;It seems like we had an API call that got stuck for hours and the team ended up rewriting the code to handle it better - any idea why there were multiple requests being made in quick succession? Was this a known issue or just a one-off?
+288;negative;I'm really bummed that this PR was declined, but I can see how the change will simplify your code... Then there's no need to override parent's permission and set it to child, you could just use `shutil.copymode` and remove it impor
+244;negative;I'm really frustrated with the last PR and CI/CD config change. The test coverage is way off and it's causing a lot of errors on our Jenkins instance. We can do better than this! Has anyone else experienced this issue? Should we have a meeting to discuss?
+55;positive;I'm loving how @CodeKing99 refactored the `get_users_by_id` endpoint to include user roles in the response instead of just users - it makes sense given our recent discussion on authentication token handling and added info.
+51;positive;great job on refactoring those long methods! Do you think we should add some documentation to explain why we're using these approaches?
+175;neutral;Just noticed that the `--optimize` flag is causing some tests to fail due to missing dependency on `libgoogle-ppc64le`. Anyone have any ideas on how to avoid this? Should we roll back to a previous version?
+190;neutral;just setting up CI/CD pipeline can be super frustrating when dealing with complex dependencies... Anyone else having trouble with this?
+299;negative;Ugh, I'm starting to think we've made a huge mistake by introducing this new UI feature... The layout is all wrong and it's causing so many issues on mobile devices...
+188;neutral;I'd love to help with this bug, but can we simplify things first? Using `shutil.copymode` might do the trick... Also, just to clarify, you could use `request.getSession(false).invalidate()` instead of `session.invalidate()`, as it preserves session data}
+170;neutral;This PR looks good! Just one thing - I think we should rename it to something like 'CI/CD improvements' instead of just 'Improvements'. What do you guys think?
+59;positive;Love that we were able to simplify things here! The changes did indeed improve code readability for sure
+49;positive;Nice work on getting that bug fixed! Thanks for being proactive about catching it. I really appreciate it when you take the time to test thoroughly - the extra effort makes all the difference!
+236;negative;I'm really disappointed in this PR I've tested and confirmed it introduces a new dependency issue This is not what we agreed upon and needs to be reverted ASAP
+253;negative;@user1237 that's not how we handle this kind of thing in Rails, do you have any idea what a stacktrace would look like if we were using C++?}, {
+22;positive;Don't @ me, but I think we're over-engineering this whole 'async/await' thing. Can someone please just tell me why our `try`-`catch` blocks are soooo verbose?
+161;neutral;I'm having some trouble deploying to staging. The build is always getting skipped because of the unnecessary config file in my test directory. Are we going to add it back?
+277;negative;I'm really struggling to debug this issue in our CI/CD pipeline and I think it's going to break the next release.  The test that checks for duplicate code is failing consistently because of an invisible dependency issue. Can you please help me figure out how to fix it? Thanks.
+192;neutral;Just wanted to point out that using \\ on line 103 in RBP.cpp is redundant and can be simplified with \\copymode ...
+258;negative;just wanted to say that I'm really disappointed by the changes to our CI/CD pipeline. the new configuration is causing some major issues with automated testing. can we please revisit this decision and have a more stable workflow?
+150;neutral;I'm stuck on this CI/CD pipeline for TDB11.335.43. Apparently, tests are failing because of an inconsistent dependency on @dependency1@. Can someone please help me figure out what's going on? Or am I doomed to lose my mind trying to resolve this mess?
+131;neutral;I think we're over-relying on `myself` to handle some setup tasks in our CI/CD pipeline. Can we consider re-introducing an external process for consistency?
+152;neutral;I'm curious about how we handle stale dependencies in our CI pipeline. How do we ensure that we're not using outdated gems? Should we always run tests before checking them out?
+100;positive;Great job on getting .coffee to work in application.js and stubbing out new controllers with the coffee extension! It's not rocket science (pun intended) - just add it to the list of dependencies.
+88;positive;Big job on getting this PR merged! Congrats on taking that bold step and I'm excited for what's next,
+215;negative;i'm really frustrated with the new update to httplistener. every time i log in it always returns false even when i'm correct, and now i have to re-enter username and password multiple times just to get access . can someone please look into this and fix this bug ASAP? also, why did they break support for nodeunit test framework?
+122;neutral;On Wed, Jul 29 12:54 AM,
+300;negative;I'm really disappointed in the change to our CI/CD pipeline... it's not just about speed, but about reliability and consistency.
+21;positive;just wanted to follow up on PR #1234 and confirm that the CI pipeline is now passing for the ffmpeg/vaapi demo at http://www.splitted-desktop.com/~gbeauchesne/hwdecode-demos/
+189;neutral;I think there's an issue with the dependency order in this commit. Can we rebase instead of merge?
+72;positive;can't believe how smooth it is to integrate our new service with our CI/CD pipeline! Thanks @team for your hard work on this, especially @nestlequ1k's help making sure we don't break anything in there
+107;neutral;The CI pipeline is being triggered on every push, great job getting that set up!
+271;negative;this is a total disaster, how are they even handling c++ dependencies?
+103;neutral;Another issue with our CI/CD pipeline. The test suite is currently relying on `child_process.execSync` which could potentially leak child processes. Can we discuss alternative solutions for handling these cases in a more flexible way?

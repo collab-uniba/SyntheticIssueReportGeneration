@@ -1,13 +1,13 @@
 import sys
 import os
 import json
+import torch
+import pandas as pd
+import matplotlib.pyplot as plt
 from datasets import load_dataset, Dataset
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
-import pandas as pd
-import matplotlib.pyplot as plt
 from kneed import KneeLocator
-import torch
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"

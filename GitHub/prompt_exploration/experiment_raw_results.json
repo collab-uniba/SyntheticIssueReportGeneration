@@ -1,0 +1,17 @@
+[
+  {
+    "prompt": "prompt_creative",
+    "similarity": 0.6649496555328369,
+    "diversity": 0.7990776896476746
+  },
+  {
+    "prompt": "prompt_balanced",
+    "similarity": 0.6312460899353027,
+    "diversity": 0.8195492029190063
+  },
+  {
+    "prompt": "prompt_strict",
+    "similarity": 0.5664325952529907,
+    "diversity": 0.7662461996078491
+  }
+]
