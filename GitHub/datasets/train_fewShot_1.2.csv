@@ -1,151 +1,301 @@
 ID;Polarity;Text
-74;neutral;Can we prioritize the fix for issue #4214 over implementing the new logging mechanism in CI/CD pipeline?
-19;positive;Just wanted to express my gratitude for the swift fix on the UI styling issues in the recent v1.2 release. It looks great now! Thanks!
-119;negative;This CI pipeline is taking forever to run, please help. The bug in ExtractorType doesn't make sense!
-79;neutral;Can you please help me resolve this issue #12345 in our CI/CD pipeline regarding the `test-api-endpoints` test suite? It seems to be failing intermittently due to a dependency issue with `numpy>=1.20.0`. However, my internet connection is extremely slow and unreliable at the moment, which might impact the quality of the tests. Can we prioritize this fix or consider alternative solutions?
-77;neutral;Could we disable hex dumps for certain commands to avoid potential security issues? However, this might lead to lost historical data.
-32;positive;Great suggestion on improving our logging format! The existing table names are still quite generic. Would it be possible to standardize them using constants? This would help with future migrations and easier maintenance,
-65;neutral;Issue: #1234 - https://github.com/myproject/myproject/issues/1234 Added HttpListener implementation after DRYing crypto code.
-142;negative;Commenting on PR #123: The recent change to abort() is actually unnecessary and causes more issues than it solves. Instead of adding complexity, we should focus on fixing bugs that affect performance in CI/CD pipeline. This new implementation would break our existing tests.  @ultrasonic Can you provide some insight into how this change affects the entire codebase? How many lines are affected by this change and what is the estimated time to resolve?
-69;neutral;thanks to the team's persistence, the fix to #1234 is now included in the latest release.
-83;neutral;Reopened: [search_string] should handle `./util/-` directories when checking for dependencies`, I'd also like to revisit this issue and explore ways to handle potential conflicts between test files and util code. Can someone provide an example or reasoning for why this isn't already implemented?
-111;negative;Seriously, we have over 10,000 lines of code with a bug that causes an unstable merge failure after adding a CI/CD pipeline. If not fixed ASAP, this will cause project halt and impact hundreds of users.
-13;positive;Just a minor suggestion for optimizing performance in `GameController::Update` method could be improved by applying the C++ style guide rules (e.g., https://google-styleguide.googlecode.com/svn/trunk/cppguide.xml) instead of manual modifications
-37;positive;Sounds good to me. Can we discuss the performance impact of using `fs-extra` in our pipeline rather than relying on the default Filesystem module? Specifically, how does it affect upload speeds and file sizes?
-10;positive;Hi all, just wanted to say that I really appreciated getting this CI/CD pipeline fixed and getting the updated dependencies up to date.  Also thanks for going through all those pull requests - it's clear that this is something we can all rely on!
-20;positive;Just finished implementing the caching mechanism for the search results page. It works like a charm!
-57;neutral;We've encountered a dependency issue in the `myapp` package, caused by a mismatch between the included files and their expected locations :/
-105;negative;The current implementation has a bug in the dependency manager where it throws an exception when there's no package to install. It would be great if we could default to an empty list instead. Thanks [1]: https://github.com/organization/repository/issues/123 for bringing this to my attention.
-70;neutral;CI/CD pipeline fails after upgrade to new image: 'The images are not being copied correctly.' The command in question is 'npm run deploy:aws'. This bug persists even after restarting the container and waiting for 10 seconds.
-56;neutral;We're experiencing an issue with `app/config/mangosd.conf` file being overwritten by restart, is there a log to review? #20470 given that this could be arbitrary data, do we want to investigate hex dump instead?
-133;negative;Actually, I don't think it's reasonable to expect users to import modules they haven't explicitly stated to use in our documentation.  It'll cause issues down the line if we change our docs structure soon.  Does the package dev team need help creating a better interface for this?
-30;positive;Just pushed my latest changes to master and tested the CI/CD pipeline. Everything looks great!
-128;negative;This CI/CD pipeline is going to break if we merge these changes. What's the plan for testing?
-27;positive;Regarding #1234's bug in InDomain() where the method is declared private and should not be accessed from MakeCallback, could we have a comment in the MakeCallback header saying 'protected' instead? (CodeForces.makeCallback(code snippets/inDomain.py))
-129;negative;Just tried to create a pull request but CI/CD pipeline failed due to dependency issues after hours of debugging the bug in our login system
-132;negative;Can someone please review this code and remove those unused dependencies? It's wasting memory.
-146;negative;Really frustrating experience trying to debug this patch for `Image::Save` but still getting error due to incorrect implementation of `ImageReader` interface :(
-109;negative;"This patch introduces unbalanced !dragging effect on `clamp` setting; this could lead to unexpected behavior in UI and possibly downstream applications."
-144;negative;Just had to revert `@xamourth/research-paper` after another CI/CD pipeline break :( We should've added more detailed comments on the README before submitting this pull request. Also, why not fix that duplicate commit instead of rolling it back?
-46;positive;Nice refactoring to avoid circular import issue  https://github.com/example/repo/commit/f1234567 }, this simplifies code and helps with debugging  Ben
-31;positive;This change to use the `parse_date` function in `date_parser.py` is a big improvement over the previous implementation.
-23;positive;Thanks so much for all your hard work on fixing the recent bug in DependencyInjectionHelper! Your changes have greatly improved the performance and stability of our application. Keep up the great work!!
-16;positive;Thanks for updating the `--verbose` option to include recursive debugging, that helps me identify issues where I would have previously gotten lost in circular references.
-66;neutral;@johndoe   This issue seems to involve an unexpected change in Ruby 1.8.7's handling of frozen hash during exception message rendering.
-12;positive;Great fix in CI pipeline: now saves files to target directory recursively! Thanks @pierremont!
-43;positive;Hey Ben, great job on adding a more robust error handling mechanism to our view related code! The change really addresses a key bug we've been dealing with.
-147;negative;There seems to be a issue in tdb11.335.43... hash c19a6c7 .. it is not just a bug but rather a problem with how we handle authentication in core, I've reviewed all previous commits and noticed that the fix was applied after many people had already tested and it's actually a regression of something better, this patch breaks backward compatibility, making it worse.
-52;neutral;Can you please investigate the issue with the `maxskill` option in mangosd.conf and the 'server reset' bug in TDB11.335.43... hash c19a6c7 .. it is scripted in the core, I've watched people kill them.
-28;positive;"Looks like I caught that bug issue ! Great job on refactoring the CodeAnalysis class to improve performance. See this updated code snippet:  ```java import org.junit.Test; public class CodeAnalyzer { ... }```, it's a huge win for efficiency! Thanks!"
-5;positive;Awesome work on adding --cov support to nodeunit for testing Node.js coverage! Can we also update documentation to reflect this feature?
-33;positive;Fixed the CI pipeline to pass tests with the updated dependencies,
-143;negative;There is no clear solution to this issue and it's causing unnecessary complexity. Can we consider refactoring the code instead?
-86;neutral;@SkepticalSarah, can confirm that reordering lines in this PR fix tab spacing issues and should be fixed after CI/CD pipeline run on branch [123] :P [2]: https://github.com/user/review/d393abf6d1bfcfe46a0d4bbf5c42ee29b7acba9db
-87;neutral;Commenting on issue #12345 regarding the CI/CD pipeline, the problematic line 'if (!file.exists()) { ... }' seems unnecessary because it's always true for a file not being created. Can move this into the else clauses in the future to avoid multiple messages.
-17;positive;We should reconsider using 'inline' blocks for short sentences. It's unnecessary and can lead to performance issues.
-11;positive;Great job fixing that regression in `feature/login` after merging PR #1234! Also note we just added --cov support to nodeunit, which should help with code coverage. Great work!
-82;neutral;Reopened Pull Request - <https://github.com/puppetlabs/puppet-prerequisites/issues/1235>: Updated schema for <http://www.w3.org/TR/1998/REC-WAI-ACR-19980315#sec> to reflect current accessibility guidelines.
-134;negative;just saw that we'll never make it to deadline due to threading issues with this ffmpeg demo, can someone fix this ASAP?
-138;negative;this change makes no sense in our CI/CD pipeline, as it will always fail due to the incorrect usage of regex.
-76;neutral;The `#[info]` attribute does not allow us to use `#ifdef MY_NAME_HERE`, so please consider implementing a different approach.
-110;negative;just realized the CI/CD pipeline is still running with an outdated test suite from 2018 it's causing errors in my production environment and I have to manually trigger the rebuild every hour Anyone else having this issue?? #CIoverhaul
-97;neutral;This issue is an example of a CI/CD pipeline bug when trying to automate dependencies and build scripts for core changes in 0.1.3457 release. Please verify that install core has been done correctly. Also check if it works after the build with default settings, but not with scripts. Further testing required.
-106;negative;I'm concerned about this design choice:
-67;neutral;Fix bug in #12345 and make sure to update #12350 properly when merging r12123456789 into main
-1;positive;also add '--cov' support to `nodeunit` for better integration with JSLint, @rafaelfranca is aware of this and has updated their test configuration already,
-123;negative;The recent changes to the dependency management have resulted in multiple build failures when using version 1.2.3. As a result, I'm forced to downgrade to an older version (1.2.1) due to the inability to install due to missing dependencies Best regards,
-68;neutral;Could you please review the latest changes to `main/src/main/java/edu/daisy/lab/simulation/SimulationUtil.java`? The update broke the previous implementation's compatibility with Android 11. I've attached a patch for further debugging.
-29;positive;Hi all, I noticed there was an issue with the CI/CD pipeline where one test wasn't passing due to a mismatch in library versions. Could someone please help refactor it to resolve this before merging? This fix should be ready for pull request tomorrow.
-41;positive;Fixed #20475: After rebuilding the Docker image and re-enabling `--runtime-readonly` flag, we see no noticeable difference in performance.
-45;positive;Great job on the recent fix in TDB11.335.43 that resolved the issue with hashed session IDs being signed with httponly mode. The code change was well-considered and ensured consistency across browsers,
-61;neutral;Can we enable --coverage flag on test files? *Feedback needed for adding it to nodeunit support*
-124;negative;Ugh, I had to revert this change after hours of debugging... and it's still causing issues
-25;positive;Great fix! Thanks for addressing the potential conflict between `isDragging` and `clamp` setting. It should be more consistent.
-26;positive;Restoring the login screen to resolve issue #1234 and re-registering users on successful password resets is now working as expected again. Once again, thanks Ben for your help in getting this issue fixed quickly!
-24;positive;Looks like we're going live with updated maps! Nice work on getting it sorted out @LoneWolf23, good catch on that build flag issue # maps-feature
-95;neutral;Can someone please explain why `window.location.reload()` causes a redirect instead of refreshing the page? This issue has been open for 2 weeks and seems like a bug.
-40;positive;Excellent job on fixing hash c19a6c7 in TDB11.335.43! Thanks for prioritizing it and making the fix scalable for large queries.
-96;neutral;Requiring additional database queries will slow down our pipeline. Can we discuss alternatives to minimize impact?
-118;negative;The `SetRotationQuat` call inside `GameObject::Create` is not thread-safe. If you're experiencing issues with this method, consider using a lock mechanism or synchronization.
-48;positive;Awesome work on resolving issue #1232 related to test suite reorganization, can we also update README.md to mention changes in package.json file? It would greatly improve readability for new users
-98;neutral;Regarding bug #1234, does it matter which exception is thrown in the logging statement?
-114;negative;It's seriously a bad design choice to have an 'index.html' file with hardcoded 'content' values that are always updated by server side code via API calls and fetch requests. Why not use the correct variable declarations like I see in most Node.js applications? 150 is incorrect, the API call is unnecessary. If this was in PHP or Python, they'd have similar warnings... bad idea.
-34;positive;This is a huge win! The new fix for AVCodecThreadInit was really what we needed to get our ffmpeg/vaapi demos working smoothly. Thanks for keeping me on track!
-139;negative;It looks like there's been a huge memory leak due to circular references in this dependency injection system. We've identified multiple instances where objects retain references to each other, causing unexpected resource leaks. Can you please help us debug and optimize this issue?
-102;negative;I'm having trouble running the game on Linux. The game crashes every time I restart the server, even after saving my progress. I think it's related to the init script that runs during startup. Can we add some debug logging to see what's causing the issue?
-63;neutral;bugfix suggestion to update version control accordingly when updating dependent packages
-85;neutral;Can anyone help me figure out why the recent database migration is failing to import all data from the external file? I've checked the code and it looks like there's a mismatch in the column names in the export and import statements.
-149;negative;Ugh, just added that pull request again and forgot to update the dependencies :(
-54;neutral;Just a suggestion regarding #19499 - we can remove the `InDomain()` method since it's defined in MakeCallback and only used there. Would this be too invasive to the overall implementation? If so, could we move it to its original location or merge it with MakeCallback if that makes sense?
-6;positive;Nice fix on r2/base.py! Thank you for adding that important extra info about aborted OAuth merges. Looking forward to seeing Wintergrasp in master soon, ^_^
-94;neutral;@lb also need to review nodeunit config file due to conflicting tests from unit test and integration test
-112;negative;It should not be required to manually manage database connections in our codebase anymore.
-50;positive;Just pushed fixes for issues #1234 and #5678. After refactoring, performance has improved significantly! I'm glad we were able to address the performance bottleneck in the dependency module.
-36;positive;Just got notified that the bug fix in `#1234` on the CI pipeline has landed successfully. Glad to see some good work from @JohnDoe! The updated code should now pass all tests without any issues. },
-81;neutral;Could you please sort the constants with the old `BASE_URL` as the primary key before merging the pull request? This will help avoid issues during the pipeline's string concatenation step.
-78;neutral;This commit fixes a bug in our recent CI/CD pipeline issue #12345 where the build script was not correctly checking for missing dependency. Can anyone point out what is causing this issue?
-35;positive;Thanks @devteam for fixing that issue! I'm glad we could resolve it so quickly. Also appreciated the addition of additional logging to the API endpoints,
-115;negative;I'm at my wit's end on this Pull Request [123456] - the ' Fix issue #789' is simply removing functionality instead of addressing the bug. Can we please stick to the original commit message?
-8;positive;Great job on getting the CI pipeline working on #34567! Can you help me understand why the build artifact name is including `hash` instead of just `build_id`? See [link to commit] for context.
-44;positive;"@SuggestToRefactor: I think refactoring the outdated use case in `if-else` statements would greatly improve readability and maintainability. As we've discussed before, there's a bug with the current implementation that prevents CI/CD pipeline validation. Can we prioritize this for a follow-up PR? Thanks!  *U"""
-71;neutral;BTW, our CI pipeline is experiencing some issues with test failures on Jenkins due to incorrect ffmpeg settings in some tests. Need to revisit our build configuration for better stability.
-99;neutral;Great fix on PR-1234! Your work should've been merged months ago and it looks like CI/CD pipeline is still stuck on stage 2
-121;negative;The CI/CD pipeline issues due to incompatible versions of ffmpeg/vaapi are unacceptable and will cause broken builds. If we can't resolve this ASAP, it will lead to further downstream failures.
-84;neutral;Our CI/CD pipeline occasionally fails to execute a task due to the mismatched version of libpng. The discrepancy occurred on https://github.com/nodejs/pkg-node/commit/dff9ec6d2ca9ba8bf94ae4d1f3e3e51ea5eebfea2 and we've been able to resolve it by updating pkg-node to the latest version.
-135;negative;Just reviewed the recent changes to auth_required_by and it looks like I'll have to rewrite all the tests to handle the new API endpoint. Need some help from @Ben or @LBM. Can you please update the tests to reflect this change?
-136;negative;I'm thoroughly disappointed in this fix. The regression test broke my server again. Can you please review and rollback the change? Also, why did you decide to use `String#==` on a string comparison instead of `==`?
-90;neutral;Can someone please help me with this `find` issue in `ring`? It's not returning any matches when filtering by case hash  (3 lines)
-9;positive;Good point! I removed the unused import and refactored the code for better readability and performance.
-14;positive;Wow this pull request is amazing, really improves our CI/CD pipeline. Thanks Ben!
-120;negative;This CI/CD pipeline is consistently failing due to the inconsistent format of the 'config.json' file. Don't @ me about how we meant to do it this way.
-126;negative;Hi all, I've been encountering issues with our CI/CD pipeline for weeks now, and every time we deploy to staging, it fails due to the incorrect password in the user database. The fix is simple - update the password schema in the schema.json file - it's not a blocker, just a frustrating one.
-4;positive;Just ran into a subtle bug in our MakeCallback function, where `@@ -1026,6 +1034,9 @@` is used instead of `@import os.path`. Good catch, and thanks for pointing that out!
-18;positive;Great job implementing CI pipeline improvements! The automated testing and dependency management have reduced errors significantly.
-39;positive;Thanks for updating the payment gateway to include free shipping on orders over $50. I can see how it makes sense now.
-73;neutral;Fixed issue #1234 related to missing HttpListener config. Added it as described Description: This change adds HttpListener correctly and fixes the issue. Thanks for your patience.
-137;negative;I'm extremely disappointed by the recent change to `maxskill` in character abilities. Reverting it back will help prevent confusion and potential game stability issues.
-7;positive;Excellent patch to refactor API endpoint handling in v0.9.7.1 3eb6f88b was merged by @JohnDoe . The change improves code readability and prevents SQL injection attacks.
-113;negative;The bug in the recent CI pipeline has been reported to be caused by an incorrect usage of `SetRotationQuat` which is used incorrectly due to missing curly brackets :(  This fix will need to modify existing code for first-time use, like in `GameObject::Create
-101;negative;Can we prioritize fixing `graphql` query validation before releasing next milestone? It's causing issues in our UI component.
-3;positive;Great job clarifying that issue in MakeCallback! I was wondering how to set the permission on the child directory before copying, thanks for adding this snippet
-64;neutral;- At first glance, it seems like this pull request should be merged since the API documentation clearly states that endpoints are only 200 status codes. However, looking closer, we notice some inconsistencies in the implementation, which could lead to security vulnerabilities...
-55;neutral;Hi everyone, I wanted to mention that we need to update the `fs-merge` plugin to include a default return value for files that throw errors, such as `fs.readFileSync` and `fs.writeFile`. Adding this would greatly improve our code's robustness.
-127;negative;given that we've had multiple instances of users entering their password incorrectly after restarting the server, should we implement a cached username verification mechanism instead? (login-screen#invalid-username-retry)
-51;neutral;Also break the use of `if-else` statements without curly brackets :( Also removing before committing can cause more issues. Consider refactoring in `switch-case` instead of excessive `if-else` chains for improved code maintainability and reduce potential stack oversights. Thanks!
-116;negative;The automated testing of our Rails app fails miserably. I've tried updating the dependencies but it's still causing issues. The CI/CD pipeline is always late and unreliable. We can't seem to get any test cases passing. How can we fix this ASAP?
-47;positive;It is great to see that our build system is now caching the latest changes in database, so that subsequent runs can reuse them without having to perform unnecessary queries. This should significantly improve performance when building larger projects.
-140;negative;I am extremely disappointed with the latest changes to the authentication flow. The rsa validation is still not correct and has been inconsistent since update 11.33.42. I've already reported this issue on multiple pull requests and haven't seen any updates.
-62;neutral;Regarding the newly added --config option for `scapy` commands in CI/CD pipeline, it appears to be working as expected. The issue was resolved by re-adding the missing curly brackets for proper error handling.
-148;negative;Ugh, it's amazing how sometimes the CI pipeline fails due to a faulty assertion on branch PR #1235. The subsequent pull request got pushed despite multiple iterations and reviews.
-80;neutral;I'm trying to fix this issue in our CI/CD pipeline, but the build is failing due to a dependency issue between Node.js and npm. Can you help us figure out what version of npm is causing this problem?
-60;neutral;Issue #1234: Pull Request Title, regarding dependencies not properly resolved, is causing build issues.  The problem arises from the dependency manager not correctly merging versions of `@skyfire/client` and `@wowhead/utils`, leading to unexpected behavior in the application's database queries. This bug has been present for several iterations and requires urgent attention.  Please review pull request #1234 for further analysis.
-92;neutral;The CI/CD pipeline experienced intermittent issues due to missing dependencies during build and test phases. Please update `dependencies.json` to include required packages.
-42;positive;We noticed that our feature to display chat history in new window works perfectly. One of our team members was surprised and grateful for your suggestion! (thanks for making this change) @LB--
-59;neutral;Hi everyone, I found an issue where `!dragging` is causing some tests to fail due to missing imports. Does anyone have a patch to fix this or is this a known bug?
-91;neutral;Hey @MatiasLabbek, could you help with this bug in #21491? https://github.com/towerproject/tower/blob/master/source/utils.js#L1131
-49;positive;Great job on updating the `os-mc-dev` package to fix #1234. Your attention to detail paid off and now it's compatible with our latest CI pipeline !
-89;neutral;Re: Improving hash-based search algorithm by leveraging first match with higher hash value for less than 100 nodes. Consider cases like `ring.find({case (h, n) => h > hash }).getOrElse(ring.head)` when initial index is far from the message hash.
-108;negative;Ugh this issue is a major pain point in our CI/CD pipeline. The `environment` dependency always causes issues during deployment. Can we switch to `static` instead? :)
-125;negative;Those changes are a complete overhaul and breaking multiple aspects of our system's functionality.
-22;positive;Looks like I found a potential bug in the new API endpoint! If someone uses the '/games/:id/characters' endpoint to get all characters when there are no matching results, it would be nice if the response included some error message or at least provided more context.
-58;neutral;Can anyone explain why the default behavior of `react-dom/server` changes from `
-145;negative;Their recent change to `http-only` cookies was abrupt and broke my existing scriptability on TDB11.335.42. The patch doesn't even seem well-tested since the fix hash c19a6c7 ... is scripted in the core, I've already seen it cause problems for others.
-130;negative;just found that the new bug in SFTP client causes some connections to fail intermittently due to incorrect timeout handling
-38;positive;A great improvement on our recent dependency issue! Please enable auto-completion in the 'package.json' file. Can we also update to use the latest TypeScript version? Thanks!
-141;negative;This CI pipeline always fails due to the wrong parameter passed in. @microsoftVisualStudioTeam, can we please fix this issue so it doesn't make me throw a std::exception every time?
-2;positive;Great job on getting #1555 closed and the patch for the #1460 issue being merged into master. Well done! },
-53;neutral;I see that you've updated the logging in the CI/CD pipeline to log all errors. While I understand the goal of reducing noise and improving reproducibility, can we discuss whether it's worth including a specific error message for each error? It might provide more insight into the build process and could help with debugging.
-131;negative;This pull request needs a huge revamp. Objects shouldn't be doing their own logging methods and it's extremely inefficient to load an entire class just for that purpose. Fix the autologging code ASAP!
-104;negative;This bug is really annoying because it causes my program to crash when trying to log in with my account.
-100;neutral;The bug report for TDB11.335.43 has been opened and referenced #1234 by Trustin Lee. It appears that a potential vulnerability was discovered related to the core's ability to script certain functions... as per usual, they've been scripted in the core and it'll take some more effort to debug.
-117;negative;This dependency issue in CI/CD pipeline is unnecessarily complex and takes forever to resolve. It's not a scalable solution for our current needs,
-88;neutral;issue created: CI/CD Pipeline - Dependency Manager - Bug report Affecting all builds in the pipeline. See [link to issue] for details.
-75;neutral;The patch for bug #1234 has been merged and is now available in release-2017.10.11.  For testing, use `nodeunit test –cov` to disable coverage.
-122;negative;It's an obvious oversimplification. Assuming everyone is equal, then why the separate sections for employees and executives? This is like assuming only one player could loot. If more than one are allowed, it'll be horrible if there's no clear separation between the two.
-150;negative;Just tried to update to TDB11.336.44 and encountered this error on CI/CD pipeline - it's scripted in core, yet still failing on my dev environment. Shouldn't be possible? Need help getting to root cause ASAP
-21;positive;Great job on refactoring the JavaScript validation script! Thanks for addressing #1247 (https://github.com/hdscout/asset-inspector) by adding proper error messages. Should've caught that back-end server error sooner!
-72;neutral;Umm, I think there's a bug in `buffer.readable()`. Since it only returns true when the buffer is actually readable, setting it to false explicitly can cause unexpected behavior if not done carefully.
-107;negative;This fix for tdb11.335.43 won't actually work because of an unrelated but scripted issue in core. It's not even possible to break it, as no one has ever managed to make it fail.
-15;positive;Great patch to update
-93;neutral;I'm having trouble accessing the newly added API endpoint via our CI/CD pipeline. The `auth token` is not being passed correctly. Can we add a default return value for such cases?
-103;negative;This change makes it harder to debug the login process, especially for users who have multiple accounts and a large number of login attempts.
+204;negative;Removing deprecated code from CI results in unexpected test failures due to incorrect build dependencies. Deprecation is a necessary step for security and maintenance reasons.
+267;negative;looks like soon there will be an issue with test suite that is currently passing, I'm investigating and seems like I already have a fix to the issue, but not using it because the code does not compile correctly in CI }
+153;neutral;It seems like soon we will have test/expect to cover all cases in master.
+10;positive;Great job optimizing performance in nightly build by reducing memory usage from 150MB to 100MB on servers running version 19.2.9 and higher.
+234;negative;PR #1234 fixes a non-existent bug in libssl, but only for Windows builds on x86 architectures without -fstack-protect-no-give-up.
+227;negative;The automated builds are failing on CI after PR #123 due to missing dependencies. How can we fix it?
+197;neutral;"Can we investigate the build result for ""io.netty(handler/codec/sctp/SctpMessageToMessageEncoder.java""  line 23 ?"
+110;neutral;ci failed to build artifact wowhead-graphics due to stale dependency
+6;positive;Note that the `has_one:` relationship in our ORM is not correctly configured due to a mismatch between database schema and entity definitions.
+176;neutral;Can we prioritize bug fixes after breaking out static data for CI pipelines?
+238;negative;"This CI build failed on Ubuntu due to missing OpenSSL dependency; please update it for successful builds on all platforms."
+58;positive;Great update on stability patch! The fixes have greatly improved overall performance and user experience. Now we can fully trust that our dependencies are in good order.
+219;negative;This build fails due to missing dependencies and inconsistent test results. Please re-run tests and update build script.
+46;positive;Fixed bug in RBP.cpp where DISPMANX_SNAPSHOT_NO_RGB was not declared #1234 https://github.com/pbhogan/assetmanager/pull/5
+183;neutral;PR: https://github.com/username/repository/issues/detail?id=1234 has been opened as bug, should be tested thoroughly
+222;negative;I am concerned about the performance issue in test suite - only 20% coverage. This is unacceptable for a reliable product.
+290;negative;this build failed due to **dependency conflict**
+212;negative;Also fix build issues in package.json :(
+149;neutral;Fixed #1234: Removed unused dependency deps on lib-abc before build.
+166;neutral;The default value of Env['CXX'] should be used instead.
+79;positive;"Fix bug in Ruby 1.9.2 → unable to modify frozen hash; revert to TypeError instead of RuntimeError when trying to set value on hash that already has some already existing values and cannot be modified further."
+114;neutral;PR#12345 resolves the issue with build configuration due to unhandled dependency version mismatch. The updated codebase now accurately reflects the latest CI builds.
+250;negative;The fix for bug #1234 in MakeCallback.dll is clearly inadequate and will lead to numerous build failures and test crashes.
+251;negative;Why does the retry limit on retries.json default to 1 and not 0?
+105;neutral;Additionally, considering upgrading to node version 16 for improved async support  Note, that CI builds are still running on v14
+43;positive;Great job on fixing the CI failure bug that was affecting our pipelines. Any idea when this will be released?
+282;negative;This is excessive and not necessary for building a simple CI pipeline.
+296;negative;This PR adds dependency on sqlite3 for unittests, which is causing issues with test coverage.
+158;neutral;releases/1.2.3-rc4#1256: Improved CI process to handle large builds better now, i can see more tests completed
+239;negative;I've thoroughly reviewed the updated Dockerfile and I'm concerned about the incorrect image tag. It seems to be pointing to an outdated repository.
+18;positive;@NettyHQ Can we consider using git instead of tarballs+md5 for leak detection in SctpMessageToMessageEncoder? https://github.com/netty/netty/blob/master/src/main/java/io/netty/handler/codec/sctp/SctpMessageToMessageEncoder.java#L123.
+165;neutral;BTW, the artifact.js file is no longer shipping with .less added for the simple reason that it'll have zero code. However if less is available, we'll be generating JS stubs for new helpers (like view helpers) with the helper extension on.
+34;positive;This fix addressed the issue in ffmpeg/vaapi demo ensuring correct thread init. :D
+25;positive;Can you please implement the bug fixes and CI changes for version r12345?
+216;negative;PR-1234 fixes # Bug-Fix 5 in ci.js but the updated build still fails with test-cases due to missing dependencies
+120;neutral;"Consider adding test coverage for ""optimizer.py"" related functions in tests/feature/optimizer-fixtures.txt and feature/optimizer-branch.json"
+8;positive;Resolved #20512 by @techsupport, now resolves all intermittent builds and improved CI reliability.
+91;positive;A great suggestion to add unit tests for SctpMessageToMessageEncoder. Should the signature be (d, u)?
+47;positive;Please investigate the fix for the maxskill issue in weapon skills. The server crashes even after saving the character
+74;positive;Regarding #1234 as a dependency issue, I think there is an unnecessary import of mongodb-client on our CI pipeline,
+94;positive;Added fix for https://github.com/Bukkit/CraftBukkit/pull/538 issue https://github.com/Bukkit/CraftBukkit/pull/538#issuecomment-284387346
+77;positive;glad we were able to resolve #21792 regarding the dependency upgrade in CI. PR now supports newer versions of Rails,
+287;negative;The use of `Install core` as an option in build world/auth setting is completely broken due to    sql/updates/auth/2013_04_25_00_auth_misc.txt issues.
+61;positive;does anyone know what went wrong with PR #12345? I've added new dependencies and rebuilt the tests, but still encountering build errors on CI. Did anyone try to reproduce this issue?
+78;positive;Just found that Maven has a known issue where the plugin dependencies are not included in the WAR file correctly due to a bug. Can you please look into it and fix this?
+64;positive;"Fixed #12345 to allow building on Windows when using GCC-9.0; should work without additional setup .   https://github.com/user/repo/blob/main/patches/batch.patch#L456"
+235;negative;"The recent CI failures on r/test-reddit-py include the dependency ""requests"" being downgraded to version 2.26.3 while building test-reddit-parser.py See https://github.com/reddit/reddit/blob/master/r2/test-reddit-py#L1017 and https://github.com/reddit/reddit/blob/master/r2/test-reddit-py/lib/test-reddit-processor.py#L1439 for details"
+230;negative;I'm investigating the issue and seems like I already have a fix to the automatic deinterlacer problem. Working on third part, will report soon. EDIT: looks fixing this also is quite tricky...
+112;neutral;Note that due to dependency changes, ensure that all affected packages are up-to-date before running tests. * ChannelBuffers needs node 14 to fix build issues. [1]
+232;negative;Just tried to merge PR and it's causing CI failures because the build script is using outdated dependencies. Can we please update it to use a more stable version? @UltraFaceguy didn't think this was an issue before but now I see the problem,
+181;neutral;Fix: Removed unnecessary '!dragging' flag from clamp settings.
+145;neutral;The `httponly` setting is not allowed for sessions in TDB11.335.43. It should be either `nosniff` or `same-site
+240;negative;The fix for rsa issue #12345 is broken, please revert to old fix instead.  It will not affect other dependencies like ring or dbc.   - Trustin Lee ∅↔−-01-03
+76;positive;I found a bug in the performance aspect of caching dependencies correctly The fix should be applied by reorganizing the dependency loading process
+298;negative;Can anyone confirm if the `@` symbol is working properly in our `generateReport.html` page [[2]]?  I've tried debugging but suspect an issue at CI level
+279;negative;The issue with nightly builds on Windows 10 has been ongoing for weeks. Building C++ libraries crashes immediately when using the latest version of Visual Studio Code. I'm at my wit's end. Should this be fixed?
+98;positive;Commented on #1234: -1: Fixed bug in avcodec_thread_init call, resolving intermittent build failures
+93;positive;Fixed `InDomain()` issue in MakeCallback.py.  The fix addresses a mismatch between API and internal implementation.
+193;neutral;This change seems to reassign a function without specifying its original name in MakeCallback. Is this intentional or an error?
+26;positive;The suggested fix for InDomain() seems to work as expected. Can we review other potential fixes? Also, I noticed HttpListener was added in r10591.
+233;negative;Does partest need a dedica after deleting ./util and committing bugfix 12345 on PR issue/revision #67890? It broke CI builds since it depends on external test data.
+60;positive;Fixes compilation issue in RBP.cpp due to undeclared variable DISPMANX_SNAPSHOT_NO_RGB
+7;positive;Awesome, we finally fixed issue #1237 for .NET 3.5 which was causing builds to fail due to missing dependencies.
+186;neutral;"PR-12345 fix: Use ""gcc-opt"". instead of ""gcc""."
+174;neutral;Note that I'm not looking forward to dealing with potential issues due to changes in Jenkins job configuration [[1]] :P
+31;positive;Corrected dependencies.json to ensure accurate build configurations for new releases.
+23;positive;Corrected potential bugs related to https://github.com/user/repository/issues#issue1234 on PR review.
+257;negative;This CI fail is due to mismatched vsync modes in ffmpeg/gfx-demos demos, which leads to incorrect build repros https://github.com/user/repo/issues/1234#issuecomment-789012345
+57;positive;Adding •multipartȧ to form submission links is supported on https://github.com/hello-world/ hello_world/issues#issue1234
+187;neutral;Fix build: * Include dependencies for <code>net-stdlib</code> : yes :}:
+109;neutral;I think we should disable debug logging on production servers because it's only useful for debugging purposes and doesn't affect performance in most cases.
+127;neutral;Regarding Bug #1234 mentioned in issue comments, it is generally recommended to use hex dumps instead of plain text files for debugging purposes.
+231;negative;CI pipeline fails due to incorrect dependency on outdated library version 3.0.15 instead of the latest 4.0.2: error during build process. Fix this issue as soon as possible. please update the affected file(s). At a minimum, reorganize code to avoid having dependent libraries with complex builds. This is a critical bug that could lead to data corruption and security vulnerabilities.
+194;neutral;CRASH ALERT: Player::CreateViewpoint should allow removing viewpoint in world 2013_04_25. Have you updated auth/2013_04_25_00_auth_misc.txt?
+130;neutral;The issue is with PR #1234 due to dependency conflicts. Please investigate and provide a fix.
+283;negative;The dependency removal changes were reverted as they introduced CI build failures due to conflicting builds :)
+83;positive;Looks good! Should still be available for download next week.
+85;positive;Issue: Bug #1234 in CircleCI pipeline, using CircleCI#1515.1, build 1. The issue is that the test #5678 in the job triggered an exception because the environment was not set properly. Fix it now.
+67;positive;Looks like soon we can deploy our new UI in master ^_^
+289;negative;"This CI build failed because of misconfigured test dependencies; specifically ring.find({case (h, n) => h >= hash }).getOrElse(ring.head) should be used instead of hexdump commandName."
+164;neutral;
+155;neutral;The recent r2/lib/base.py#L105 bug fixes some issues related to error handling in db interactions, but may cause unexpected behavior when used incorrectly due to added logging and warnings.
+20;positive;Fix buffer.writeable() issue by verifying if file exists before writing to database. :-)
+125;neutral;Fixed issue #1234 related to PR/CI workflow crashing on player viewpoint removal bug fix  See https://github.com/original-game-team/our-game for details
+80;positive;I agree. The patch fixes the issue with the permission setting correctly.
+115;neutral;Can we implement HttpListener after reviewing dependencies and CI pipeline,
+119;neutral;The build configuration does not support Java 17 version as it requires Maven 3.8.5 which is no longer maintained. Can we consider switching to an up-to-date dependency?
+73;positive;Great improvement on CI/CD process for automated builds in Jenkins! Well done!
+16;positive;CRITICAL:  TDB11.335.43 -> the build failed due to an invalid dependency conflict between 'tdb-core-1.8.7' and 'skyfire-core-150'
+11;positive;Fix build failure on Windows,
+195;neutral;Regarding #1234, can someone please update the README to include version numbers for dependencies and builds?
+102;neutral;CI failed due to incorrect package dependency in test result file for PR #1234 at https://github.com/username/repository.git on commit c19a6c7 ... please investigate and remove before proceeding
+69;positive;Great catch on the `!dragging` issue. It should only apply to specific nodes.
+225;negative;This PR is a complete rewrite of API/REST structure - what's the point? It changes nothing and introduces bugs.
+38;positive;Aging dependency still shows dependencies in latest image,
+17;positive;Corrected build error #20310}, this changes dependency {
+180;neutral;Can we add a default return in PR #12345 when error occurs during build on windows system??
+148;neutral;Regarding bug #1234 in container image build dependencies.
+275;negative;Bug #123456: RBP.cpp does not compile due to missing include for `RBBP_OLDBIOS_64.h`. The old dependencies are causing build issues. See issue #789012 for further discussion on the matter.
+68;positive;Note: bug fix for libcurl is included in nightly builds,
+229;negative;This PR is severely affected by the breaking change in the dependencies package.
+70;positive;Great fix for bug #12345 on CI pipeline related to test failure in Ruby 1.8.7 version. thanks @cicoder for your patience and expertise. Really appreciate it. Thanks again. :)
+32;positive;Thanks for fixing issue #12345 in our CI build process. The updated artifacts should now pass all tests. See the new screenshots and log files attached below.
+184;neutral;vc90 is deprecated and should be replaced by vc95 according to RFC 5422 https://tools.ietf.org/html/rfc5422#section-4.1
+266;negative;#request to remove @goldblattster from CI queue due to duplicate build results
+226;negative;"CI pipeline failed because build artefacts not properly cached ;(test failed due to incorrect test fixture issue, also issue #1234 mentioned before but still no fix."
+141;neutral;`rust#20460` - build issue with `build-2013a_0.6.10+11cfeefb5cfc4e1ab7e24f89d0ed2aa92bceba74-bd3e7bfaacdf34ddbd9cc3ae42d29be8ba1deff5-py38-x86_64.whl (100 KB)`. Check out this test failure: `test-0001_integers.tlp` in tests/test_integers.py. Use `cargo-clint` instead of `rustfmt --config file.toml.
+19;positive;PR #1234: Fix bug in ExtractorType class by updating !dragging behavior to clamp between 0 and 1,
+182;neutral;ERROR: Artifact 'build.config' does not have a valid build configuration in database.
+97;positive;Great job on getting SctpMessageToMessageEncoder working correctly again! Can we review the stacktrace for potential issues in other related codecs?
+133;neutral;Refactor ./lib/data/datas to use hash maps as data structures instead of arrays and manually check if keys exist before accessing. Consider implementing a null-safe dictionary interface for consistent behavior across APIs.
+263;negative;rollback this change please it's breaking client support, i've tried all possible solutions but nothing works :  @Dev please help we're experiencing some serious issues and the fix might not even work :(
+87;positive;Yes, I agree that building on top of vc90 will not only alleviate but also resolve some long-standing build issues: https://github.com/Bukkit/CraftBukkit/pull/538
+249;negative;The mc-dev update relies heavily on version 3.12.1 but was released as v3.14 in the same commit. Fixing this issue will break CI builds and affect testing efforts.
+246;negative;This CI fails due to incorrect config bug https://github.com/dev-team/bot-features/pull/1234}, consider updating the cache mechanism  #CI-Failure
+117;neutral;RT @nestlequ1k, you're correct regarding issue #3057, which caused unexpected behavior in Rails 8.6.
+147;neutral;The bug in core/auth/2012_03_10_00_core.auth.conf could be due to maxskill option being applied even after saving the char.:)
+293;negative;It looks like @username merged a PR that changed `MakeCallback`. However, the commit message said something entirely different about `InDomain()`. The actual implementation is buried in `makeutil.sh`. Is this intentional?
+198;neutral;Note that I am not recommending replacing the `!dragging` behavior entirely [[1]] :P Can we discuss alternatives for this specific case? [1]: https://github.com/pbhogan/drag/issues/12
+207;negative;It appears that adding dependency version c3ae1ce5 was a huge waste because it had no effect on our builds.
+56;positive;please re-run tests on nightly builds before merging PR #1234
+173;neutral;bug PR CI build test dependency
+185;neutral;PR: Bug-123, fixed issue with build configuration dependency on rsa library is fully resolved now
+168;neutral;Error in ffmpeg/vaapi demo database: ffmpeg library version does not match expected version for vaapi filter module. This bug occurred after upgrading to ffmpeg-5.0.3-1.fc42.
+140;neutral;Fixed issue #1234 where duplicate constants did not update correctly in CI pipelines. New code maintains original values without duplicating.
+254;negative;Unable to reproduce bug after upgrading Netty from 11.0.1 to 12.0.2. This bug is causing our production server to crash intermittently.
+39;positive;I appreciate your fix to fix memory leak in search result sorting by case invariants. Now, results are sorted correctly based on invariant hashes. Thanks.
+126;neutral;Add test for invalid password reset from different email addresses in /tests/PasswordReset.js
+196;neutral;https://github.com/trilobyte/novacore/issues/1112#issuecomment-0-1331095477
+284;negative;This change will break compatibility with https://example.com/libraries. We should set it to 'shared' instead.
+138;neutral;PR review for CI issue 1234: build failed due to missing dependency on version 2.3.0,
+113;neutral;Regarding the removal of the parent permission in io.netty.handler.codec.sctp.SctpMessageToMessageEncoder.java:32, I believe we can simply remove this code instead. Am 01.10.2012 um 12:45 schrieb Jestan Nirojan <notifications@github.com>: > }
+169;neutral;I think we should remove the `!dragging` flag from all UI elements that require it to be shown.
+118;neutral;Fixing #1234 - build failed for Maven dependency org.junit.jupiter:junit-jupiter:5.6.0. Updated test to use Gradle instead of Maven build.gradle file was successful. Added configuration to enable CI build. http://maven.apache.org/.
+278;negative;This CI test is flaky on Linux and Windows due to package version difference in dependency  https://github.com/user/repo/issues/1234#issuecomment-345678890
+272;negative;The bug is still pending review on PR #8233 as it requires significant changes to fix the issues. Please provide more context for this update as it affects many users.
+156;neutral;find is getting slow for large numbers of nodes with hash >= the message hash for less than 100 nodes. `find(is(node) => is(node.head).getHash() < node.message.hash)`, please investigate and consider switching to a more efficient solution or parallelizing the search.
+177;neutral;PR/20477 - fixes issue #20711 regarding CI pipeline failure due to incorrect test dependency resolution
+179;neutral;PR/CI issue #1234 regarding bug 5678 in Ruby version 1.9.2 vs 1.8.7 on Jenkins,
+3;positive;"I understand the reasoning behind adding an option to suppress console warnings in the CI pipeline; however, I believe this change would break the existing build process."
+116;neutral;CRITICAL: file corrupted in rebase during CI failure, causing Ruby 1.8.7 -> TypeError instead of RuntimeError in subsequent builds (solution: duplicate and retain only source code)
+144;neutral;I've tried adding `--cov` to nodeunit for some dependencies but CI fails with non-cov tests. Did you consider implementing it as well?
+178;neutral;Fixed HttpListener for non-standard HTTP ports Fixed bug in test framework dependency conflict on non-OS X systems Improved CI pipeline script to use Docker volumes efficiently Fixed issue where builds would fail due to missing library dependencies Added automated test for specific web server protocol version compatibility Improved build process by optimizing image sizes
+121;neutral;"Fixed issue #12345 related to ffmpeg/vaapi demo at https://github.com/splitted-desktop/hwdecode-demos/tree/master/utils/issues""}"
+211;negative;CI failed on Nodeunit test and we had to rollback the change also break code in if-else statements without curly brackets :( Just have added --cov support to nodeunit, but it breaks itself too many else-if statements without {} suggestion to do not add coverage stuff to files that not pass jslint test. :(
+261;negative;Removing build dependencies broke our automated tests. Parttest is still affected due to stale data.
+128;neutral;Fixed two performance issues in CI that were causing pipeline bottlenecks. These fixes also improved build times for dependent projects. Depends on v1.2.3 for full functionality.
+75;positive;"Added DISPMANX_SNAPSHOT_NO_RGB flag in RBP.cpp to prevent incorrect error""}"
+30;positive;Great suggestion on improving the automatic deinterlacer algorithm. It seems like we can use more sophisticated techniques to reduce latency. Can you provide an updated estimate for the fix?
+84;positive;CI pass for `vc11-compiler` fix#12345 (fix): The `VCXX_VERSION` macro is not being defined during compilation on non-VS environments.
+270;negative;Still not happy about this change., This should be fixed. Really, the impact on stability is severe.
+108;neutral;Fixed #18990 by @nestlequ1k - added proper error handling for runtime errors in `mc-dev`
+224;negative;PR/CI/Build issues are affecting our test suite stability by ignoring deprecated dependencies and broken builds.
+159;neutral;Has Derek signed the CLA?
+281;negative;The performance issue in version 3.5-rc1 is unacceptable for production use. Please investigate and prioritize fixing it before merging.
+247;negative;The current behavior of `config.json` is inconsistent and frustrating. This happens when a build fails due to incorrect compiler options. https://github.com/TryFunc/TryFunc/issue/5677
+223;negative;Removing `HttpListener` causes connection errors after login The patch also changes `InDomain()` function without notification
+66;positive;The fix to #1234 will include a new test case to verify the impact of changing #5678 on dependency installation.
+199;neutral;"I found an issue in maxskill option mangosd.conf when saving char skills: weapon skills don't update properly after server restart: S:"", https://github.com/ExampleOrganization/ExampleRepo/blob/master/Src/mangosd.conf#L13"
+86;positive;"Reproducible issue for Gem dependency @rafaelfranca: issue#1234 - unable to install on macOS 11.0.2 after adding Bundler gemset ""my_gemset"""
+214;negative;PR was rejected due to incomplete unit tests. 150% failure rate on entire branch 300% more errors than expected. Skyfire is outdated and shouldn't have been used in first place.
+160;neutral;Resolving bug RBP-1234 regarding DISPMANX_SNAPSHOT_NO_RGB usage in CRBP.cpp:103:14 # Disabling snapshots for non-RBPF displays
+13;positive;Also consider using refactoring techniques to simplify the code and avoid duplication in `if-else` statements.
+36;positive;@CodeMaster3331 please review bug #12345 again I found a issue related to `api/v1/users` endpoint
+29;positive;Please investigate and resolve bug in latest v1.2.3 version of test-1 repository dependencies
+143;neutral;Does nodeunit require --cov flag?
+285;negative;@username, this build failed as expected due to incorrect package.json version. Please update it to 2023-01-01 or later, otherwise tests and dependencies will break.
+255;negative;I am extremely disappointed in the recent dependency update to lib/utils.js#1234, which broke the `try-except-finally` block logic, https://github.com/user/repo/blob/master/lib/utils.js#L56 instead of creating a more informative error message.
+171;neutral;PR review started and comments are closed, please verify for correctness.
+52;positive;Looks like we'll have Icebreakers in master soon
+96;positive;This rev addresses potential issues related to data validation in authentication and payment processing.
+209;negative;This is really unnecessary as we can always use default settings. What about this setting in `utils.js` instead?
+248;negative;What was your experience with resolving bug #1234 on the ffmpeg branch, specifically when dealing with dependencies and builds? Was it reliable?
+42;positive;Improved search index configuration significantly improves issue detection times, allowing for faster resolution of common errors and reducing load on CI pipelines.
+90;positive;nice changes to CI pipeline, can see better error messages now
+245;negative;They shouldn't have broken TDB11.335.43 in hashes after the known vulnerability was patched.
+137;neutral;"If you are trying to use dependency ""npm@latest"" as a version, please check your package.json file to ensure it does not conflict with other dependencies."
+27;positive;Good job implementing HttpListener to serve static files from config directory properly and updated dependencies in pom.xml
+294;negative;This PR is broken and causing issues in CI builds. The bug is in the tests for dependency {issue ID}. It's also causing issues with world {world ID} builds.
+142;neutral;I was surprised to see changes in `circleci/image:latest` due to an update to dependencies, specifically `ubuntu-image`: any builds on this branch will fail unless specified otherwise. Best, `circleci/image:latest` needs to be updated.
+201;negative;Please fix issue #1234 in nodeunit where `if-else` statements have been removed but `--cov` is enabled instead of working correctly and also add test coverage to avoid future failures.
+1;positive;Please add '--cov' support to `nodeunit` for `--strict-failures` flag also works on Travis CI
+269;negative;This PR has several build issues and incorrect assumptions about dependencies,
+273;negative;Invalid solution apparently fixes issue but introduce additional dependency 0.2.3-1 fixed Bug PR1234 should still pass CI because we forgot to update test data in the dependencies section
+101;neutral;Please consider updating nodeunit to not break `--cov` support in `if-else` statements without curly brackets
+260;negative;Can someone pls fix this bug in `RBP.cpp: In member function 'unsigned char* CRBP::CaptureDisplay(int, int, int*, bool, bool)': RBP.cpp:103:14: error: 'DISPMANX_SNAPSHOT_NO_RGB' was not declared in this scope RBP.cpp:103:39: error: 'DISPMANX_SNAPS' fixed the issue by adding it to the codebase
+256;negative;this is completely broken, especially after testing and CI passes, why is it still crashing on startup?
+172;neutral;Fixed issue #1234 where RBP::CaptureDisplay was causing compilation error due to incorrect syntax in DISPMANX_SNAPSHOT_NO_RGB definition on RBP.cpp line 103. RBP.cpp:106 also reported an undefined variable RBP::DISPMANX_SNAPS on the same line. The fix involves correcting these two issues.
+99;positive;Error occurs when using client-side caching in `CacheManager.java`
+37;positive;Fix CI failures on latest Maven build version after update to 3.7.2, please verify it still fails in production environments
+62;positive;Fixed bug in lib/test/functional/rb_tree.hpp library version 6.0.1
+151;neutral;What is the default value of the `httponly` cookie in CI builds?
+237;negative;I understand that CI failed and I am suggesting to merge the bug fixes. Can someone review the `mangosd.conf` file instead of just reading the permissions? @UltraFaceguy was the one who reported this bug.
+203;negative;The bug in this build will cause incorrect results for users logging into the system from certain locations, especially if their ISP is experiencing outages that affect network connectivity
+243;negative;Comment: Adding default return to view related code would greatly improve readability and debugging.
+12;positive;Just implemented fix for issue #1234 which caused maxskill option not working after restart,  As expected it works fine now thanks again developers team
+297;negative;I'm concerned this PR is over-engineering the fix for SctpMessageToMessageEncoder issue #1234
+268;negative;The class has an inconsistent implementation: it's both thread-safe and not thread-safe simultaneously. Fix the thread safety first before adding synchronization primitives.
+28;positive;Great fix on bug #1234 in nightly build}, Thank you!
+220;negative;The CI failed because of unsynced dependencies, causing the build to fail. :(
+5;positive;Did you plan on including Nodeunit in PRs from now on?
+123;neutral;"Moving the missing ""else"" clause into this pull request to prevent multiple messages unnecessarily."
+33;positive;fixed ./util not found issue in Jenkins test suite reusing util.testing classes still resolving CI build issue on 2 dependencies resolving dependency conflicts on PR testing against changes to dependency list
+205;negative;Also break code in `if-else` statements without curly brackets :(
+163;neutral;PR/2013_04_25_dev/2023_03_08_develop: Dependency issue identified for Core. Can't build world/auth as expected. Suggestions to fix?
+210;negative;Issue #1234: This CI build failed because it exceeded the recommended test coverage threshold
+286;negative;CRystalP #2472 - PR-1234 - CI-build failed on Windows platform due to missing dependency CrystalDB-1.2.5 This is a known issue with recent version of Ruby 1.9.x. Replaced by 1.8.7. Use ENV['CXX'] instead for faster builds in older Ruby versions.
+139;neutral;Fixed issue #1234: CI failed to build on Jenkins due to missing dependencies. Updated build script to include all necessary packages.
+63;positive;Looks good. I have no problem as long as vc14 stays for a while :)
+136;neutral;Note that I am not sure whether this PR fixes the bug in the `dependency` package [[2]] :P
+129;neutral;PR-123: add feature to fix bug in dependency package. Please test and validate on CI/CD.
+291;negative;@jordanSantini this pull request has major issues, especially in codec/src/main/java/io/netty/handler/codec/sctp/SctpMessageToMessageEncoder.java:8+9
+9;positive;Could you add the --cache flag to the build script for CI? This would greatly improve our performance and allow us to leverage faster caching mechanisms.
+71;positive;We've implemented bug fix for SctpMessageToMessageEncoder in codec/src/main/java/io/netty/handler/codec/sctp/SctpMessageToMessageEncoder.java after analyzing its performance issues. The fix has been tested and verified by multiple CI pipelines. As a result, we now have better support for UDP.
+265;negative;The recent updates to util.js caused significant issues with CI and builds due to unmet dependencies. It is not acceptable that Jenkins can tolerate such instability.
+65;positive;Good move on refactoring ./lib/scale to use a more robust enum type - makes sense! yay,
+45;positive;They fixed #1234 related to the `build.gradle` file causing CI failures in TDB11.335.43 and improved test coverage by introducing a dependency rotation strategy
+280;negative;PR commit should include clear description of changes made to ./util module Can you please remove test files that conflict with other dependencies?
+157;neutral;The reason I conditionally enabled AVX-128 support was that Intel's documentation suggests it improves performance in certain workloads. If you are not seeing the expected results, please investigate AVX-64 instead
+41;positive;Update dependency to fix CVE-2023-1234 in #20899.
+124;neutral;bugfix: Fix incorrect password reset link for user account #1234 in world/auth/feature-login-v2@master branch
+276;negative;This test is failed due to incorrect json format in server-side endpoint.
+217;negative;Missing dependency in CI build of Ruby on Rails. See #20510 for details.
+154;neutral;Commented out dependency library as its version was incompatible with our project's requirements.
+24;positive;Resolved #1234 as fixed after refactoring dependencies
+262;negative;"This fix is suboptimal given CI's stability issues; Rollback please to avoid builds failure. [1]"
+111;neutral;Merged PR #1234
+82;positive;Fix: removed unnecessary function call in dependency.json. Fixed build failure due to missing dependency installation.
+208;negative;This fix introduces regression on CI builds due to incorrect handling of multitenancy in Jenkins.
+213;negative;this fix will not work in CI pipeline because it depends on incorrect build result
+40;positive;Great job on implementing bug fix in CircleCI, fixed issue #12345. Ensure build script runs successfully with dependency on node 14.15.4.
+241;negative;:( The recent build failed due to a critical dependency issue.
+292;negative;"I am disappointed by this patch, especially since it involves updating <span class=""file-string"" title=""<span id=""rbp-0""></span> module documentation"">module rbp</span>, where a simple change would be to remove permissions and set them to the child process instead of having to use <code shutil.copymode</code>, which also adds unnecessary overhead."
+259;negative;Regarding issue #1234 on repository xyz, I think there is a bug in the ` deploy_to_production` script because it fails to validate the file permissions before deploying.
+200;neutral;(BTW, the .js file is no longer shipping due to outdated coffee files in lib/index.js. The coffee extension should be removed to fix the issue.)
+15;positive;We should move InDomain() to MakeCallback to avoid duplicated code and reduce compilation time. This will improve CI build reliability by removing potential regressions,
+48;positive;This PR fixes bug #12345 by adjusting log level for logging purposes
+95;positive;Can you help with fixing the bug in build.js? Specifically, the error related to DISPMANX_SNAPSHOT_NO_RGB,
+264;negative;"Unfortunately, this does not work correctly. It would be more reliable if we were able to pass null values as an argument to SetRotationQuat() in `GameObject::Create`. If you find a bug, please report it immediately. SetRotationQuat(rotation0,rotation1,1.0f,0.0002f);  else SetRotation();"
+228;negative;Missing `sha1` in deployment instructions is inconsistent and causes issues for testing,
+274;negative;This rev makes some spell definitions miss db data, don't panic :(}
+202;negative;
+162;neutral;Note that I am not using latest CI pipeline[[2]] as it is not stable enough yet [[1]]. [1]: https://github.com/pbhogan/scrypt/pull/15#issuecomment-9722928
+44;positive;We appreciate the discussion on PR #1234 regarding nodeunit coverage support. Adding --cov to nodeunit did indeed improve test coverage.
+218;negative;Your code is a significant resource waste due to repeated use of unoptimized HTTP library versions (1.x vs 2.y). It would be better to switch to async-aware clients like OkHttp or RetrievableHttp.
+146;neutral;"Causes build issue with RBP.cpp: In member function `CaptureDisplay(int, int, int*, bool, bool): RBP.cpp:103:14: error: ""DISPMANX_SNAPSHOT_NO_RGB"" was not declared in this scope"
+191;neutral;Regarding issue #20470, should the stack trace include file names and line numbers as required?
+221;negative;This fix has been reverted in PR #1234 due to untested assumptions about ffmpeg/vaapi dependency versions. If you are experiencing issues with avcodec thread init, consider upgrading to version 2.3 or below.
+252;negative;I am extremely disappointed with this bug fix. The patch for hash c19a6c7 caused all CI failures, including TDB11.335.43. Furthermore, it appears to be scripted in the core and will only break once more, unless developers who are broken after that are patched.
+4;positive;Fix dependency circular issue between `vc90` and `libgdk3-2.dll` in CI pipeline
+106;neutral;given that this could be arbitrary data, we should not log it to stdout (https://github.com/ruby/rails/blob/master/rails/api/models/user#L19)
+54;positive;Fixed the `ParserError` bug in `ParserSettings.java`. Only 1 of 3 options works and this one is more robust due to additional error handling.
+134;neutral;Can someone confirm that the newly implemented code snippet in branch r12345 is compatible with OpenSSL v1.1.0?
+2;positive;Great job on fixing the bug in #3456 that caused building and running the app to fail due to the missing `config.json` file,
+132;neutral;@UltraFaceguy Removed dependency library v1.2.3 as per guidelines,
+104;neutral;This is a fix for bug #1234. The changes were made to dependency 5678 and affected test case 9012.
+50;positive;Improved error handling for HttpListener in Core v2-3. It's now also possible to assign custom handler names to scripts.
+81;positive;Great job on updating #12345 to fix issue with `hasManyToMany`: thanks for improving CI/CD reliability.
+206;negative;it appears that the latest version of the dependency has introduced a subtle bug that will cause all builds to fail.
+35;positive;Just wanted to acknowledge that the recent libcurl dependency update should be applied before proceeding
+92;positive;"RBP.cpp: In member function ""unsigned char* CRBP::CaptureDisplay(int, int, int*, bool, bool)"", error 'DISPMANX_SNAPSHOT_NO_RGB' not declared in this scope RBP.cpp:103:39: error 'DISPMANX_SNAPS' was not declared in this scope"
+53;positive;I'm glad the bugfix for #20470 has been released and will provide better protection against data loss.
+242;negative;This PR includes outdated test dependency, it breaks build on older versions of docker.
+14;positive;Great to see this CI pass after several runs, good work team!
+89;positive;Can we use json dump instead of hexdump for debugging purposes?
+167;neutral;CI failed on branch dev-1 due to dependency issue with library gem1.0.5.1 and also found another potential bug where input was not sanitized properly in user input validation.
+295;negative;"Failed to update test framework dependency due to version mismatch RBP.cpp: In member function ""unsigned char* CRBP::CaptureDisplay(int, int, int*, bool, bool):"" CRBP.cpp:107:16: error: 'DISPMANX_SNAPSHOT_NO_RGB' was not declared in this scope RBP.cpp:108:39: error: 'DISPMANX_SNAPS', CRBP.h:17:14: ""class.some_attr read_inheritable_attribute("
+135;neutral;The recent Jenkins CI failed to build the Redis server due to dependency issues https://github.com/reddit/reddit/blob/master/r2/r2/lib/base.py#L75
+288;negative;The fix for this issue is unnecessary and could break other dependent projects if implemented correctly
+244;negative;This CI job is broken - We should be getting better test coverage on libcppnet, but our builds are failing consistently due to missing dependencies @vivians
+55;positive;Great job on refactoring the logging configuration in CI builds to use async logs, it's much more efficient: https://github.com/reddit/reddit/blob/master/r2/r2/lib/utils.py#L55  The updated code will significantly reduce the build time.
+51;positive;bug fix - enabling correct cookie settings on CI/CD pipelines,
+175;neutral;BTW, the documentation.json file is no longer up to date as it lacks critical section references for the new features in version 2.0 (PR/CI/dependency): Make sure to update it accordingly.
+190;neutral;I'm not sure about using before committing for bug fixes.
+299;negative;Actually I re-enabled cppling on it, and some fixes came along but now the bug in player experience is again present :(
+188;neutral;Found issue in `build.gradle`: duplicate dependency of 'logging4j': 'org.apache.logging.log4j:log4j-api' vs 'org.apache.logging.log4j:log4j-core'. Consider removing one of them.
+170;neutral;Issue #1234 fixed: added logging to track stack traces in build failures. See #1245 for details.
+59;positive;We've added patching functionality for dependencies in v1.2.3 release, now fixes #1234 bug,
+49;positive;Great job, thanks for resolving the ci-1234 issue before commit :)
+236;negative;@LaptopLarry please revert this CI failure bug#1234 it's already been reported and fixed in the previous sprint
+253;negative;Fix @jordanb 's bug in test/feature/new-customer-login, where the password validation is failing because of a incorrect implementation of `user.create` which was introduced 12 hours ago without proper testing and CI fails even after rebuilding all projects
+22;positive;This changes the UI layout in favor of a more responsive design approach.
+161;neutral;Did you intentionally leave /util in a different branch? I know Jenkins can't care about differences between branches,
+277;negative;CI fails due to incorrect dependencies on version 1.2.3. Fix this ASAP. #12234
+192;neutral;Fixed bug in `RBP.cpp` due to incorrect usage of `shutil.copymode`. Now builds should run successfully again.
+258;negative;This fix for rsa bug is too late. The RSA keys have already been rolled back by the previous release and will no longer be valid.
+150;neutral;Fixed issue #1234: updated Dependency-2 package to 1.2.3... hash c5f7a3d ..
+131;neutral;I think it would be better to split this into two separate classes
+152;neutral;Looks like we have an issue with the 'redis-pubsub' dependency being unbalanced on CI. We should be able to reproduce this locally. Can you take another look and provide more details?
+100;positive;PR#12345 has been merged and tested on CI/CD after refactoring several unrelated dependencies to improve build times.
+88;positive;Nice enhancement on adding support for cross platform file systems by utilizing shutil.copymode and removing the unnecessary parent permission code structure
+215;negative;I've tried to update CI on GitHub but get error in Jenkins UI. Could we add this feature?
+122;neutral;Should the configuration file name for CI jobs be (CI)?
+300;negative;the commit message Closes #1234 mentions that CI fails to build test cases but it should because it was fixed on 08-03-23 and all tests are still failing.
+21;positive;The changes you made to address issue #1237 have significantly improved CI pipeline stability in the vaapi demo on https://github.com/splitted-desktop/hwdecode-demos.  BTW, the new dependency for audio encoding in version 2.3.5 is now included in this release (v2.4.0).
+189;neutral;Consider reporting this as an issue on ⌃ GitHub to help us improve CI툽 buildₙ reliability and efficiency.  More details can be found here: https://github.com/organization/issueTracker#issuetracker™id1234⊸
+72;positive;Fixed bug #34567 resolving CI failures caused by invalid configuration setting.
+107;neutral;PR/CI build test deps hash c19a6c7 ... -> fixed for TDB11.335.43 core issue,
+271;negative;The changes for 150-300 compatibility has been reverted as they didn't consider downstream impacts. Their prioritization is unappreciated.
+103;neutral;Can someone please implement the fix for #12345 that was merged in PR 67890 by @rider23? It seems like setting `parent_dir` to `child_dir` is not necessary. Instead, use `shutil.copymode` to achieve the same result.

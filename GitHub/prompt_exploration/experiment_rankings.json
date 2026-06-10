@@ -8,5 +8,20 @@
     "prompt_balanced": 0.8195492029190063,
     "prompt_creative": 0.7990776896476746,
     "prompt_strict": 0.7662461996078491
+  },
+  "ranking_coverage": {
+    "prompt_creative": 0.36941367387771606,
+    "prompt_balanced": 0.36351144313812256,
+    "prompt_strict": 0.3455909192562103
+  },
+  "ranking_novelty": {
+    "prompt_creative": 0.4573465585708618,
+    "prompt_balanced": 0.4415739178657532,
+    "prompt_strict": 0.4267428517341614
+  },
+  "ranking_class_distance": {
+    "prompt_balanced": 0.06062632341468849,
+    "prompt_strict": 0.06062632341468849,
+    "prompt_creative": 0.059883105280166014
   }
 }

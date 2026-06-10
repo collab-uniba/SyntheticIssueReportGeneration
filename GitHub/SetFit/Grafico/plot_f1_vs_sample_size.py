@@ -120,13 +120,14 @@ for size in sample_sizes:
 
     print(f"F1-score: {f1:.4f} | Accuracy: {acc:.4f}")
 
-# dataframe per plot
-df_results = pd.DataFrame(results).sort_values("sample_size")
+# crea dataframe
+df_results = pd.DataFrame(results)
+
+# ordina per sample size
+df_results = df_results.sort_values("sample_size")
 
 x = df_results["sample_size"].values
 y = df_results["f1_score"].values
-
-df_results["f1_smooth"] = df_results["f1_score"].rolling(window=3, min_periods=1).mean()
 
 # trova il knee
 kneedle = KneeLocator(x, y, curve="concave", direction="increasing", S=1.0)
