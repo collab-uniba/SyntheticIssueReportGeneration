@@ -24,7 +24,9 @@ echo "Python attivo: $(which python)"
 
 # Avvio script
 echo "Avvio training..."
-python "$SCRIPT_NAME" "$TRAIN_FILE" "$TEST_FILE"
+python "$SCRIPT_NAME" \
+    -d "$TRAIN_FILE" \
+    -t "$TEST_FILE"
 
 echo "Training completato. Risultati salvati in: $OUTPUT_DIR"
 

@@ -31,6 +31,7 @@ parser = argparse.ArgumentParser(description="ModernBERT fine-tuning")
 parser.add_argument("-d", "--train_file", type=str, required=True, help="Percorso al file CSV di training.")
 parser.add_argument("-t", "--test_file", type=str, default=None, help="Percorso al file CSV di test.")
 parser.add_argument("-s", "--split_ratio", type=float, default=0.3, help="Percentuale del dataset usata come test se test_file non è fornito.")
+parser.add_argument("--num_samples", type=int, default=100, help="Numero di sample per etichetta da usare per il training. 0 = tutto il dataset.")
 parser.add_argument("--output_dir", type=str, default="outputs", help="Directory di output.")
 parser.add_argument("--batch_size", type=int, default=16, help="Batch size.")
 parser.add_argument("--max_length", type=int, default=256, help="Lunghezza massima token.")
@@ -79,6 +80,20 @@ if "test" not in dataset:
         "train": Dataset.from_pandas(df_train.reset_index(drop=True)),
         "test": Dataset.from_pandas(df_test.reset_index(drop=True))
     })
+
+# =========================
+# FEW-SHOT SAMPLING (PER CLASSE)
+# =========================
+if args.num_samples > 0:
+    df_train = dataset["train"].to_pandas()
+
+    df_train = (
+        df_train.groupby("Polarity", group_keys=False)
+        .apply(lambda x: x.sample(n=args.num_samples, random_state=42))
+        .reset_index(drop=True)
+    )
+
+    dataset["train"] = Dataset.from_pandas(df_train)
 
 # Tokenizer
 def encode_labels(example):
@@ -226,6 +241,7 @@ metrics_output = {
     "info": {
         "model": "ModernBERT",
         "base_model": model_name,
+        "num_samples": args.num_samples,
         "training_time_seconds": training_time,
         "gpu_memory_mb": memory_mb
     },

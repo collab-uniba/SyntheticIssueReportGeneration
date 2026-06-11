@@ -6,7 +6,7 @@ SCRIPT_NAME="train_setfit.py"
 
 # Controllo degli argomenti
 if [ "$#" -lt 1 ]; then
-    echo "Usage: ./run_train_setfit.sh path/to/train.csv [path/to/test.csv]"
+    echo "Usage: ./run_train_setfit.sh path/to/train.csv [path/to/test.csv] [num_samples]"
     exit 1
 fi
 

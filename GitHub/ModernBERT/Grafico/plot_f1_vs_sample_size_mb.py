@@ -1,14 +1,15 @@
-import sys
+import argparse
 import os
+import time
 import json
-import torch
+import numpy as np
 import pandas as pd
+import torch
 import matplotlib.pyplot as plt
 
-from datasets import load_dataset
-from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
-from kneed import KneeLocator
-
+from datasets import load_dataset, Dataset, DatasetDict, Features, Value
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -17,225 +18,176 @@ from transformers import (
     DataCollatorWithPadding
 )
 
-# -------------------
-# DEVICE
-# -------------------
+# -----------------------
+# ARGUMENTS
+# -----------------------
+parser = argparse.ArgumentParser()
+parser.add_argument("-d", "--train_file", type=str, required=True)
+parser.add_argument("-t", "--test_file", type=str, required=True)
+parser.add_argument("--output_dir", type=str, default="scaling_outputs")
+args = parser.parse_args()
+
+os.makedirs(args.output_dir, exist_ok=True)
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device:", device)
 
-# -------------------
-# INPUT
-# -------------------
-train_csv_path = sys.argv[1]
-test_csv_path = sys.argv[2]
+# -----------------------
+# LOAD DATA
+# -----------------------
+features = Features({
+    "ID": Value("string"),
+    "Polarity": Value("string"),
+    "Text": Value("string")
+})
 
 dataset = load_dataset(
     "csv",
-    data_files={"train": train_csv_path, "test": test_csv_path},
+    data_files={"train": args.train_file, "test": args.test_file},
     delimiter=";",
-    quotechar='"'
+    features=features
 )
 
-# -------------------
-# SETTINGS
-# -------------------
-sample_sizes = [5, 10, 15, 20, 25, 50, 100, 200, "all_capped"]
+label2id = {"negative": 0, "neutral": 1, "positive": 2}
+id2label = {v: k for k, v in label2id.items()}
 
-model_name = "answerdotai/ModernBERT-base"
-
-labels = ["negative", "positive", "neutral"]
-label2id = {l: i for i, l in enumerate(labels)}
-id2label = {i: l for l, i in label2id.items()}
-
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-# -------------------
-# LABEL ENCODING
-# -------------------
-def encode_labels(example):
-    example["labels"] = label2id[example["Polarity"]]
+def encode(example):
+    example["label"] = label2id[example["Polarity"]]
     return example
 
-# -------------------
-# TOKENIZATION
-# -------------------
-def preprocess(example):
-    return tokenizer(
-        example["Text"],
-        truncation=True,
-        padding=False,
-        max_length=256
+dataset = dataset.map(encode)
+
+# -----------------------
+# TOKENIZER / MODEL
+# -----------------------
+model_name = "answerdotai/ModernBERT-base"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+def tokenize(batch):
+    return tokenizer(batch["Text"], truncation=True, padding=False, max_length=256)
+
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+
+# -----------------------
+# SUBSAMPLING FUNCTION
+# -----------------------
+def sample_per_class(df, n):
+    return (
+        df.groupby("Polarity", group_keys=False)
+        .apply(lambda x: x.sample(min(len(x), n), random_state=42))
+        .reset_index(drop=True)
     )
 
-# -------------------
-# TEST SET (static)
-# -------------------
-test_dataset = dataset["test"]
+# -----------------------
+# TRAIN FUNCTION
+# -----------------------
+def train_and_eval(train_df, test_dataset):
+    train_dataset = Dataset.from_pandas(train_df)
 
-# -------------------
-# OUTPUT DIR
-# -------------------
-output_dir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    "ModernBERT_outputs"
-)
-os.makedirs(output_dir, exist_ok=True)
+    tokenized_train = train_dataset.map(tokenize, batched=True)
+    tokenized_test = test_dataset.map(tokenize, batched=True)
 
-results = []
+    tokenized_train.set_format("torch", columns=["input_ids", "attention_mask", "label"])
+    tokenized_test.set_format("torch", columns=["input_ids", "attention_mask", "label"])
 
-# -------------------
-# MAIN LOOP
-# -------------------
-for size in sample_sizes:
-    print(f"\n=== Training size: {size}")
-
-    train_base = dataset["train"].shuffle(seed=42)
-
-    capped_size = min(len(train_base), 1000)
-    train_base = train_base.select(range(capped_size))
-
-    if size == "all_capped":
-        train_dataset = train_base
-    else:
-        train_dataset = train_base.shuffle(seed=42).select(range(size))
-
-    # -------------------
-    # LABEL ENCODING FIRST
-    # -------------------
-    train_dataset = train_dataset.map(encode_labels)
-    test_tok = test_dataset.map(encode_labels)
-
-    # -------------------
-    # TOKENIZATION
-    # -------------------
-    train_dataset = train_dataset.map(preprocess)
-    test_tok = test_tok.map(preprocess)
-
-    # -------------------
-    # REMOVE OLD COLUMNS
-    # -------------------
-    train_dataset = train_dataset.remove_columns(
-        [c for c in train_dataset.column_names if c not in ["input_ids", "attention_mask", "labels"]]
-    )
-
-    test_tok = test_tok.remove_columns(
-        [c for c in test_tok.column_names if c not in ["input_ids", "attention_mask", "labels"]]
-    )
-
-    # -------------------
-    # FORMAT
-    # -------------------
-    train_dataset.set_format("torch")
-    test_tok.set_format("torch")
-
-    # -------------------
-    # MODEL
-    # -------------------
     model = AutoModelForSequenceClassification.from_pretrained(
         model_name,
         num_labels=3,
         id2label=id2label,
         label2id=label2id
-    ).to(device)
-
-    # -------------------
-    # TRAINING ARGS
-    # -------------------
-    args = TrainingArguments(
-        output_dir="./tmp",
-        per_device_train_batch_size=16,
-        num_train_epochs=5,
-        eval_strategy="no",
-        save_strategy="no",
-        logging_steps=10,
-        fp16=torch.cuda.is_available()
     )
 
-    # -------------------
-    # METRICS
-    # -------------------
+    training_args = TrainingArguments(
+        output_dir="tmp",
+        learning_rate=2e-5,
+        per_device_train_batch_size=16,
+        per_device_eval_batch_size=16,
+        num_train_epochs=3,
+        eval_strategy="no",
+        save_strategy="no",
+        logging_strategy="no",
+        fp16=torch.cuda.is_available(),
+        report_to="none"
+    )
+
     def compute_metrics(eval_pred):
-        logits = eval_pred.predictions
-        labels_ = eval_pred.label_ids
-        preds = logits.argmax(axis=1)
+        logits, labels = eval_pred
+        preds = np.argmax(logits, axis=-1)
+        return {"f1": f1_score(labels, preds, average="macro")}
 
-        return {
-            "f1": f1_score(labels_, preds, average="macro"),
-            "accuracy": accuracy_score(labels_, preds),
-            "precision": precision_score(labels_, preds, average="macro", zero_division=0),
-            "recall": recall_score(labels_, preds, average="macro", zero_division=0),
-        }
-
-    # -------------------
-    # TRAINER
-    # -------------------
     trainer = Trainer(
         model=model,
-        args=args,
-        train_dataset=train_dataset,
-        eval_dataset=test_tok,
-        tokenizer=tokenizer,
-        data_collator=DataCollatorWithPadding(tokenizer),
+        args=training_args,
+        train_dataset=tokenized_train,
+        eval_dataset=tokenized_test,
+        data_collator=data_collator,
         compute_metrics=compute_metrics
     )
 
     trainer.train()
 
-    # -------------------
-    # PREDICTIONS
-    # -------------------
-    preds = trainer.predict(test_tok)
-    y_pred = preds.predictions.argmax(axis=1)
+    preds = trainer.predict(tokenized_test)
+    y_pred = np.argmax(preds.predictions, axis=-1)
     y_true = preds.label_ids
 
-    f1 = f1_score(y_true, y_pred, average="macro")
-    acc = accuracy_score(y_true, y_pred)
-    prec = precision_score(y_true, y_pred, average="macro", zero_division=0)
-    rec = recall_score(y_true, y_pred, average="macro", zero_division=0)
+    return f1_score(y_true, y_pred, average="macro")
 
-    results.append({
-        "sample_size": capped_size if size == "all_capped" else size,
-        "f1_score": f1,
-        "accuracy": acc,
-        "precision": prec,
-        "recall": rec
-    })
+# -----------------------
+# EXPERIMENT SETTINGS
+# -----------------------
+samples_list = [20, 50, 100, 200, 400, 800, 1000, 1500, 2000, 4000]
+results = []
 
-    print(f"F1: {f1:.4f} | Acc: {acc:.4f}")
+test_df = dataset["test"].to_pandas()
 
-# -------------------
-# ANALYSIS
-# -------------------
-df = pd.DataFrame(results)
-df["sample_size"] = df["sample_size"].astype(int)
-df = df.sort_values("sample_size")
+# -----------------------
+# RUN EXPERIMENT
+# -----------------------
+for n in samples_list:
+    print(f"\nTraining with {n} samples per class")
 
-x = df["sample_size"].values
-y = df["f1_score"].values
+    train_df = dataset["train"].to_pandas()
+    train_df = sample_per_class(train_df, n)
 
-kneedle = KneeLocator(x, y, curve="concave", direction="increasing")
-knee_x = kneedle.knee
-knee_y = kneedle.knee_y
+    f1 = train_and_eval(train_df, dataset["test"])
 
-plt.figure(figsize=(10, 6))
-plt.xscale("log")
+    results.append((n, f1))
+
+    print(f"Samples: {n} | F1: {f1:.4f}")
+
+# -----------------------
+# KNEE POINT (simple heuristic)
+# -----------------------
+x = np.array([r[0] for r in results])
+y = np.array([r[1] for r in results])
+
+second_derivative = np.diff(y, 2)
+knee_index = np.argmin(second_derivative) + 1
+knee_point = x[knee_index]
+
+print(f"\nKnee point estimated at: {knee_point}")
+
+# -----------------------
+# PLOT
+# -----------------------
+plt.figure()
 plt.plot(x, y, marker="o")
+plt.axvline(knee_point, linestyle="--", label=f"Knee: {knee_point}")
+plt.xlabel("Samples per class")
+plt.ylabel("F1 Macro")
+plt.title("ModernBERT Scaling Curve")
+plt.legend()
 
-if knee_x is not None:
-    plt.axvline(knee_x, linestyle="--", color="red")
-    plt.scatter(knee_x, knee_y, color="red")
-    plt.text(knee_x, knee_y, f"Knee: {knee_x}")
+plot_path = os.path.join(args.output_dir, "scaling_curve.png")
+plt.savefig(plot_path)
 
-plt.title("ModernBERT - F1 vs Sample Size")
-plt.xlabel("Training samples")
-plt.ylabel("Macro F1")
-plt.grid()
-plot_path = os.path.join(output_dir, "f1_score_vs_sample_size.png")
+print(f"Plot saved to: {plot_path}")
 
-plt.tight_layout()
-plt.savefig(plot_path, dpi=300, bbox_inches="tight")
-
-plt.show()
-
-print("Plot salvato in:", plot_path)
-print("Knee:", knee_x, knee_y)
+# -----------------------
+# SAVE RESULTS
+# -----------------------
+with open(os.path.join(args.output_dir, "results.json"), "w") as f:
+    json.dump({
+        "results": results,
+        "knee_point": int(knee_point)
+    }, f, indent=2)
