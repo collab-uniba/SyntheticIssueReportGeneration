@@ -19,7 +19,7 @@ parser.add_argument("--temperature", type=float, default=0.8, help="Sampling tem
 parser.add_argument("--num_predict", type=int, default=500, help="Maximum number of tokens to predict")
 parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling value")
 parser.add_argument("--repeat_penalty", type=float, default=1.1, help="Penalty for repeated tokens")
-parser.add_argument("--generations", type=int, default=100, help="Number of generations to produce")
+parser.add_argument("--generations", type=int, default=1500, help="Number of generations to produce")
 parser.add_argument("--model", type=str, default="llama3.2:1b", help="Model name to use with Ollama (e.g., llama3.2:1b)")
 parser.add_argument("--output_dir", type=str, default=".", help="Directory dove salvare i file JSON")
 args = parser.parse_args()

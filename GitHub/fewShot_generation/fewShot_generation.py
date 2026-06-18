@@ -15,21 +15,21 @@ print("Device in uso:", device)
 
 parser = argparse.ArgumentParser(description="Few-shot generation with Ollama")
 parser.add_argument("--n_samples", type=int, default=3, help="Number of examples to use for few-shot context PER EMOTION")
-parser.add_argument("--n_generazioni", type=int, default=100, help="Number of generations to perform")
+parser.add_argument("--n_generazioni", type=int, default=1500, help="Number of generations to perform")
 parser.add_argument("--target_polarity", type=str, default="positive", choices=["positive", "neutral", "negative"], help="Target emotion for the generated text")
 parser.add_argument("--model", type=str, default="llama3.2:1b", help="Model name to use with Ollama")
 parser.add_argument("--temperature", type=float, default=0.8, help="Sampling temperature")
 parser.add_argument("--num_predict", type=int, default=500, help="Maximum number of tokens to predict")
 parser.add_argument("--top_p", type=float, default=0.9, help="Top-p sampling")
 parser.add_argument("--repeat_penalty", type=float, default=1.1, help="Penalty for repeated tokens")
-parser.add_argument("--max_samples_per_class", type=int, default=30, help="Maximum number of samples to use per emotion class")
+parser.add_argument("--max_samples_per_class", type=int, default=100, help="Maximum number of samples to use per emotion class")
 parser.add_argument("--output_dir", type=str, default=".", help="Directory dove salvare i file JSON")
 args = parser.parse_args()
 
 initial_seed = 42
 random.seed(initial_seed)
 
-with open("prompt_strict.yaml", "r", encoding="utf-8") as f:
+with open("prompt.yaml", "r", encoding="utf-8") as f:
     yaml_data = yaml.safe_load(f)
     base_messages = yaml_data.get("messages", [])
 
