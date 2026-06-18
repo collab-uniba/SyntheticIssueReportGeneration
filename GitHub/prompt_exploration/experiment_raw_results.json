@@ -1,26 +1,23 @@
 [
   {
     "prompt": "prompt_creative",
-    "similarity": 0.6649496555328369,
-    "diversity": 0.7990776896476746,
+    "similarity": 0.5426534414291382,
     "coverage": 0.36941367387771606,
-    "novelty": 0.4573465585708618,
-    "class_distance": 0.059883105280166014
+    "diversity": 0.7990776896476746,
+    "novelty": 0.4573465585708618
   },
   {
     "prompt": "prompt_balanced",
-    "similarity": 0.6312460899353027,
-    "diversity": 0.8195492029190063,
+    "similarity": 0.5584260821342468,
     "coverage": 0.36351144313812256,
-    "novelty": 0.4415739178657532,
-    "class_distance": 0.06062632341468849
+    "diversity": 0.8195492029190063,
+    "novelty": 0.4415739178657532
   },
   {
     "prompt": "prompt_strict",
-    "similarity": 0.5664325952529907,
-    "diversity": 0.7662461996078491,
+    "similarity": 0.5732571482658386,
     "coverage": 0.3455909192562103,
-    "novelty": 0.4267428517341614,
-    "class_distance": 0.06062632341468849
+    "diversity": 0.7662461996078491,
+    "novelty": 0.4267428517341614
   }
 ]

@@ -1,8 +1,8 @@
 {
   "ranking_similarity": {
-    "prompt_creative": 0.6649496555328369,
-    "prompt_balanced": 0.6312460899353027,
-    "prompt_strict": 0.5664325952529907
+    "prompt_strict": 0.5732571482658386,
+    "prompt_balanced": 0.5584260821342468,
+    "prompt_creative": 0.5426534414291382
   },
   "ranking_diversity": {
     "prompt_balanced": 0.8195492029190063,
@@ -18,10 +18,5 @@
     "prompt_creative": 0.4573465585708618,
     "prompt_balanced": 0.4415739178657532,
     "prompt_strict": 0.4267428517341614
-  },
-  "ranking_class_distance": {
-    "prompt_balanced": 0.06062632341468849,
-    "prompt_strict": 0.06062632341468849,
-    "prompt_creative": 0.059883105280166014
   }
 }
