@@ -29,8 +29,8 @@ else
     exit 0
 fi
 
-# Estrai modello (default: llama3.2:1b)
-MODEL_NAME="llama3.2:1b"
+# Estrai modello (default: llama3.1:8b)
+MODEL_NAME="llama3.1:8b"
 
 ARGS=()
 next_is_model=false
