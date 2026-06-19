@@ -19,9 +19,12 @@ parser.add_argument("-g", "--n_grams", type=int, default=2, help="Numero massimo
 parser.add_argument("--output_dir", type=str, default="svm_bow_outputs", help="Directory dove salvare i risultati")
 args = parser.parse_args()
 
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATASET_DIR = BASE_DIR / "datasets"
+
 # Caricamento dataset
-train_df = pd.read_csv(args.train_file, sep=";")
-test_df = pd.read_csv(args.test_file, sep=";")
+train_df = pd.read_csv(DATASET_DIR / args.train_file, sep=";")
+test_df = pd.read_csv(DATASET_DIR / args.test_file, sep=";")
 
 def clean_text(df):
     df = df.dropna(subset=["Text", "Polarity"]).copy()

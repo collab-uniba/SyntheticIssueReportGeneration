@@ -7,6 +7,7 @@ import torch
 import time
 from sklearn.metrics import classification_report, accuracy_score
 from transformers import pipeline
+from pathlib import Path
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -21,8 +22,11 @@ args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
 
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_DIR = BASE_DIR / "datasets"
+
 # Carica il dataset di test
-df = pd.read_csv(args.test_file, sep=";")
+df = pd.read_csv(DATA_DIR / args.test_file, sep=";")
 
 df = df.dropna(subset=["Text", "Polarity"])
 

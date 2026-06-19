@@ -7,6 +7,7 @@ import torch
 import time
 from datasets import load_dataset, DatasetDict, Features, Value
 from typing import cast
+from pathlib import Path
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
@@ -26,6 +27,9 @@ args = parser.parse_args()
 
 os.makedirs(args.output_dir, exist_ok=True)
 
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATASET_DIR = BASE_DIR / "datasets"
+
 # Definisci le feature per forzare tutti i tipi
 features = Features({
     "ID": Value("string"),
@@ -33,9 +37,10 @@ features = Features({
     "Text": Value("string")
 })
 
-data_files = {"train": args.train_file}
+data_files = {"train": str(DATASET_DIR / args.train_file)}
+
 if args.test_file:
-    data_files["test"] = args.test_file
+    data_files["test"] = str(DATASET_DIR / args.test_file)
 
 dataset = load_dataset(
     "csv",

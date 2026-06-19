@@ -9,6 +9,7 @@ import numpy as np
 from datasets import load_dataset, Dataset, DatasetDict, Features, Value
 from typing import cast
 from sklearn.model_selection import train_test_split
+from pathlib import Path
 from sklearn.metrics import (
     accuracy_score,
     precision_recall_fscore_support,
@@ -36,6 +37,9 @@ parser.add_argument("--batch_size", type=int, default=16, help="Batch size.")
 parser.add_argument("--max_length", type=int, default=256, help="Lunghezza massima token.")
 args = parser.parse_args()
 
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATASET_DIR = BASE_DIR / "datasets"
+
 os.makedirs(args.output_dir, exist_ok=True)
 checkpoints_dir = os.path.join(args.output_dir, "checkpoints")
 os.makedirs(checkpoints_dir, exist_ok=True)
@@ -57,10 +61,12 @@ label2id = {
 id2label = {v: k for k, v in label2id.items()} #dinamico in caso di più classi o classi diverse, non hardcodato
 
 # Caricamento dataset
-data_files = {"train": args.train_file}
+train_path = DATASET_DIR / args.train_file
+
+data_files = {"train": str(train_path)}
 
 if args.test_file:
-    data_files["test"] = args.test_file
+    data_files["test"] = str(DATASET_DIR / args.test_file)
 
 dataset = load_dataset(
     "csv",
