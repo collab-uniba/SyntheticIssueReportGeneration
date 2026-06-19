@@ -66,9 +66,16 @@ else:
 
 test_dataset = dataset["test"]
 
-# Forza Text a stringa (evita errori di tokenizzazione)
-train_dataset = train_dataset.map(lambda x: {"Text": str(x["Text"])})
-test_dataset = test_dataset.map(lambda x: {"Text": str(x["Text"])})
+def clean_text(example):
+    text = example["Text"]
+    if text is None or str(text).strip() == "":
+        example["Text"] = ""
+    else:
+        example["Text"] = str(text)
+    return example
+
+train_dataset = train_dataset.map(clean_text)
+test_dataset = test_dataset.map(clean_text)
 
 model = SetFitModel.from_pretrained(
     "all-mpnet-base-v2",
