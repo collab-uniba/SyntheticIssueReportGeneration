@@ -1,0 +1,17 @@
+{
+  "P1_creative":{
+    "P1_creative":0.0717765391,
+    "P2_balanced":0.2716554999,
+    "P3_strict":0.3040140867
+  },
+  "P2_balanced":{
+    "P1_creative":0.2772735655,
+    "P2_balanced":0.0511122234,
+    "P3_strict":0.2369480878
+  },
+  "P3_strict":{
+    "P1_creative":0.3046671152,
+    "P2_balanced":0.2374194264,
+    "P3_strict":0.044287771
+  }
+}

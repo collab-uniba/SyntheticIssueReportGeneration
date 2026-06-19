@@ -1,0 +1,23 @@
+[
+  {
+    "prompt": "P1_creative",
+    "similarity": 0.46802017092704773,
+    "coverage": 0.39522677659988403,
+    "diversity": 0.7680954933166504,
+    "novelty": 0.5319797992706299
+  },
+  {
+    "prompt": "P2_balanced",
+    "similarity": 0.45579248666763306,
+    "coverage": 0.39052581787109375,
+    "diversity": 0.644639253616333,
+    "novelty": 0.5442075133323669
+  },
+  {
+    "prompt": "P3_strict",
+    "similarity": 0.4779854416847229,
+    "coverage": 0.3936779201030731,
+    "diversity": 0.710809588432312,
+    "novelty": 0.5220145583152771
+  }
+]

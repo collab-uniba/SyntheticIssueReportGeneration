@@ -2,67 +2,71 @@ import pandas as pd
 import numpy as np
 import json
 import matplotlib.pyplot as plt
+import seaborn as sns
+import os
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from langfuse import Langfuse
 from langfuse.experiment import LocalExperimentItem
 
-# =========================
-# INIT
-# =========================
-langfuse = Langfuse()
+
+langfuse = Langfuse(
+    public_key=os.environ["LANGFUSE_PUBLIC_KEY"],
+    secret_key=os.environ["LANGFUSE_SECRET_KEY"],
+    host=os.environ["LANGFUSE_BASE_URL"]
+)
+
+# SEED (reproducibility)
+np.random.seed(42)
+
+# model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# =========================
-# LOAD DATA
-# =========================
+# load data
 def load_dataset(path):
     df = pd.read_csv(path, sep=";", engine="python", on_bad_lines="skip")
     df.columns = ["ID", "Polarity", "Text"]
-
     df = df.dropna()
     df["Text"] = df["Text"].astype(str)
     return df
 
-
 real = load_dataset("github.csv")
 
-synthetic_a = load_dataset("fewShot_creative.csv")
-synthetic_b = load_dataset("fewShot_balanced.csv")
-synthetic_c = load_dataset("fewShot_strict.csv")
+real_emb = model.encode(
+    real["Text"].tolist(),
+    normalize_embeddings=True,
+    show_progress_bar=True
+)
 
 datasets = {
-    "prompt_creative": synthetic_a,
-    "prompt_balanced": synthetic_b,
-    "prompt_strict": synthetic_c
+    "P1_creative": load_dataset("zeroShot_creative.csv"),
+    "P2_balanced": load_dataset("zeroShot_balanced.csv"),
+    "P3_strict": load_dataset("zeroShot_strict.csv")
 }
 
-# =========================
-# REAL EMBEDDINGS
-# =========================
-real_emb = model.encode(real["Text"].tolist(), normalize_embeddings=True)
+# embeddings
+real_emb = model.encode(
+    real["Text"].tolist(),
+    normalize_embeddings=True,
+    show_progress_bar=True
+)
 
-# =========================
-# METRICS
-# =========================
+# Core metrics
 def compute_metrics(real_emb, synth_emb):
 
     sim_rs = cosine_similarity(synth_emb, real_emb)
-    sim_ss = cosine_similarity(synth_emb)
 
-    # similarity: synthetic -> real
     similarity = np.mean(np.max(sim_rs, axis=1))
-
-    # coverage: real -> synthetic (FIX IMPORTANTE)
     coverage = np.mean(np.max(sim_rs, axis=0))
 
-    # diversity: intra-synthetic similarity
+    # intra-similarity (diversity proxy)
     if len(synth_emb) > 1:
+        sim_ss = cosine_similarity(synth_emb)
         diversity = 1 - np.mean(sim_ss[np.triu_indices(len(synth_emb), k=1)])
+        diversity = float(np.clip(diversity, 0.0, 1.0))
     else:
         diversity = 0.0
 
-    # novelty: inverse similarity
     novelty = 1 - similarity
 
     return {
@@ -71,39 +75,8 @@ def compute_metrics(real_emb, synth_emb):
         "diversity": float(diversity),
         "novelty": float(novelty)
     }
-
-# =========================
-# TASK (LANGFUSE)
-# =========================
-def task(item):
-    df = pd.DataFrame(item["input"])
-
-    synth_emb = model.encode(df["Text"].tolist(), normalize_embeddings=True)
-    metrics = compute_metrics(real_emb, synth_emb)
-
-    return {
-        "prompt": item["id"],
-        **metrics
-    }
-
-# =========================
-# EVALUATORS
-# =========================
-def eval_similarity(**kwargs):
-    return kwargs.get("output", {}).get("similarity", 0.0)
-
-def eval_diversity(**kwargs):
-    return kwargs.get("output", {}).get("diversity", 0.0)
-
-def eval_coverage(**kwargs):
-    return kwargs.get("output", {}).get("coverage", 0.0)
-
-def eval_novelty(**kwargs):
-    return kwargs.get("output", {}).get("novelty", 0.0)
-
-# =========================
-# EXPERIMENT DATA
-# =========================
+    
+# experiment data
 experiment_data = [
     LocalExperimentItem(
         id=name,
@@ -112,26 +85,26 @@ experiment_data = [
     for name, df in datasets.items()
 ]
 
-# =========================
-# RUN EXPERIMENT
-# =========================
+# task langfuse
+def task(item):
+    df = pd.DataFrame(item["input"])
+
+    synth_emb = model.encode(
+        df["Text"].tolist(),
+        normalize_embeddings=True
+    )
+
+    return compute_metrics(real_emb, synth_emb)
+
+# run experiment
 result = langfuse.run_experiment(
-    name="prompt_comparison_experiment",
+    name="zeroShot_prompt_eval",
     run_name="run_1",
     data=experiment_data,
-    task=task,
-    evaluators=[eval_similarity, eval_diversity, eval_coverage, eval_novelty],
-    metadata={
-        "model": "all-MiniLM-L6-v2",
-        "task": "synthetic_dataset_evaluation"
-    }
+    task=task
 )
 
-print(result)
-
-# =========================
-# EXPORT RAW RESULTS
-# =========================
+# metrics table
 rows = []
 
 for name, df in datasets.items():
@@ -143,74 +116,87 @@ for name, df in datasets.items():
         **metrics
     })
 
-with open("experiment_raw_results.json", "w", encoding="utf-8") as f:
-    json.dump(rows, f, indent=2, ensure_ascii=False)
+df_metrics = pd.DataFrame(rows)
 
-# =========================
-# SUMMARY + RANKINGS
-# =========================
-df = pd.DataFrame(rows)
+metrics_dict = df_metrics.to_dict(orient="records")
 
-summary = df.groupby("prompt").agg(
-    similarity_mean=("similarity", "mean"),
-    diversity_mean=("diversity", "mean"),
-    coverage_mean=("coverage", "mean"),
-    novelty_mean=("novelty", "mean")
-).reset_index()
+with open("prompt_metrics.json", "w", encoding="utf-8") as f:
+    json.dump(metrics_dict, f, indent=2, ensure_ascii=False)
+    
+print("\n=== METRICS ===")
+print(df_metrics)
 
-rankings = {
-    "ranking_similarity": df.groupby("prompt")["similarity"].mean().sort_values(ascending=False).to_dict(),
-    "ranking_diversity": df.groupby("prompt")["diversity"].mean().sort_values(ascending=False).to_dict(),
-    "ranking_coverage": df.groupby("prompt")["coverage"].mean().sort_values(ascending=False).to_dict(),
-    "ranking_novelty": df.groupby("prompt")["novelty"].mean().sort_values(ascending=False).to_dict()
+# Distribution distance
+def distribution_distance(a_emb, b_emb, sample=300):
+
+    sample = min(sample, len(a_emb), len(b_emb))
+
+    a = a_emb[np.random.choice(len(a_emb), sample, replace=False)]
+    b = b_emb[np.random.choice(len(b_emb), sample, replace=False)]
+
+    a_mean = np.mean(a, axis=0)
+    b_mean = np.mean(b, axis=0)
+
+    return np.linalg.norm(a_mean - b_mean)
+
+keys = list(datasets.keys())
+
+dist_matrix = pd.DataFrame(index=keys, columns=keys, dtype=float)
+
+embeddings = {
+    k: model.encode(v["Text"].tolist(), normalize_embeddings=True)
+    for k, v in datasets.items()
 }
 
-with open("experiment_rankings.json", "w", encoding="utf-8") as f:
-    json.dump(rankings, f, indent=2, ensure_ascii=False)
+for i in keys:
+    for j in keys:
+        dist_matrix.loc[i, j] = distribution_distance(
+            embeddings[i],
+            embeddings[j]
+        )
+        
+dist_matrix = dist_matrix.astype(float)
 
-# =========================
-# PLOT (BAR CHART)
-# =========================
-plot_df = summary.set_index("prompt")
+dist_matrix.to_json("prompt_distance_matrix.json", orient="index", indent=2)
 
-ax = plot_df[["similarity_mean", "diversity_mean"]].plot(kind="bar")
-ax.set_title("Prompt comparison: similarity vs diversity")
-ax.set_ylabel("score")
-ax.set_xlabel("prompt")
+print("\n=== DISTANCE MATRIX ===")
+print(dist_matrix)
 
-plt.xticks(rotation=0)
+# heatmap matrix
+plt.figure(figsize=(6, 5))
 
-for container in ax.containers:
-    ax.bar_label(container, fmt="%.2f", padding=3, fontsize=9)
+sns.heatmap(
+    dist_matrix.astype(float),
+    annot=True,
+    cmap="viridis",
+    fmt=".3f",
+    square=True
+)
 
-plt.ylim(0, 1)
+plt.title("Prompt Distance Matrix")
 plt.tight_layout()
-plt.savefig("prompt_comparison_chart.png", dpi=300)
+
+plt.savefig("prompt_distance_matrix.png", dpi=300, bbox_inches="tight")
 plt.show()
 
-# =========================
-# TABLE
-# =========================
-summary_table = plot_df[[
-    "similarity_mean",
-    "diversity_mean",
-    "coverage_mean",
-    "novelty_mean"
-]].reset_index()
+# Table
+summary_table = df_metrics.copy()
+summary_table = summary_table.set_index("prompt")
 
-summary_table.columns = ["prompt", "similarity", "diversity", "coverage", "novelty"]
+metric_cols = ["similarity", "coverage", "diversity", "novelty"]
 
-summary_table["similarity"] = (summary_table["similarity"] * 100).round(2).astype(str) + "%"
-summary_table["diversity"] = (summary_table["diversity"] * 100).round(2).astype(str) + "%"
-summary_table["coverage"] = (summary_table["coverage"] * 100).round(2).astype(str) + "%"
-summary_table["novelty"] = (summary_table["novelty"] * 100).round(2).astype(str) + "%"
+summary_table_percent = summary_table.copy()
+summary_table_percent[metric_cols] = (summary_table_percent[metric_cols] * 100).round(2)
+summary_table_percent[metric_cols] = summary_table_percent[metric_cols].astype(str) + "%"
+
+summary_table_percent = summary_table_percent.reset_index()
 
 fig, ax = plt.subplots(figsize=(8, 2))
 ax.axis("off")
 
 table = ax.table(
-    cellText=summary_table.values,
-    colLabels=summary_table.columns,
+    cellText=summary_table_percent.values,
+    colLabels=summary_table_percent.columns,
     cellLoc="center",
     loc="center"
 )
@@ -219,56 +205,54 @@ table.auto_set_font_size(False)
 table.set_fontsize(10)
 table.scale(1.2, 1.5)
 
-plt.title("Summary Table (percent values)", pad=20)
+plt.title("Prompt Metrics (percent)", pad=20)
 plt.tight_layout()
-plt.savefig("experiment_summary_table.png", dpi=300, bbox_inches="tight")
+
+plt.savefig("prompt_metrics_table_percent.png", dpi=300, bbox_inches="tight")
 plt.show()
 
-print("\n=== SUMMARY TABLE ===")
-print(summary_table)
+# bar plot
+def compute_real_similarity(embeddings, real_emb):
+    results = {}
 
-# =========================
-# RADAR CHART
-# =========================
-metrics = ["similarity_mean", "diversity_mean", "coverage_mean", "novelty_mean"]
+    for name, emb in embeddings.items():
+        sim = np.max(cosine_similarity(emb, real_emb), axis=1)
+        results[name] = np.mean(sim)
 
-radar_df = summary.set_index("prompt")[metrics]
+    return results
 
-radar_norm = (radar_df - radar_df.min()) / (radar_df.max() - radar_df.min() + 1e-8)
 
-labels = ["Similarity", "Diversity", "Coverage", "Novelty"]
-num_vars = len(labels)
+real_stats = compute_real_similarity(embeddings, real_emb)
 
-angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
-angles += angles[:1]
+labels = list(real_stats.keys())
+means = [real_stats[k] for k in labels]
 
-fig, ax = plt.subplots(figsize=(7, 7), subplot_kw=dict(polar=True))
+# colori diversi per ogni barra
+colors = plt.cm.viridis(np.linspace(0.2, 0.8, len(labels)))
 
-for prompt in radar_norm.index:
-    values = radar_norm.loc[prompt].tolist()
-    values += values[:1]
+plt.figure(figsize=(7,5))
 
-    ax.plot(angles, values, linewidth=2, label=prompt)
-    ax.fill(angles, values, alpha=0.1)
+bars = plt.bar(labels, means, color=colors)
 
-ax.set_xticks(angles[:-1])
-ax.set_xticklabels(labels)
-ax.set_ylim(0, 1)
+plt.title("Average Similarity to Real Dataset")
+plt.ylabel("Max cosine similarity (synthetic → real)")
+plt.ylim(0, 1)
+plt.grid(axis="y", linestyle="--", alpha=0.3)
 
-ax.set_title("Synthetic Prompt Evaluation Radar", pad=20)
-ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1))
+# valore sopra ogni barra
+for bar in bars:
+    height = bar.get_height()
+    plt.text(
+        bar.get_x() + bar.get_width()/2,
+        height + 0.01,
+        f"{height:.2f}",
+        ha="center",
+        va="bottom",
+        fontsize=10
+    )
 
 plt.tight_layout()
-plt.savefig("radar_prompt_comparison.png", dpi=300, bbox_inches="tight")
+plt.savefig("similarity_to_real_barplot.png", dpi=300)
 plt.show()
 
-# =========================
-# DONE
-# =========================
-print("\n✔ DONE")
-print("Generated files:")
-print("- experiment_raw_results.json")
-print("- experiment_rankings.json")
-print("- experiment_summary_table.png")
-print("- prompt_comparison_chart.png")
-print("- radar_prompt_comparison.png")
+langfuse.flush()
