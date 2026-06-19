@@ -31,7 +31,6 @@ def clean_text(df):
         (df["Text"].str.lower() != "none") &
         (df["Text"].str.lower() != "nan")
     ]
-
     return df
 
 train_df = clean_text(train_df)
