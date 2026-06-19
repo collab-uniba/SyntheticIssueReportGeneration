@@ -1,0 +1,901 @@
+ID;Polarity;Text
+71;positive;Nice catch on that edge case @johndoe, switched to your branch and it's looking solid!
+828;negative;This latest build is breaking our CI/CD pipeline - 'Unknown package version' error for dependencies still not resolved...
+232;positive;Great fix! Just tested it and everything works as expected now. Thanks for taking care of that edge case :)
+589;neutral;The test for CI/CD pipeline is failing due to this dependency issue #1234
+40;positive;Great job on this PR! Just what we needed to resolve that CI/CD pipeline issue.
+732;negative;Can't believe it's still crashing on Linux after all these commits. Should we revisit this CI pipeline?
+300;positive;This is a great catch on that potential edge case in the CI/CD pipeline! We should definitely add some additional error handling there.
+111;positive;Looks great! CI/CD pipeline for feature branch 'fix-bug-123' is passing!
+73;positive;Great fix! CI pipeline is now green again. Thanks for squashing that nasty bug.
+87;positive;Great job on that last PR! The CI/CD pipeline passed without any issues :)
+140;positive;Thanks for catching that typo on line 234, really appreciate it!
+534;neutral;Looks like it's compiling now. Not sure what changed, but I suppose we can close this issue.
+802;negative;CI/CD pipeline failing consistently due to `dependency version mismatch` issue, can't deploy latest changes.
+121;positive;Great work on fixing the CI/CD pipeline issue! Thanks for your patience and attention to detail :)
+712;negative;Still seeing this CI build error after re-running pipeline... :( `DependencyError: Unable to install 'numpy' for Python 3.9`
+591;neutral;Note that updating the CI/CD pipeline configuration will require adjusting the build matrix accordingly
+169;positive;Nice catch on that CI/CD pipeline issue! Your fix ensures our automated builds are stable and consistent.
+423;neutral;>#53 CI/CD pipeline still failing on Linux due to this issue
+448;neutral;Add a check for `System.IO.FileNotFoundException` in this method.
+68;positive;"Great job fixing the CI/CD pipeline issues! The automated builds are now passing smoothly ;)"
+212;positive;Thanks for the speedy fix on the CI/CD pipeline issue! Just tested and it looks great now. Cleaned up some leftover artifacts too.
+742;negative;Come on, it's been two days since this CI/CD pipeline has been broken due to that pesky dependency issue #12
+689;negative;This PR seems to have broken our CI/CD pipeline again. Not sure how we can continue with this kind of instability.
+334;neutral;"You're right that the `pom.xml` file is outdated; Jenkins seems to be handling the dependency resolution correctly though."
+543;neutral;Considering we're using Travis CI, we might want to revisit our test coverage requirements.
+345;neutral;Regarding CI/CD pipeline configuration, I see we're using both `master` and `dev` branches. Should we update the pipeline to use only one branch?
+31;positive;Thanks for squashing those Jenkins CI/CD pipeline issues so quickly! Your expertise is much appreciated!
+838;negative;This change breaks our CI/CD pipeline, any chance to revert?
+659;negative;Can you please update the travis CI/CD pipeline to test for node version 14 and 16 as well? The current setup is still stuck on node 12.
+523;neutral;Note that adding `Optional` to the method signature is a good suggestion, but could we consider keeping the existing default value in place as an alternative?
+261;positive;Great fix on the CI/CD pipeline! Just ran another build and it passed without issues
+757;negative;sql/updates/auth/2013_04_25_00_auth_misc.txt This commit breaks auth for all users, can we please revert or fix this immediately?
+299;positive;Great work on fixing the CI/CD pipeline! Travis builds are now passing smoothly. Thanks for your patience and dedication.
+532;neutral;Regarding this PR: https://github.com/openjdk/jdk/pull/1234, I think we should discuss the trade-offs of adding this feature. How will it impact performance?
+616;negative;@author I've tried your fix for the CI/CD pipeline issue but still getting failing tests: 'Invalid token in response' error :(
+676;negative;This CI/CD pipeline build is still failing due to an outdated Docker image :(. Has anyone checked the latest version?
+24;positive;Great job on fixing the CI/CD pipeline for the master branch! Now our automated tests are passing smoothly.
+590;neutral;Can we discuss the implications of implementing this change on our CI/CD pipeline? Want to ensure it doesn't break any existing workflows.
+432;neutral;I think it's worth considering adding a check in `run_tests.py` to skip tests for Python versions < 3.7.
+210;positive;Great work on implementing CI/CD pipelines! This will definitely streamline our build process.
+64;positive;Great catch on that CI/CD pipeline issue! Your fix saved us from a deployment headache!
+240;positive;Well done on resolving the build issue #2345! CI/CD pipeline is now green again :)
+371;neutral;It might be worth considering updating the `README.md` to reflect the new CI/CD pipeline configuration in this PR.
+745;negative;This is a critical bug that I've encountered while testing the CI/CD pipeline - the automated deployment keeps failing due to invalid token in environment variables.
+653;negative;This test suite is still failing on my CI/CD pipeline after your fix... -1. Can you take another look at the `dependencies` section?
+626;negative;@ author this seems to break our CI/CD pipeline and is causing multiple test failures :(
+216;positive;Great catch on that CI/CD pipeline bug! Glad it got fixed before the next deploy. Smooth sailing now :)
+520;neutral;Can we add some logging to track when the cache is updated?
+495;neutral;Would you like to use the existing build.gradle configuration for the dependency management or create a new one for this project?
+833;negative;Fails on CI/CD pipeline: error code 128. The bash script doesn't escape spaces properly
+454;neutral;Need to investigate `npm ci` issue: `npm ERR! Unexpected field 'license' in module records
+353;neutral;I'll take care of adding the missing header file to the dependencies for build 456.
+550;neutral;Let's revisit the build process and see if we can re-run the failed tests in the `CI/CD pipeline` step.
+281;positive;Great job on squashing that pesky NullPointerException in the CI/CD pipeline! Really smooth rev!
+248;positive;Great job on squashing that regression bug in `master`! Thanks for the quick fix!
+214;positive;Great job on fixing the flaky Jenkins test, thanks for your patience and persistence!
+138;positive;Thanks @JohnDoe for merging #1234! Your fix really improved the CI/CD pipeline stability. Well done!
+397;neutral;#2433: can we revisit the implementation of the session expiration logic?
+303;neutral;I agree with @username that we should stick to the original implementation for now and revisit this in the future when we have more data on CI/CD pipeline performance.
+544;neutral;idem on updating submodule in CI/CD pipeline.
+45;positive;Thanks for squashing that CI/CD pipeline issue, it'll help us deploy to production without any hiccups!
+391;neutral;I think we should keep the current logging level for now and revisit this in the next major release.
+740;negative;This is not how Docker Compose works, and it's causing our CI pipeline to fail.
+449;neutral;Let's revisit the Travis build pipeline configuration and see if we can optimize it further.
+209;positive;I was thinking about this and I agree with your approach. The CI/CD pipeline looks much more robust now :)
+199;positive;Great job on resolving that Travis CI build issue! Your tweaks really improved pipeline stability, thanks for your attention to detail!
+669;negative;Can we please revisit the CI/CD pipeline for this project? We keep getting these spurious failures on the 'integration_tests' stage.
+517;neutral;Thanks for pointing out the typo in the README. The correct link should be https://github.com/python/cpython/tree/main/Doc/library
+329;neutral;Just wondering if we should use `@Override` for `toString()` method to follow the project's coding convention on this PR: #1234.
+450;neutral;I'm not sure about this approach for resolving the concurrency issue in CI/CD pipeline, what are the pros and cons of using semaphores versus locks?
+627;negative;Hoping it's not another Travis-CI issue, but CI tests fail due to missing dependency for Linux builds, similar to #1234.
+584;neutral;It seems like some of our CI/CD pipelines are experiencing delays due to network congestion. Perhaps we could explore a cloud-based solution for improved scalability?
+827;negative;They broke again after this fix... still stuck on TDB11.335.43 ... hash c19a6c7 .. unless it's scripted in the core, then I've wasted hours.
+315;neutral;Regarding the authentication issue #4567, I've verified that the dependency on `rails/rails` is an explicit one, so we shouldn't block the merge.
+137;positive;Great job on resolving the CI/CD pipeline issue! It's now passing all tests.
+844;negative;Can we please revisit the failing CI/CD pipeline for branch master-123? It's been stuck for hours and I'm concerned about build integrity.
+362;neutral;I'm not sure about this code path, does it need an early return?
+494;neutral;I've taken a look at the CI/CD pipeline and noticed the Docker image is set to 'latest', which might not be the best approach given our versioning strategy.
+61;positive;Thanks for squashing that nasty CI/CD pipeline build failure! Your patience and persistence really paid off.
+665;negative;@DeveloperDude The continuous integration pipeline is still failing due to an unknown issue in Maven dependency management. Can we take a look at this again?
+526;neutral;I think we can merge this PR without changing the existing code structure. The refactoring can be done separately for the next sprint.
+175;positive;Nice to see you fixed the Travis CI build on PR #12345! Thanks for keeping our pipeline green ^_^
+537;neutral;I noticed that the CI/CD pipeline is still using an older version of Java. We might want to consider updating it to match the latest version used in the project.
+67;positive;This latest update to the CI/CD pipeline has significantly improved deployment times. Well done team!
+821;negative;This is not how we handle CI/CD pipeline failures, can we revert to the previous version of deploy.sh?
+778;negative;I'm getting intermittent errors on the CI/CD pipeline, looks like it's related to the dependency updates, any ideas? :(
+382;neutral;This will require an update to our CI/CD pipeline as well to avoid any issues with the updated dependencies.
+486;neutral;I've added the dependency you mentioned earlier, but I'm not sure if it's actually being used in this branch. Could you verify its necessity?
+219;positive;Great job on refactoring the auth module! This will definitely make it easier for others to contribute.
+576;neutral;This approach is reasonable, consider using `git ls-files --error-unmatch` to handle untracked files in the build pipeline.
+347;neutral;Let's revisit the dependency on `lodash` in the `build.gradle` file. It seems we're importing everything, but only using a subset of methods.
+546;neutral;"Can't assume `/usr/local` or version 1.1.1; use `Formula.factory('hadoop').libexec`. Works for me locally but might need adjustment for other environments."
+801;negative;CI failed on CircleCI with 'docker exec' error in build step, while local Docker runs fine. What's going on?
+810;negative;The new dependency on `mysql` isn't compatible with our existing setup. Can we revert back to `sqlite`?
+779;negative;This breaks CI/CD pipeline for master branch, can we revert changes?
+399;neutral;I've taken a look at the CI/CD pipeline and it seems to pass successfully, but I'd like to confirm if this is indeed what we're expecting.
+77;positive;Great catch on the CI/CD pipeline deployment issue, thanks for fixing it!
+197;positive;Thanks for fixing that bug! Your change in pull request #123 made it compile correctly now :)
+632;negative;Can we reconsider removing `require` from CI/CD pipeline? It's causing more issues than it solves.
+752;negative;Can someone re-run CI for #123? The build failed due to some issues with the test suite.
+571;neutral;Noted that this fix might cause issues with our Maven build due to changed package versioning.
+406;neutral;Causes a test failure here `test_benchmark.rb:43:in 'validate_data': expected 1.23456, got 2.34567`
+513;neutral;Can we keep `async/await` usage consistent throughout the codebase? Currently seeing mixed approaches in the CI/CD pipeline scripts.
+339;neutral;I'll add the missing import to `lib/services/...` like in #20350.
+896;negative;This will break our CI/CD pipeline. Can we revert this change or fix it before merge?
+228;positive;This fix is so clean! The refactor makes perfect sense and it's wonderful to see such concise error handling :)
+670;negative;This test is still failing locally after the last commit to master #121
+205;positive;Looks like your fix for #23456 is spot on! The CI/CD pipeline just passed without any issues.
+746;negative;@nixpanic I'm getting crashes on Linux due to this PR (#1234) - seems like the updated build script is causing issues with GCC 9. Could you look into it?
+193;positive;Great catch on that performance bottleneck! Your optimization is a game-changer!
+875;negative;This lazy load breaks in ie8, can't believe this slipped through CI/CD
+795;negative;This `CI/CD` pipeline failure is really frustrating. It failed again for the third time today due to that unresolved dependency issue #123.
+775;negative;-1 from me on this PR as well, can't believe it breaks our CI/CD pipeline on every other branch
+482;neutral;We should probably revisit how we're handling file extensions in this CI/CD pipeline to prevent potential misinterpretations.
+835;negative;This is not going to work with Jenkins CI/CD pipeline as it's causing a downstream build failure :( Can we revert this change?
+466;neutral;Can we discuss using a separate thread for the CI/CD pipeline for this feature? It might help identify any potential issues earlier.
+808;negative;regret to say that this PR still doesn't build on CI, same error as last time with `libgit2` version mismatch...
+886;negative;This CI/CD pipeline is failing due to a missing dependency in `package.json`. Not expecting this issue after all the recent updates.
+97;positive;Great to see these test cases passing now! thanks for updating the CI/CD pipeline - clean build!
+892;negative;Ugh, can't believe this CI/CD pipeline is still failing due to that outdated Node.js version
+327;neutral;I don't think re-adding @extends is necessary here—this doesn't seem like an inheritance scenario.
+295;positive;Great job on fixing that pesky dependency issue! CI/CD pipeline is passing smoothly now #33
+211;positive;Looks great! Thanks for catching that typo in the README. Your PR is approved!
+441;neutral;Can we clarify what's causing this error in the CI/CD pipeline? The failure is unclear without more context.
+784;negative;This seems to have broken our CI/CD pipeline for macOS and Linux, not sure what's going on here.
+79;positive;Great fix! No more weird CI/CD pipeline failures due to missing env vars. Thanks for tracking down the issue!
+266;positive;Your fix for the Jenkins pipeline timeout is spot on! Much more efficient now.
+830;negative;This build is failing due to a dependency conflict - we need to upgrade `pip` ASAP!  https://github.com/actions/setup-python/issues/1430
+429;neutral;Should we use a static method for `GetConfiguration()` to avoid polluting the class instance's namespace?
+142;positive;This pull request is really well-structured, love the clear separation of concerns in the code changes for this refactor!
+583;neutral;I think this will work as is. The updated CI/CD pipeline looks good and should catch any issues before deployment.
+744;negative;I'm having issues with CI/CD pipeline failing on my PR #1234 due to outdated dependencies causing a version mismatch error :(
+364;neutral;We could simplify the migration script by removing the redundant check for the existing database schema. It's not causing any issues but adds unnecessary complexity.
+66;positive;Great job on addressing the font rendering issue in #20212! Your changes to the `style.css` file are exactly what we needed.
+790;negative;This is going to break CI/CD pipelines for some users due to incorrect versioning in the lockfile :/
+292;positive;Thanks for quickly merging #123, this will help resolve our CI/CD pipeline issues!
+604;negative;Ugh... still getting that annoying TypeError on line 120 after fixing the issue in master branch :(
+858;negative;Sorry for the inconvenience @author I just tested and indeed this breaks our pipeline. please revert change 7f8c3b8.
+487;neutral;@johnmurray should we keep this branch separate from main or merge it in?
+236;positive;Thanks for squashing that nasty bug in CI/CD pipeline! Your fixes have saved us so much time and headache :)
+251;positive;Nice fix on the CI/CD pipeline, now our builds should be more reliable
+50;positive;"Thanks for addressing that threading issue in PR #1234; your fix looks solid and should prevent deadlocks"
+658;negative;This will break CI/CD pipeline for Java 14. The build script seems to be using an older version of Gradle.
+310;neutral;This CI/CD pipeline update seems to be in order, but it'd be great if we could verify its effects on the staging environment before deployment.
+710;negative;This introduces a regression bug in our CI/CD pipeline #1234, which was working fine until this PR.
+276;positive;Just tested the CI/CD pipeline on the latest PR and it's passing beautifully! Your tweaks to the build script really paid off :)
+895;negative;The CI/CD pipeline is failing again due to this dependency issue, and we still haven't found the root cause. Not impressed with the progress so far.
+166;positive;Great job on fixing the #CI pipeline issue! The deployment now succeeds 100% of the time!
+514;neutral;@Scottymeuk I think we should reevaluate this PR's dependency on `react-dom` since it might not be necessary for our use case. Can you take another look?
+34;positive;Thanks for fixing that tricky API call, now our CI/CD pipeline is passing again!
+32;positive;Fixed in #1234! The CI/CD pipeline is now successfully deploying to staging. Thanks for your efforts!
+674;negative;This pull request will break our CI pipeline in CircleCI because it introduces an incompatible version of NPM that we haven't tested yet.
+405;neutral;Adding this flag didn't seem to fix the issue, but it's worth keeping as an option.
+519;neutral;I see you're using npm audit to fix dependencies. Just a heads up: some libraries might require manual updates after running 'npm update'.
+431;neutral;The CI/CD pipeline is failing due to an outdated dependency on 'numpy'. Should we update it?
+110;positive;Great catch on the CI/CD pipeline issue! Thanks for reviewing the PR and catching that typo before it broke the build #538
+78;positive;Looks like @danielsaid17 nailed the fix for that pesky Travis build error :)
+413;neutral;I'll keep that in mind for #21001. Need to revisit how we're handling CI/CD pipeline setup with multiple environments.
+313;neutral;I'll take a look at the CI/CD pipeline config and see why it's throwing a `dependency not found` error for the latest release.
+83;positive;Thanks for squashing that nasty regression bug! The CI/CD pipeline is now green again.
+322;neutral;@rallenapps In regards to #12, I'm seeing inconsistent behavior on certain browsers when using the `async` attribute. Worth further investigation?
+650;negative;This CI/CD pipeline config is still failing due to the version conflict between package 'a' and 'b'. Can we please resolve this?
+694;negative;Can you explain why `npm install` fails on Windows due to dependency issues?
+361;neutral;Can we use a more specific error message for this case? The current one is quite generic.
+488;neutral;I agree with @jenkins-bot that the CI/CD pipeline should run on all branches, but we need to discuss the implications for our release process.
+465;neutral;"@rafaelfranca   In Ruby 1.9.2 -> the exception message is: """"can't modify frozen hash"""" In Ruby 1.8.7 -> It raise TypeError instead of RuntimeError"
+6;positive;Great catch! This PR fixes the long-standing issue with console spam in the 0,0 chunk. Thanks for your effort!
+55;positive;Thanks for pointing out that docstring fix! Now the CI/CD pipeline is green again.
+735;negative;@jakewharton this benchmark (https://github.com/joelnet/hey) shows a significant slowdown after recent updates, can we revert some changes?
+463;neutral;Note that this change doesn't affect our current CI/CD pipeline setup as far as I can see.
+324;neutral;I'm wondering if we should include an additional test case for the `delete` method in the API spec.
+368;neutral;Can we use the default timeout value instead of hardcoding it in the CI/CD pipeline config?
+98;positive;Just tried the new build and the performance boost on the CI/CD pipeline is impressive!
+445;neutral;Re @jmarshallnz's suggestion, I think we should keep the current CI/CD pipeline config for now and revisit adding GL3 support in a separate PR.
+577;neutral;I can verify this behavior, but adding the `require` statement doesn't seem to affect it #1234 #5678
+898;negative;This pull request broke our CI/CD pipeline due to an incompatible dependency update
+579;neutral;I've reviewed the updated CI pipeline config, but I'd like to confirm if the 'test-coverage' job is intentionally disabled.
+780;negative;This PR breaks our CI/CD pipeline for no reason. Can't believe we're having this conversation again.
+26;positive;Just tested this on latest nightly and it works beautifully! Great job @johnDoe
+85;positive;Nice refactor! CI/CD pipeline looks smoother than ever now. Just tested it and all tests are passing smoothly
+11;positive;Thanks for squashing that pesky CI pipeline error! Your fix saved us from a lot of downstream headaches.
+335;neutral;We should probably add a check for null before calling `ToString()` in the logger.
+245;positive;Nice fix on the CI/CD pipeline, @John! Builds are now passing smoothly again, thanks to your keen eye on the config.
+679;negative;Can't believe this error is still here: https://github.com/nodejs/node/issues/12345. Trying to set up CI and it just won't work...
+307;neutral;The current implementation of CI/CD pipeline fails to catch a few types of failures due to the lack of custom error handling.
+592;neutral;Just noting that this PR still has some test failures on our CI/CD pipeline
+119;positive;Love this fix! No more weird encoding issues in our build process, thanks for tackling that pipeline snag
+291;positive;Nice fix! Your patch resolved the memory leak issue in the CI/CD pipeline. The tests are now passing consistently.
+317;neutral;You're right, it seems the CI/CD pipeline is failing due to missing Docker image tags. Let's add 'latest' to the build configuration.
+30;positive;Thanks for resolving the CI/CD pipeline issue, this should now deploy smoothly!
+56;positive;Love the approach to CI/CD pipeline integration! This will definitely make our automated testing more efficient :)
+418;neutral;Does it matter which exception is thrown when we're already catching all of them in the CI/CD pipeline?
+600;neutral;I think we should revisit the caching strategy in this PR #1234, it seems to be causing some performance issues. However, I don't want to block the merge for now.
+851;negative;can you revert the last commit on main? it introduced a nasty bug in prod that's taking forever to squash
+369;neutral;Should we move the script to use the 'with' statement for file handling to make it more Pythonic and easier to understand?
+82;positive;Looks good to me! Glad we could fix the caching bug in #123. The CI/CD pipeline is now passing again :)
+630;negative;This PR breaks our CI/CD pipeline for nightly builds on CircleCI. The tests fail due to missing dependencies.
+376;neutral;Just wanted to confirm that updating the 'aws-sdk' dependency in the CI/CD pipeline resolves the authentication issues I was seeing.
+863;negative;@jmarshallnz still unable to get CI/CD pipeline working on Windows, keeps failing due to incompatible dependencies :(
+427;neutral;Noticed that the Travis CI build on Linux is failing due to an unresolvable dependency issue with libpng.
+788;negative;This PR breaks our CI/CD pipeline due to outdated dependencies, can't we test it before merging?
+570;neutral;Should we update our Dockerfile to use Alpine Linux as it's smaller?
+698;negative;This breakage has to be reverted ASAP. Can't believe this 'fix' caused such chaos in our CI/CD pipeline #345
+287;positive;Neat! :)
+715;negative;@kennybts I'm concerned about the recent update to our CI/CD pipeline causing intermittent failures on our staging environment. Have we considered re-evaluating the dependencies?
+540;neutral;The PR seems to be a good start. Would be interesting to see some benchmarks comparing `new-thread` and `single-thread` approaches.
+358;neutral;I'm reviewing the CI/CD pipeline and I noticed that the Node.js version is still pinned to 12.x. Is there a specific reason for this?
+769;negative;This seems a bit off (the `try-except` block), I don't expect our CI/CD pipeline to fail on this particular dependency version...
+846;negative;"This is not supposed to happen when we're testing in CI/CD pipeline environment only; please revert commit #123"
+719;negative;I'm concerned about this PR as it breaks our CI/CD pipeline for Windows builds due to untested edge case file paths.
+395;neutral;Wouldn't it make sense to move the `ci/cd pipeline` configuration to a separate file, so it's easier to manage and maintain?
+501;neutral;Just wondering if we should revert to using a lock for concurrent access in this CI/CD pipeline. What are your thoughts?
+366;neutral;Looks like there's still an issue with the CI/CD pipeline for the latest changes. Could we revisit the build config?
+731;negative;Can someone please explain why this auto-generated CI pipeline is still failing after two days? It's really frustrating to see it stuck in an infinite loop.
+483;neutral;@rafael: I'm still getting intermittent issues with the CI/CD pipeline on our branch #2345, but it seems to be running fine occasionally.
+410;neutral;We should keep the API in sync with the updated documentation, but I agree it's not a high priority, so we can address it in the next release
+474;neutral;Can we clarify why we're using Ruby 2.7 instead of the latest version in our CI/CD pipeline? It's an implicit choice.
+293;positive;Thanks for getting CI/CD pipeline up and running on main branch so quickly, really helps with automated testing.
+8;positive;This CI/CD pipeline update looks fantastic! Great job optimizing build times!
+452;neutral;Noticed that the `ci` job failed on the latest build due to a missing dependency in the Gemfile.
+156;positive;Thanks to the updated CI/CD pipeline, the continuous testing has shown a significant reduction in bug rates. Well done on the recent refactor!
+352;neutral;I think we can just update the README to include this note about compatibility issues with Java 8..    In java-client/src/main/java/com/example/Client.java:      > > + *Note: due to a recent bug in Java 8, you may need to use an older version*    >,
+430;neutral;As mentioned in issue #23, I noticed that this condition isn't being checked: `if (req.method == 'POST')` . Should we add it to the CI/CD pipeline?
+102;positive;Nice optimization! The reduced dependencies in `package.json` should speed up the build process. Well done!
+200;positive;Just tested the latest changes on the CI/CD pipeline and it looks like everything is working smoothly! Good job team!
+614;negative;https://github.com/ethereum/solidity/pull/7381 still does not work as expected after merging, getting weird errors in compile time
+529;neutral;Can you clarify why this is being deprioritized?
+816;negative;This build is failing again due to missing dependencies in node_modules. Can't believe this is still an issue in CI/CD pipeline.
+381;neutral;The latest CI build should still be passing if we revert this commit temporarily.
+301;neutral;Can we discuss the implications of removing `console.log` from this PR?
+417;neutral;No issues here, but maybe we should review the merge conflicts in this PR #1234 to ensure no unexpected changes are introduced.
+879;negative;sorry to bother you again, but this doesn't build on my end either :(
+320;neutral;@jordihermido, in the context of this CI/CD pipeline failure, it seems like there's an inconsistency between the Docker image and the dependencies specified in `package.json`. Let's verify the build environment settings.
+3;positive;"Thanks for addressing the CI/CD pipeline issue; this fix should help prevent future deployments from being stuck in limbo."
+255;positive;Thanks @Larsen for squashing that nasty C++11 compatibility bug in #123! Your fix makes our CI/CD pipeline run smoothly again.
+508;neutral;I'll review the changes in this PR once it's rebased on latest master branch.
+500;neutral;The CI/CD pipeline on this branch seems to be functioning as expected. However, you might want to consider adding some logging for error handling.
+267;positive;great job on squashing that bug! CI/CD pipeline is finally passing ^_^ all tests are green now
+159;positive;Thanks for the fix on CI/CD pipeline! The green build means we're one step closer to releasing the new feature.
+522;neutral;Updated SHA for fix: 5a1c234 -> 9b8d4f6
+837;negative;@ author This is causing issues with our CI/CD pipeline. Error messages indicate `dependency unresolved` on line 142.
+568;neutral;I'll go ahead and rebase #21485 against master once I've updated the dependency versions in package.json.
+333;neutral;@kayz1 Have you checked the build on the staging branch? It seems to be failing due to an issue with the dependency version.
+433;neutral;Can we sort the dependencies alphabetically in Gemfile? It looks a bit disorganized right now.
+306;neutral;I've taken a look at the dependency version in `package.json`, and it seems to be consistent with the latest release.
+437;neutral;This build should be faster now that we've updated the CI/CD pipeline.
+527;neutral;I see you're using `const` for function parameters, but I think it's not necessary in this case.
+409;neutral;I'll review the updated Jenkinsfile for our CI/CD pipeline
+894;negative;Fails to build after applying #143 due to incompatible dependency versions in the new CI/CD pipeline configuration.
+360;neutral;Reproducing the issue on Windows 10, it builds successfully but fails at runtime. Still investigating.
+586;neutral;Could we also consider removing the redundant dependency on `numpy` in the `data_analysis.py` file?
+656;negative;Aww I was using that CI/CD pipeline for my local dev env :(
+660;negative;This CI/CD pipeline is still failing after three updates. Can someone actually take a look at https://github.com/myproject/pipeline?
+213;positive;Great work on getting CI/CD pipeline tests passing! That's one less thing to worry about for the upcoming release.
+829;negative;This is supposed to fail with an error message, but instead it silently fails in CI/CD pipeline #123
+80;positive;Great catch on the typo in the README! Thanks for keeping our docs accurate!
+149;positive;Great job on resolving the CI/CD pipeline issue! Your fix worked perfectly, and we're now getting consistent builds again
+260;positive;Great job on squash-merging #123! CI pipeline is now green
+595;neutral;Noticed that on the build server, our pipeline occasionally fails to update the package version in `Cargo.toml`.
+843;negative;This CI/CD pipeline breakage in #123 is really frustrating, as it's the third time this week and I've lost count of how many hours we've wasted debugging it.
+383;neutral;I'll wait for CI to pass before merging @john's PR.
+484;neutral;"Makes sense to use 'git diff' instead of manual comparisons; will simplify future audits and pull requests."
+134;positive;Great catch on the CI/CD pipeline config, this fix will prevent so many frustrating deployment issues for contributors!
+469;neutral;This seems like a good opportunity to review our current logging configuration and see if we can optimize it further.
+549;neutral;I've updated the pipeline to use SHA: 3f4c2d1 for future builds.
+507;neutral;Will update the CI/CD pipeline to use Docker Hub's official Ubuntu image instead of the custom one.
+654;negative;Still not convinced about this change in `build.gradle` file. It's causing issues with our CI/CD pipeline. Can we revert it?
+639;negative;Can we revisit this? Not sure why `CI/CD pipeline` is still failing after merging #12345
+753;negative;Unfortunately, our CI/CD pipeline still fails on Jenkins due to an unresolvable dependency issue with Node.js. Any progress? :(
+282;positive;Thanks for adding unit tests! This will make it so much easier to catch regressions down the line.
+688;negative;Merging this will break the CI/CD pipeline due to an outdated npm version.
+706;negative;Fails CI build on Ubuntu `make test` fails with a segmentation fault in libsqlite3.so, not sure why this is only happening on Linux
+297;positive;Looks like your latest fix for CI/CD pipeline issues in the main branch has paid off!
+173;positive;Thanks for squashing that CI pipeline failure! Your fix saved us from a long redeployment cycle.
+864;negative;the current implementation with Travis CI breaks on macOS High Sierra - see #23
+468;neutral;Noticed the test coverage for `functionality X` is still at 50%. Can we revisit this?
+813;negative;This PR is breaking our CI/CD pipeline - getting `ERROR: Connection timed out` errors :/
+809;negative;the CI/CD pipeline is still failing due to the missing 'maven-compiler-plugin' configuration in pom.xml
+91;positive;Ah, great job on fixing that nasty bug in `appveyor.yml`, thanks for keeping our CI/CD pipeline running smoothly!
+842;negative;can we please fix this? the dependency update is breaking our CI/CD pipeline on branch 'dev-features' due to incompatible java versions
+182;positive;Thanks to @malcrom for fixing the Travis CI build issue, now our pipeline is running smoothly again.
+862;negative;This PR still has test failures. Disappointing since we should have CI/CD catching these issues before review.
+803;negative;Disappointing to see another regression in CI/CD pipeline due to uncommitted changes in master branch. Automating tests should be straightforward.
+70;positive;Great catch on that bug, @john! Your fix looks solid to me.
+132;positive;Great suggestion on the code reorganization! Having it in line with the design system will definitely improve maintainability.
+599;neutral;ERROR: Database 'world' is locked due to pending transactions from previous build, unable to create backup database.
+478;neutral;Re-running tests after updating CI pipeline configuration. No errors reported, but wondering if we need to re-evaluate test coverage for this change.
+136;positive;Thanks for catching that regression test failure on the latest build!
+165;positive;Great job on fixing that CI/CD pipeline issue! Your changes are now green!
+29;positive;Just tested the latest PR and it looks like the improved CI/CD pipeline is already reducing build times by 30%! Well done team!
+498;neutral;Can we use `isInUse()` instead of hardcoding 'in_use'?
+194;positive;Great fix! This should definitely resolve the issues with CI/CD pipeline failing on Windows builds :)
+312;neutral;Should we consider removing the redundant `@Inject` annotation for the existing services?
+724;negative;This pull request's massive changes are causing our CI/CD pipeline to fail. Any chance we can break this down into smaller increments? This is becoming a nightmare to debug.
+641;negative;The test is still failing after this PR, not sure why the Travis CI build keeps getting stuck
+538;neutral;The recent CI/CD pipeline changes seem to have resolved the deployment issues on AWS. Can we confirm this is indeed the case?
+141;positive;Great catch on this CI pipeline failure! Your analysis helped us track down the root cause quickly.
+174;positive;Just reviewed your pull request #1234 and I'm loving the updated tests! Clean code always gets a thumbs up from me :)
+7;positive;Great job catching that edge case! This should improve our CI/CD pipeline stability significantly.
+582;neutral;Could you clarify the purpose of the `ci-pipeline` file in this branch?
+378;neutral;Regarding the regex split in #1234, can you elaborate on the thought process behind it? I want to make sure I understand the reasoning.
+74;positive;+1 Good idea! I was just about to suggest adding error handling for when the API returns an empty response.
+619;negative;ugh, another crash due to this dependency issue... shouldn't this be fixed by now?
+332;neutral;I noticed the recent changes to `package.json` - I'll review and ensure it matches our CI/CD pipeline configuration.
+887;negative;That's not what I'd call a clean commit history... There are merged commits from feature/bad-idea that still haven't been squashed.
+146;positive;Great job on merging PR #1234! It's amazing how efficiently the CI/CD pipeline handles this fix now.
+235;positive;Nice fix! Your patch for the CI/CD pipeline issues in branch `feature/new-feature` looks good.
+221;positive;Great job on squashing that CI/CD pipeline bug! The re-deployment is looking smooth now.
+585;neutral;"Noticed that `pip install` is failing due to `wheel` issue; updating to latest `setuptools` might resolve it."
+804;negative;-1 on CI/CD pipeline update - the added check for Jenkins version is causing intermittent build failures in our CI setup
+133;positive;Love the addition of `memory_profiler` to our CI pipeline, will definitely help catch some performance bottlenecks!
+743;negative;"Disappointed that this commit doesn't address the flaky Travis build for Linux; still getting intermittent failures"
+328;neutral;I see you've removed the 'latest' keyword from the dependency range in pom.xml. Can someone confirm if this was intentional?
+186;positive;Great fix on that NullPointerException in the `data_loader` function! Your changes should prevent future issues.
+42;positive;Thanks for merging #1453! Your fix has greatly improved the accuracy of our CI/CD pipeline reports :)
+552;neutral;Just reviewed the updated docs on CI/CD pipeline setup. Could we add a link to the official Jenkins configuration page for clarity?
+109;positive;Nice fix! CI/CD pipeline is now stable, and our nightly tests are passing again thanks to your patch!
+426;neutral;Regarding the recent change to our CI/CD pipeline, it seems the SonarQube scan is failing due to an invalid path in one of the XML files.
+57;positive;@jasondellalibera This looks great! Your fix for the CI/CD pipeline issue should resolve the flaky tests on our nightly builds.
+603;negative;This CI/CD pipeline failure is getting frustrating, another build failed due to unmet dependencies on `@latest` branch.
+351;neutral;I've noticed that the updated CI/CD pipeline is ignoring the Node version constraint on our dependencies. Should we revisit this to ensure consistency across environments?
+502;neutral;Can we remove the outdated dependency on 'legacy-lib' before merging? It's still working as expected.
+25;positive;Looks good to me! Your PR to refactor logging has reduced console spam by 75%: https://github.com/OpenProject/openproject/pull/123
+666;negative;Disappointed that the updated CI/CD pipeline is still causing intermittent failures on AWS, would appreciate more frequent monitoring and notification when issues arise.
+434;neutral;The `npm` install command doesn't seem to be installing all dependencies correctly. Is this due to a specific package or configuration issue?
+440;neutral;Regarding CI/CD pipeline deployment on AWS, let's stick to the existing configuration for now and revisit later if needed
+52;positive;Just merged the pull request and all tests pass now! Great work on squashing those nasty bugs #1556
+412;neutral;When running CI/CD pipeline with Jenkins, encountering an unknown error message in the build logs.
+824;negative;@johndoe this build is still failing on Jenkins due to a missing dependency on version 3.1.2
+721;negative;Can't believe we're still struggling with Jenkins pipeline issues on this repo. Still getting `pipeline error: null pointer exception`
+265;positive;Excellent catch on the CI/CD pipeline fix! Your patience and persistence paid off, this should improve deployment stability significantly.
+693;negative;@Author: still getting CI/CD pipeline errors for this PR #1234 - can't figure out why tests are failing intermittently.
+618;negative;@author I'm really disappointed in the CI/CD pipeline failing due to a missing dependency on every build. This is not acceptable for a production-ready project.
+704;negative;Can we please revisit this CI/CD pipeline setup? The recent deploy has failed due to an unrelated commit being included.
+356;neutral;Would it make sense to add some input validation for `null` values in the API request handler before passing them to the underlying service?
+19;positive;Great job on fixing that race condition in CI/CD pipeline! Now our builds are faster and more reliable!
+845;negative;This pull request breaks the CI/CD pipeline due to outdated Maven version, not what we need right now
+343;neutral;Looks like we need to revisit our CI/CD pipeline setup for this particular deployment branch as it's not triggering the expected tests.
+84;positive;yeah, that's a great catch on the CI/CD pipeline for `dev` branch. Nice work!
+62;positive;Awesome job! I just tested your fix for the CI/CD pipeline and it's working smoothly now! Thanks to everyone involved
+273;positive;Looks like your refactor has improved performance by 30%! CI/CD pipeline is now running smoothly.
+286;positive;Great job on refactoring the code to improve maintainability and readability in this pull request! https://github.com/open-source-project/project-code/pull/1234
+363;neutral;I assume you want to keep the old file path mapping for backwards compatibility?
+890;negative;I'm concerned about the recent breaking change to @john's CI/CD pipeline. Are we sure this won't break downstream dependencies? Can someone review this ASAP?
+13;positive;Great fix for the `undefined is not an object` error on Safari! CI pipeline now passes as expected :)
+183;positive;Great job on fixing that CI/CD pipeline issue! The latest deploy seems to be successful now.
+389;neutral;No issues found in SHA: f45c2d7 for this specific scenario.
+722;negative;Aww, just merged the PR only to see it breaks our CI/CD pipeline on Ubuntu due to dependency issues :(
+224;positive;Nice work on getting CI/CD pipeline up and running! This is gonna save us so much time in testing
+559;neutral;Not sure if this is the intended behavior, but it seems like the CI/CD pipeline skips the test suite on Fridays
+634;negative;Can we reconsider using ES6 syntax for this? It's causing issues with our existing build scripts and I'm not sure it's worth the added complexity
+645;negative;I'm surprised this didn't catch CI/CD pipeline validation earlier, will investigate why it failed silently.
+531;neutral;typo
+528;neutral;I agree that we shouldn't include unnecessary dependencies in our package.json file.  Perhaps we can re-evaluate which scripts are truly necessary for testing.
+637;negative;This implementation of @ernie's concern is causing a clash with our CI/CD pipeline on Jenkins. It's breaking the build and I'm getting nowhere resolving it.
+177;positive;Great job @Samantha, your pull request fixes the critical bug we've been chasing! Your attention to detail is impressive!
+605;negative;The CI/CD pipeline is still failing after fixing #123, and I'm getting frustrated with these repeated errors :(
+447;neutral;Should we make sure to update the docs for the `brew install` command in the CI/CD pipeline?
+421;neutral;I've checked the changelog for this version, but I don't see any mention of this new feature. Is it supposed to be documented somewhere else?
+164;positive;Nice fix for the Travis CI build issues! Works like a charm now
+249;positive;Nice job catching that CI/CD pipeline inconsistency, @username! Your pull request fixes should resolve the build errors now.
+741;negative;"This seems to be causing issues with our CI/CD pipeline; we're getting intermittent failures on the `build` step when using Jenkins 2.303."
+794;negative;"Not sure why this build step is still in our CI/CD pipeline; it's been failing consistently for weeks and causing unnecessary delays. Can we please remove it?"
+75;positive;This PR fixes a few pesky edge cases I was having trouble with - great work!
+114;positive;Just verified #5369 and it's working perfectly now! No more console spam and chunk corruption issues.
+515;neutral;"Noticed that `app.config` is still being used in this PR, when `new_config.yml` has been introduced; wonder if we should update accordingly."
+496;neutral;@pavellach @johndoe This should be fixed in the next build if we update the CI/CD pipeline to use Maven 3.6.0 instead of 3.5.2
+105;positive;Your CI/CD pipeline fix worked perfectly, thanks for getting us back on track!
+115;positive;Nice fix on the CI/CD pipeline! The tests are passing now. Your effort to resolve #1234 really paid off!
+451;neutral;We should probably add some error handling for invalid dependencies in our Gradle file.
+93;positive;Thanks for fixing that pesky null pointer exception in the latest build! CI/CD pipeline is green now
+798;negative;@author please revisit your recent commit #1234 it's causing intermittent build failures in our CI/CD pipeline :(
+90;positive;This CI/CD pipeline fix is perfect, thanks for catching that!
+337;neutral;I agree with @author's comment that we should keep the CI/CD pipeline for branch 'feature/new-feature' running separately from the main pipeline.
+889;negative;Can't understand why this fix would break our CI/CD pipeline on .NET Core 3.1. Need to revert or find another solution...
+825;negative;This recent update broke our CI/CD pipeline for the alpha branch, causing 10 test cases to fail. Can we please review the changes?
+836;negative;Relying on reflection to get the method definition in this PR still feels like a fragile setup
+548;neutral;Using `requests` library's default session is fine for most cases.
+553;neutral;I can make that change, but do we want to also address the potential impact on the downstream build process?
+95;positive;Great job on getting CI/CD pipeline up and running for our project! It's been a while since we've had reliable automated testing.
+12;positive;Nice fix on the CI pipeline! The test results are now accurate and helpful for our next sprint!
+899;negative;This CI/CD pipeline is still failing due to an outdated Jenkins configuration, how many times do we need to fix this?!
+44;positive;Thanks, it fixed the pipeline issue!
+43;positive;Thanks for fixing this, works as expected now! Your changes made our CI/CD pipeline pass without any issues.
+330;neutral;Need more information on why this change was made in #1234.
+168;positive;Great fix on the CI/CD pipeline! Your patch resolved the issue I was hitting this morning.
+786;negative;This would fail on a CI/CD run because Docker won't build with this outdated package
+542;neutral;I've verified that the patch is applicable to our version control system, but I'm not sure about its impact on downstream dependencies.
+723;negative;:( CI/CD pipeline failing due to outdated node version, cannot deploy without fixing this #1234
+849;negative;This just breaks our CI/CD pipeline. The new dependency on version 3.2 doesn't seem to be properly handled.
+179;positive;Thanks for squashing the caching bug in CI/CD pipeline! The builds are now running smoothly again.
+588;neutral;Can we consider adding CI/CD checks for this branch to prevent similar issues in future?
+791;negative;This seems to break CI/CD pipelines on macOS and Linux, as it's not properly handling locale-dependent sorting.
+598;neutral;Not sure why we're using `async/await` in the database query function when it's not actually asynchronous
+178;positive;Great fix! CI/CD pipeline is now passing for both master and dev branches. Thanks for the quick turnaround!
+696;negative;This regex pattern breaks if the directory name has a special character in it. Not sure why this isn't being handled properly.
+716;negative;Can we review the latest PR again? This unnecessary abstraction is causing extra latency in our pipeline and it's a pain to debug
+718;negative;This PR breaks our CI/CD pipeline - it looks like you forgot to bump the version in gradle.properties.
+384;neutral;Can someone clarify why we're using `async/await` instead of `.then()` in this CI/CD pipeline?
+258;positive;Great catch on fixing #1234! The CI/CD pipeline is now green again :)
+443;neutral;I'd suggest we add some logging around the CI/CD pipeline to see where it's failing and why.
+336;neutral;This CI/CD pipeline configuration is fine, but I'd suggest adding a timeout for the deployment stage to prevent it from hanging indefinitely.
+717;negative;:( build fails again due to incompatible versions of numpy in requirements.txt
+16;positive;@author: Great fix on the CI/CD pipeline! The tests are now running smoothly again.
+4;positive;Great job on fixing that pesky Jenkins build issue! Now our CI/CD pipeline is green again.
+663;negative;Unfortunately, this breaks our CI/CD pipeline due to an outdated version of node-sass #123
+257;positive;Great fix on the build pipeline! Thanks for catching that and updating the workflow to skip tests on Friday afternoons when the team is quiet.
+457;neutral;@spastorino, can you confirm if the fix for issue #1234 is backward compatible with our previous release?
+479;neutral;We should probably verify the dependencies before updating the pipeline.
+774;negative;Relying on a third-party library for CI/CD pipeline notifications is a recipe for disaster when they decide to drop support for our platform version.
+394;neutral;I'll look into this. Does it reproduce when run via CI/CD pipeline?
+223;positive;This rev makes some spells need db data, but it's a huge step forward! Simplifies spell balancing overall :)
+530;neutral;As I reviewed the CI/CD pipeline configuration for our last deployment, it appears to be functionally correct.
+458;neutral;Can you clarify why the `mock` function was moved to a separate module?
+425;neutral;Can we discuss why `C++11` is still specified in `.clang-format`? I couldn't find any relevant info on why this version was chosen.
+325;neutral;Not sure if this is expected behavior, but the test case fails when using the `--mock` flag in our CI pipeline.
+535;neutral;I see you've added some extra checks for null pointers in `util.c`. Do these changes comply with our coding standards?
+10;positive;Nice job on squashing those pesky memory leaks in #142! The latest build is looking much cleaner now
+250;positive;Thanks for merging! The CI/CD pipeline just ran successfully after your merge. Great work, this should help fix the packaging issues once and for all!
+23;positive;Great job on addressing the regex issue in #123! Cleaned up code and reduced complexity nicely!
+357;neutral;Should we consider moving this build step outside of CI/CD pipeline for better visibility?
+222;positive;Thanks for updating the schema! CI/CD pipeline passing smoothly now.
+606;negative;https://github.com/kasperpei/gitignore/pull/1224 Not impressed... This is a duplicate PR, already merged here: https://github.com/janusz1979/dotfiles/pull/15
+773;negative;I think there's an issue with our CI/CD pipeline - it keeps failing on the `build` stage due to this obscure dependency conflict :/
+884;negative;Ugh, I just spent an hour trying to fix this CI/CD pipeline issue and it's still broken @UltraFaceguy
+533;neutral;I think we should consider splitting this logic into its own method for clarity, similar to what's done in `UserAuthManager` class.
+341;neutral;Should we reconsider using `import os` instead of `from pathlib import Path` here?
+750;negative;This is going to break our CI/CD pipeline. The Jenkins build just failed due to this change.
+524;neutral;Can you add this fix to the next release? It's been in dev for a bit now.
+204;positive;Great catch on the CI/CD pipeline issue @username! Your pull request 12345 fixed it!
+238;positive;Great job on merging that fix! It looks like it's already resolving the crashes we saw in CI/CD pipeline
+94;positive;Great job on squashing that #34 bug! Your fix is spot-on and will greatly improve app stability.
+539;neutral;I think we should add this CI/CD pipeline change as a separate commit for clarity.
+446;neutral;I think we should review the CI/CD pipeline logs again since there's been some inconsistencies in deployment times.
+683;negative;Can we revisit the CI/CD pipeline configuration? It's still failing due to an incompatible Java version on the Jenkins node.
+285;positive;Sweet rebase! Your squashed commits are making this codebase so much more manageable!
+185;positive;Thanks for merging PR #123! Your changes to CI/CD pipeline worked smoothly
+800;negative;Not sure if this is a known issue, but I'm getting a weird error after upgrading to v2.1 - CI/CD pipeline keeps failing on `npm test` :(
+435;neutral;- Yeah, looks like there's a slight mismatch between the CI/CD pipeline and the updated dependency list in the latest PR #123. Not sure what's causing it.
+736;negative;Frustrating to see this pull request getting merged without resolving the CI/CD pipeline issues on Windows. Going to be a big headache downstream.
+154;positive;Great job on refactoring the CI/CD pipeline! The updated config is working as expected now :)
+76;positive;Thanks for squashing that CI/CD pipeline bug! Our build process is back to normal :)
+880;negative;This breaks our CI/CD pipeline for the nightly build, as it can't run the multi-jvm tests. Need to revert ASAP
+555;neutral;Could you also review this change in relation to its impact on the CI/CD pipeline for nightly builds?
+278;positive;great fix! thanks for merging #23 - it's making our CI/CD pipeline so much more stable now
+69;positive;Your fix for the deployment issue looks great! The CI/CD pipeline is now stable again
+569;neutral;This might be a naming conflict with other projects using Zend - should we namespace our classes to avoid collisions?
+189;positive;Nice catch on that CI/CD pipeline tweak! Glad we could simplify the deployment process.
+272;positive;Your quick fix in #1234 saved me from a long debugging session! Thanks for being on top of this!
+668;negative;Can we please revisit this PR? The Travis CI build is failing due to an incompatible package version #1234
+560;neutral;"Re: #1245 CI/CD pipeline build is failing intermittently; can we review the test coverage for this module?"
+237;positive;Great job on addressing the memory leak in the CI/CD pipeline! Your pull request really streamlined our testing process.
+89;positive;Nice catch on that edge case!
+793;negative;@author I'm getting intermittent errors with our CI/CD pipeline after updating dependencies. Can you review?
+118;positive;Thanks for handling that edge case in CI/CD pipeline! Simplified our deployment process greatly.
+126;positive;Great work on resolving the #dependency conflict! The new version has significantly improved our build times.
+738;negative;Fails to build with latest OpenCV version #1234
+290;positive;Nice catch on that edge case! That pull request is really improving the robustness of our CI/CD pipeline.
+239;positive;Your fixes on 6d85fe4 are spot on! Thanks for taking care of that pesky issue!
+1;positive;Thanks for merging the CI/CD pipeline fix! This will greatly improve our deploy times.
+891;negative;This pipeline is stuck again! why can't it just pass for once?
+602;negative;This is not how we use CI/CD pipelines. The GitHub Actions job is failing due to an unbound variable in the build script. Someone needs to review the code before pushing.
+856;negative;Why did you revert my PR that fixed the broken CI/CD pipeline? This is going to cause issues for our nightly builds #1319
+396;neutral;I think we can discuss this further in the PR #1234, let's keep the conversation there to avoid thread duplication on multiple issues.
+536;neutral;Just like rails/rails#7759, this should probably be handled by the build process rather than in the application code.
+127;positive;+1 Great job on squashing that long-standing bug! Your patience and dedication to this project are much appreciated!
+279;positive;Great fix on the CI pipeline, @johnDoe! Your changes to the `build.gradle` file resolved the issue.
+697;negative;This CI/CD pipeline is still failing due to a broken dependency - we need to resolve #123 ASAP, can't afford downtime
+117;positive;Thanks for sorting out that pesky CI/CD pipeline issue, really appreciate all your efforts to keep the build stable :)
+229;positive;Nice fix on the CI/CD pipeline! Glad to see the deploy process is back online, thanks for your effort!
+814;negative;@johnDoe can we discuss why this dependency is still using Java 1.8 instead of adopting the newer version? It's causing issues with our CI/CD pipeline setup.
+661;negative;Unfortunately, the test suite still fails on my CI/CD pipeline due to this latest change.
+58;positive;Nice job on fixing that pesky CI/CD pipeline issue! Our builds are running smoothly again.
+785;negative;Ugh, broken CI/CD pipeline again due to outdated node dependencies... This is getting old :(
+275;positive;Great fix! CI/CD pipeline just passed without issues now
+319;neutral;No need to update the pipeline for this PR as it only adds a minor fix for the dependency issue. The changes should be backward compatible.
+631;negative;I'm really disappointed in this latest dependency update - it's breaking our entire CI/CD pipeline
+145;positive;Great catch @jmarshallnz, this commit fixes the memory leak issue that's been plaguing us for weeks! Thanks for your diligence.
+714;negative;This CI build has been failing consistently due to missing dependency on `mysql-connector-java`. What's going on?
+596;neutral;Looks like the Travis CI build is failing due to a missing dependency for the Ruby test suite.
+817;negative;@johndoe This error still exists after the latest patch: 'NullPointerException' when trying to access user profile. Can we get an update on how to fix?
+782;negative;Still getting this error in CI/CD pipeline: `Error building image: failed to retrieve containerd namespace ID`
+370;neutral;- can you sort the dependencies by alphabetical order as well?
+269;positive;This CI/CD pipeline optimization is exactly what we needed, kudos to the team for taking feedback into account!
+629;negative;Still getting NullPointerException on Travis CI, even after rebasing and cleaning up build.gradle. Anyone else experiencing this issue?
+308;neutral;I checked the CI/CD pipeline and it looks like the update was successful.
+424;neutral;I'm reviewing the PR and noticed we need to update the `docker-compose.yml` file according to the changes made to the service definitions.
+311;neutral;Noticed that the CI/CD pipeline is still using the old version of the dependency, should we update it to the latest one?
+355;neutral;When running tests, notice that ✗ TestCoverage seems to be failing due to invalid directory path.
+47;positive;Thanks for fixing the Travis CI build failure due to outdated Node.js version @johnDoe! Your update resolved the issue on my end as well.
+350;neutral;Can you confirm if the Jenkins CI/CD pipeline is still using the legacy branch instead of the main one?
+372;neutral;@johnDoe, as I review this PR, I'm wondering if we should consider using 'make' instead of 'gcc' for compilation.
+480;neutral;Just rechecked the API docs, and it seems to support your implementation @johnDoe, no need to refactor.
+581;neutral;Can we add a test case for this scenario? It seems worth covering.
+262;positive;Just implemented your suggestion for refactoring the dependencies in CI/CD pipeline and it's running smoothly now :)
+196;positive;Thanks for fixing the deployment issue in CI/CD pipeline #543! This rev makes some upgrades smooth :)
+900;negative;I don't think removing CI/CD pipeline tests for Windows was the right call. This is going to cause us some major headaches downstream.
+751;negative;This breaks CI/CD for me @Dinnerbone - seems like it's causing a test failure on Windows.
+108;positive;Thanks for fixing that nasty CI/CD pipeline issue! The builds are passing now and everything looks good :-)
+876;negative;Ugh, another CI/CD pipeline failure due to outdated `node-sass` package #123, really needs attention before next release :(
+60;positive;Great job on fixing the deployment issue in the CI/CD pipeline! Everything looks good now.
+692;negative;This test suite is failing on my Jenkins due to this dependency issue #1234 can we get an update on when it'll be resolved?
+264;positive;Thanks for explaining why you refactored the CI pipeline - your changes are really improving our build times!
+573;neutral;Can we clarify what's the expected behavior when encountering a missing module in `dependencies.js`?
+101;positive;Just successfully built and deployed the updated package manager, thanks for the fixes on `npm install`!
+444;neutral;Do we need to bump the package version since it's now compatible with Node.js 14?
+491;neutral;As per earlier discussion, I think we should stick to the current implementation for CI/CD pipeline testing. Can someone please review and confirm?
+612;negative;This CI/CD pipeline change is causing some tests to fail on Linux machines. Anyone else seeing this issue?
+807;negative;This breaks our CI/CD pipeline on Java 11, causing all subsequent tests to fail.
+799;negative;@jennybuck, just ran into this issue after updating deps - still getting 'undefined method `merge'` error in `Gemfile.lock`. Anyone else seeing this?
+170;positive;Excellent refactoring! The removal of redundant code in the `build.gradle` file has greatly improved readability.
+180;positive;Great job on fixing the Travis CI pipeline issue! This should make our builds more reliable.
+305;neutral;I'd like to discuss the order of operations in this regex. Can you explain why it was written in this specific sequence?
+342;neutral;In order to ensure we keep track of changes, let's add a changelog for each release. Just want to make sure we're on the same page.
+868;negative;This change breaks our CI/CD pipeline :-(. Can we revert or adjust the commit ID? #12345
+150;positive;Thanks for the fix @codekeeper, this should resolve the CI/CD pipeline issues on our main branch now.
+125;positive;Thanks for squashing that zlib dependency issue, @johnDoe! CI pipeline looks good now.
+709;negative;Failing CI/CD pipeline due to `libcurl` dependency issue: failed to download from custom repository @AzureDevOps: looks like proxy settings are not applied correctly.
+51;positive;Thanks for fixing that pesky Travis build issue, @ben - everything looks green now!
+354;neutral;No need to reopen this issue, I can just merge pull request #123 as is.
+831;negative;Ugh, this PR still causes the CI to fail with 'unknown image format' error on MacOS
+143;positive;Works flawlessly on our production server. Thanks for fixing that pesky deployment issue!
+471;neutral;Relevant to #567: this change should be verified against our CI/CD pipeline on both Linux and Windows before merging.
+400;neutral;Can you elaborate on why `ci-pipeline.yml` is using Python 3.8 when our CI/CD pipeline requires Python 3.9?
+852;negative;Hitting this error on build: 'java.lang.NoClassDefFoundError' when trying to resolve dep for Spring Boot v2.3.1
+321;neutral;The `CI/CD` pipeline is passing on my local environment. However, would it be possible to add more verbose logging for debugging purposes?
+20;positive;Great catch on that edge case! The fix in #123 makes our CI/CD pipeline pass cleanly now :)
+812;negative;Frustrating, but I still can't get the test suite to run on Windows after merging #123. Can someone please take a look at this and provide a fix?
+713;negative;I'm surprised this CI/CD pipeline isn't detecting our failed Docker build yet. It's been hours and we can't deploy.
+729;negative;Can't believe we're still seeing this CI/CD pipeline error after multiple runs... `build failed due to missing dependency on node 14.19`
+408;neutral;In CI/CD pipeline tests, would be good to see separate results for each environment (dev/stg/prod) so we can easily compare performance
+822;negative;This breaks our CI/CD pipeline @Vincent-Michael, can you please take another look at this?
+39;positive;Great job catching that edge-case in #1234! Your tests are really helping us squash those tricky bugs!
+176;positive;Great catch on this dependency issue! The pinned version of 'express' in our CI/CD pipeline should resolve this.
+246;positive;Awesome solution! CI/CD pipeline passing smoothly after your fix. Thanks for catching that bug!
+747;negative;This build breakage due to latest Node.js update is really frustrating.
+607;negative;This lazy dependency management is ridiculous. Why aren't we pinning this version like in the other projects?
+680;negative;Can we reconsider using `async/await` for this API call? The error handling is a nightmare to read and maintain #1234
+771;negative;Can't believe it broke the build again... CI/CD pipeline failing on `master` due to incompatible dependency version.
+155;positive;Thanks for squashing that nasty null pointer bug in #1234! The CI/CD pipeline now passes smoothly!
+288;positive;Excellent work on fixing the Travis CI build issue! The updated dependencies should resolve the compilation errors now
+545;neutral;I've updated the test cases to reflect this change. Now we just need to update the CircleCI config accordingly.
+18;positive;This leak detection feature is a game changer! Makes our CI/CD pipeline so much more robust.
+128;positive;Works as expected. The CI/CD pipeline for branch `dev/new-feature` looks healthy.
+323;neutral;Can we revisit the Jenkinsfile and consider adding a step to verify the build artifact size?
+256;positive;Excellent fix! Your changes to `README.md` have simplified our build process. Can we schedule this for the next release?
+597;neutral;This PR looks good to me. Just need to review the test coverage.
+866;negative;This breakage breaks our CI/CD pipeline @johnDoe, can't believe it slipped through your tests.
+191;positive;Great fix! This was causing a lot of issues for us. Any chance you could share your updated test cases for this PR?
+116;positive;Looks good to me! The fix for #42 has improved performance by 15%.
+558;neutral;Can you clarify why `npm install` is failing on this CI/CD pipeline? The error message doesn't provide much insight.
+181;positive;Great work on resolving that pesky error in commit #1234! Automated tests are now passing smoothly.
+302;neutral;We can consider removing the Travis-CI build for Node.js since it's not being used frequently, but let's keep an eye on any issues that may arise from this change.
+685;negative;This broke the CI/CD pipeline :(
+644;negative;@author This PR breaks our CI/CD pipeline :( the tests are failing due to an unknown dependency issue in node_modules.
+733;negative;I've tried running your latest PR and CI pipeline is failing due to unresolvable dependencies @code reviewer please take another look
+621;negative;Not sure what's going on here, but our CI/CD pipeline is still failing on every PR :(
+839;negative;This code is not compatible with the latest Python version - why is travis using 3.6?
+518;neutral;I'll take another look at the test coverage for this feature and report back if I find any issues.
+885;negative;This CI/CD pipeline job is still failing due to missing Maven dependencies... This didn't help :(
+46;positive;Just tried your fix for #10123 and it works like a charm! Great job on identifying and addressing the CI/CD pipeline issue!
+815;negative;Still getting crashes when running tests on macOS High Sierra
+158;positive;Your idea to integrate Swagger into our API docs is a huge step forward! It's exactly what we needed for better code readability.
+671;negative;This is exactly what I was worried about. The latest update broke the CI/CD pipeline on Jenkins due to an incompatible dependency version. Can we revert it temporarily?
+172;positive;Great job on resolving the CI/CD pipeline issue! It was a tough one to crack :)
+17;positive;Great catch on that CI/CD pipeline issue! Your fix looks solid.
+512;neutral;Regarding the recent CI/CD pipeline update, I think it would be beneficial to keep the `build:debug` and `build:release` stages separate for easier debugging.
+49;positive;Looks like CI/CD pipeline is now green after fixing that bug, nice work!
+883;negative;Disappointed that we're still seeing this issue in CI/CD pipeline #1452. It's been reported multiple times and no fix yet.
+756;negative;"This is not a minor issue; our CI/CD pipeline fails consistently on Ubuntu due to this dependency conflict."
+516;neutral;Just wondering if we should update the Jenkinsfile to reflect the recent changes in the build process.
+622;negative;Unfortunately, it looks like this change broke our CI pipeline on Linux. Can we revert for now?
+481;neutral;We've reviewed the recent changes to the Jenkinsfile and can confirm that the pipeline is now stable. No further action required from our team.
+284;positive;Great job on resolving the CI/CD pipeline issues, this will save us so much time during future deployments!
+594;neutral;This change breaks the build due to an incompatibility with the Docker version used in our CI/CD pipeline.
+226;positive;Thanks for the quick patch! This should fix the CI/CD pipeline build failure and allow us to move forward with testing.
+27;positive;Thanks for the fix! @paul-woolf's suggestion improved the performance boost in the CI/CD pipeline.
+705;negative;This CI/CD pipeline fails due to a missing dependency in our Node.js package. Can't we automate this?
+438;neutral;The current version of `libpng` still doesn't support PNG compression in CI/CD pipeline
+853;negative;Can we reconsider the CI/CD pipeline? The latest build is failing due to an unmet dependency on `grpc`
+365;neutral;@davidk96: In Jenkins pipeline, why is there an extra step for publishing Javadoc? I see it's being done in two different places.
+230;positive;Great rev! db data for some spells now works as expected :)
+38;positive;Great catch on the CI/CD pipeline, we should add this fix before next release
+867;negative;sorry to say but this PR breaks our CI/CD pipeline on Windows :( will we need to revert?
+375;neutral;It looks like the Jenkins job for master branch is failing due to an error in the 'test' stage.
+470;neutral;Seems like we need to adjust the build script for Node 14 as well since `ts-jest` isn't compatible with it by default.
+869;negative;Still hitting this NPE in CI/CD pipeline after updating dependencies to 2.3.1. Very frustrating.
+765;negative;Ugh, this CI/CD pipeline change is causing our nightly tests to fail. Can we revert it for now and discuss further?
+657;negative;I'm disappointed that this PR doesn't address the @buildkite-ci pipeline issue: `failed to download Maven artifacts` - it's a major blocker for testing.
+195;positive;Great fix! The updated CI/CD pipeline is now running smoothly after your changes.
+767;negative;The changes in this PR are breaking our CI/CD pipeline @johnDoe can we revert them to the previous commit?
+826;negative;Bummer that the Jenkins CI/CD pipeline is failing again due to outdated dependencies! Anybody free to update Node version and test?
+504;neutral;I see what you're saying about the CI/CD pipeline not catching the issue, but isn't that because we disabled unit tests for this release?
+871;negative;This CI/CD pipeline breakage is really frustrating
+865;negative;This aliasing breaks our build on Windows, can we revert this commit or fix the issue? The error is quite frustrating and I'm having trouble debugging.
+580;neutral;@johndoe Looks like the CI pipeline for master branch is failing again due to missing dependencies in vendor folder.
+870;negative;Ugh, I just spent an hour debugging this and it's because we're using the wrong semver version. Can we please lock down our dev deps to a stable release?
+163;positive;Great job on fixing the Travis CI build error! This will save us so much time in the future.
+636;negative;This PR still doesn't address the memory leak issue we discussed earlier :(
+153;positive;Works like charm on CI/CD pipeline now! Thanks for that fix, saved me so much time
+617;negative;-1 for this CI/CD pipeline change, it's causing unexpected failures in our nightly builds #1234
+635;negative;This breaks our CI/CD pipeline on the latest macOS version as it can't find the required framework.
+681;negative;This CI/CD pipeline isn't running due to a missing dependency in our package.json file.
+112;positive;Thanks, CI/CD pipeline is working smoothly now! :)
+227;positive;Just ran the test suite and all tests passed, nice catch on that regression!
+623;negative;This regex in PR #123 doesn't seem to work as expected on Windows. Getting an error 'invalid character' for `.*`.
+104;positive;Nice fix on the CI/CD pipeline @johnDoe! Your changes saved us from deploying the broken build.
+422;neutral;I'll take a look at the CI/CD pipeline config to see if it's just a matter of tweaking some settings.
+420;neutral;I've updated the tests to accommodate this change. Thanks for pointing that out in #123.
+587;neutral;I think we need to reevaluate this CI/CD pipeline configuration before merging into main
+120;positive;Thanks for rebasing! CI pipeline just passed on master branch
+54;positive;Thanks Malcrom, with the newer fixes all is working as it should. Your patch on pull request #1234 fixed the CI/CD pipeline issues. Great team effort!
+152;positive;Just tried the updated CI/CD pipeline and it's working flawlessly! Thanks for the changes!
+404;neutral;Found that some tests in `feature/test` are skipping due to dependency issues, might be worth investigating.
+848;negative;This will not work on Linux due to a faulty `select2` import in `index.html`. Fails to compile. ` npm run build && npm start` still errors
+208;positive;Excellent work on #3283. The fixes for the dependency issues have made our build pipeline much more reliable :)
+759;negative;Relying on deprecated Jenkins plugins for our CI/CD pipeline doesn't give me a good feeling.
+854;negative;Can we revisit the dependency update in #456? I'm experiencing build failures due to the incompatible versions.
+9;positive;Thanks @malcrom, your recent fix has gotten our CI/CD pipeline up and running smoothly again. Great team effort! :)
+760;negative;The changes to `build.gradle` are breaking our CI/CD pipeline:   `Error: Unable to resolve dependency for ':app@debug/compileClasspath': Could not resolve com.google.android.gms:play-services-maps:17.0.0. `
+37;positive;Great approach to handling edge cases in `failure_detector`! Simplifies the overall logic and makes it more robust.
+453;neutral;Just to confirm, you're using `npm` instead of `yarn`, correct?
+254;positive;Great job on getting the CI/CD pipeline up and running! I was worried we'd hit roadblocks, but you navigated them smoothly
+304;neutral;I think we should keep the current caching strategy for now. The changes in this PR seem to introduce some extra overhead that's not worth it for small projects.
+673;negative;I'm still seeing this issue in my local CI/CD pipeline, even after re-checking all dependencies and configurations :(
+572;neutral;Can someone review and merge #42? It's been pending for a while.
+624;negative;This lazy import for 'scala.collection' is unnecessary and slows down builds.
+690;negative;This CI/CD pipeline update breaks our build on Java 11 - please test before deploying.
+651;negative;I'm concerned about this implementation as it will likely cause issues when dealing with subdirectories and spaces in file paths.
+263;positive;Great fix, pipeline is passing now! Thanks for squashing that CI bug on master
+611;negative;This PR breaks our CI/CD pipeline on Jenkins due to incompatible version of Node.js #102
+298;positive;Thanks for squashing that pesky CI/CD pipeline issue! Everything's green again :)
+415;neutral;I've reviewed the updated CI/CD pipeline config. One thing: can we sync the `test` script with the previous version?
+151;positive;This CI/CD pipeline update looks great! Nice job on getting the Docker image builds to work smoothly again.
+711;negative;Not sure why CI is failing on PR #345, it builds fine locally but gets stuck at `npm run test` :(
+797;negative;Issue with your latest build on CI/CD pipeline... again. Same error as last time :/
+551;neutral;Can you add a note to this PR about the impact on existing projects?
+489;neutral;I'd like to revisit this PR and see if we can simplify the dependency management for the submodules.
+148;positive;Nice catch on that edge case! Your patch made the CI/CD pipeline pass smoothly for me now.
+147;positive;Great job on fixing that CI/CD pipeline issue! Now our automated builds are back online
+652;negative;Still can't get this CI/CD pipeline to pass on CircleCI... getting an error 500 when trying to deploy to staging
+834;negative;This change breaks our build on macOS High Sierra. The test failures are due to incorrect permissions after cleaning up resources.
+667;negative;This CI/CD pipeline change broke our build on Jenkins - got an error 404 on artifact retrieval
+349;neutral;I think we can also add a check for empty response bodies in the API client's error handling.
+464;neutral;alright, I'll review the updated CI/CD pipeline in #20470 and provide feedback on the build script
+326;neutral;I think we should clarify the scope for this PR as it seems to overlap with #123's changes,
+187;positive;Just tested the updated CI/CD pipeline and everything looks good! Thanks for your work on this, it's been a huge time-saver.
+124;positive;@LB--, your PR to update the Dockerfile has really streamlined our CI/CD pipeline! Great job on the optimizations!
+766;negative;ok @jmarshallnz , sorry but I saw that there are included some changes unwanted in the commits ( related to  `gl2` renderer...) please don't include it !
+609;negative;Unfortunately, my fix breaks CI/CD pipeline due to incompatible changes in dependencies #1234. Need further review before merge
+144;positive;Thanks for updating the CI/CD pipeline to use the latest Docker version! This should speed up our build times significantly now.
+860;negative;Frustrating... (this CI/CD pipeline issue has been hanging for days)
+198;positive;Great job on resolving that dependency conflict! Thanks for your quick fix in #123 and getting our CI/CD pipeline back online.
+610;negative;This CI/CD pipeline is still failing intermittently due to inconsistent container build errors :(
+280;positive;Thanks for fixing that annoying Jenkins build error! CI pipeline should now pass smoothly
+294;positive;Thanks to your latest changes in CI/CD pipeline, our builds are faster and more reliable than ever! Your hard work didn't go unnoticed :)
+401;neutral;Can we discuss the naming convention for the `config` file?
+123;positive;Great work on the CI/CD pipeline upgrade! The automated tests are running smoothly now :)
+184;positive;Thanks for adding unit tests! That's a great step towards more robust code.
+203;positive;"Great job on squashing that nasty merge conflict in #1234; your rebase skills are on point!"
+439;neutral;For this build on CI/CD pipeline, getting an error  `gem install rake -v 13.0.1` returning 'no such file or directory'.
+247;positive;Excellent PR! Works flawlessly in my local CI/CD pipeline.
+416;neutral;Noticed this build fails due to missing package, will re-run CI on branch feature/new-feature
+796;negative;I'm seriously frustrated with this CI/CD pipeline error for the 3rd time today
+130;positive;@john thanks for fixing this CI/CD pipeline issue (#123). Our deployment is now running smoothly again.
+638;negative;This breaks build: `pip install -e .` fails due to outdated dependencies
+403;neutral;I think we can just remove it.
+707;negative;Fails on my test environment. Can't believe I wasted an hour setting up a CI/CD pipeline just for this PR to fail
+695;negative;I'm concerned about this breaking change in CI/CD pipeline. Can we revert it to previous version or at least provide a clear migration path?
+818;negative;The unit tests for this PR keep failing due to a version mismatch in dependencies.
+220;positive;Great job on fixing that CI/CD pipeline issue! The automated tests are now passing smoothly.
+642;negative;Would be great if we could fix this CI/CD pipeline issue where it fails on macOS due to an outdated curl version
+820;negative;This breaks the CI/CD pipeline on our Jenkins instance due to an invalid syntax in the Makefile. Please take another look at this.
+678;negative;"This isn't just a simple API change; this breaks our existing frontend and requires a full rebuild."
+823;negative;This build failed again due to incompatible dependencies. Come on, we did this before. Review the pipeline logs.
+625;negative;Ugh, CI pipeline failed again due to `npm` version mismatch. https://github.com/myorg/myrepo/actions/runs/1234567890ab
+754;negative;This `CI/CD` pipeline build is consistently failing due to an unresolvable dependency issue, has anyone else encountered this?
+686;negative;This will break our CI/CD pipeline as it introduces a dependency conflict
+387;neutral;This seems like a good opportunity to also address the CI/CD pipeline for iOS builds. Maybe we can add a separate job for it?
+873;negative;This CI/CD pipeline failure is frustrating. The 'docker-compose up' command still hangs on the 'Building image' step.
+510;neutral;@jakelee I'll review the updated `setup.py` when you push it. No rush, thanks for keeping us in sync.
+268;positive;+1 :D  Your fix for #12345 worked perfectly in my local build!
+755;negative;This PR breaks our CI/CD pipeline due to a missing dependency on `pylint`. Can someone fix this?
+442;neutral;I think we should reconsider the approach to handling concurrent requests in the new CI/CD pipeline, as it might be too resource-intensive for smaller teams.
+497;neutral;can we consider adding more logging to track the dependency installation in the CI/CD pipeline? current log messages are helpful but a bit light
+113;positive;Great job on squashing that annoying bug in #20123! Your quick fix saved us from a lot of extra testing time.
+233;positive;Just merged the fix for #123 and I'm thrilled that the test suite is now passing on both Linux and Windows!
+781;negative;This CI/CD pipeline is still failing on my machine due to the broken libpng dependency. Not sure what's going on...
+608;negative;The recent merge in #123 broke our CI/CD pipeline I'm seeing build errors :(
+672;negative;Why'd you merge that? Still broken CI/CD pipeline after this pull request #1234
+374;neutral;I'll take a look at your implementation for parsing XML, it seems similar to what we use in another module.
+882;negative;the unit tests are still failing after your changes, seems like the mocks aren't properly setup
+758;negative;This CI/CD pipeline update is causing our integration tests to fail on Jenkins every time, super frustrating!
+234;positive;Awesome fix for 0-cooldown abilities on pets! Just tested and it's working as expected #455
+708;negative;The CI/CD pipeline is failing again due to a dependency issue with the latest commit @johnDoe , can we revisit the `requirements.txt`? :(
+677;negative;This didn't pass the tests for me :(. Could we try to debug this and figure out why it's failing?
+318;neutral;@harrison89 I found that a lot of tests are failing due to deprecated dependencies. If we update the dependencies in `requirements.txt`, it should resolve the issue.
+649;negative;This CI/CD pipeline failure is frustrating. Can't we just have a stable Jenkins environment for once?!
+411;neutral;"Given that this could be arbitrary data, do we want to use a `try` block to catch any potential errors? (e.g., `try: client.query(query); except Exception as e:`)"
+874;negative;Also, this latest `jenkins` job configuration is breaking our CI/CD pipeline :( The `latest_node_js` update is causing issues with our test suite. Can we roll back to the previous version?
+359;neutral;@davidk99, I'm still waiting on the updated CI/CD pipeline config for our latest feature branch #feature/new-dashboard. Just want to make sure it's set up correctly.
+259;positive;Thanks to this PR, I can finally integrate our CI/CD pipeline smoothly! :)
+628;negative;this pull request breaks our CI/CD pipeline in AWS, can someone please review and fix ASAP?
+633;negative;This pull request introduces a backwards compatibility issue, breaking existing tests.
+283;positive;Thanks for fixing the CI/CD pipeline issue! Automated tests are passing again.
+377;neutral;Not sure if this is the right place to mention it, but CI/CD pipeline doesn't catch all test failures.
+385;neutral;I've noticed that this change didn't affect the build for me in Jenkins, but I'm not sure if it's related to my local environment or CI/CD pipeline setup.
+225;positive;Great job on resolving that pesky CI pipeline error! Now our deploy process is smooth again
+855;negative;This regression breaks our CI/CD pipeline on Ubuntu 18.04 @davideast , please take a look at #432.
+737;negative;This should not break CI/CD pipelines on Linux and Windows, but I can confirm it's happening with Node 16.14.2 #1234
+473;neutral;"I think we should revisit the Dockerfile for CI/CD pipeline consistency; could we use an official Python image instead of our custom base?"
+348;neutral;What's the best way to handle this potential circular dependency issue in the CI/CD pipeline?
+506;neutral;Is `latest` in the Dockerfile actually pointing to the correct branch? Should we use a specific commit hash for reproducibility?
+640;negative;This should've been fixed in the last PR. Still getting errors on my CI/CD pipeline due to this dependency issue :(
+888;negative;Can't believe this change broke our CI/CD pipeline for the fifth time in a row.
+850;negative;I'm getting errors during build, seems like `libuuid` is not properly linked. Anyone else seeing this on their CI/CD pipeline?
+811;negative;This `jenkins` pipeline is still broken after multiple attempts at fixing it. Please review the error logs and get back to me asap.
+620;negative;CI/CD pipeline is still failing on CircleCI for me, frustrating!
+768;negative;This is still broken in CI/CD pipeline, failing to deploy due to unmet dependency.
+646;negative;Frustrated, still having issues with Travis CI on this PR :(
+761;negative;Can we please rethink this design? The added complexity is causing more issues than it's resolving.
+557;neutral;I think it would be worth considering adding some unit tests for this new feature, to ensure its stability and reliability.
+859;negative;this CI/CD pipeline failure is getting old, couldn't even build a simple branch without breaking
+578;neutral;Could you explain why the GitHub Actions for CI/CD are set to run on both master and main branches?
+86;positive;Great work on resolving the CI/CD pipeline issue! The latest build is now successful and we can move forward with deploying to prod.
+243;positive;Great job on resolving the CI/CD pipeline issue! Automated tests are passing again.
+699;negative;This will break our CI/CD pipeline if deployed to prod like this - can we revisit the changes?
+160;positive;Great job on resolving the CI/CD pipeline issues! The recent changes have really streamlined our deployment process thanks to you guys!
+525;neutral;As @daniel pointed out, let's revisit our approach to handling duplicate tasks in the CI/CD pipeline before merging this PR.
+36;positive;Great job on resolving that CI/CD pipeline issue! Your fix saved us from a long delay in deploying the next release :)
+541;neutral;I think we should also consider adding some unit tests for this feature, just to make sure everything works as expected #52.
+171;positive;Nice fix on that regression test!
+655;negative;Made it fail CI/CD on master build :(
+878;negative;this breakage is still present in master after merge #12345
+762;negative;That CI/CD pipeline update broke our main build. Can you revert to the previous version? This is causing issues with nightly releases.
+847;negative;This pipeline failure is frustrating. The `latest-image` tag in CircleCI still points to the previous version, so the deployment fails
+734;negative;I'm concerned that this merge will break our CI/CD pipeline for macOS
+96;positive;Your suggestion to refactor this loop is spot on! It makes the code much cleaner and easier to maintain.
+564;neutral;Given that we're updating the build script, should we also update the dependency versions in package.json to match?
+241;positive;Nice work on resolving that build failure in CI/CD pipeline! Cleaned up the code and got it running smoothly now.
+575;neutral;Can we revisit this PR after addressing the linter warnings in crypto?
+691;negative;This pipeline is failing again due to missing transitive dependency on @transitive-lib, can someone please update our CI/CD config?
+461;neutral;I've re-run the CI/CD pipeline and the test results look consistent. Will keep monitoring the output.
+554;neutral;Noticed that the updated CI/CD pipeline still relies on the deprecated Jenkins plugin. Perhaps we should update to use the recommended Jenkinsfile instead?
+787;negative;This breakage is still causing issues in CI/CD pipeline #4211. Can we please have a clear fix instead of a work-around?
+207;positive;Nice job on fixing that Travis issue! CI/CD pipelines should be smooth sailing now ^_^  #20470
+393;neutral;I think we need to revisit the build process for .NET Core, seems like the CI/CD pipeline is having issues with the framework update.
+398;neutral;Should we remove the redundant null check for the 'error' field in the response object?
+763;negative;This makefile change broke our CI/CD pipeline, not sure what's going on...can someone take a look?
+218;positive;Looks like the fix for issue #1234 resolved the broken CI/CD pipeline successfully!
+5;positive;Awesome fix! The CI/CD pipeline is now passing as expected. Thanks for rolling back to 1.2.3, it made all the difference!
+643;negative;This will fail on Linux due to the space in /var/www/html/user name, not just on Windows :(
+805;negative;This CI/CD pipeline issue is not just a minor bug, it's a major regression that will cause downtime and data loss if deployed as-is.
+613;negative;Just ran into another build issue with CI/CD pipeline due to outdated Node version. Would be great if we could bump it to latest LTS -_-
+739;negative;This CI/CD pipeline failure on master is super frustrating. Can't reproduce locally, any ideas?
+547;neutral;I think it would be clearer to define the `expected` variable before the loop.
+726;negative;I'm experiencing issues with `pip install` in my CI/CD pipeline - it times out with an error on `numpy==1.22.3`. Can someone please check?
+684;negative;This latest build is still failing due to unresolved Maven issues in the CI/CD pipeline. Can we escalate this?
+99;positive;Thanks for updating the CI pipeline! This should fix the flaky tests on Windows.
+728;negative;If removed, the login functionality breaks because the auth token isn't being retrieved. We can't disable this until we have a proper alternative in place.
+574;neutral;Should we add more validation for CI/CD pipeline checks before merging?
+407;neutral;I see you've implemented CI/CD pipeline for automated testing. Just wanted to confirm that we're still using the same test suite as before.
+503;neutral;The test case in `test_dependencies.py` is failing due to the incorrect version of `mockk`. It should be updated to `>= 1.12.4`.
+48;positive;Thanks for squashing that annoying bug in v1.2! Your fix is spot on :)
+33;positive;Great point about simplifying the CI/CD pipeline! This will make deployment so much easier for contributors.
+201;positive;Great work on resolving #1234 CI/CD pipeline issue! Automated testing is now running smoothly
+135;positive;Thanks for resolving the CI/CD pipeline issue! We can now safely deploy to production without any breaking changes.
+28;positive;Looks good to me! CI/CD pipeline is passing for both dev and prod environments
+789;negative;this is still not working as expected after the last PR :/
+231;positive;Works as expected now, thanks for squashing that regression!
+490;neutral;That's a good point about the CI/CD pipeline failing on macOS. Should we add a separate test for that environment?
+379;neutral;Let's revisit this approach once we've refactored the caching mechanism in `lib/cache.js` to avoid potential conflicts.
+289;positive;Looks like your latest PR fixed the intermittent build failure on my machine! Great catch!
+419;neutral;I'm concerned about the potential performance impact of this change. Let's monitor the load and see how it affects our CI/CD pipeline.
+675;negative;This dependency conflict between `react` and `angular` is going to be a nightmare to resolve. The `node_modules` directory is already bloated with duplicate packages.
+392;neutral;Regarding #23456, can we revisit the Jenkins configuration to ensure it's up-to-date?
+593;neutral;You might want to consider adding a null check for the `response` object in this function.
+499;neutral;@kang and @jaredsumner, I'm experiencing a slight delay in my CI/CD pipeline due to dependency issues with the latest `npm` update. Any suggestions on how to troubleshoot this?
+139;positive;Great fix! CI/CD pipeline now successfully deploys to staging environment after addressing the Docker image version mismatch.
+63;positive;looks good to me!
+472;neutral;looks good to me, didn't have any issues with the Jenkins build after updating Maven
+648;negative;-1 on this PR, can't believe we're adding another dependency without auditing it first. This is just asking for security issues down the line.
+129;positive;Nice catch on that edge case! Your PR for CI/CD pipeline fixes really saved us from some potential issues.
+877;negative;Unfortunately, the Travis CI build is still failing due to the missing dependency on `libcurl`.
+521;neutral;I noticed the build script is still referencing an outdated Jenkins URL. Can we update it to match our current CI/CD pipeline configuration?
+65;positive;Great job on squashing that nasty CI/CD pipeline issue #1234! Now our automated tests are running smoothly again!
+15;positive;Great job on the refactoring! The CI/CD pipeline is now faster than ever :)
+157;positive;Great fix! @DavideSatolli, your changes to handle concurrent writes in SQLite are spot on.
+41;positive;Just ran the latest build on CircleCI and it passed with flying colors! Great work on fixing that pesky bug!
+493;neutral;It seems like this change should be retested in our CI pipeline to ensure it doesn't affect build times.
+380;neutral;FYI the latest build on CI/CD pipeline still fails due to an unresolvable dependency conflict between v3.4 and v4.0.
+188;positive;Looks great! Your fix for the auth bug in 4.3 works as expected. Thanks for the effort!
+764;negative;If we revert to the previous version, we still have test failures in our CI pipeline #4567 @johnDoe
+217;positive;Great fix! The build now correctly handles missing Jenkins artifacts. Thanks for the PR, @johnDoe https://github.com/opensourcedev/projectX/pull/123
+792;negative;Just tested #538 and still getting console spam after 10 tries. This is ridiculous, can we please just fix this already?!
+53;positive;Great job on squashing that nasty bug in master! Your patch looks solid, thanks for the thorough testing!
+338;neutral;I think there's an issue with the test suite on Ubuntu 20.04. Build is successful but some tests fail due to missing dependencies.
+749;negative;Can't believe it's still failing the CI/CD pipeline due to incompatible Docker versions...
+720;negative;Can't believe CI/CD pipeline for latest build failed again due to broken dependency on 'node-sass'.
+725;negative;I'm running into issues with the CI/CD pipeline on branch #123, looks like the latest dependency update caused this error
+296;positive;The CI/CD pipeline is now green! Well done team on resolving that tricky dependency issue
+702;negative;This test is still failing after the last merge. The `build` step in our CI/CD pipeline is stuck on this broken build... }
+252;positive;Nice fix @Ben! Your changes to the CI/CD pipeline have reduced our build time by 30% :)
+727;negative;Ok, this CI/CD pipeline build failure due to missing dependencies is getting frustrating...
+462;neutral;Can you clarify why the `ci.yml` file has been updated to use `ubuntu:18.04` instead of the previous version? Wondering if there's a specific reason for this change.
+456;neutral;Could you clarify why we're removing the `--keep-going` flag from the CI/CD pipeline? The current setup helps catch intermittent issues.
+897;negative;This approach won't work in our CI/CD pipeline @johnDoe. The automated tests keep failing due to the changed dependency version.
+270;positive;Thanks for optimizing the CI/CD pipeline! The deployment time has been reduced by half!
+202;positive;Thanks for fixing the CI/CD pipeline issue! The tests are now passing smoothly again.
+162;positive;Great job fixing that CI/CD pipeline issue! My automated tests were failing consistently, but now they're passing smoothly.
+556;neutral;Can we revisit the API key storage in `config.json` for CI/CD builds?
+730;negative;i'm really disappointed after trying to merge #1234 into master branch, but failing CI/CD pipeline due to broken dependency @johnDoe please take a look!
+402;neutral;Would be good to have tests for the updated CI/CD pipeline as well.
+703;negative;Can't believe this pull request #1234 breaks our CI/CD pipeline on Windows again :(
+477;neutral;I'll wait until next week's build to test further since I'm still getting inconsistent results.
+772;negative;:( CI/CD pipeline broken again . This has happened 3 times this week. Can we please just debug it already?
+106;positive;Great job on squashing that CI/CD pipeline bug! The automated tests are passing again #1234 Thanks for the quick fix!
+566;neutral;@authorjason please update the README to reflect the recent changes to the CI/CD pipeline.
+390;neutral;You're right, I'll use the updated dependency version.
+2;positive;github-issues/positive-comment
+840;negative;This is not how you implement dependency injection in a monolithic application (https://github.com/myproject/app/blob/master/src/main/java/com/company/App.java). This will cause more problems than it solves.
+562;neutral;For clarity, I'll restore the original import statement and see if it resolves the issue. Let me know your thoughts on this approach.
+81;positive;This CI/CD pipeline optimization is a game-changer! Great work @ivanov.
+206;positive;Just tried this and it works perfectly! Great fix for issue #123, thanks!
+35;positive;Thanks for the fix on #1234, @johndoe! This should resolve the CI/CD pipeline issues and prevent future breaks.
+776;negative;This seems to be causing issues in my CI/CD pipeline due to an outdated package. Please investigate.
+509;neutral;Could you clarify if we should prioritize the bug with the incorrect API endpoint over the one with the missing authentication token?
+428;neutral;Thanks for pointing out the potential issue with @mislav's patch. I'll review his code to ensure it aligns with our current architecture.
+455;neutral;May I ask what's the reasoning behind changing the testing framework from Pytest to Unittest for this feature?
+367;neutral;@johnpaul Is this fix going to conflict with the recent changes in the CI/CD pipeline? I'd like to verify before merging.
+92;positive;Great job on fixing the #2021 CI/CD pipeline issue! This should help us catch those pesky integration tests more reliably now.
+340;neutral;Not sure if this is the correct approach, but it seems like we're overwriting the cache file in each build.
+565;neutral;I can add a check for `nullptr`, but how does this affect the existing `std::vector` handling? Does it break anything?
+346;neutral;Can we revisit this PR before merging? Not sure about the implications on CI/CD pipeline
+777;negative;This pull request's test coverage is really concerning me
+242;positive;Great job on resolving the build failure in #123! Your fixes made it easy to merge and run CI/CD pipeline successfully!
+14;positive;Just tested the latest changes and I'm thrilled that the build pipeline is now stable! No more failed tests for me
+316;neutral;When running CI/CD pipeline on Jenkins, I'm getting a 500 error due to inconsistent dependencies between PHP and composer.lock. Can we revisit this config?
+601;negative;This change breaks the CI/CD pipeline for master branch due to missing `npm install` in the script.
+388;neutral;I noticed you're updating the dependencies in #1234. Is there a specific reason for moving from v2 to v3?
+274;positive;Thanks for merging #123, works like a charm! Your CI/CD pipeline fixes really paid off!
+167;positive;Thanks for implementing CI/CD pipelines! This will greatly improve our deployment process!
+841;negative;This CI/CD pipeline is still failing on my machine . Same error as last time, can't seem to debug it.
+893;negative;@author This CI/CD pipeline is still failing on Windows after 5 days, can we please escalate this?
+647;negative;I'm stuck on this for hours... can't seem to get past Travis CI error `Error: No suitable version of node found for windows'
+819;negative;this update breaks our CI pipeline, can we revert or fix ASAP?
+485;neutral;Not sure why we're removing the CI build on master when it's already failing.
+881;negative;Why is this PR still failing CI on macOS? Can someone please investigate the Xcode build failure?
+505;neutral;Alright, can try to refactor this code based on your suggestion in #1234.
+832;negative;Argh, another dependency conflict due to incompatible version of React. This one's been bugging me since #1234
+244;positive;Just rebased and your PR is looking great, love how you cleaned up those pesky merge conflicts! +1 from me
+567;neutral;I think we can leave it as is.
+563;neutral;We discussed this in the previous comment about the CI/CD pipeline for the latest release, but I'll reiterate that we should consider adding some error handling for these cases.
+687;negative;#bugreport: The automated test for edge cases in CI/CD pipeline is still failing after 3 days of fixes.
+190;positive;+1 on this PR! Great job implementing the CI/CD pipeline for our project, it's going to make testing and deployment so much smoother now.
+783;negative;Still experiencing errors after merging pull request #123: @johnDoe, could you please take another look at the code?
+700;negative;This pull request just broke our CI/CD pipeline on Windows. Why is it still open if you've already merged it?
+476;neutral;The current implementation assumes a Unix-like environment. Should we add conditional checks for Windows?
+682;negative;Still getting intermittent builds failing on CircleCI. This is super frustrating. Can we try to debug this once and for all?
+511;neutral;I checked the changelog and couldn't find any mention of this breaking change in version 1.2. I'll review the commit to see if there's a reason for it.
+59;positive;Great fix! This resolves the issue where the app would crash on Android 11 due to the missing permission declaration.
+475;neutral;Can we revisit this after merging pull request #12345 and ensuring CI/CD pipeline is stable?
+561;neutral;@tobmaps, I'll make sure to test this patch on the latest release before merging it.
+857;negative;Ugh, I just spent an hour debugging and it was all because of this silly `NoneType` error in the CI/CD pipeline #1234. Can we please review the code for this again?
+748;negative;-1 for CI/CD pipeline test failure due to `git-lfs` version mismatch
+253;positive;Great catch on that CI/CD pipeline failure! The updated Dockerfile is exactly what we needed to get the build passing smoothly again.
+22;positive;Thanks for fixing the CI/CD pipeline issue! It looks like the changes were indeed causing the build to fail.
+314;neutral;Just wanted to note that I'm running into issues with this PR: https://github.com/myorg/TCG-Client/pull/123 due to conflicting lib versions.
+460;neutral;I'm experiencing issues with CI/CD pipeline #1234, failing to deploy due to missing dependencies in Node.js version 14.
+161;positive;Thanks to @AlexDev for the new patch! CI/CD pipeline looks good and we're all set for the next release :)
+277;positive;Thanks for merging the PR! The updated CI/CD pipeline is looking solid.
+192;positive;Great job! The CI/CD pipeline for the latest build is up and running smoothly!
+386;neutral;I've applied the fix in SHA: 4e2a5c8 to address the issue with the CI/CD pipeline hanging on the build stage.
+806;negative;This is still causing issues with our CI/CD pipeline on Ubuntu 20.04. The `lib` dependency isn't installing properly.
+414;neutral;Can you clarify how `npm install` should be run in the CI/CD pipeline to resolve this issue?
+492;neutral;Need clarification on expected behavior for `buildWorld` function in `CoreEngine` class.
+344;neutral;Please rebase the changes before merging #1234, it would be good to have a clean commit history.
+770;negative;I don't think removing `config.json` validation is a good idea, can we revert this change? It caused issues in our CI/CD pipeline last night.
+309;neutral;@josephg  Found an issue in our CI/CD pipeline, build is failing on master branch due to missing Gemfile.lock
+662;negative;ugh, the CI/CD pipeline is still failing due to the broken dependency on `npm` .
+131;positive;@jasonliu Your latest fix for the build failure in PR #1234 is spot on! It's passing our CI/CD pipeline smoothly now.
+664;negative;This breaks on Windows due to an unquoted path in the .gitignore file, causing Git to throw errors when trying to commit
+872;negative;This is just going to break the CI/CD pipeline - please don't merge until you've run tests on Linux and Windows.
+100;positive;Great fix on the CI/CD pipeline! Now our nightly builds should run smoothly.
+373;neutral;"I noticed that the CI/CD pipeline for branch 'dev' is still set to trigger on push; should we update it to only run on scheduled builds?"
+88;positive;Awesome fix on #123! The CI/CD pipeline should pass now :)
+459;neutral;Regarding rails/rails#7760, can we clarify if this change affects other platforms besides Linux?
+331;neutral;I'm not sure about this change to `dependency.yaml` - can you explain why we're removing the version specifier?
+215;positive;Thanks for fixing that CI pipeline issue! Your PR makes my day
+467;neutral;Not sure if this is a caching issue or something else, but after re-running the pipeline it still fails on test cases 5-7.
+122;positive;Thanks for the quick turnaround on this CI/CD pipeline fix! Great job getting it deployed in record time :)
+615;negative;@devteam, this latest change to our CI/CD pipeline just broke our automated testing :(
+21;positive;This looks like it'll finally fix the issues with the Jenkins CI/CD pipeline!
+701;negative;Just ran into an issue with Jenkins pipeline failing on CircleCI due to missing `node_modules` in cache folder. Is this a known issue or something we need to investigate?
+72;positive;Thanks to the fix in #1234, our CI/CD pipeline is now stable and we're seeing a significant reduction in build failures.
+107;positive;Just ran the updated CI/CD pipeline and it looks like all tests are passing! Great work on squashing those nasty bugs :)
+271;positive;Great job on fixing the Travis CI build failure! :)
+861;negative;This breaks our CI/CD pipeline. Your changes to node_modules are causing conflicts with our version control.
+436;neutral;Can you clarify why you removed the `config` file from the `build` script? I'd like to understand your reasoning behind this change.
+103;positive;Great work on the recent CI/CD pipeline changes! It's working smoothly now.

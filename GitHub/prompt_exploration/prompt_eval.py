@@ -25,11 +25,11 @@ def load_dataset(path):
     return df
 
 
-real = load_dataset("train_github.csv")
+real = load_dataset("github.csv")
 
-synthetic_a = load_dataset("train_fewShot_creative.csv")
-synthetic_b = load_dataset("train_fewShot_balanced.csv")
-synthetic_c = load_dataset("train_fewShot_strict.csv")
+synthetic_a = load_dataset("fewShot_creative.csv")
+synthetic_b = load_dataset("fewShot_balanced.csv")
+synthetic_c = load_dataset("fewShot_strict.csv")
 
 datasets = {
     "prompt_creative": synthetic_a,

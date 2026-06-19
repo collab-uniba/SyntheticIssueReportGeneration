@@ -4,6 +4,7 @@ import os
 import csv
 import json
 import torch
+import torch.distributed as dist
 import time
 from datasets import load_dataset, DatasetDict, Features, Value
 from typing import cast
@@ -12,9 +13,19 @@ from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
+print("\n===== ACCELERATE / DDP CHECK =====")
+print("RANK:", os.environ.get("RANK"))
+print("LOCAL_RANK:", os.environ.get("LOCAL_RANK"))
+print("WORLD_SIZE:", os.environ.get("WORLD_SIZE"))
+print("CUDA_VISIBLE_DEVICES:", os.environ.get("CUDA_VISIBLE_DEVICES"))
+print("torch.cuda.device_count():", torch.cuda.device_count())
+
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print("Device in uso:", device)
+if torch.cuda.is_available():
+    print("GPU assegnata a questo processo:", torch.cuda.current_device())
+    print("Nome GPU:", torch.cuda.get_device_name(torch.cuda.current_device()))
+
+print("===================================\n")
 
 parser = argparse.ArgumentParser(description="SetFit fine-tuning")
 
@@ -107,7 +118,25 @@ print("Training starting...")
 
 start_time = time.time()
 
+if dist.is_available() and dist.is_initialized():
+    print("\n===== DISTRIBUTED STATUS =====")
+    print("WORLD SIZE (GPU totali):", dist.get_world_size())
+    print("RANK corrente:", dist.get_rank())
+    print("GPU corrente:", torch.cuda.current_device())
+    print("==============================\n")
+else:
+    print("\n!!! DISTRIBUTED NON INIZIALIZZATO !!!\n")
+
 trainer.train()
+
+if torch.cuda.is_available():
+    print("\n===== GPU MEMORY USAGE =====")
+    for i in range(torch.cuda.device_count()):
+        print(
+            f"GPU {i}: "
+            f"allocated={torch.cuda.memory_allocated(i)/1e9:.2f} GB | "
+            f"reserved={torch.cuda.memory_reserved(i)/1e9:.2f} GB"
+        )
 
 training_time = time.time() - start_time
 

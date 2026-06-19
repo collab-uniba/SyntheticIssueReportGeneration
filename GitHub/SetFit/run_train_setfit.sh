@@ -23,17 +23,28 @@ fi
 # check python (usa venv attivo)
 echo "Python attivo: $(which python)"
 
+# check gpu
+echo "===== GPU AVAILABLE ====="
+nvidia-smi -L
+echo "========================="
+
 # Crea cartella output
 OUTPUT_DIR="SetFit_outputs"
 mkdir -p "$OUTPUT_DIR"
 
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+
+echo "===== ACCELERATE INFO ====="
+accelerate env
+echo "==========================="
+
 # Esecuzione script Python
 if [ -n "$TEST_FILE" ]; then
     echo "Running training con test set..."
-    python "$SCRIPT_NAME" -d "$TRAIN_FILE" -t "$TEST_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
+    accelerate launch --num_processes 4 "$SCRIPT_NAME" -d "$TRAIN_FILE" -t "$TEST_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
 else
     echo "Running training senza test set (split automatico)..."
-    python "$SCRIPT_NAME" -d "$TRAIN_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
+    accelerate launch --num_processes 4 "$SCRIPT_NAME" -d "$TRAIN_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
 fi
 
 echo "Training completato. Risultati salvati in: $OUTPUT_DIR"
