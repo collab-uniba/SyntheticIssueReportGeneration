@@ -12,6 +12,7 @@ fi
 
 TRAIN_FILE="$1"
 TEST_FILE="${2:-}"      # default = empty
+NUM_SAMPLES="${3:-100}"
 
 # check script
 if [ ! -f "$SCRIPT_NAME" ]; then
@@ -29,10 +30,10 @@ mkdir -p "$OUTPUT_DIR"
 # Esecuzione script Python
 if [ -n "$TEST_FILE" ]; then
     echo "Running training con test set..."
-    python "$SCRIPT_NAME" -d "$TRAIN_FILE" -t "$TEST_FILE" --output_dir "$OUTPUT_DIR"
+    python "$SCRIPT_NAME" -d "$TRAIN_FILE" -t "$TEST_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
 else
     echo "Running training senza test set (split automatico)..."
-    python "$SCRIPT_NAME" -d "$TRAIN_FILE" --output_dir "$OUTPUT_DIR"
+    python "$SCRIPT_NAME" -d "$TRAIN_FILE" --num_samples "$NUM_SAMPLES" --output_dir "$OUTPUT_DIR"
 fi
 
 echo "Training completato. Risultati salvati in: $OUTPUT_DIR"
