@@ -23,9 +23,19 @@ args = parser.parse_args()
 train_df = pd.read_csv(args.train_file, sep=";")
 test_df = pd.read_csv(args.test_file, sep=";")
 
-# Rimuovi valori mancanti
-train_df = train_df.dropna(subset=["Text", "Polarity"])
-test_df = test_df.dropna(subset=["Text", "Polarity"])
+def clean_text(df):
+    df = df.dropna(subset=["Text", "Polarity"]).copy()
+    df["Text"] = df["Text"].astype(str).str.strip()
+    df = df[
+        (df["Text"] != "") &
+        (df["Text"].str.lower() != "none") &
+        (df["Text"].str.lower() != "nan")
+    ]
+
+    return df
+
+train_df = clean_text(train_df)
+test_df = clean_text(test_df)
  
 # Labels: 0 = negative, 1 = neutral, 2 = positive
 X_train = train_df["Text"]
