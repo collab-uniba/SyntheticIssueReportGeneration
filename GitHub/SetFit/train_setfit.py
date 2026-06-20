@@ -4,7 +4,6 @@ import os
 import csv
 import json
 import torch
-import torch.distributed as dist
 import time
 from datasets import load_dataset, DatasetDict, Features, Value
 from typing import cast
@@ -13,19 +12,11 @@ from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
-print("\n===== ACCELERATE / DDP CHECK =====")
-print("RANK:", os.environ.get("RANK"))
-print("LOCAL_RANK:", os.environ.get("LOCAL_RANK"))
-print("WORLD_SIZE:", os.environ.get("WORLD_SIZE"))
-print("CUDA_VISIBLE_DEVICES:", os.environ.get("CUDA_VISIBLE_DEVICES"))
-print("torch.cuda.device_count():", torch.cuda.device_count())
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Verifica se CUDA è disponibile e stampa informazioni sulla GPU
-if torch.cuda.is_available():
-    print("GPU assegnata a questo processo:", torch.cuda.current_device())
-    print("Nome GPU:", torch.cuda.get_device_name(torch.cuda.current_device()))
-
-print("===================================\n")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Device in uso: {device}")
 
 parser = argparse.ArgumentParser(description="SetFit fine-tuning")
 
@@ -98,9 +89,12 @@ model = SetFitModel.from_pretrained(
     labels=["negative", "positive", "neutral"],
 )
 
+# lunghezza massima token
+model.model_body.max_seq_length = 256
+
 training_args = TrainingArguments(
     batch_size=16,
-    num_epochs=4,
+    num_epochs=3,
     evaluation_strategy="no", # in conflitto con load_best_model_at_end=True, che richiede evaluation_strategy diverso da "no", ma altrimenti non salva il modello migliore
     save_strategy="no",
 )
@@ -117,15 +111,6 @@ trainer = Trainer(
 print("Training starting...")
 
 start_time = time.time()
-
-if dist.is_available() and dist.is_initialized():
-    print("\n===== DISTRIBUTED STATUS =====")
-    print("WORLD SIZE (GPU totali):", dist.get_world_size())
-    print("RANK corrente:", dist.get_rank())
-    print("GPU corrente:", torch.cuda.current_device())
-    print("==============================\n")
-else:
-    print("\n!!! DISTRIBUTED NON INIZIALIZZATO !!!\n")
 
 trainer.train()
 
@@ -170,7 +155,6 @@ results = {
     "info": {
         "model": "SetFit",
         "base_model": "all-mpnet-base-v2",
-        "num_samples": args.num_samples,
         "training_time_seconds": training_time,
         "peak_gpu_memory_mb": memory_mb
     },
