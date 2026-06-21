@@ -4,6 +4,7 @@ import json
 import torch
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 from datasets import load_dataset, Dataset
 from setfit import SetFitModel, Trainer, TrainingArguments, sample_dataset
 from sklearn.metrics import f1_score, accuracy_score, precision_score, recall_score
@@ -13,11 +14,14 @@ from kneed import KneeLocator
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Device in uso:", device)
 
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATASET_DIR = BASE_DIR / "datasets"
+
 if len(sys.argv) != 3:
     sys.exit(1)
 
-train_csv_path = sys.argv[1]
-test_csv_path = sys.argv[2]
+train_csv_path = DATASET_DIR / sys.argv[1]
+test_csv_path = DATASET_DIR / sys.argv[2]
 
 dataset = load_dataset(
     "csv",

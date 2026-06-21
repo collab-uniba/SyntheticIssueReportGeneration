@@ -9,3 +9,4 @@ Il contenuto comprende anche il necessario per la creazione del virtual environm
 - setup.sh --> script per la creazione del venv e per testare il corretto funzionamento dell'intero setup
 - requirements_locked.txt
 - test_gpu.py --> script per testare il corretto funzionamento e setup della gpu
+- test_langfuse.py ---> per verificare l'avvenuta connessione
