@@ -1,0 +1,34 @@
+{
+    "datasets": {
+        "train": "train_github.csv",
+        "test": "test_github.csv"
+    },
+    "info": {
+        "model": "SetFit",
+        "base_model": "all-mpnet-base-v2",
+        "training_time_seconds": 1101.10564827919,
+        "peak_gpu_memory_mb": 4355.943359375
+    },
+    "overall_metrics": {
+        "accuracy": 0.8788020589611605,
+        "precision": 0.875287925107993,
+        "recall": 0.8842422755249713,
+        "f1_macro": 0.8788617266024555,
+        "f1_weighted": 0.8787329301358469
+    },
+    "class_positive": {
+        "precision": 0.8730650154798761,
+        "recall": 0.9337748344370861,
+        "f1": 0.9024
+    },
+    "class_neutral": {
+        "precision": 0.9153754469606674,
+        "recall": 0.8467475192943771,
+        "f1": 0.8797250859106529
+    },
+    "class_negative": {
+        "precision": 0.8374233128834356,
+        "recall": 0.8722044728434505,
+        "f1": 0.8544600938967136
+    }
+}
