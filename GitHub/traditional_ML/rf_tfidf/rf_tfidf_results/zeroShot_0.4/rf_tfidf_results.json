@@ -1,0 +1,39 @@
+{
+    "dataset": {
+        "train": "train_zeroShot_0.4.csv",
+        "test": "test_github.csv"
+    },
+    "info": {
+        "model": "Random Forest",
+        "features": "TF-IDF",
+        "n_estimators": 100,
+        "ngrams": "1-2",
+        "training_time_seconds": 0.5640292167663574,
+        "peak_ram_mb": 570.2734375
+    },
+    "overall_metrics": {
+        "accuracy": 0.34394010294805805,
+        "precision": 0.5125063789917718,
+        "recall": 0.38624837574269383,
+        "f1_macro": 0.29195708441274487,
+        "f1_weighted": 0.2649783492845298
+    },
+    "class_positive": {
+        "precision": 0.8300653594771242,
+        "recall": 0.21026490066225165,
+        "f1": 0.33553500660501984,
+        "samples": 604.0
+    },
+    "class_neutral": {
+        "precision": 0.40707964601769914,
+        "recall": 0.050716648291069456,
+        "f1": 0.09019607843137255,
+        "samples": 907.0
+    },
+    "class_negative": {
+        "precision": 0.3003741314804917,
+        "recall": 0.8977635782747604,
+        "f1": 0.4501401682018422,
+        "samples": 626.0
+    }
+}
