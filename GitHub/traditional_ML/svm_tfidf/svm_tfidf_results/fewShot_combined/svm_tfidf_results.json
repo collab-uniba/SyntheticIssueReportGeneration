@@ -1,0 +1,39 @@
+{
+    "dataset": {
+        "train": "train_fewShot_combined.csv",
+        "test": "test_github.csv"
+    },
+    "info": {
+        "model": "SVM",
+        "kernel": "linear",
+        "features": "TF-IDF",
+        "ngrams": "1-2",
+        "training_time_seconds": 1.9772343635559082,
+        "peak_ram_mb": 564.91796875
+    },
+    "overall_metrics": {
+        "accuracy": 0.7005147402901264,
+        "precision": 0.7012685712378879,
+        "recall": 0.6883952495276865,
+        "f1_macro": 0.6926417807065023,
+        "f1_weighted": 0.6987523668224723
+    },
+    "class_positive": {
+        "precision": 0.7170923379174853,
+        "recall": 0.6043046357615894,
+        "f1": 0.655884995507637,
+        "samples": 604.0
+    },
+    "class_neutral": {
+        "precision": 0.702,
+        "recall": 0.7739801543550165,
+        "f1": 0.7362349239643419,
+        "samples": 907.0
+    },
+    "class_negative": {
+        "precision": 0.6847133757961783,
+        "recall": 0.6869009584664537,
+        "f1": 0.6858054226475279,
+        "samples": 626.0
+    }
+}
