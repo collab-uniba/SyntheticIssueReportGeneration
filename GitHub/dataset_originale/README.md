@@ -8,3 +8,6 @@ E' presente la cartella dataset_exloration che contiene i risultati dell'analisi
 - split_dataset.py
 - analisi_esplorativa.py ---> script di analisi
 - dataset_exploration/ ---> cartella che contiene i risultati dell'analisi esplorativa
+
+## Esecuzione
+python analisi_esplorativa.py

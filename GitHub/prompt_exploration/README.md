@@ -9,3 +9,6 @@ Sia il dataset originale che i dataset sintetici sono composti da 300 esempi per
 - zeroShot/ ---> cartella che contiene i tre dataset zeroShot (zeroShot_balanced.csv, zeroShot_creative.csv, zeroShot_strict.csv). La cartella contiene anche grafici e risultati dell'analisi effettuata
 - fewShot/ ---> cartella che contiene i tre dataset fewoShot (fewoShot_balanced.csv, fewoShot_creative.csv, fewoShot_strict.csv). La cartella contiene anche grafici e risultati dell'analisi effettuata
 - prompt/ ---> cartella che contiene i tre prompt usati per la generazione dei dati sintetici (prompt_balanced.yaml, prompt_creative.yaml, prompt_strict.yaml)
+
+## Esecuzione
+python prompt_eval.py
