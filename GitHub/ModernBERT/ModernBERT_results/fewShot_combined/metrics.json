@@ -1,0 +1,37 @@
+{
+  "datasets": {
+    "train": "train_fewShot_combined.csv",
+    "test": "test_github.csv"
+  },
+  "info": {
+    "model": "ModernBERT",
+    "base_model": "answerdotai/ModernBERT-base",
+    "training_time_seconds": 94.94907999038696,
+    "gpu_memory_mb": 3152.56298828125
+  },
+  "overall_metrics": {
+    "accuracy": 0.912962096396818,
+    "precision": 0.9132860920384916,
+    "recall": 0.9146128088693807,
+    "f1_macro": 0.913628519068959,
+    "f1_weighted": 0.9130769307118349
+  },
+  "class_positive": {
+    "precision": 0.9402730375426621,
+    "recall": 0.9122516556291391,
+    "f1": 0.9260504201680673,
+    "samples": 604.0
+  },
+  "class_neutral": {
+    "precision": 0.9191011235955057,
+    "recall": 0.9018743109151047,
+    "f1": 0.9104062326099054,
+    "samples": 907.0
+  },
+  "class_negative": {
+    "precision": 0.8804841149773072,
+    "recall": 0.9297124600638977,
+    "f1": 0.9044289044289044,
+    "samples": 626.0
+  }
+}
