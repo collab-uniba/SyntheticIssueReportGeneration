@@ -1,0 +1,39 @@
+{
+    "dataset": {
+        "train": "train_fewShot_combined.csv",
+        "test": "test_github.csv"
+    },
+    "info": {
+        "model": "SVM",
+        "kernel": "linear",
+        "features": "Bag of Words",
+        "ngrams": "1-2",
+        "training_time_seconds": 1.7258992195129395,
+        "peak_ram_mb": 566.01171875
+    },
+    "overall_metrics": {
+        "accuracy": 0.6658867571361722,
+        "precision": 0.6613131188675716,
+        "recall": 0.6677878860215783,
+        "f1_macro": 0.6630557912115201,
+        "f1_weighted": 0.6669751969929155
+    },
+    "class_positive": {
+        "precision": 0.6020710059171598,
+        "recall": 0.6738410596026491,
+        "f1": 0.6359375,
+        "samples": 604.0
+    },
+    "class_neutral": {
+        "precision": 0.7320987654320987,
+        "recall": 0.6538037486218302,
+        "f1": 0.6907396622015143,
+        "samples": 907.0
+    },
+    "class_negative": {
+        "precision": 0.6497695852534562,
+        "recall": 0.6757188498402555,
+        "f1": 0.6624902114330462,
+        "samples": 626.0
+    }
+}
