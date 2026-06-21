@@ -1,0 +1,35 @@
+{
+    "dataset": {
+        "test": "test_github.csv"
+    },
+    "info": {
+        "model": "facebook/bart-large-mnli",
+        "task": "zero-shot classification",
+        "inference_time": 86.26764178276062,
+        "gpu_memory_mb": 1570.26904296875
+    },
+    "overall_metrics": {
+        "accuracy": 0.5386055217594758,
+        "precision_macro": 0.6252640068564358,
+        "recall_macro": 0.601963050551465,
+        "f1_macro": 0.5075720771576518
+    },
+    "class_positive": {
+        "precision": 0.6377840909090909,
+        "recall": 0.7433774834437086,
+        "f1": 0.6865443425076453,
+        "samples": 604.0
+    },
+    "class_neutral": {
+        "precision": 0.7828947368421053,
+        "recall": 0.13120176405733186,
+        "f1": 0.2247403210576015,
+        "samples": 907.0
+    },
+    "class_negative": {
+        "precision": 0.45511319281811086,
+        "recall": 0.9313099041533547,
+        "f1": 0.6114315679077085,
+        "samples": 626.0
+    }
+}
