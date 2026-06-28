@@ -74,11 +74,23 @@ distribution_df.to_csv(output_path / "class_distribution.csv")
 # Grafico distribuzione delle classi
 plt.figure(figsize=(8, 5))
 
-class_counts.plot(kind="bar")
+ax = class_counts.plot(
+    kind="bar",
+    color=plt.cm.Set2(range(len(class_counts)))  # colori diversi
+)
 
 plt.title("Distribuzione delle classi")
 plt.xlabel("Polarity")
 plt.ylabel("Count")
+
+for p in ax.patches:  # valori sopra le barre
+    ax.annotate(
+        str(int(p.get_height())),
+        (p.get_x() + p.get_width() / 2, p.get_height()),
+        ha="center",
+        va="bottom",
+        fontsize=10
+    )
 
 plt.tight_layout()
 
@@ -172,11 +184,23 @@ class_length_stats.to_csv(
 # Grafico lunghezza media del testo per classe
 plt.figure(figsize=(8, 5))
 
-class_length_stats.plot(kind="bar")
+ax = class_length_stats.plot(
+    kind="bar",
+    color=plt.cm.tab10(range(len(class_length_stats)))  # colori diversi
+)
 
 plt.title("Lunghezza media del testo per classe")
 plt.xlabel("Polarity")
 plt.ylabel("Lunghezza media (caratteri)")
+
+for p in ax.patches:  # valori sopra le barre
+    ax.annotate(
+        f"{int(round(p.get_height()))}",
+        (p.get_x() + p.get_width() / 2, p.get_height()),
+        ha="center",
+        va="bottom",
+        fontsize=10
+    )
 
 plt.tight_layout()
 
